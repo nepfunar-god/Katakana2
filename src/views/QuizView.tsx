@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Trophy, Type, Languages, X, Medal } from 'lucide-react';
+import { Trophy, Type, Languages, X, Medal, ChevronLeft } from 'lucide-react';
 import { RAW_DATA } from '../data';
 import { speak } from '../utils/tts';
 import { playCorrect, playIncorrect, playClick } from '../utils/audio';
+import { ViewState } from '../App';
 
 type QuizState = 'menu' | 'active' | 'results';
 
-export default function QuizView({ setStreak }: { setStreak: (s: number | ((prev: number) => number)) => void; key?: string }) {
+export default function QuizView({ setStreak, setView }: { setStreak: (s: number | ((prev: number) => number)) => void; setView: (view: ViewState) => void; key?: string }) {
   const [quizState, setQuizState] = useState<QuizState>('menu');
   const [len, setLen] = useState<number | 'all'>(10);
   const [mode, setMode] = useState<'kana' | 'word'>('kana');
@@ -123,8 +124,11 @@ export default function QuizView({ setStreak }: { setStreak: (s: number | ((prev
 
   if (quizState === 'menu') {
     return (
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col h-full justify-center gap-6 max-w-sm mx-auto px-4 pb-4">
-        <div className="text-center mb-4">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col h-full justify-center gap-6 max-w-sm mx-auto px-4 pb-4 relative">
+        <button onClick={() => { playClick(); setView('practice'); }} className="absolute top-4 left-4 w-10 h-10 bg-[#1A1D24] text-zinc-400 rounded-full flex items-center justify-center hover:bg-[#222630] hover:text-zinc-200 transition-colors active:scale-95 shadow-sm">
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        <div className="text-center mb-4 mt-12">
           <h2 className="text-3xl font-black text-zinc-100 tracking-tight">Quiz Arena</h2>
           <p className="text-sm text-zinc-500 mt-2">Test your knowledge and speed</p>
           <div className="flex gap-3 justify-center mt-6">

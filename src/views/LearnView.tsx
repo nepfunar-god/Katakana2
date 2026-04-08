@@ -1,12 +1,12 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { Search, Volume2, Check, X, PenTool, ChevronRight, ArrowLeft, Languages, Type } from 'lucide-react';
+import { Search, Volume2, Check, X, PenTool, ChevronRight, ArrowLeft, Languages, Type, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAW_DATA } from '../data';
 import { speak } from '../utils/tts';
 import { playClick } from '../utils/audio';
 import MinnaView from './MinnaView';
 
-type MainCategory = 'hiragana' | 'katakana' | 'words' | null;
+type MainCategory = 'hiragana' | 'katakana' | 'words' | 'minna' | null;
 type SubCategory = 'basic' | 'dakuten' | 'handakuten' | null;
 
 function DrawingCanvas() {
@@ -103,7 +103,6 @@ function DrawingCanvas() {
 }
 
 export default function LearnView() {
-  const [activeTab, setActiveTab] = useState<'kana' | 'jlpt'>('kana');
   const [viewMode, setViewMode] = useState<'main' | 'sub' | 'grid'>('main');
   const [mainCat, setMainCat] = useState<MainCategory>(null);
   const [subCat, setSubCat] = useState<SubCategory>(null);
@@ -204,41 +203,23 @@ export default function LearnView() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col h-full">
-      <div className="sticky top-0 bg-[#11131A]/95 backdrop-blur-md py-2.5 z-20 space-y-3 mb-2 px-4">
-        <div className="flex bg-[#1A1D24] p-1 rounded-xl">
-          <button 
-            onClick={() => { playClick(); setActiveTab('kana'); }}
-            className={`flex-1 py-2 text-sm font-bold rounded-lg transition-colors ${activeTab === 'kana' ? 'bg-cyan-500 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
-          >
-            Kana & Vocab
-          </button>
-          <button 
-            onClick={() => { playClick(); setActiveTab('jlpt'); }}
-            className={`flex-1 py-2 text-sm font-bold rounded-lg transition-colors ${activeTab === 'jlpt' ? 'bg-cyan-500 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
-          >
-            JLPT
-          </button>
-        </div>
-        {activeTab === 'kana' && (
-          <div className="relative">
-            <Search className="absolute left-3.5 top-3 w-4 h-4 text-zinc-500" />
-            <input 
-              type="text" 
-              value={search}
-              onChange={handleSearch}
-              placeholder="Search vocabulary or kana..." 
-              className="w-full bg-[#1A1D24]/80 text-zinc-100 text-sm rounded-full py-2.5 pl-10 pr-4 border border-white/5 focus:bg-[#222630] focus:outline-none transition-colors shadow-sm"
-            />
-          </div>
-        )}
-      </div>
-
-      {activeTab === 'jlpt' ? (
-        <div className="flex-1 overflow-hidden relative">
-          <MinnaView />
-        </div>
+      {mainCat === 'minna' ? (
+        <MinnaView onBack={() => { playClick(); setMainCat(null); setViewMode('main'); }} />
       ) : (
         <>
+          <div className="sticky top-0 bg-[#11131A]/95 backdrop-blur-md py-2.5 z-20 space-y-3 mb-2 px-4">
+            <div className="relative">
+              <Search className="absolute left-3.5 top-3 w-4 h-4 text-zinc-500" />
+              <input 
+                type="text" 
+                value={search}
+                onChange={handleSearch}
+                placeholder="Search vocabulary or kana..." 
+                className="w-full bg-[#1A1D24]/80 text-zinc-100 text-sm rounded-full py-2.5 pl-10 pr-4 border border-white/5 focus:bg-[#222630] focus:outline-none transition-colors shadow-sm"
+              />
+            </div>
+          </div>
+
           {viewMode === 'main' && !search && (
         <div className="flex flex-col gap-2.5 mt-2 px-4 pb-6">
           <button onClick={() => selectMainCategory('hiragana')} className="w-full p-4 bg-[#1A1D24] rounded-[24px] flex items-center gap-4 group active:scale-[0.98] transition-all shadow-sm">
@@ -270,6 +251,17 @@ export default function LearnView() {
             <div className="text-left flex-1">
               <h3 className="text-[15px] font-bold text-zinc-100 mb-0.5">Vocabulary</h3>
               <p className="text-[12px] text-zinc-500 font-medium">Common words & phrases</p>
+            </div>
+            <ChevronRight className="text-zinc-600 w-4 h-4 shrink-0" />
+          </button>
+
+          <button onClick={() => selectMainCategory('minna')} className="w-full p-4 bg-[#1A1D24] rounded-[24px] flex items-center gap-4 group active:scale-[0.98] transition-all shadow-sm">
+            <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
+              <BookOpen className="w-5 h-5" />
+            </div>
+            <div className="text-left flex-1">
+              <h3 className="text-[15px] font-bold text-zinc-100 mb-0.5">Minna no Nihongo</h3>
+              <p className="text-[12px] text-zinc-500 font-medium">JLPT Vocabulary & Sentences</p>
             </div>
             <ChevronRight className="text-zinc-600 w-4 h-4 shrink-0" />
           </button>

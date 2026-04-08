@@ -96,6 +96,12 @@ export default function App() {
               <Flame className="w-3.5 h-3.5 text-orange-500" />
               <span className="text-xs font-bold text-zinc-100">{streak}</span>
             </div>
+            <button 
+              onClick={() => { playClick(); setView('settings'); }}
+              className="w-8 h-8 flex items-center justify-center rounded-full bg-[#1A1D24]/80 border border-white/5 text-zinc-400 hover:text-zinc-200 active:scale-95 transition-all shadow-sm"
+            >
+              <Settings className="w-4 h-4" />
+            </button>
           </div>
         </header>
       )}
@@ -104,13 +110,13 @@ export default function App() {
         <AnimatePresence mode="wait">
           {view === 'onboarding' && <OnboardingView key="onboarding" onFinish={handleFinishOnboarding} />}
           {view === 'learn' && <LearnView key="learn" />}
-          {view === 'practice' && <PracticeView key="practice" />}
-          {view === 'quiz' && <QuizView key="quiz" setStreak={setStreak} />}
+          {view === 'practice' && <PracticeView key="practice" setView={setView} />}
+          {view === 'quiz' && <QuizView key="quiz" setStreak={setStreak} setView={setView} />}
           {view === 'game' && <GameView key="game" />}
-          {view === 'draw' && <DrawView key="draw" />}
+          {view === 'draw' && <DrawView key="draw" setView={setView} />}
           {view === 'time' && <TimeView key="time" />}
           {view === 'date' && <DateView key="date" />}
-          {view === 'settings' && <SettingsView key="settings" />}
+          {view === 'settings' && <SettingsView key="settings" setView={setView} />}
         </AnimatePresence>
       </main>
 
@@ -118,12 +124,9 @@ export default function App() {
         <nav className="absolute bottom-0 w-full flex-none h-[76px] bg-[#1A1D24]/95 backdrop-blur-3xl border-t border-white/5 flex justify-between items-center px-2 pb-4 pt-2 z-40 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] overflow-x-auto scrollbar-hide gap-1">
           <NavItem icon={<Book />} label="Learn" active={view === 'learn'} onClick={() => setView('learn')} />
           <NavItem icon={<Layers />} label="Practice" active={view === 'practice'} onClick={() => setView('practice')} />
-          <NavItem icon={<Gamepad2 />} label="Quiz" active={view === 'quiz'} onClick={() => setView('quiz')} />
           <NavItem icon={<Rocket />} label="Game" active={view === 'game'} onClick={() => setView('game')} />
-          <NavItem icon={<PenTool />} label="Draw" active={view === 'draw'} onClick={() => setView('draw')} />
           <NavItem icon={<Clock />} label="Time" active={view === 'time'} onClick={() => setView('time')} />
           <NavItem icon={<CalendarDays />} label="Date" active={view === 'date'} onClick={() => setView('date')} />
-          <NavItem icon={<Settings />} label="Set" active={view === 'settings'} onClick={() => setView('settings')} />
         </nav>
       )}
     </div>

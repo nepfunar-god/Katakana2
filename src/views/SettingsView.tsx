@@ -1,17 +1,36 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import { motion } from 'motion/react';
-import { Settings, Trash2, Upload } from 'lucide-react';
+import { Settings, Trash2, Upload, ChevronLeft } from 'lucide-react';
+import { ViewState } from '../App';
+import { playClick } from '../utils/audio';
 
-export default function SettingsView() {
+export default function SettingsView({ setView }: { setView: (view: ViewState) => void }) {
   const [lang, setLang] = useState('en');
+  const [flashcardOrder, setFlashcardOrder] = useState<'sequential' | 'random'>('sequential');
+  const [autoAudioLang, setAutoAudioLang] = useState<'en' | 'ne'>('en');
 
   useEffect(() => {
     setLang(localStorage.getItem('kn_lang') || 'en');
+    setFlashcardOrder((localStorage.getItem('minna_flashcard_order') as 'sequential' | 'random') || 'sequential');
+    setAutoAudioLang((localStorage.getItem('minna_auto_audio_lang') as 'en' | 'ne') || 'en');
   }, []);
 
   const handleLangChange = (newLang: string) => {
+    playClick();
     setLang(newLang);
     localStorage.setItem('kn_lang', newLang);
+  };
+
+  const handleFlashcardOrderChange = (order: 'sequential' | 'random') => {
+    playClick();
+    setFlashcardOrder(order);
+    localStorage.setItem('minna_flashcard_order', order);
+  };
+
+  const handleAutoAudioLangChange = (lang: 'en' | 'ne') => {
+    playClick();
+    setAutoAudioLang(lang);
+    localStorage.setItem('minna_auto_audio_lang', lang);
   };
 
   const handleImport = (e: ChangeEvent<HTMLInputElement>) => {
@@ -38,6 +57,7 @@ export default function SettingsView() {
   };
 
   const resetData = () => {
+    playClick();
     if (confirm("Reset all progress? This cannot be undone.")) {
       localStorage.clear();
       window.location.reload();
@@ -45,10 +65,15 @@ export default function SettingsView() {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col pt-4 pb-10 px-4 max-w-sm mx-auto w-full">
-      <h2 className="text-3xl font-black text-zinc-100 mb-8 flex items-center gap-3">
-        <Settings className="w-8 h-8 text-cyan-400" /> Settings
-      </h2>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col pt-4 pb-10 px-4 max-w-sm mx-auto w-full relative">
+      <div className="flex items-center gap-3 mb-8">
+        <button onClick={() => { playClick(); setView('learn'); }} className="w-10 h-10 bg-[#1A1D24] text-zinc-400 rounded-full flex items-center justify-center hover:bg-[#222630] hover:text-zinc-200 transition-colors active:scale-95 shadow-sm shrink-0">
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        <h2 className="text-3xl font-black text-zinc-100 flex items-center gap-3">
+          <Settings className="w-8 h-8 text-cyan-400" /> Settings
+        </h2>
+      </div>
       <div className="space-y-4">
         <div className="bg-[#1A1D24] p-6 rounded-[28px] shadow-sm">
           <label className="block text-xs text-zinc-500 uppercase font-bold tracking-wider mb-4">Translation Language</label>
@@ -62,6 +87,42 @@ export default function SettingsView() {
             <button 
               onClick={() => handleLangChange('ne')} 
               className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${lang === 'ne' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+            >
+              Nepali
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-[#1A1D24] p-6 rounded-[28px] shadow-sm">
+          <label className="block text-xs text-zinc-500 uppercase font-bold tracking-wider mb-4">Flashcard Order</label>
+          <div className="flex gap-3">
+            <button 
+              onClick={() => handleFlashcardOrderChange('sequential')} 
+              className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${flashcardOrder === 'sequential' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+            >
+              Sequential
+            </button>
+            <button 
+              onClick={() => handleFlashcardOrderChange('random')} 
+              className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${flashcardOrder === 'random' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+            >
+              Random
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-[#1A1D24] p-6 rounded-[28px] shadow-sm">
+          <label className="block text-xs text-zinc-500 uppercase font-bold tracking-wider mb-4">Auto Flashcard Audio</label>
+          <div className="flex gap-3">
+            <button 
+              onClick={() => handleAutoAudioLangChange('en')} 
+              className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${autoAudioLang === 'en' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+            >
+              English
+            </button>
+            <button 
+              onClick={() => handleAutoAudioLangChange('ne')} 
+              className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${autoAudioLang === 'ne' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
             >
               Nepali
             </button>

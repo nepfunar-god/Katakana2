@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { RefreshCw, Trash2, CheckCircle2, X, ChevronLeft, Folder, Lightbulb } from 'lucide-react';
 import { RAW_DATA } from '../data';
 import { playClick } from '../utils/audio';
+import { ViewState } from '../App';
 
 type DrawMode = 'sequence' | 'alphabet';
 type AlphabetType = 'hiragana' | 'katakana' | null;
@@ -67,7 +68,7 @@ const AnimatedKana = ({ charCode, char }: { charCode: string, char: string }) =>
   );
 };
 
-export default function DrawView() {
+export default function DrawView({ setView }: { setView: (view: ViewState) => void }) {
   const [drawMode, setDrawMode] = useState<DrawMode>('sequence');
   
   // Sequence Mode State
@@ -207,9 +208,14 @@ export default function DrawView() {
 
   return (
     <div className="flex flex-col h-full px-4 pb-4 relative">
-      <div className="flex bg-[#1A1D24] p-1.5 rounded-[16px] mb-4 mt-2 shadow-sm shrink-0">
-        <button onClick={() => { playClick(); setDrawMode('sequence'); }} className={`flex-1 py-2 rounded-[12px] text-sm font-bold transition-all ${drawMode === 'sequence' ? 'text-zinc-100 bg-[#222630]' : 'text-zinc-500'}`}>Sequence</button>
-        <button onClick={() => { playClick(); setDrawMode('alphabet'); }} className={`flex-1 py-2 rounded-[12px] text-sm font-bold transition-all ${drawMode === 'alphabet' ? 'text-zinc-100 bg-[#222630]' : 'text-zinc-500'}`}>Alphabet</button>
+      <div className="flex items-center gap-3 mb-4 mt-2">
+        <button onClick={() => { playClick(); setView('practice'); }} className="w-10 h-10 bg-[#1A1D24] text-zinc-400 rounded-full flex items-center justify-center hover:bg-[#222630] hover:text-zinc-200 transition-colors active:scale-95 shadow-sm shrink-0">
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        <div className="flex flex-1 bg-[#1A1D24] p-1.5 rounded-[16px] shadow-sm">
+          <button onClick={() => { playClick(); setDrawMode('sequence'); }} className={`flex-1 py-2 rounded-[12px] text-sm font-bold transition-all ${drawMode === 'sequence' ? 'text-zinc-100 bg-[#222630]' : 'text-zinc-500'}`}>Sequence</button>
+          <button onClick={() => { playClick(); setDrawMode('alphabet'); }} className={`flex-1 py-2 rounded-[12px] text-sm font-bold transition-all ${drawMode === 'alphabet' ? 'text-zinc-100 bg-[#222630]' : 'text-zinc-500'}`}>Alphabet</button>
+        </div>
       </div>
 
       {drawMode === 'sequence' ? (

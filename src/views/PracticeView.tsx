@@ -1,11 +1,12 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Volume2, Check, Shuffle, Layers, Crown, ChartBar, Play, X } from 'lucide-react';
+import { Volume2, Check, Shuffle, Layers, Crown, ChartBar, Play, X, Gamepad2, PenTool } from 'lucide-react';
 import { RAW_DATA } from '../data';
 import { speak } from '../utils/tts';
 import { playClick, playFlip } from '../utils/audio';
+import { ViewState } from '../App';
 
-export default function PracticeView() {
+export default function PracticeView({ setView }: { setView: (view: ViewState) => void }) {
   const [queue, setQueue] = useState<any[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -94,6 +95,17 @@ export default function PracticeView() {
               <p className="text-4xl font-black text-cyan-400">{timeXp}</p>
             </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          <button onClick={() => { playClick(); setView('quiz'); }} className="bg-gradient-to-br from-amber-500 to-orange-600 p-5 rounded-[24px] flex flex-col items-center justify-center gap-3 text-white shadow-lg shadow-orange-500/20 active:scale-95 transition-all">
+            <Gamepad2 className="w-8 h-8" />
+            <span className="font-bold text-sm">Take Quiz</span>
+          </button>
+          <button onClick={() => { playClick(); setView('draw'); }} className="bg-gradient-to-br from-emerald-400 to-teal-600 p-5 rounded-[24px] flex flex-col items-center justify-center gap-3 text-white shadow-lg shadow-teal-500/20 active:scale-95 transition-all">
+            <PenTool className="w-8 h-8" />
+            <span className="font-bold text-sm">Draw Mode</span>
+          </button>
         </div>
 
         <div className="space-y-4">
