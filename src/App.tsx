@@ -1,0 +1,148 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { useState, useEffect, ReactNode } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Book, Layers, Gamepad2, Clock, Settings, Flame, CalendarDays, Rocket, PenTool } from 'lucide-react';
+import { Capacitor } from '@capacitor/core';
+import { StatusBar, Style } from '@capacitor/status-bar';
+import { NavigationBar } from '@capgo/capacitor-navigation-bar';
+import LearnView from './views/LearnView';
+import PracticeView from './views/PracticeView';
+import QuizView from './views/QuizView';
+import GameView from './views/GameView';
+import DrawView from './views/DrawView';
+import TimeView from './views/TimeView';
+import DateView from './views/DateView';
+import SettingsView from './views/SettingsView';
+import OnboardingView from './views/OnboardingView';
+import SplashView from './views/SplashView';
+import { playClick } from './utils/audio';
+
+export type ViewState = 'splash' | 'onboarding' | 'learn' | 'practice' | 'quiz' | 'game' | 'draw' | 'time' | 'date' | 'settings';
+
+export default function App() {
+  const [view, setView] = useState<ViewState>('splash');
+  const [streak, setStreak] = useState(0);
+  const [isOnboarded, setIsOnboarded] = useState(false);
+
+  useEffect(() => {
+    const updateSystemBars = async () => {
+      if (!Capacitor.isNativePlatform()) return;
+      
+      try {
+        const isSplash = view === 'splash';
+        const isOnboarding = view === 'onboarding';
+        const statusBarColor = isSplash ? '#050811' : '#11131A';
+        const navBarColor = isSplash ? '#050811' : (isOnboarding ? '#11131A' : '#1A1D24');
+
+        await StatusBar.setOverlaysWebView({ overlay: true });
+        await StatusBar.setBackgroundColor({ color: '#00000000' });
+        await StatusBar.setStyle({ style: Style.Dark });
+        
+        // Ensure the body background matches so the transparent status bar looks correct
+        document.body.style.backgroundColor = statusBarColor;
+        document.documentElement.style.backgroundColor = statusBarColor;
+        
+        await NavigationBar.setNavigationBarColor({ color: navBarColor, darkButtons: false });
+      } catch (e) {
+        console.error('Failed to update system bars', e);
+      }
+    };
+    
+    updateSystemBars();
+  }, [view]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const onboarded = localStorage.getItem('kn_onboarded');
+      if (!onboarded) {
+        setView('onboarding');
+      } else {
+        setIsOnboarded(true);
+        setView('learn');
+      }
+    }, 3500);
+
+    const savedStreak = localStorage.getItem('kn_streak');
+    if (savedStreak) setStreak(parseInt(savedStreak, 10));
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleFinishOnboarding = () => {
+    localStorage.setItem('kn_onboarded', 'true');
+    setIsOnboarded(true);
+    setView('learn');
+  };
+
+  return (
+    <div className="flex flex-col h-[100dvh] w-full bg-[#11131A] text-zinc-200 font-sans overflow-hidden selection:bg-cyan-500/30 pt-[env(safe-area-inset-top)]">
+      <AnimatePresence mode="wait">
+        {view === 'splash' && <SplashView key="splash" />}
+      </AnimatePresence>
+
+      {view !== 'splash' && view !== 'onboarding' && (
+        <header className="flex-none h-[60px] bg-[#11131A]/90 backdrop-blur-xl z-50 flex items-center justify-between px-4 pt-1">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-[20px] font-black bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500 tracking-tight">
+              Katakana Pro
+            </h1>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5 bg-[#1A1D24]/80 px-2.5 py-1 rounded-full border border-white/5 shadow-sm">
+              <Flame className="w-3.5 h-3.5 text-orange-500" />
+              <span className="text-xs font-bold text-zinc-100">{streak}</span>
+            </div>
+          </div>
+        </header>
+      )}
+
+      <main className="flex-1 overflow-y-auto relative scroll-smooth pt-2 pb-24">
+        <AnimatePresence mode="wait">
+          {view === 'onboarding' && <OnboardingView key="onboarding" onFinish={handleFinishOnboarding} />}
+          {view === 'learn' && <LearnView key="learn" />}
+          {view === 'practice' && <PracticeView key="practice" />}
+          {view === 'quiz' && <QuizView key="quiz" setStreak={setStreak} />}
+          {view === 'game' && <GameView key="game" />}
+          {view === 'draw' && <DrawView key="draw" />}
+          {view === 'time' && <TimeView key="time" />}
+          {view === 'date' && <DateView key="date" />}
+          {view === 'settings' && <SettingsView key="settings" />}
+        </AnimatePresence>
+      </main>
+
+      {view !== 'splash' && view !== 'onboarding' && (
+        <nav className="absolute bottom-0 w-full flex-none h-[76px] bg-[#1A1D24]/95 backdrop-blur-3xl border-t border-white/5 flex justify-between items-center px-2 pb-4 pt-2 z-40 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] overflow-x-auto scrollbar-hide gap-1">
+          <NavItem icon={<Book />} label="Learn" active={view === 'learn'} onClick={() => setView('learn')} />
+          <NavItem icon={<Layers />} label="Practice" active={view === 'practice'} onClick={() => setView('practice')} />
+          <NavItem icon={<Gamepad2 />} label="Quiz" active={view === 'quiz'} onClick={() => setView('quiz')} />
+          <NavItem icon={<Rocket />} label="Game" active={view === 'game'} onClick={() => setView('game')} />
+          <NavItem icon={<PenTool />} label="Draw" active={view === 'draw'} onClick={() => setView('draw')} />
+          <NavItem icon={<Clock />} label="Time" active={view === 'time'} onClick={() => setView('time')} />
+          <NavItem icon={<CalendarDays />} label="Date" active={view === 'date'} onClick={() => setView('date')} />
+          <NavItem icon={<Settings />} label="Set" active={view === 'settings'} onClick={() => setView('settings')} />
+        </nav>
+      )}
+    </div>
+  );
+}
+
+function NavItem({ icon, label, active, onClick }: { icon: ReactNode; label: string; active: boolean; onClick: () => void }) {
+  return (
+    <button
+      onClick={() => {
+        playClick();
+        onClick();
+      }}
+      className="flex flex-col items-center justify-center min-w-[48px] flex-1 relative group active:scale-95 transition-transform"
+    >
+      <div className={`flex items-center justify-center w-12 h-7 rounded-full transition-all duration-300 ${active ? 'bg-cyan-500/20 text-cyan-400' : 'text-zinc-400 group-hover:text-zinc-300'} mb-1 [&>svg]:w-4 [&>svg]:h-4`}>
+        {icon}
+      </div>
+      <span className={`text-[10px] font-medium tracking-wide transition-colors ${active ? 'text-cyan-400' : 'text-zinc-500'}`}>{label}</span>
+    </button>
+  );
+}

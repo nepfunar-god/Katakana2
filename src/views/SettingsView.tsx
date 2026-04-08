@@ -1,0 +1,86 @@
+import { useState, useEffect, ChangeEvent } from 'react';
+import { motion } from 'motion/react';
+import { Settings, Trash2, Upload } from 'lucide-react';
+
+export default function SettingsView() {
+  const [lang, setLang] = useState('en');
+
+  useEffect(() => {
+    setLang(localStorage.getItem('kn_lang') || 'en');
+  }, []);
+
+  const handleLangChange = (newLang: string) => {
+    setLang(newLang);
+    localStorage.setItem('kn_lang', newLang);
+  };
+
+  const handleImport = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const text = ev.target?.result as string;
+      const lines = text.split(/\r?\n/);
+      let count = 0;
+      const customWords = JSON.parse(localStorage.getItem('kn_custom') || '[]');
+      lines.forEach(l => {
+        const p = l.split('|');
+        if (p.length >= 4) {
+          customWords.push({ id: 'c' + Date.now() + Math.random(), c: p[0], r: p[1], m: p[2], n: p[3] });
+          count++;
+        }
+      });
+      localStorage.setItem('kn_custom', JSON.stringify(customWords));
+      alert(`Imported ${count} items!`);
+      e.target.value = '';
+    };
+    reader.readAsText(file);
+  };
+
+  const resetData = () => {
+    if (confirm("Reset all progress? This cannot be undone.")) {
+      localStorage.clear();
+      window.location.reload();
+    }
+  };
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col pt-4 pb-10 px-4 max-w-sm mx-auto w-full">
+      <h2 className="text-3xl font-black text-zinc-100 mb-8 flex items-center gap-3">
+        <Settings className="w-8 h-8 text-cyan-400" /> Settings
+      </h2>
+      <div className="space-y-4">
+        <div className="bg-[#1A1D24] p-6 rounded-[28px] shadow-sm">
+          <label className="block text-xs text-zinc-500 uppercase font-bold tracking-wider mb-4">Translation Language</label>
+          <div className="flex gap-3">
+            <button 
+              onClick={() => handleLangChange('en')} 
+              className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${lang === 'en' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+            >
+              English
+            </button>
+            <button 
+              onClick={() => handleLangChange('ne')} 
+              className={`flex-1 py-3.5 rounded-[20px] text-sm font-bold transition-all ${lang === 'ne' ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+            >
+              Nepali
+            </button>
+          </div>
+        </div>
+        
+        <div className="bg-[#1A1D24] p-6 rounded-[28px] shadow-sm">
+          <label className="block text-xs text-cyan-400 uppercase font-bold tracking-wider mb-2">Import Words (TXT)</label>
+          <p className="text-sm text-zinc-500 mb-4 font-medium">Format: Katakana|Romaji|English|Nepali</p>
+          <label className="flex items-center justify-center gap-2 w-full py-4 bg-[#222630] text-zinc-100 rounded-[20px] text-sm font-bold cursor-pointer hover:bg-[#2A2E38] transition-colors shadow-sm active:scale-[0.98]">
+            <Upload className="w-5 h-5 text-cyan-400" /> Choose File
+            <input type="file" onChange={handleImport} className="hidden" accept=".txt" />
+          </label>
+        </div>
+
+        <button onClick={resetData} className="w-full py-4 bg-pink-500/10 text-pink-500 rounded-[24px] text-sm font-bold flex items-center justify-center gap-2 hover:bg-pink-500/20 transition-colors active:scale-[0.98] mt-8">
+          <Trash2 className="w-5 h-5" /> Reset All Progress
+        </button>
+      </div>
+    </motion.div>
+  );
+}
