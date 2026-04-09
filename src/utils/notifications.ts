@@ -11,6 +11,17 @@ export const setupNotifications = async (intervalMinutes: number) => {
     const permStatus = await LocalNotifications.requestPermissions();
     if (permStatus.display !== 'granted') return;
 
+    if (Capacitor.getPlatform() === 'android') {
+      await LocalNotifications.createChannel({
+        id: 'high_priority',
+        name: 'High Priority Notifications',
+        description: 'Notifications for hard card reviews',
+        importance: 5,
+        visibility: 1,
+        vibration: true,
+      });
+    }
+
     // Cancel existing notifications
     const pending = await LocalNotifications.getPending();
     if (pending.notifications.length > 0) {
@@ -20,17 +31,18 @@ export const setupNotifications = async (intervalMinutes: number) => {
     if (intervalMinutes === 0) return;
 
     const savedHard = localStorage.getItem('minna_hard');
-    if (!savedHard) return;
-
-    const hardCardsRecord = JSON.parse(savedHard);
     const allHardCards: any[] = [];
     
-    Object.values(hardCardsRecord).forEach((cards: any) => {
-      if (Array.isArray(cards)) {
-        allHardCards.push(...cards);
-      }
-    });
+    if (savedHard) {
+      const hardCardsRecord = JSON.parse(savedHard);
+      Object.values(hardCardsRecord).forEach((cards: any) => {
+        if (Array.isArray(cards)) {
+          allHardCards.push(...cards);
+        }
+      });
+    }
 
+    // Only schedule if there are hard cards
     if (allHardCards.length === 0) return;
 
     const notifications = [];
@@ -39,14 +51,31 @@ export const setupNotifications = async (intervalMinutes: number) => {
     // Schedule up to 60 notifications (Capacitor iOS limit is 64)
     for (let i = 1; i <= 60; i++) {
       const randomCard = allHardCards[Math.floor(Math.random() * allHardCards.length)];
+      
       const title = randomCard.kanji || randomCard.japanese || 'Review Time!';
-      const body = `${randomCard.japanese ? randomCard.japanese + ' - ' : ''}${randomCard.english || randomCard.nepali || ''}`;
+      
+      const bodyParts = [];
+      if (randomCard.japanese && randomCard.japanese !== randomCard.kanji) {
+        bodyParts.push(randomCard.japanese);
+      }
+      if (randomCard.nepali) {
+        bodyParts.push(randomCard.nepali);
+      }
+      if (randomCard.english) {
+        bodyParts.push(randomCard.english);
+      }
+      
+      const body = bodyParts.join(' • ');
       
       notifications.push({
         id: i,
         title: 'Hard Card Review',
         body: `${title}\n${body}`,
-        schedule: { at: new Date(now + i * intervalMinutes * 60 * 1000) },
+        schedule: { 
+          at: new Date(now + i * intervalMinutes * 60 * 1000),
+          allowWhileIdle: true 
+        },
+        channelId: 'high_priority',
       });
     }
 
@@ -68,13 +97,28 @@ export const sendTestNotification = async () => {
       alert('Notification permission not granted.');
       return;
     }
+
+    if (Capacitor.getPlatform() === 'android') {
+      await LocalNotifications.createChannel({
+        id: 'high_priority',
+        name: 'High Priority Notifications',
+        description: 'Notifications for hard card reviews',
+        importance: 5,
+        visibility: 1,
+        vibration: true,
+      });
+    }
     
     await LocalNotifications.schedule({
       notifications: [{
         id: 999,
         title: 'Katakana Pro',
         body: 'Notifications are working! You will receive hard card reviews here.',
-        schedule: { at: new Date(new Date().getTime() + 2000) } // 2 seconds from now
+        schedule: { 
+          at: new Date(new Date().getTime() + 2000),
+          allowWhileIdle: true
+        }, // 2 seconds from now
+        channelId: 'high_priority',
       }]
     });
   } catch (e) {

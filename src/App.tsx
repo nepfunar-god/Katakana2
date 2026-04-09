@@ -3,12 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, ReactNode } from 'react';
+import { useState, useEffect, useRef, ReactNode } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Layers, Gamepad2, Clock, Settings, Flame, CalendarDays, Rocket, PenTool } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { NavigationBar } from '@capgo/capacitor-navigation-bar';
+import { App as CapacitorApp } from '@capacitor/app';
 import LearnView from './views/LearnView';
 import PracticeView from './views/PracticeView';
 import QuizView from './views/QuizView';
@@ -28,6 +29,23 @@ export default function App() {
   const [view, setView] = useState<ViewState>('splash');
   const [streak, setStreak] = useState(0);
   const [isOnboarded, setIsOnboarded] = useState(false);
+  const [showExitDialog, setShowExitDialog] = useState(false);
+  
+  const historyRef = useRef<ViewState[]>(['learn']);
+  const currentViewRef = useRef<ViewState>('splash');
+
+  const handleSetView = (newView: ViewState) => {
+    const hist = historyRef.current;
+    if (newView === 'learn') {
+      historyRef.current = ['learn'];
+    } else if (hist.length > 1 && hist[hist.length - 2] === newView) {
+      hist.pop();
+    } else if (newView !== currentViewRef.current) {
+      hist.push(newView);
+    }
+    currentViewRef.current = newView;
+    setView(newView);
+  };
 
   useEffect(() => {
     const updateSystemBars = async () => {
@@ -60,10 +78,10 @@ export default function App() {
     const timer = setTimeout(() => {
       const onboarded = localStorage.getItem('kn_onboarded');
       if (!onboarded) {
-        setView('onboarding');
+        handleSetView('onboarding');
       } else {
         setIsOnboarded(true);
-        setView('learn');
+        handleSetView('learn');
         
         // Initialize notifications
         const interval = parseInt(localStorage.getItem('minna_notification_interval') || '0', 10);
@@ -84,10 +102,43 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+
+    const backListener = CapacitorApp.addListener('backButton', () => {
+      if (showExitDialog) {
+        setShowExitDialog(false);
+        return;
+      }
+
+      const cv = currentViewRef.current;
+      if (cv === 'learn' || cv === 'splash' || cv === 'onboarding') {
+        setShowExitDialog(true);
+      } else {
+        if (historyRef.current.length > 1) {
+          historyRef.current.pop();
+          const prevView = historyRef.current[historyRef.current.length - 1];
+          currentViewRef.current = prevView;
+          setView(prevView);
+        } else {
+          setShowExitDialog(true);
+        }
+      }
+    });
+
+    return () => {
+      backListener.remove();
+    };
+  }, [showExitDialog]);
+
   const handleFinishOnboarding = () => {
     localStorage.setItem('kn_onboarded', 'true');
     setIsOnboarded(true);
-    setView('learn');
+    handleSetView('learn');
+  };
+
+  const confirmExit = () => {
+    CapacitorApp.exitApp();
   };
 
   return (
@@ -109,7 +160,7 @@ export default function App() {
               <span className="text-xs font-bold text-zinc-100">{streak}</span>
             </div>
             <button 
-              onClick={() => { playClick(); setView('settings'); }}
+              onClick={() => { playClick(); handleSetView('settings'); }}
               className="w-8 h-8 flex items-center justify-center rounded-full bg-[#1A1D24]/80 border border-white/5 text-zinc-400 hover:text-zinc-200 active:scale-95 transition-all shadow-sm"
             >
               <Settings className="w-4 h-4" />
@@ -122,25 +173,61 @@ export default function App() {
         <AnimatePresence mode="wait">
           {view === 'onboarding' && <OnboardingView key="onboarding" onFinish={handleFinishOnboarding} />}
           {view === 'learn' && <LearnView key="learn" />}
-          {view === 'practice' && <PracticeView key="practice" setView={setView} />}
-          {view === 'quiz' && <QuizView key="quiz" setStreak={setStreak} setView={setView} />}
+          {view === 'practice' && <PracticeView key="practice" setView={handleSetView} />}
+          {view === 'quiz' && <QuizView key="quiz" setStreak={setStreak} setView={handleSetView} />}
           {view === 'game' && <GameView key="game" />}
-          {view === 'draw' && <DrawView key="draw" setView={setView} />}
+          {view === 'draw' && <DrawView key="draw" setView={handleSetView} />}
           {view === 'time' && <TimeView key="time" />}
           {view === 'date' && <DateView key="date" />}
-          {view === 'settings' && <SettingsView key="settings" setView={setView} />}
+          {view === 'settings' && <SettingsView key="settings" setView={handleSetView} />}
         </AnimatePresence>
       </main>
 
       {view !== 'splash' && view !== 'onboarding' && (
         <nav className="absolute bottom-0 w-full flex-none h-[76px] bg-[#1A1D24]/95 backdrop-blur-3xl border-t border-white/5 flex justify-between items-center px-2 pb-4 pt-2 z-40 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] overflow-x-auto scrollbar-hide gap-1">
-          <NavItem icon={<Book />} label="Learn" active={view === 'learn'} onClick={() => setView('learn')} />
-          <NavItem icon={<Layers />} label="Practice" active={view === 'practice'} onClick={() => setView('practice')} />
-          <NavItem icon={<Rocket />} label="Game" active={view === 'game'} onClick={() => setView('game')} />
-          <NavItem icon={<Clock />} label="Time" active={view === 'time'} onClick={() => setView('time')} />
-          <NavItem icon={<CalendarDays />} label="Date" active={view === 'date'} onClick={() => setView('date')} />
+          <NavItem icon={<Book />} label="Learn" active={view === 'learn'} onClick={() => handleSetView('learn')} />
+          <NavItem icon={<Layers />} label="Practice" active={view === 'practice'} onClick={() => handleSetView('practice')} />
+          <NavItem icon={<Rocket />} label="Game" active={view === 'game'} onClick={() => handleSetView('game')} />
+          <NavItem icon={<Clock />} label="Time" active={view === 'time'} onClick={() => handleSetView('time')} />
+          <NavItem icon={<CalendarDays />} label="Date" active={view === 'date'} onClick={() => handleSetView('date')} />
         </nav>
       )}
+
+      {/* Exit Confirmation Dialog */}
+      <AnimatePresence>
+        {showExitDialog && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-[#1A1D24] border border-white/10 rounded-3xl p-6 w-full max-w-sm shadow-2xl"
+            >
+              <h3 className="text-xl font-bold text-white mb-2">Exit App?</h3>
+              <p className="text-zinc-400 mb-6 font-medium">Are you sure you want to exit Katakana Pro?</p>
+              <div className="flex gap-3">
+                <button 
+                  onClick={() => setShowExitDialog(false)}
+                  className="flex-1 py-3 rounded-xl bg-[#222630] text-white font-bold hover:bg-[#2A2E38] transition-colors"
+                >
+                  No
+                </button>
+                <button 
+                  onClick={confirmExit}
+                  className="flex-1 py-3 rounded-xl bg-red-500/20 text-red-500 font-bold hover:bg-red-500/30 transition-colors"
+                >
+                  Yes
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

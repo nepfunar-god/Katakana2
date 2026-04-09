@@ -527,27 +527,27 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 p-3 bg-[#11131A] border-t border-white/5 flex flex-col gap-2 text-sm">
-          <button onClick={() => startFlashcards(selectedLesson)} className="w-full py-2.5 bg-[#2DD4BF] text-white font-bold rounded-xl active:scale-95 transition-all">
+        <div className="absolute bottom-0 left-0 right-0 p-3 pb-24 bg-[#11131A] border-t border-white/5 flex flex-col gap-2 text-sm z-50">
+          <button onClick={() => startFlashcards(selectedLesson)} className="w-full py-2.5 bg-[#2DD4BF] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-teal-500/20">
             START FLASHCARDS
           </button>
           <div className="flex gap-2">
-            <button onClick={() => startFlashcards(selectedLesson, false, true)} className="flex-1 py-2.5 bg-[#F43F5E] text-white font-bold rounded-xl active:scale-95 transition-all">
+            <button onClick={() => startFlashcards(selectedLesson, false, true)} className="flex-1 py-2.5 bg-[#F43F5E] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-rose-500/20">
               HARD CARDS ({hardCount})
             </button>
-            <button onClick={() => startFlashcards(selectedLesson, true)} className="flex-1 py-2.5 bg-[#F59E0B] text-white font-bold rounded-xl active:scale-95 transition-all">
+            <button onClick={() => startFlashcards(selectedLesson, true)} className="flex-1 py-2.5 bg-[#F59E0B] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-amber-500/20">
               REVERSE FLASHCARDS
             </button>
           </div>
           <div className="flex gap-2">
-            <button className="flex-1 py-2.5 bg-[#A855F7] text-white font-bold rounded-xl active:scale-95 transition-all opacity-50 cursor-not-allowed">
+            <button className="flex-1 py-2.5 bg-[#A855F7] text-white font-bold rounded-xl active:scale-95 transition-all opacity-50 cursor-not-allowed shadow-lg shadow-purple-500/20">
               SENTENCES
             </button>
-            <button className="flex-1 py-2.5 bg-[#78716C] text-white font-bold rounded-xl active:scale-95 transition-all opacity-50 cursor-not-allowed">
+            <button className="flex-1 py-2.5 bg-[#78716C] text-white font-bold rounded-xl active:scale-95 transition-all opacity-50 cursor-not-allowed shadow-lg shadow-stone-500/20">
               HISTORY
             </button>
           </div>
-          <button className="w-full py-2.5 bg-[#F97316] text-white font-bold rounded-xl active:scale-95 transition-all flex items-center justify-center gap-2">
+          <button className="w-full py-2.5 bg-[#F97316] text-white font-bold rounded-xl active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20">
             <Zap className="w-4 h-4" /> TAKE QUIZ
           </button>
         </div>
