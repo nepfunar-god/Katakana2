@@ -20,6 +20,7 @@ import SettingsView from './views/SettingsView';
 import OnboardingView from './views/OnboardingView';
 import SplashView from './views/SplashView';
 import { playClick } from './utils/audio';
+import { setupNotifications, sendTestNotification } from './utils/notifications';
 
 export type ViewState = 'splash' | 'onboarding' | 'learn' | 'practice' | 'quiz' | 'game' | 'draw' | 'time' | 'date' | 'settings';
 
@@ -63,6 +64,17 @@ export default function App() {
       } else {
         setIsOnboarded(true);
         setView('learn');
+        
+        // Initialize notifications
+        const interval = parseInt(localStorage.getItem('minna_notification_interval') || '0', 10);
+        setupNotifications(interval);
+        
+        // Send a test notification on first load if requested by user
+        const hasSentTest = localStorage.getItem('kn_test_notification_sent');
+        if (!hasSentTest) {
+          sendTestNotification();
+          localStorage.setItem('kn_test_notification_sent', 'true');
+        }
       }
     }, 3500);
 

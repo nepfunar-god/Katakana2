@@ -183,12 +183,12 @@ export default function PracticeView({ setView }: { setView: (view: ViewState) =
           </div>
           {/* Back */}
           <div className="absolute w-full h-full backface-hidden bg-[#1A1D24] rounded-[32px] shadow-lg flex flex-col items-center justify-center p-6 ring-1 ring-cyan-500/20" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-            <span className="text-2xl text-cyan-400 font-bold font-mono mb-3 bg-cyan-500/10 px-4 py-1.5 rounded-xl">{item.r}</span>
+            <span className="text-3xl text-cyan-400 font-bold font-mono mb-3 bg-cyan-500/10 px-4 py-1.5 rounded-xl">{item.r}</span>
             <div className="w-12 h-1.5 bg-[#222630] rounded-full my-5"></div>
-            <p className="text-2xl text-zinc-100 font-bold text-center leading-snug">{item.m || item.r.toUpperCase()}</p>
-            <p className="text-sm text-zinc-500 mt-3 text-center font-medium">{lang === 'ne' ? item.n : ''}</p>
-            <button onClick={(e) => { e.stopPropagation(); speak(item.c); }} className="mt-8 w-12 h-12 rounded-full bg-[#222630] text-zinc-300 flex items-center justify-center active:scale-90 transition-transform hover:bg-[#2A2E38] hover:text-cyan-400 shadow-sm">
-              <Volume2 className="w-6 h-6" />
+            <p className="text-3xl text-zinc-100 font-bold text-center leading-snug">{item.m || item.r.toUpperCase()}</p>
+            <p className="text-lg text-zinc-400 mt-3 text-center font-medium">{lang === 'ne' ? item.n : ''}</p>
+            <button onClick={(e) => { e.stopPropagation(); speak(item.c); }} className="mt-8 w-14 h-14 rounded-full bg-[#222630] text-zinc-300 flex items-center justify-center active:scale-90 transition-transform hover:bg-[#2A2E38] hover:text-cyan-400 shadow-sm">
+              <Volume2 className="w-7 h-7" />
             </button>
           </div>
         </motion.div>

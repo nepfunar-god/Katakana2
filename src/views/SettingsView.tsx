@@ -1,18 +1,21 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import { motion } from 'motion/react';
-import { Settings, Trash2, Upload, ChevronLeft } from 'lucide-react';
+import { Settings, Trash2, Upload, ChevronLeft, Bell, BellRing } from 'lucide-react';
 import { ViewState } from '../App';
 import { playClick } from '../utils/audio';
+import { setupNotifications, sendTestNotification } from '../utils/notifications';
 
 export default function SettingsView({ setView }: { setView: (view: ViewState) => void }) {
   const [lang, setLang] = useState('en');
   const [flashcardOrder, setFlashcardOrder] = useState<'sequential' | 'random'>('sequential');
   const [autoAudioLang, setAutoAudioLang] = useState<'en' | 'ne'>('en');
+  const [notificationInterval, setNotificationInterval] = useState<number>(0);
 
   useEffect(() => {
     setLang(localStorage.getItem('kn_lang') || 'en');
     setFlashcardOrder((localStorage.getItem('minna_flashcard_order') as 'sequential' | 'random') || 'sequential');
     setAutoAudioLang((localStorage.getItem('minna_auto_audio_lang') as 'en' | 'ne') || 'en');
+    setNotificationInterval(parseInt(localStorage.getItem('minna_notification_interval') || '0', 10));
   }, []);
 
   const handleLangChange = (newLang: string) => {
@@ -31,6 +34,18 @@ export default function SettingsView({ setView }: { setView: (view: ViewState) =
     playClick();
     setAutoAudioLang(lang);
     localStorage.setItem('minna_auto_audio_lang', lang);
+  };
+
+  const handleNotificationIntervalChange = (interval: number) => {
+    playClick();
+    setNotificationInterval(interval);
+    localStorage.setItem('minna_notification_interval', interval.toString());
+    setupNotifications(interval);
+  };
+
+  const handleTestNotification = async () => {
+    playClick();
+    await sendTestNotification();
   };
 
   const handleImport = (e: ChangeEvent<HTMLInputElement>) => {
@@ -126,6 +141,26 @@ export default function SettingsView({ setView }: { setView: (view: ViewState) =
             >
               Nepali
             </button>
+          </div>
+        </div>
+
+        <div className="bg-[#1A1D24] p-6 rounded-[28px] shadow-sm">
+          <div className="flex items-center justify-between mb-4">
+            <label className="block text-xs text-zinc-500 uppercase font-bold tracking-wider">Hard Card Notifications</label>
+            <button onClick={handleTestNotification} className="text-cyan-400 hover:text-cyan-300 p-1 bg-cyan-500/10 rounded-full" title="Test Notification">
+              <BellRing className="w-4 h-4" />
+            </button>
+          </div>
+          <div className="grid grid-cols-3 gap-2">
+            {[0, 5, 15, 30, 60].map(interval => (
+              <button 
+                key={interval}
+                onClick={() => handleNotificationIntervalChange(interval)} 
+                className={`py-2 rounded-[16px] text-xs font-bold transition-all ${notificationInterval === interval ? 'bg-cyan-500 text-white shadow-md scale-[1.02]' : 'bg-[#222630] text-zinc-400 hover:text-zinc-200 hover:bg-[#2A2E38]'}`}
+              >
+                {interval === 0 ? 'Off' : interval === 60 ? '1 hr' : `${interval} min`}
+              </button>
+            ))}
           </div>
         </div>
         

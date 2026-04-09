@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Search, ChevronLeft, Upload, Cloud, Zap, BookOpen, Clock, Volume2, RotateCcw } from 'lucide-react';
 import { playClick } from '../utils/audio';
 import { speak } from '../utils/tts';
+import { setupNotifications } from '../utils/notifications';
 
 type MinnaWord = {
   japanese: string;
@@ -169,6 +170,8 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
   const saveHardCards = (newHard: Record<string, MinnaWord[]>) => {
     setHardCards(newHard);
     localStorage.setItem('minna_hard', JSON.stringify(newHard));
+    const interval = parseInt(localStorage.getItem('minna_notification_interval') || '0', 10);
+    setupNotifications(interval);
   };
 
   const markHard = (word: MinnaWord) => {
@@ -400,54 +403,54 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
             <div className="absolute inset-0 bg-[#1A1D24] rounded-2xl border border-white/5 flex flex-col p-4 sm:p-6 backface-hidden rotate-y-180 shadow-lg">
               <div className="flex-1 flex flex-col items-center justify-center w-full overflow-y-auto scrollbar-hide">
                 {isRev ? (
-                  <div className="w-full flex flex-col items-center gap-2 sm:gap-4">
+                  <div className="w-full flex flex-col items-center gap-3 sm:gap-5">
                     <div className="text-center w-full">
-                      <div className="text-purple-400 font-bold text-xs sm:text-sm mb-1">Japanese:</div>
-                      <div className="text-white text-3xl sm:text-4xl font-bold mb-2">{card.kanji || card.japanese}</div>
-                      {card.kanji && <div className="text-zinc-400 text-lg sm:text-xl">{card.japanese}</div>}
+                      <div className="text-purple-400 font-bold text-sm sm:text-base mb-1">Japanese:</div>
+                      <div className="text-white text-4xl sm:text-5xl font-bold mb-2">{card.kanji || card.japanese}</div>
+                      {card.kanji && <div className="text-zinc-400 text-xl sm:text-2xl">{card.japanese}</div>}
                     </div>
                     {card.sentence && (
                       <>
-                        <div className="w-full h-px bg-white/10 my-1 sm:my-2 shrink-0" />
-                        <div className="w-full flex items-start justify-center gap-2 text-center">
-                          <div className="text-purple-400 font-bold text-xs sm:text-sm shrink-0 mt-0.5">Example:</div>
-                          <div className="text-zinc-300 text-xs sm:text-sm flex-1 leading-snug">
+                        <div className="w-full h-px bg-white/10 my-2 sm:my-3 shrink-0" />
+                        <div className="w-full flex flex-col items-center justify-center gap-2 text-center">
+                          <div className="text-purple-400 font-bold text-sm sm:text-base shrink-0">Example:</div>
+                          <div className="text-zinc-300 text-base sm:text-lg flex-1 leading-snug px-2">
                             {card.sentence}
                           </div>
-                          <button onClick={(e) => { e.stopPropagation(); speak(card.sentence, 'ja-JP'); }} className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0 hover:bg-white/20 transition-colors">
-                            <Volume2 className="w-3 h-3 text-zinc-300" />
+                          <button onClick={(e) => { e.stopPropagation(); speak(card.sentence, 'ja-JP'); }} className="mt-1 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 hover:bg-white/20 transition-colors">
+                            <Volume2 className="w-4 h-4 text-zinc-300" />
                           </button>
                         </div>
                       </>
                     )}
                   </div>
                 ) : (
-                  <div className="w-full flex flex-col items-center gap-2 sm:gap-4">
+                  <div className="w-full flex flex-col items-center gap-3 sm:gap-5">
                     <div className="text-center w-full">
-                      <div className="text-white text-3xl sm:text-4xl font-bold mb-1">{card.kanji || card.japanese}</div>
-                      {card.kanji && <div className="text-zinc-400 text-lg sm:text-xl">{card.japanese}</div>}
+                      <div className="text-white text-4xl sm:text-5xl font-bold mb-1">{card.kanji || card.japanese}</div>
+                      {card.kanji && <div className="text-zinc-400 text-xl sm:text-2xl">{card.japanese}</div>}
                     </div>
                     
                     <div className="text-center">
-                      <div className="text-purple-400 font-bold text-xs sm:text-sm mb-0.5">English:</div>
-                      <div className="text-zinc-300 text-sm sm:text-base leading-tight">{card.english}</div>
+                      <div className="text-purple-400 font-bold text-sm sm:text-base mb-0.5">English:</div>
+                      <div className="text-zinc-300 text-base sm:text-lg leading-tight">{card.english}</div>
                     </div>
                     
                     <div className="text-center">
-                      <div className="text-purple-400 font-bold text-xs sm:text-sm mb-0.5">Nepali:</div>
-                      <div className="text-zinc-300 text-sm sm:text-base leading-tight">{card.nepali}</div>
+                      <div className="text-purple-400 font-bold text-sm sm:text-base mb-0.5">Nepali:</div>
+                      <div className="text-zinc-300 text-base sm:text-lg leading-tight">{card.nepali}</div>
                     </div>
                     
                     {card.sentence && (
                       <>
-                        <div className="w-full h-px bg-white/10 my-1 sm:my-2 shrink-0" />
-                        <div className="w-full flex items-start justify-center gap-2 text-center">
-                          <div className="text-purple-400 font-bold text-xs sm:text-sm shrink-0 mt-0.5">Example:</div>
-                          <div className="text-zinc-300 text-xs sm:text-sm flex-1 leading-snug">
+                        <div className="w-full h-px bg-white/10 my-2 sm:my-3 shrink-0" />
+                        <div className="w-full flex flex-col items-center justify-center gap-2 text-center">
+                          <div className="text-purple-400 font-bold text-sm sm:text-base shrink-0">Example:</div>
+                          <div className="text-zinc-300 text-base sm:text-lg flex-1 leading-snug px-2">
                             {card.sentence}
                           </div>
-                          <button onClick={(e) => { e.stopPropagation(); speak(card.sentence, 'ja-JP'); }} className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0 hover:bg-white/20 transition-colors">
-                            <Volume2 className="w-3 h-3 text-zinc-300" />
+                          <button onClick={(e) => { e.stopPropagation(); speak(card.sentence, 'ja-JP'); }} className="mt-1 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 hover:bg-white/20 transition-colors">
+                            <Volume2 className="w-4 h-4 text-zinc-300" />
                           </button>
                         </div>
                       </>
