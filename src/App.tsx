@@ -30,9 +30,18 @@ export default function App() {
   const [streak, setStreak] = useState(0);
   const [isOnboarded, setIsOnboarded] = useState(false);
   const [showExitDialog, setShowExitDialog] = useState(false);
+  const [hideNav, setHideNav] = useState(false);
   
   const historyRef = useRef<ViewState[]>(['learn']);
   const currentViewRef = useRef<ViewState>('splash');
+
+  useEffect(() => {
+    const handleHideNav = (e: Event) => {
+      setHideNav((e as CustomEvent).detail);
+    };
+    window.addEventListener('setHideNav', handleHideNav);
+    return () => window.removeEventListener('setHideNav', handleHideNav);
+  }, []);
 
   const handleSetView = (newView: ViewState) => {
     const hist = historyRef.current;
@@ -161,7 +170,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-[100dvh] w-full bg-gradient-to-br from-[#0f172a] to-[#312e81] text-zinc-200 font-sans overflow-hidden selection:bg-cyan-500/30 pt-[env(safe-area-inset-top)]">
+    <div className="flex flex-col h-[100dvh] w-full bg-gradient-to-br from-[#0B0F19] via-[#1A1124] to-[#4A154B] text-zinc-200 font-sans overflow-hidden selection:bg-cyan-500/30 pt-[env(safe-area-inset-top)]">
       <AnimatePresence mode="wait">
         {view === 'splash' && <SplashView key="splash" />}
       </AnimatePresence>
@@ -188,7 +197,7 @@ export default function App() {
         </header>
       )}
 
-      <main className="flex-1 overflow-y-auto relative scroll-smooth pt-2 pb-24">
+      <main className={`flex-1 overflow-y-auto relative scroll-smooth pt-2 ${hideNav ? 'pb-4' : 'pb-24'}`}>
         <AnimatePresence mode="wait">
           {view === 'onboarding' && <OnboardingView key="onboarding" onFinish={handleFinishOnboarding} />}
           {view === 'learn' && <LearnView key="learn" />}
@@ -202,14 +211,36 @@ export default function App() {
         </AnimatePresence>
       </main>
 
-      {view !== 'splash' && view !== 'onboarding' && (
-        <nav className="absolute bottom-0 w-full flex-none h-[76px] bg-[#1A1D24]/95 backdrop-blur-3xl border-t border-white/5 flex justify-between items-center px-2 pb-4 pt-2 z-40 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] overflow-x-auto scrollbar-hide gap-1">
-          <NavItem icon={<Book />} label="Learn" active={view === 'learn'} onClick={() => handleSetView('learn')} />
-          <NavItem icon={<Layers />} label="Practice" active={view === 'practice'} onClick={() => handleSetView('practice')} />
-          <NavItem icon={<Rocket />} label="Game" active={view === 'game'} onClick={() => handleSetView('game')} />
-          <NavItem icon={<Clock />} label="Time" active={view === 'time'} onClick={() => handleSetView('time')} />
-          <NavItem icon={<CalendarDays />} label="Date" active={view === 'date'} onClick={() => handleSetView('date')} />
-        </nav>
+      {view !== 'splash' && view !== 'onboarding' && view !== 'draw' && view !== 'quiz' && !hideNav && (
+        <div className="absolute bottom-4 left-4 right-4 z-40">
+          {/* FAB */}
+          <div className="absolute left-1/2 -translate-x-1/2 -top-5 z-50">
+            <button 
+              onClick={() => { playClick(); handleSetView('game'); }}
+              className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform active:scale-95 ${view === 'game' ? 'bg-cyan-500 text-white' : 'bg-[#11131A] text-cyan-500 border-[3px] border-[#1A1D24]'}`}
+            >
+              <Rocket className="w-5 h-5" fill={view === 'game' ? 'currentColor' : 'none'} />
+            </button>
+          </div>
+          
+          {/* Nav Bar Background with Cutout */}
+          <nav 
+            className="w-full h-[60px] bg-[#1A1D24] rounded-[24px] flex justify-between items-center px-2 shadow-2xl"
+            style={{
+              maskImage: 'radial-gradient(circle at 50% -10px, transparent 34px, black 35px)',
+              WebkitMaskImage: 'radial-gradient(circle at 50% -10px, transparent 34px, black 35px)'
+            }}
+          >
+            <div className="flex w-[42%] justify-around">
+              <NavItem icon={<Book />} label="Learn" active={view === 'learn'} onClick={() => handleSetView('learn')} />
+              <NavItem icon={<Layers />} label="Practice" active={view === 'practice'} onClick={() => handleSetView('practice')} />
+            </div>
+            <div className="flex w-[42%] justify-around">
+              <NavItem icon={<Clock />} label="Time" active={view === 'time'} onClick={() => handleSetView('time')} />
+              <NavItem icon={<CalendarDays />} label="Date" active={view === 'date'} onClick={() => handleSetView('date')} />
+            </div>
+          </nav>
+        </div>
       )}
 
       {/* Exit Confirmation Dialog */}
@@ -258,12 +289,12 @@ function NavItem({ icon, label, active, onClick }: { icon: ReactNode; label: str
         playClick();
         onClick();
       }}
-      className="flex flex-col items-center justify-center min-w-[48px] flex-1 relative group active:scale-95 transition-transform"
+      className="flex flex-col items-center justify-center min-w-[48px] flex-1 relative group active:scale-95 transition-transform pt-1"
     >
-      <div className={`flex items-center justify-center w-12 h-7 rounded-full transition-all duration-300 ${active ? 'bg-cyan-500/20 text-cyan-400' : 'text-zinc-400 group-hover:text-zinc-300'} mb-1 [&>svg]:w-4 [&>svg]:h-4`}>
+      <div className={`flex items-center justify-center transition-all duration-300 ${active ? 'text-cyan-400' : 'text-zinc-400 group-hover:text-zinc-300'} mb-0.5 [&>svg]:w-5 [&>svg]:h-5`}>
         {icon}
       </div>
-      <span className={`text-[10px] font-medium tracking-wide transition-colors ${active ? 'text-cyan-400' : 'text-zinc-500'}`}>{label}</span>
+      <span className={`text-[10px] font-bold tracking-wide transition-colors ${active ? 'text-cyan-400' : 'text-zinc-500'}`}>{label}</span>
     </button>
   );
 }

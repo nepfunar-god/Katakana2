@@ -154,6 +154,10 @@ export default function GameView() {
     setGameState('gameover');
   };
 
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('setHideNav', { detail: gameState !== 'menu' }));
+  }, [gameState]);
+
   // Game Loop
   useEffect(() => {
     if (gameState !== 'playing') return;

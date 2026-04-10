@@ -436,7 +436,7 @@ export default function DrawView({ setView }: { setView: (view: ViewState) => vo
             initial={{ opacity: 0, scale: 0.95 }} 
             animate={{ opacity: 1, scale: 1 }} 
             exit={{ opacity: 0, scale: 0.95 }}
-            className="absolute inset-0 z-50 bg-gradient-to-br from-[#0f172a] to-[#312e81] flex flex-col"
+            className="absolute inset-0 z-50 bg-gradient-to-br from-[#0B0F19] via-[#1A1124] to-[#4A154B] flex flex-col"
           >
             <div className="flex justify-between items-center p-4 border-b border-white/10 shrink-0">
               <div className="flex items-center gap-4">

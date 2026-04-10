@@ -56,13 +56,13 @@ export const setupNotifications = async (intervalMinutes: number) => {
       
       const bodyParts = [];
       if (randomCard.japanese) {
-        bodyParts.push(randomCard.japanese);
+        bodyParts.push(`🇯🇵 ${randomCard.japanese}`);
       }
       if (randomCard.nepali) {
-        bodyParts.push(randomCard.nepali);
+        bodyParts.push(`🇳🇵 ${randomCard.nepali}`);
       }
       if (randomCard.english) {
-        bodyParts.push(randomCard.english);
+        bodyParts.push(`🇺🇸 ${randomCard.english}`);
       }
       
       const body = bodyParts.join('\n');
@@ -113,7 +113,7 @@ export const sendTestNotification = async () => {
       notifications: [{
         id: 999,
         title: 'Review Time! 🎓',
-        body: 'じょせい\nमहिला / नारी\nfemale, woman',
+        body: '🇯🇵 じょせい\n🇳🇵 महिला / नारी\n🇺🇸 female, woman',
         schedule: { 
           at: new Date(new Date().getTime() + 2000),
           allowWhileIdle: true

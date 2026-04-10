@@ -208,6 +208,10 @@ export default function LearnView() {
     setSelectedItem(null);
   };
 
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('setHideNav', { detail: mainCat !== null || viewMode !== 'main' }));
+  }, [mainCat, viewMode]);
+
   const selectMainCategory = (cat: MainCategory) => {
     playClick();
     setMainCat(cat);
@@ -371,7 +375,7 @@ export default function LearnView() {
             </span>
           </div>
 
-          <div className={isWordMode ? "flex flex-col gap-2.5 pb-24" : "grid grid-cols-5 gap-2.5 pb-24 content-start"}>
+          <div className={isWordMode ? "flex flex-col gap-2.5 pb-6" : "grid grid-cols-5 gap-2.5 pb-6 content-start"}>
             {displayedItems.length === 0 && (
               <div className="col-span-full text-center text-zinc-500 mt-8 text-sm">No items found.</div>
             )}

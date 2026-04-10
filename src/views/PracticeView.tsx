@@ -47,6 +47,10 @@ export default function PracticeView({ setView }: { setView: (view: ViewState) =
     return () => window.removeEventListener('hardwareBackButton', handleBack);
   }, [isActive]);
 
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('setHideNav', { detail: isActive }));
+  }, [isActive]);
+
   const startPractice = () => {
     let pool = [];
     if (pracType === 'kana') {
