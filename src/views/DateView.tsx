@@ -29,6 +29,17 @@ export default function DateView() {
     generateQuestion();
   }, []);
 
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (showRef) {
+        e.preventDefault();
+        setShowRef(false);
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [showRef]);
+
   const saveStats = (newXp: number) => {
     localStorage.setItem('dm_xp', newXp.toString());
     setXp(newXp);

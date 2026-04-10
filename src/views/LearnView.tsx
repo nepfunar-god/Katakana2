@@ -114,6 +114,50 @@ export default function LearnView() {
   const [showDrawing, setShowDrawing] = useState(false);
 
   useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (mainCat === 'minna') {
+        return;
+      }
+      if (showDrawing) {
+        e.preventDefault();
+        setShowDrawing(false);
+        return;
+      }
+      if (selectedItem) {
+        e.preventDefault();
+        setSelectedItem(null);
+        return;
+      }
+      if (search) {
+        e.preventDefault();
+        setSearch('');
+        setViewMode('main');
+        return;
+      }
+      if (viewMode === 'grid') {
+        e.preventDefault();
+        if (mainCat !== 'words') {
+          setViewMode('sub');
+        } else {
+          setViewMode('main');
+          setMainCat(null);
+          setSubCat(null);
+        }
+        return;
+      }
+      if (viewMode === 'sub') {
+        e.preventDefault();
+        setViewMode('main');
+        setMainCat(null);
+        setSubCat(null);
+        return;
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [mainCat, showDrawing, selectedItem, search, viewMode]);
+
+  useEffect(() => {
     setProgress(JSON.parse(localStorage.getItem('kn_progress') || '{}'));
     setCustomWords(JSON.parse(localStorage.getItem('kn_custom') || '[]'));
     setLang(localStorage.getItem('kn_lang') || 'en');

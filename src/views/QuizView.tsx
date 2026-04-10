@@ -34,6 +34,17 @@ export default function QuizView({ setStreak, setView }: { setStreak: (s: number
     });
   }, []);
 
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (quizState !== 'menu') {
+        e.preventDefault();
+        setQuizState('menu');
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [quizState]);
+
   const startQuiz = (selectedMode: 'kana' | 'word') => {
     setMode(selectedMode);
     let pool = selectedMode === 'kana' 

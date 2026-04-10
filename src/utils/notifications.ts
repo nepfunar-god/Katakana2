@@ -52,10 +52,10 @@ export const setupNotifications = async (intervalMinutes: number) => {
     for (let i = 1; i <= 60; i++) {
       const randomCard = allHardCards[Math.floor(Math.random() * allHardCards.length)];
       
-      const title = randomCard.kanji || randomCard.japanese || 'Review Time!';
+      const title = 'Review Time! 🎓';
       
       const bodyParts = [];
-      if (randomCard.japanese && randomCard.japanese !== randomCard.kanji) {
+      if (randomCard.japanese) {
         bodyParts.push(randomCard.japanese);
       }
       if (randomCard.nepali) {
@@ -65,12 +65,12 @@ export const setupNotifications = async (intervalMinutes: number) => {
         bodyParts.push(randomCard.english);
       }
       
-      const body = bodyParts.join(' • ');
+      const body = bodyParts.join('\n');
       
       notifications.push({
         id: i,
-        title: 'Hard Card Review',
-        body: `${title}\n${body}`,
+        title: title,
+        body: body,
         schedule: { 
           at: new Date(now + i * intervalMinutes * 60 * 1000),
           allowWhileIdle: true 
@@ -112,8 +112,8 @@ export const sendTestNotification = async () => {
     await LocalNotifications.schedule({
       notifications: [{
         id: 999,
-        title: 'Katakana Pro',
-        body: 'Notifications are working! You will receive hard card reviews here.',
+        title: 'Review Time! 🎓',
+        body: 'じょせい\nमहिला / नारी\nfemale, woman',
         schedule: { 
           at: new Date(new Date().getTime() + 2000),
           allowWhileIdle: true

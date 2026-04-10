@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, ChevronLeft, Upload, Cloud, Zap, BookOpen, Clock, Volume2, RotateCcw } from 'lucide-react';
+import { Search, ChevronLeft, Cloud, Zap, BookOpen, Clock, Volume2, RotateCcw } from 'lucide-react';
 import { playClick } from '../utils/audio';
 import { speak } from '../utils/tts';
 import { setupNotifications } from '../utils/notifications';
+
+import { vocabulary } from '../data/vocabulary';
 
 type MinnaWord = {
   japanese: string;
@@ -17,7 +19,7 @@ type MinnaWord = {
 type MinnaData = Record<string, MinnaWord[]>;
 
 export default function MinnaView({ onBack }: { onBack?: () => void }) {
-  const [data, setData] = useState<MinnaData | null>(null);
+  const [data, setData] = useState<MinnaData | null>(vocabulary as MinnaData);
   const [selectedLesson, setSelectedLesson] = useState<string | null>(null);
   const [search, setSearch] = useState('');
   const [hardCards, setHardCards] = useState<Record<string, MinnaWord[]>>({});
@@ -29,14 +31,6 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
   const [isAutoMode, setIsAutoMode] = useState(false);
 
   useEffect(() => {
-    const savedData = localStorage.getItem('minna_data');
-    if (savedData) {
-      try {
-        setData(JSON.parse(savedData));
-      } catch (e) {
-        console.error(e);
-      }
-    }
     const savedHard = localStorage.getItem('minna_hard');
     if (savedHard) {
       try {
@@ -47,125 +41,31 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
     }
   }, []);
 
-  const [uploadError, setUploadError] = useState<string | null>(null);
-
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    
-    setUploadError(null);
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      try {
-        const text = event.target?.result as string;
-        let formattedData: MinnaData = {};
-        
-        try {
-          // Try standard JSON first
-          const json = JSON.parse(text);
-          if (Array.isArray(json)) {
-            json.forEach((item: any) => {
-              const lessonKey = item.lesson ? `Lesson ${item.lesson}` : 'Lesson 1';
-              if (!formattedData[lessonKey]) formattedData[lessonKey] = [];
-              formattedData[lessonKey].push({ ...item, lesson: lessonKey });
-            });
-          } else if (json && typeof json === 'object') {
-            Object.keys(json).forEach(key => {
-              formattedData[key] = json[key].map((item: any) => ({ ...item, lesson: key }));
-            });
-          }
-        } catch (err) {
-          // Fallback to robust custom parser for malformed JS/JSON
-          const lessonRegex = /(?:"?Lesson\s+(\d+)"?|'?Lesson\s+(\d+)'?)\s*:/gi;
-          const lessons: { name: string, index: number }[] = [];
-          let match;
-          
-          while ((match = lessonRegex.exec(text)) !== null) {
-            const lessonNum = match[1] || match[2];
-            lessons.push({ name: `Lesson ${lessonNum}`, index: match.index });
-          }
-
-          if (lessons.length === 0) {
-            // Try evaluating as JS if no "Lesson X" headers found
-            try {
-              const json = new Function('return (' + text + ')')();
-              if (Array.isArray(json)) {
-                json.forEach((item: any) => {
-                  const lessonKey = item.lesson ? `Lesson ${item.lesson}` : 'Lesson 1';
-                  if (!formattedData[lessonKey]) formattedData[lessonKey] = [];
-                  formattedData[lessonKey].push({ ...item, lesson: lessonKey });
-                });
-              } else if (json && typeof json === 'object') {
-                Object.keys(json).forEach(key => {
-                  formattedData[key] = json[key].map((item: any) => ({ ...item, lesson: key }));
-                });
-              } else {
-                throw new Error("Invalid format");
-              }
-            } catch (innerErr: any) {
-              throw new Error("Could not find any lessons in the file. Expected format: 'Lesson 1': [...]");
-            }
-          } else {
-            for (let i = 0; i < lessons.length; i++) {
-              const currentLesson = lessons[i];
-              const nextLesson = lessons[i + 1];
-              const chunk = text.slice(
-                currentLesson.index, 
-                nextLesson ? nextLesson.index : undefined
-              );
-              
-              const words: MinnaWord[] = [];
-              const objRegex = /\{([^{}]*)\}/g;
-              let objMatch;
-              
-              while ((objMatch = objRegex.exec(chunk)) !== null) {
-                const inner = objMatch[1];
-                
-                const extractProp = (key: string) => {
-                  const propRegex = new RegExp(`["']?${key}["']?\\s*:\\s*(["'])((?:(?!\\1)[^\\\\\\n]|\\\\.)*)\\1`, 'i');
-                  const m = inner.match(propRegex);
-                  if (m) {
-                    return m[2].replace(/\\(["'\\])/g, '$1');
-                  }
-                  return "";
-                };
-                
-                const japanese = extractProp("japanese");
-                const kanji = extractProp("kanji");
-                const nepali = extractProp("nepali");
-                const english = extractProp("english");
-                const sentence = extractProp("sentence");
-                
-                if (japanese || english || nepali) {
-                  words.push({ japanese, kanji, nepali, english, sentence, lesson: currentLesson.name });
-                }
-              }
-              
-              if (words.length > 0) {
-                if (!formattedData[currentLesson.name]) {
-                  formattedData[currentLesson.name] = [];
-                }
-                formattedData[currentLesson.name].push(...words);
-              }
-            }
-          }
-        }
-
-        if (Object.keys(formattedData).length === 0) {
-           throw new Error("No valid data found in the file.");
-        }
-
-        setData(formattedData);
-        localStorage.setItem('minna_data', JSON.stringify(formattedData));
-        playClick();
-      } catch (err: any) {
-        console.error(err);
-        setUploadError("Failed to process file: " + err.message);
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (flashcardMode !== null) {
+        e.preventDefault();
+        setFlashcardMode(null);
+        return;
+      }
+      if (selectedLesson !== null) {
+        e.preventDefault();
+        setSelectedLesson(null);
+        return;
+      }
+      if (search !== '') {
+        e.preventDefault();
+        setSearch('');
+        return;
+      }
+      if (onBack) {
+        e.preventDefault();
+        onBack();
       }
     };
-    reader.readAsText(file);
-    e.target.value = ''; // Reset input so the same file can be selected again
-  };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [flashcardMode, selectedLesson, search, onBack]);
 
   const saveHardCards = (newHard: Record<string, MinnaWord[]>) => {
     setHardCards(newHard);
@@ -221,7 +121,10 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
     playClick();
     let list: MinnaWord[] = [];
     if (lesson === 'All Hard Cards') {
-      Object.values(hardCards).forEach(arr => list.push(...arr));
+      (Object.values(hardCards) as MinnaWord[][]).forEach(arr => list.push(...arr));
+    } else if (lesson.startsWith('Hard Cards: ')) {
+      const baseLesson = lesson.replace('Hard Cards: ', '');
+      list = hardCards[baseLesson] || [];
     } else if (onlyHard) {
       list = hardCards[lesson] || [];
     } else {
@@ -242,7 +145,7 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
     setFlashcardList(listToUse);
     setCurrentCardIdx(0);
     setIsFlipped(false);
-    setIsHardReviewMode(onlyHard || lesson === 'All Hard Cards');
+    setIsHardReviewMode(onlyHard || lesson === 'All Hard Cards' || lesson.startsWith('Hard Cards: '));
     setIsAutoMode(false);
     setFlashcardMode(reverse ? 'reverse' : 'normal');
   };
@@ -302,42 +205,9 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
 
   const allHardCount = useMemo(() => {
     let count = 0;
-    Object.values(hardCards).forEach(arr => count += arr.length);
+    (Object.values(hardCards) as MinnaWord[][]).forEach(arr => count += arr.length);
     return count;
   }, [hardCards]);
-
-  if (!data) {
-    return (
-      <div className="flex flex-col h-full">
-        {onBack && (
-          <div className="sticky top-0 bg-[#11131A]/95 backdrop-blur-md py-2.5 z-20 px-4 flex items-center">
-            <button onClick={onBack} className="w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white shrink-0 bg-[#1A1D24] rounded-full active:scale-95 transition-all">
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-          </div>
-        )}
-        <div className="flex flex-col items-center justify-center flex-1 p-6 text-center">
-          <div className="w-20 h-20 bg-cyan-500/20 rounded-full flex items-center justify-center mb-6">
-            <Upload className="w-10 h-10 text-cyan-400" />
-          </div>
-          <h2 className="text-2xl font-bold text-white mb-2">Upload Vocabulary</h2>
-          <p className="text-zinc-400 mb-8">Please upload the Minna No Nihongo JSON file to get started.</p>
-          
-          {uploadError && (
-            <div className="bg-red-500/20 text-red-400 p-4 rounded-xl mb-6 text-sm border border-red-500/30 w-full max-w-md text-left">
-              <p className="font-bold mb-1">Upload Failed</p>
-              <p className="break-words">{uploadError}</p>
-            </div>
-          )}
-
-          <label className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-xl font-bold cursor-pointer transition-colors shadow-lg active:scale-95">
-            Select JSON File
-            <input type="file" accept=".json,.txt,application/json,text/plain" className="hidden" onChange={handleFileUpload} />
-          </label>
-        </div>
-      </div>
-    );
-  }
 
   const playManualSound = () => {
     if (!flashcardMode || flashcardList.length === 0) return;
@@ -364,7 +234,7 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
     const isRev = flashcardMode === 'reverse';
     
     return (
-      <div className="flex flex-col h-full bg-[#0E1117] absolute inset-0 z-50">
+      <div className="flex flex-col h-full bg-gradient-to-br from-[#0f172a] to-[#312e81] absolute inset-0 z-50">
         <div className="flex items-center justify-between p-4 border-b border-white/5">
           <button onClick={() => { playClick(); setFlashcardMode(null); setIsAutoMode(false); }} className="w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white">
             <ChevronLeft className="w-6 h-6" />
@@ -386,35 +256,35 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
             transition={{ duration: 0.4, type: "spring", stiffness: 260, damping: 20 }}
           >
             {/* Front */}
-            <div className="absolute inset-0 bg-[#1A1D24] rounded-2xl border border-white/5 flex flex-col p-6 backface-hidden shadow-lg">
+            <div className="absolute inset-0 bg-[#1A1D24] rounded-2xl border border-white/10 flex flex-col p-6 backface-hidden shadow-lg">
               <div className="flex-1 flex flex-col items-center justify-center text-center w-full">
                 {isRev ? (
                   <div className="flex flex-col items-center gap-3">
-                    <div className="text-3xl font-bold text-white">{card.nepali}</div>
-                    <div className="text-xl text-zinc-400">{card.english}</div>
+                    <div className="text-4xl font-bold text-white">{card.nepali}</div>
+                    <div className="text-2xl text-zinc-400">{card.english}</div>
                   </div>
                 ) : (
-                  <div className="text-5xl font-bold text-white">{card.japanese}</div>
+                  <div className="text-6xl font-bold text-white">{card.japanese}</div>
                 )}
               </div>
             </div>
 
             {/* Back */}
-            <div className="absolute inset-0 bg-[#1A1D24] rounded-2xl border border-white/5 flex flex-col p-4 sm:p-6 backface-hidden rotate-y-180 shadow-lg">
+            <div className="absolute inset-0 bg-[#1A1D24] rounded-2xl border border-white/10 flex flex-col p-4 sm:p-6 backface-hidden rotate-y-180 shadow-lg">
               <div className="flex-1 flex flex-col items-center justify-center w-full overflow-y-auto scrollbar-hide">
                 {isRev ? (
                   <div className="w-full flex flex-col items-center gap-3 sm:gap-5">
                     <div className="text-center w-full">
                       <div className="text-purple-400 font-bold text-sm sm:text-base mb-1">Japanese:</div>
-                      <div className="text-white text-4xl sm:text-5xl font-bold mb-2">{card.kanji || card.japanese}</div>
-                      {card.kanji && <div className="text-zinc-400 text-xl sm:text-2xl">{card.japanese}</div>}
+                      <div className="text-white text-5xl sm:text-6xl font-bold mb-2">{card.kanji || card.japanese}</div>
+                      {card.kanji && <div className="text-zinc-400 text-3xl sm:text-4xl">{card.japanese}</div>}
                     </div>
                     {card.sentence && (
                       <>
                         <div className="w-full h-px bg-white/10 my-2 sm:my-3 shrink-0" />
                         <div className="w-full flex flex-col items-center justify-center gap-2 text-center">
                           <div className="text-purple-400 font-bold text-sm sm:text-base shrink-0">Example:</div>
-                          <div className="text-zinc-300 text-base sm:text-lg flex-1 leading-snug px-2">
+                          <div className="text-zinc-300 text-lg sm:text-xl flex-1 leading-snug px-2">
                             {card.sentence}
                           </div>
                           <button onClick={(e) => { e.stopPropagation(); speak(card.sentence, 'ja-JP'); }} className="mt-1 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 hover:bg-white/20 transition-colors">
@@ -427,18 +297,18 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
                 ) : (
                   <div className="w-full flex flex-col items-center gap-3 sm:gap-5">
                     <div className="text-center w-full">
-                      <div className="text-white text-4xl sm:text-5xl font-bold mb-1">{card.kanji || card.japanese}</div>
-                      {card.kanji && <div className="text-zinc-400 text-xl sm:text-2xl">{card.japanese}</div>}
+                      <div className="text-white text-5xl sm:text-6xl font-bold mb-1">{card.kanji || card.japanese}</div>
+                      {card.kanji && <div className="text-zinc-400 text-3xl sm:text-4xl">{card.japanese}</div>}
                     </div>
                     
                     <div className="text-center">
                       <div className="text-purple-400 font-bold text-sm sm:text-base mb-0.5">English:</div>
-                      <div className="text-zinc-300 text-base sm:text-lg leading-tight">{card.english}</div>
+                      <div className="text-zinc-300 text-2xl sm:text-3xl leading-tight">{card.english}</div>
                     </div>
                     
                     <div className="text-center">
                       <div className="text-purple-400 font-bold text-sm sm:text-base mb-0.5">Nepali:</div>
-                      <div className="text-zinc-300 text-base sm:text-lg leading-tight">{card.nepali}</div>
+                      <div className="text-zinc-300 text-2xl sm:text-3xl leading-tight">{card.nepali}</div>
                     </div>
                     
                     {card.sentence && (
@@ -446,7 +316,7 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
                         <div className="w-full h-px bg-white/10 my-2 sm:my-3 shrink-0" />
                         <div className="w-full flex flex-col items-center justify-center gap-2 text-center">
                           <div className="text-purple-400 font-bold text-sm sm:text-base shrink-0">Example:</div>
-                          <div className="text-zinc-300 text-base sm:text-lg flex-1 leading-snug px-2">
+                          <div className="text-zinc-300 text-lg sm:text-xl flex-1 leading-snug px-2">
                             {card.sentence}
                           </div>
                           <button onClick={(e) => { e.stopPropagation(); speak(card.sentence, 'ja-JP'); }} className="mt-1 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 hover:bg-white/20 transition-colors">
@@ -461,18 +331,18 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
               
               <div className="flex gap-2 sm:gap-3 mt-3 pt-3 w-full shrink-0 border-t border-white/5">
                 {isHardReviewMode ? (
-                  <button onClick={(e) => { e.stopPropagation(); removeHard(card); }} className="flex-1 py-2 sm:py-2.5 rounded-xl border border-red-500 text-white font-bold hover:bg-red-500/10 active:scale-95 transition-all text-[10px] sm:text-xs whitespace-nowrap">
+                  <button onClick={(e) => { e.stopPropagation(); removeHard(card); }} className="flex-1 py-4 sm:py-5 rounded-xl border border-red-500 text-white font-bold hover:bg-red-500/10 active:scale-95 transition-all text-sm sm:text-base whitespace-nowrap">
                     REMOVE
                   </button>
                 ) : (
-                  <button onClick={(e) => { e.stopPropagation(); markHard(card); }} className="flex-1 py-2 sm:py-2.5 rounded-xl border border-red-500 text-white font-bold hover:bg-red-500/10 active:scale-95 transition-all text-[10px] sm:text-xs whitespace-nowrap">
+                  <button onClick={(e) => { e.stopPropagation(); markHard(card); }} className="flex-1 py-4 sm:py-5 rounded-xl border border-red-500 text-white font-bold hover:bg-red-500/10 active:scale-95 transition-all text-sm sm:text-base whitespace-nowrap">
                     HARD
                   </button>
                 )}
-                <button onClick={(e) => { e.stopPropagation(); nextCard(); }} className="flex-1 py-2 sm:py-2.5 rounded-xl border border-yellow-500 text-white font-bold hover:bg-yellow-500/10 active:scale-95 transition-all text-[10px] sm:text-xs whitespace-nowrap">
+                <button onClick={(e) => { e.stopPropagation(); nextCard(); }} className="flex-1 py-4 sm:py-5 rounded-xl border border-yellow-500 text-white font-bold hover:bg-yellow-500/10 active:scale-95 transition-all text-sm sm:text-base whitespace-nowrap">
                   GOOD
                 </button>
-                <button onClick={(e) => { e.stopPropagation(); nextCard(); }} className="flex-1 py-2 sm:py-2.5 rounded-xl border border-green-500 text-white font-bold hover:bg-green-500/10 active:scale-95 transition-all text-[10px] sm:text-xs whitespace-nowrap">
+                <button onClick={(e) => { e.stopPropagation(); nextCard(); }} className="flex-1 py-4 sm:py-5 rounded-xl border border-green-500 text-white font-bold hover:bg-green-500/10 active:scale-95 transition-all text-sm sm:text-base whitespace-nowrap">
                   EASY
                 </button>
               </div>
@@ -497,15 +367,23 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
 
   if (selectedLesson) {
     let list: MinnaWord[] = [];
+    let isHardCardsView = false;
+    let baseLesson = selectedLesson;
+
     if (selectedLesson === 'All Hard Cards') {
-      Object.values(hardCards).forEach(arr => list.push(...arr));
+      (Object.values(hardCards) as MinnaWord[][]).forEach(arr => list.push(...arr));
+      isHardCardsView = true;
+    } else if (selectedLesson.startsWith('Hard Cards: ')) {
+      baseLesson = selectedLesson.replace('Hard Cards: ', '');
+      list = hardCards[baseLesson] || [];
+      isHardCardsView = true;
     } else {
       list = data?.[selectedLesson] || [];
     }
-    const hardCount = selectedLesson === 'All Hard Cards' ? list.length : (hardCards[selectedLesson] || []).length;
+    const hardCount = selectedLesson === 'All Hard Cards' ? list.length : (hardCards[baseLesson] || []).length;
 
     return (
-      <div className="flex flex-col h-full bg-[#0E1117] absolute inset-0 z-40">
+      <div className="flex flex-col h-full bg-gradient-to-br from-[#0f172a] to-[#312e81] absolute inset-0 z-40">
         <div className="flex items-center p-4 border-b border-white/5 shrink-0 bg-[#11131A]/95 backdrop-blur-md sticky top-0 z-10">
           <button onClick={() => { playClick(); setSelectedLesson(null); }} className="w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white">
             <ChevronLeft className="w-6 h-6" />
@@ -531,14 +409,23 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
           <button onClick={() => startFlashcards(selectedLesson)} className="w-full py-2.5 bg-[#2DD4BF] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-teal-500/20">
             START FLASHCARDS
           </button>
-          <div className="flex gap-2">
-            <button onClick={() => startFlashcards(selectedLesson, false, true)} className="flex-1 py-2.5 bg-[#F43F5E] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-rose-500/20">
-              HARD CARDS ({hardCount})
-            </button>
-            <button onClick={() => startFlashcards(selectedLesson, true)} className="flex-1 py-2.5 bg-[#F59E0B] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-amber-500/20">
-              REVERSE FLASHCARDS
-            </button>
-          </div>
+          {!isHardCardsView && (
+            <div className="flex gap-2">
+              <button onClick={() => { playClick(); setSelectedLesson(`Hard Cards: ${selectedLesson}`); }} className="flex-1 py-2.5 bg-[#F43F5E] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-rose-500/20">
+                HARD CARDS ({hardCount})
+              </button>
+              <button onClick={() => startFlashcards(selectedLesson, true)} className="flex-1 py-2.5 bg-[#F59E0B] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-amber-500/20">
+                REVERSE FLASHCARDS
+              </button>
+            </div>
+          )}
+          {isHardCardsView && (
+            <div className="flex gap-2">
+              <button onClick={() => startFlashcards(selectedLesson, true)} className="flex-1 py-2.5 bg-[#F59E0B] text-white font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-amber-500/20">
+                REVERSE FLASHCARDS
+              </button>
+            </div>
+          )}
           <div className="flex gap-2">
             <button className="flex-1 py-2.5 bg-[#A855F7] text-white font-bold rounded-xl active:scale-95 transition-all opacity-50 cursor-not-allowed shadow-lg shadow-purple-500/20">
               SENTENCES
@@ -581,37 +468,28 @@ export default function MinnaView({ onBack }: { onBack?: () => void }) {
             <button 
               key={lesson}
               onClick={() => { playClick(); setSelectedLesson(lesson); }}
-              className="py-3 px-2 bg-[#1A1D24] border border-cyan-500/30 rounded-xl text-cyan-400 font-bold text-sm hover:bg-[#222630] active:scale-95 transition-all"
+              className="py-3 px-2 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-xl text-cyan-400 font-bold text-sm hover:from-cyan-500/20 hover:to-purple-500/20 active:scale-95 transition-all"
             >
               {lesson}
             </button>
           ))}
           <button 
-            className="py-3 px-2 bg-[#1A1D24] border border-amber-500/30 rounded-xl text-amber-500 font-bold text-sm flex items-center justify-center gap-1 hover:bg-[#222630] active:scale-95 transition-all"
+            className="py-3 px-2 bg-[#1A1D24] border border-amber-500 rounded-xl text-amber-500 font-bold text-sm flex items-center justify-center gap-1 hover:bg-[#222630] active:scale-95 transition-all"
           >
             <Zap className="w-4 h-4" /> Quiz All
           </button>
         </div>
 
         <div className="flex flex-col gap-2">
-          {uploadError && (
-            <div className="bg-red-500/20 text-red-400 p-3 rounded-xl text-sm border border-red-500/30">
-              {uploadError}
-            </div>
-          )}
-          <label className="w-full p-4 bg-[#1A1D24] border border-cyan-500/30 rounded-xl flex items-center justify-between hover:bg-[#222630] active:scale-95 transition-all cursor-pointer">
-            <span className="font-bold text-cyan-400 flex items-center gap-2"><Upload className="w-5 h-5" /> Upload Vocabulary JSON</span>
-            <input type="file" accept=".json,.txt,application/json,text/plain" className="hidden" onChange={handleFileUpload} />
-          </label>
           <button 
-            onClick={() => { playClick(); setSelectedLesson('All Hard Cards'); startFlashcards('All Hard Cards'); }}
+            onClick={() => { playClick(); setSelectedLesson('All Hard Cards'); }}
             className="w-full p-4 bg-[#1A1D24] border border-cyan-500/30 rounded-xl flex items-center justify-between hover:bg-[#222630] active:scale-95 transition-all"
           >
             <span className="font-bold text-cyan-400">Review All Hard Cards</span>
             <span className="text-cyan-400 font-bold">{allHardCount}</span>
           </button>
           <button className="w-full p-4 bg-[#1A1D24] border border-cyan-500/30 rounded-xl flex items-center justify-between hover:bg-[#222630] active:scale-95 transition-all">
-            <span className="font-bold text-cyan-400">Imported Decks</span>
+            <span className="font-bold text-cyan-400">Total Decks</span>
             <span className="text-cyan-400 font-bold">{data ? Object.keys(data).length : 0}</span>
           </button>
         </div>

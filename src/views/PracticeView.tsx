@@ -6,7 +6,7 @@ import { speak } from '../utils/tts';
 import { playClick, playFlip } from '../utils/audio';
 import { ViewState } from '../App';
 
-export default function PracticeView({ setView }: { setView: (view: ViewState) => void }) {
+export default function PracticeView({ setView }: { setView: (view: ViewState) => void; key?: string | number }) {
   const [queue, setQueue] = useState<any[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -35,6 +35,17 @@ export default function PracticeView({ setView }: { setView: (view: ViewState) =
     const tmLevel = parseInt(localStorage.getItem('tm_level') || '1');
     setTimeXp(tmXp + ((tmLevel - 1) * 100));
   }, []);
+
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (isActive) {
+        e.preventDefault();
+        setIsActive(false);
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [isActive]);
 
   const startPractice = () => {
     let pool = [];

@@ -42,6 +42,23 @@ export default function TimeView() {
     generateQuestion();
   }, []);
 
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (showRef) {
+        e.preventDefault();
+        setShowRef(false);
+        return;
+      }
+      if (showSettings) {
+        e.preventDefault();
+        setShowSettings(false);
+        return;
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [showRef, showSettings]);
+
   const saveStats = (newXp: number, newLevel: number) => {
     localStorage.setItem('tm_xp', newXp.toString());
     localStorage.setItem('tm_level', newLevel.toString());

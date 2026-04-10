@@ -5,7 +5,7 @@ import { ViewState } from '../App';
 import { playClick } from '../utils/audio';
 import { setupNotifications, sendTestNotification } from '../utils/notifications';
 
-export default function SettingsView({ setView }: { setView: (view: ViewState) => void }) {
+export default function SettingsView({ setView }: { setView: (view: ViewState) => void; key?: string | number }) {
   const [lang, setLang] = useState('en');
   const [flashcardOrder, setFlashcardOrder] = useState<'sequential' | 'random'>('sequential');
   const [autoAudioLang, setAutoAudioLang] = useState<'en' | 'ne'>('en');

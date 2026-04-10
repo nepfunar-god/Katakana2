@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RefreshCw, Trash2, CheckCircle2, X, ChevronLeft, Folder, Lightbulb } from 'lucide-react';
 import { RAW_DATA } from '../data';
@@ -68,7 +68,7 @@ const AnimatedKana = ({ charCode, char }: { charCode: string, char: string }) =>
   );
 };
 
-export default function DrawView({ setView }: { setView: (view: ViewState) => void }) {
+export default function DrawView({ setView }: { setView: (view: ViewState) => void; key?: string | number }) {
   const [drawMode, setDrawMode] = useState<DrawMode>('sequence');
   
   // Sequence Mode State
@@ -87,6 +87,33 @@ export default function DrawView({ setView }: { setView: (view: ViewState) => vo
   
   const activeCanvasRef = useRef<HTMLCanvasElement>(null);
   const hasDrawnRef = useRef(false);
+
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (activeKana) {
+        e.preventDefault();
+        closeActiveKana();
+        return;
+      }
+      if (infoKana) {
+        e.preventDefault();
+        setInfoKana(null);
+        return;
+      }
+      if (subCat) {
+        e.preventDefault();
+        setSubCat(null);
+        return;
+      }
+      if (alphaType) {
+        e.preventDefault();
+        setAlphaType(null);
+        return;
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [activeKana, infoKana, subCat, alphaType]);
 
   const pool = [...RAW_DATA.basic, ...RAW_DATA.dakuten, ...RAW_DATA.handakuten].filter(item => !item.empty);
 
@@ -409,7 +436,7 @@ export default function DrawView({ setView }: { setView: (view: ViewState) => vo
             initial={{ opacity: 0, scale: 0.95 }} 
             animate={{ opacity: 1, scale: 1 }} 
             exit={{ opacity: 0, scale: 0.95 }}
-            className="absolute inset-0 z-50 bg-[#0E1117] flex flex-col"
+            className="absolute inset-0 z-50 bg-gradient-to-br from-[#0f172a] to-[#312e81] flex flex-col"
           >
             <div className="flex justify-between items-center p-4 border-b border-white/10 shrink-0">
               <div className="flex items-center gap-4">

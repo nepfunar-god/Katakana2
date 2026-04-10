@@ -1,4 +1,13 @@
-export const RAW_DATA = {
+export type KanaItem = {
+  id: string;
+  c: string;
+  r: string;
+  empty?: boolean;
+  m?: string;
+  n?: string;
+};
+
+export const RAW_DATA: Record<string, KanaItem[]> = {
   basic: [
     {id:'a',c:'ア',r:'a'}, {id:'i',c:'イ',r:'i'}, {id:'u',c:'ウ',r:'u'}, {id:'e',c:'エ',r:'e'}, {id:'o',c:'オ',r:'o'},
     {id:'ka',c:'カ',r:'ka'}, {id:'ki',c:'キ',r:'ki'}, {id:'ku',c:'ク',r:'ku'}, {id:'ke',c:'ケ',r:'ke'}, {id:'ko',c:'コ',r:'ko'},

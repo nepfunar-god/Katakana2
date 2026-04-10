@@ -50,6 +50,17 @@ export default function GameView() {
   const allHiragana = useMemo(() => [...RAW_DATA.h_basic, ...RAW_DATA.h_dakuten, ...RAW_DATA.h_handakuten].filter(item => !item.empty), []);
   const allKana = useMemo(() => [...allKatakana, ...allHiragana], [allKatakana, allHiragana]);
 
+  useEffect(() => {
+    const handleBack = (e: Event) => {
+      if (gameState !== 'menu') {
+        e.preventDefault();
+        setGameState('menu');
+      }
+    };
+    window.addEventListener('hardwareBackButton', handleBack);
+    return () => window.removeEventListener('hardwareBackButton', handleBack);
+  }, [gameState]);
+
   const pool = useMemo(() => {
     if (alphabetMode === 'katakana') return allKatakana;
     if (alphabetMode === 'hiragana') return allHiragana;
@@ -429,7 +440,7 @@ export default function GameView() {
   }
 
   if (gameState === 'stats') {
-    const sortedStats = Object.entries(srsData)
+    const sortedStats = (Object.entries(srsData) as [string, { avgTime: number; count: number; }][])
       .sort(([, a], [, b]) => b.avgTime - a.avgTime);
 
     return (
@@ -581,7 +592,7 @@ export default function GameView() {
   }
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-[#11131A] flex flex-col" onClick={() => inputRef.current?.focus()}>
+    <div className="relative w-full h-full overflow-hidden bg-transparent flex flex-col" onClick={() => inputRef.current?.focus()}>
       {/* Header */}
       <div className="absolute top-0 left-0 right-0 p-4 flex justify-between items-center z-10 bg-gradient-to-b from-[#11131A] to-transparent">
         <div className="flex gap-1">

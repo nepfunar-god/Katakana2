@@ -1,0 +1,7432 @@
+export const vocabulary = {
+   "Lesson 1": [{
+                    japanese: "わたし",
+                    kanji: "私",
+                    nepali: "म",
+                    english: "I",
+                    sentence: "わたしはがくせいです。"
+                },
+                {
+                    japanese: "あなた",
+                    kanji: "",
+                    nepali: "तिमी",
+                    english: "you",
+                    sentence: "あなたはかいしゃいんですか。"
+                },
+                {
+                    japanese: "あのひと (あのかた)",
+                    kanji: "あの人 (あの方)",
+                    nepali: "उ त्यो मान्छे (उँहा)",
+                    english: "that person, he, she",
+                    sentence: "あのひとはだれですか。"
+                },
+                {
+                    japanese: "~さん",
+                    kanji: "",
+                    nepali: "~ जी",
+                    english: "Mr., Ms.",
+                    sentence: "あれはミラーさんです。"
+                },
+                {
+                    japanese: "~ちゃん",
+                    kanji: "",
+                    nepali: "~ さん को सट्टा बच्चाको नामको पछाडि मायाले लगाइने शब्द",
+                    english: "(suffix for children's names)",
+                    sentence: "さくらちゃんはかわいいです。"
+                },
+                {
+                    japanese: "~じん",
+                    kanji: "~人",
+                    nepali: "~नागरिक",
+                    english: "(suffix for nationality)",
+                    sentence: "わたしはネパールじんです。"
+                },
+                {
+                    japanese: "せんせい",
+                    kanji: "先生",
+                    nepali: "शिक्षक/शिक्षिका (आफ्नो पेशा उल्लेख गर्दा प्रयोग गरिदैन)",
+                    english: "teacher, instructor",
+                    sentence: "サントスさんはせんせいです。"
+                },
+                {
+                    japanese: "きょうし",
+                    kanji: "教師",
+                    nepali: "प्रशिक्षक/शिक्षक/शिक्षिका (आफ्नो पेशा उल्लेख गर्दा प्रयोग गरिन्छ)",
+                    english: "teacher, instructor (one's own profession)",
+                    sentence: "わたしはきょうしです。"
+                },
+                {
+                    japanese: "がくせい",
+                    kanji: "学生",
+                    nepali: "विद्यार्थी",
+                    english: "student",
+                    sentence: "タワポンくんはがくせいです。"
+                },
+                {
+                    japanese: "かいしゃいん",
+                    kanji: "会社員",
+                    nepali: "कम्पनी कर्मचारी",
+                    english: "company employee",
+                    sentence: "わたしのちちはかいしゃいんです。"
+                },
+                {
+                    japanese: "しゃいん",
+                    kanji: "社員",
+                    nepali: "कर्मचारी (कम्पनीको नाम सँग प्रयोग गरिन्छ)",
+                    english: "employee (of a company)",
+                    sentence: "わたしはIMCのしゃいんです。"
+                },
+                {
+                    japanese: "ぎんこういん",
+                    kanji: "銀行員",
+                    nepali: "बैंक कर्मचारी",
+                    english: "bank employee",
+                    sentence: "あのひとはぎんこういんです。"
+                },
+                {
+                    japanese: "いしゃ",
+                    kanji: "医者",
+                    nepali: "चिकित्सक / डाक्टर",
+                    english: "doctor",
+                    sentence: "カリナさんはいしゃです。"
+                },
+                {
+                    japanese: "けんきゅうしゃ",
+                    kanji: "研究者",
+                    nepali: "अनुसन्धानकर्ता",
+                    english: "researcher",
+                    sentence: "ワットさんはけんきゅうしゃです。"
+                },
+                {
+                    japanese: "だいがく",
+                    kanji: "大学",
+                    nepali: "विश्वविद्यालय",
+                    english: "university",
+                    sentence: "さくらだいがくはゆうめいです。"
+                },
+                {
+                    japanese: "びょういん",
+                    kanji: "病院",
+                    nepali: "अस्पताल",
+                    english: "hospital",
+                    sentence: "こうべびょういんは大きいです。"
+                },
+                {
+                    japanese: "だれ (どなた)",
+                    kanji: "",
+                    nepali: "को ?",
+                    english: "who",
+                    sentence: "あのかたはどなたですか。"
+                },
+                {
+                    japanese: "〜さい",
+                    kanji: "〜歳",
+                    nepali: "- उमेर / वर्ष",
+                    english: "~ years old",
+                    sentence: "たろうくんは９さいです。"
+                },
+                {
+                    japanese: "なんさい (おいくつ)",
+                    kanji: "何歳",
+                    nepali: "कति वर्ष ? / कति उमेर ?",
+                    english: "how old",
+                    sentence: "おいくつですか。"
+                },
+                {
+                    japanese: "はい",
+                    kanji: "",
+                    nepali: "अँ / हुन्छ",
+                    english: "yes",
+                    sentence: "はい、わたしはがくせいです。"
+                },
+                {
+                    japanese: "いいえ",
+                    kanji: "",
+                    nepali: "अँह / हुन्न",
+                    english: "no",
+                    sentence: "いいえ、せんせいじゃありません。"
+                },
+                {
+                    japanese: "はじめまして",
+                    kanji: "",
+                    nepali: "पहिलो पटक भेट्दा। परिचय दिँदा सामान्यतया आफ्नो सुरुमा गरिने अभिवादन।",
+                    english: "How do you do?",
+                    sentence: "はじめまして。ラジブです。"
+                },
+                {
+                    japanese: "~からきました。",
+                    kanji: "",
+                    nepali: "~ बाट आएको हो",
+                    english: "I came from ~.",
+                    sentence: "ネパールからきました。"
+                },
+                {
+                    japanese: "どうぞよろしくおねがいします。",
+                    kanji: "",
+                    nepali: "भेटेर खुशी लाग्यो।",
+                    english: "Pleased to meet you.",
+                    sentence: "どうぞよろしくおねがいします。"
+                },
+                {
+                    japanese: "しつれいですが",
+                    kanji: "",
+                    nepali: "माफ गर्नुहोस्.....",
+                    english: "Excuse me, but...",
+                    sentence: "しつれいですが、おなまえは？"
+                },
+                {
+                    japanese: "おなまえは？",
+                    kanji: "お名前は？",
+                    nepali: "शुभनाम ?",
+                    english: "What is your name?",
+                    sentence: "おなまえは？"
+                },
+                {
+                    japanese: "こちらは〜さんです。",
+                    kanji: "",
+                    nepali: "उँहा ~ जी हुनुहुन्छ।",
+                    english: "This is Mr./Ms. ~.",
+                    sentence: "こちらはマリアさんです。"
+                }
+            ],
+            "Lesson 2": [{
+                    japanese: "これ",
+                    kanji: "",
+                    nepali: "यो",
+                    english: "this",
+                    sentence: "これはじしょです。"
+                },
+                {
+                    japanese: "それ",
+                    kanji: "",
+                    nepali: "त्यो",
+                    english: "that",
+                    sentence: "それはわたしのかさです。"
+                },
+                {
+                    japanese: "あれ",
+                    kanji: "",
+                    nepali: "उ त्यो",
+                    english: "that (over there)",
+                    sentence: "あれはだれのかばんですか。"
+                },
+                {
+                    japanese: "この~",
+                    kanji: "",
+                    nepali: "यो~",
+                    english: "this ~",
+                    sentence: "このほんはわたしのです。"
+                },
+                {
+                    japanese: "その~",
+                    kanji: "",
+                    nepali: "त्यो ~",
+                    english: "that ~",
+                    sentence: "そのかばんはあなたのですか。"
+                },
+                {
+                    japanese: "あの~",
+                    kanji: "",
+                    nepali: "उत्यो [~]",
+                    english: "that ~ (over there)",
+                    sentence: "あのとけいはだれのですか。"
+                },
+                {
+                    japanese: "ほん",
+                    kanji: "本",
+                    nepali: "पुस्तक / किताब",
+                    english: "book",
+                    sentence: "これはにほんごのほんです。"
+                },
+                {
+                    japanese: "じしょ",
+                    kanji: "辞書",
+                    nepali: "शब्दकोष",
+                    english: "dictionary",
+                    sentence: "それはえいごのじしょです。"
+                },
+                {
+                    japanese: "ざっし",
+                    kanji: "雑誌",
+                    nepali: "पत्रिका",
+                    english: "magazine",
+                    sentence: "これはコンピューターのざっしです。"
+                },
+                {
+                    japanese: "しんぶん",
+                    kanji: "新聞",
+                    nepali: "अखबार",
+                    english: "newspaper",
+                    sentence: "あれはきょうのしんぶんです。"
+                },
+                {
+                    japanese: "ノート",
+                    kanji: "",
+                    nepali: "नोटबुक / कापी",
+                    english: "notebook",
+                    sentence: "これはだれのノートですか。"
+                },
+                {
+                    japanese: "てちょう",
+                    kanji: "手帳",
+                    nepali: "जेब नोटबुक",
+                    english: "pocket notebook",
+                    sentence: "このてちょうはすてきですね。"
+                },
+                {
+                    japanese: "めいし",
+                    kanji: "名刺",
+                    nepali: "व्यापार कार्ड",
+                    english: "business card",
+                    sentence: "これはわたしのめいしです。"
+                },
+                {
+                    japanese: "カード",
+                    kanji: "",
+                    nepali: "कार्ड",
+                    english: "card",
+                    sentence: "それはテレホンカードですか。"
+                },
+                {
+                    japanese: "えんぴつ",
+                    kanji: "鉛筆",
+                    nepali: "शीशाकलम (पेन्सिल)",
+                    english: "pencil",
+                    sentence: "このえんぴつはだれのですか。"
+                },
+                {
+                    japanese: "ボールペン",
+                    kanji: "",
+                    nepali: "बलपेन / डटपेन",
+                    english: "ballpoint pen",
+                    sentence: "それはあなたのボールペンですか。"
+                },
+                {
+                    japanese: "シャープペンシル",
+                    kanji: "",
+                    nepali: "मेकानिकल पेन्सिल",
+                    english: "mechanical pencil",
+                    sentence: "あれはシャープペンシルです。"
+                },
+                {
+                    japanese: "かぎ",
+                    kanji: "",
+                    nepali: "साँचो / चाबी",
+                    english: "key",
+                    sentence: "これはへやのかぎです。"
+                },
+                {
+                    japanese: "とけい",
+                    kanji: "時計",
+                    nepali: "घडी",
+                    english: "watch, clock",
+                    sentence: "そのとけいはいくらですか。"
+                },
+                {
+                    japanese: "かさ",
+                    kanji: "傘",
+                    nepali: "छाता",
+                    english: "umbrella",
+                    sentence: "このかさはわたしのです。"
+                },
+                {
+                    japanese: "かばん",
+                    kanji: "",
+                    nepali: "झोला / ब्रीफकेस",
+                    english: "bag, briefcase",
+                    sentence: "あなたのかばんはどれですか。"
+                },
+                {
+                    japanese: "テレビ",
+                    kanji: "",
+                    nepali: "टेलिभिजन",
+                    english: "television",
+                    sentence: "このテレビはにほんのです。"
+                },
+                {
+                    japanese: "ラジオ",
+                    kanji: "",
+                    nepali: "रेडियो",
+                    english: "radio",
+                    sentence: "これはふるいラジオです。"
+                },
+                {
+                    japanese: "カメラ",
+                    kanji: "",
+                    nepali: "क्यामेरा",
+                    english: "camera",
+                    sentence: "そのカメラはたかいですか。"
+                },
+                {
+                    japanese: "コンピューター",
+                    kanji: "",
+                    nepali: "कम्प्युटर",
+                    english: "computer",
+                    sentence: "わたしのコンピューターはあたらしいです。"
+                },
+                {
+                    japanese: "くるま",
+                    kanji: "車",
+                    nepali: "कार, गाडी",
+                    english: "car, vehicle",
+                    sentence: "これはだれのくるまのですか。"
+                },
+                {
+                    japanese: "つくえ",
+                    kanji: "机",
+                    nepali: "डेक्स",
+                    english: "desk",
+                    sentence: "わたしのつくえはこれです。"
+                },
+                {
+                    japanese: "いす",
+                    kanji: "",
+                    nepali: "कुर्सी",
+                    english: "chair",
+                    sentence: "このいすは丈夫（じょうぶ）です。"
+                },
+                {
+                    japanese: "チョコレート",
+                    kanji: "",
+                    nepali: "चकलेट",
+                    english: "chocolate",
+                    sentence: "チョコレートをどうぞ。"
+                },
+                {
+                    japanese: "コーヒー",
+                    kanji: "",
+                    nepali: "कफी",
+                    english: "coffee",
+                    sentence: "コーヒー、おねがいします。"
+                },
+                {
+                    japanese: "[お]みやげ",
+                    kanji: "お土産",
+                    nepali: "कोसेली",
+                    english: "souvenir, present",
+                    sentence: "これはきょうとのおみやげです。"
+                },
+                {
+                    japanese: "えいご",
+                    kanji: "英語",
+                    nepali: "अंग्रेजी भाषा",
+                    english: "English language",
+                    sentence: "これはえいごのほんです。"
+                },
+                {
+                    japanese: "にほんご",
+                    kanji: "日本語",
+                    nepali: "जापानी भाषा",
+                    english: "Japanese language",
+                    sentence: "にほんごのべんきょうはたのしいです。"
+                },
+                {
+                    japanese: "~ご",
+                    kanji: "~語",
+                    nepali: "भाषा",
+                    english: "~ language",
+                    sentence: "ネパールごをはなします。"
+                },
+                {
+                    japanese: "なん",
+                    kanji: "何",
+                    nepali: "के ? / कुन् ? / कति ?",
+                    english: "what",
+                    sentence: "これはなんですか。"
+                },
+                {
+                    japanese: "そう",
+                    kanji: "",
+                    nepali: "त्यसो",
+                    english: "so, like that",
+                    sentence: "はい、そうです。"
+                }
+            ],
+            "Lesson 3": [{
+                    japanese: "ここ",
+                    kanji: "",
+                    nepali: "यहाँ / यो ठाँउ",
+                    english: "here, this place",
+                    sentence: "ここはきょうしつです。"
+                },
+                {
+                    japanese: "そこ",
+                    kanji: "",
+                    nepali: "त्यहाँ / त्यो ठाँउ",
+                    english: "there, that place",
+                    sentence: "そこはじむしょです。"
+                },
+                {
+                    japanese: "あそこ",
+                    kanji: "",
+                    nepali: "उ त्यहाँ / उ त्यो ठाँउ",
+                    english: "over there, that place over there",
+                    sentence: "しょくどうはあそこです。"
+                },
+                {
+                    japanese: "どこ",
+                    kanji: "",
+                    nepali: "कहाँ ? / कुन ठाँउ ?",
+                    english: "where, what place?",
+                    sentence: "トイレはどこですか。"
+                },
+                {
+                    japanese: "こちら",
+                    kanji: "",
+                    nepali: "यतातिर / यता (ここ को आदर शब्द)",
+                    english: "this way (polite)",
+                    sentence: "かいぎしつはこちらです。"
+                },
+                {
+                    japanese: "そちら",
+                    kanji: "",
+                    nepali: "त्यतातिर / त्यता (そこ को आदर शब्द)",
+                    english: "that way (polite)",
+                    sentence: "あなたのうちょうはそちらですか。"
+                },
+                {
+                    japanese: "あちら",
+                    kanji: "",
+                    nepali: "उ त्यतातिर / उ त्या (あそこ को आदर शब्द)",
+                    english: "that way over there (polite)",
+                    sentence: "エレベーターはあちらです。"
+                },
+                {
+                    japanese: "どちら",
+                    kanji: "",
+                    nepali: "कतातिर ? / कता ? (どこ को आदर शब्द)",
+                    english: "which way, where (polite)",
+                    sentence: "おてあらいはどちらですか。"
+                },
+                {
+                    japanese: "きょうしつ",
+                    kanji: "教室",
+                    nepali: "कक्षाकोठा",
+                    english: "classroom",
+                    sentence: "わたしのきょうしつはここです。"
+                },
+                {
+                    japanese: "しょくどう",
+                    kanji: "食堂",
+                    nepali: "डाइनिङ्ग हल",
+                    english: "dining hall, canteen",
+                    sentence: "しょくどうはちかです。"
+                },
+                {
+                    japanese: "じむしょ",
+                    kanji: "事務所",
+                    nepali: "अफिस / कार्यालय",
+                    english: "office",
+                    sentence: "じむしょはどこですか。"
+                },
+                {
+                    japanese: "かいぎしつ",
+                    kanji: "会議室",
+                    nepali: "सम्मेलन कोठा",
+                    english: "conference room, meeting room",
+                    sentence: "かいぎしつは２かいです。"
+                },
+                {
+                    japanese: "うけつけ",
+                    kanji: "受付",
+                    nepali: "रिसेप्सन डेक्स",
+                    english: "reception desk",
+                    sentence: "うけつけはあそこです。"
+                },
+                {
+                    japanese: "ロビー",
+                    kanji: "",
+                    nepali: "प्रतिक्षा गर्ने हल",
+                    english: "lobby",
+                    sentence: "ロビーにかいしゃのひとがいます。"
+                },
+                {
+                    japanese: "へや",
+                    kanji: "部屋",
+                    nepali: "कोठा",
+                    english: "room",
+                    sentence: "わたしのへやは３かいです。"
+                },
+                {
+                    japanese: "トイレ(おてあらい)",
+                    kanji: "",
+                    nepali: "ट्वाइलेट / शौचालय",
+                    english: "toilet, restroom",
+                    sentence: "おてあらいはどこですか。"
+                },
+                {
+                    japanese: "かいだん",
+                    kanji: "階段",
+                    nepali: "भऱ्याङ्ग / सीढी",
+                    english: "stairs",
+                    sentence: "かいだんはこちらです。"
+                },
+                {
+                    japanese: "エレベーター",
+                    kanji: "",
+                    nepali: "लिफ्ट",
+                    english: "elevator",
+                    sentence: "エレベーターはあちらです。"
+                },
+                {
+                    japanese: "エスカレーター",
+                    kanji: "",
+                    nepali: "एस्कालेटर",
+                    english: "escalator",
+                    sentence: "このデパートにエスカレーターがあります。"
+                },
+                {
+                    japanese: "じどうはんばいき",
+                    kanji: "自動販売機",
+                    nepali: "भेन्डिङ्ग मेशीन",
+                    english: "vending machine",
+                    sentence: "じどうはんばいきでジュースをかいます。"
+                },
+                {
+                    japanese: "でんわ",
+                    kanji: "電話",
+                    nepali: "टेलिफोन",
+                    english: "telephone, phone call",
+                    sentence: "でんわはうけつけのとなりです。"
+                },
+                {
+                    japanese: "[お]くに",
+                    kanji: "お国",
+                    nepali: "देश",
+                    english: "country",
+                    sentence: "おくにはどちらですか。"
+                },
+                {
+                    japanese: "かいしゃ",
+                    kanji: "会社",
+                    nepali: "कम्पनी",
+                    english: "company",
+                    sentence: "あなたのかいしゃはどちらですか。"
+                },
+                {
+                    japanese: "うち",
+                    kanji: "",
+                    nepali: "घर",
+                    english: "house, home",
+                    sentence: "わたしのうちはここです。"
+                },
+                {
+                    japanese: "くつ",
+                    kanji: "靴",
+                    nepali: "जुत्ता",
+                    english: "shoes",
+                    sentence: "くつうりばはどこですか。"
+                },
+                {
+                    japanese: "ネクタイ",
+                    kanji: "",
+                    nepali: "टाई",
+                    english: "necktie",
+                    sentence: "このネクタイはイタリアのです。"
+                },
+                {
+                    japanese: "ワイン",
+                    kanji: "",
+                    nepali: "वाइन",
+                    english: "wine",
+                    sentence: "ワインうりばはちかです。"
+                },
+                {
+                    japanese: "うりば",
+                    kanji: "売り場",
+                    nepali: "बिक्रि कक्ष",
+                    english: "department, counter",
+                    sentence: "かばんうりばは２かいです。"
+                },
+                {
+                    japanese: "ちか",
+                    kanji: "地下",
+                    nepali: "भुइमुनीको तल्ला",
+                    english: "basement",
+                    sentence: "レストランはちかいっかいです。"
+                },
+                {
+                    japanese: "ーかい(がい)",
+                    kanji: "ー階",
+                    nepali: "तल्ला",
+                    english: "-th floor",
+                    sentence: "しょくどうは３がいです。"
+                },
+                {
+                    japanese: "なんがい",
+                    kanji: "何階",
+                    nepali: "कुन तल्ला ? / कति तल्ला ?",
+                    english: "what floor?",
+                    sentence: "カメラうりばはなんがいですか。"
+                },
+                {
+                    japanese: "えん",
+                    kanji: "円",
+                    nepali: "एन (जापानी मुद्रा)",
+                    english: "yen",
+                    sentence: "このかばんは8,000えんです。"
+                },
+                {
+                    japanese: "いくら",
+                    kanji: "",
+                    nepali: "कति ?",
+                    english: "how much?",
+                    sentence: "このとけいはいくらですか。"
+                },
+                {
+                    japanese: "ひゃく",
+                    kanji: "百",
+                    nepali: "सय",
+                    english: "hundred",
+                    sentence: "これはひゃくえんです。"
+                },
+                {
+                    japanese: "せん",
+                    kanji: "千",
+                    nepali: "हजार",
+                    english: "thousand",
+                    sentence: "このくつはごせんえんです。"
+                },
+                {
+                    japanese: "まん",
+                    kanji: "万",
+                    nepali: "दश हजार",
+                    english: "ten thousand",
+                    sentence: "あのくるまはにひゃくまんえんです。"
+                }
+            ],
+            "Lesson 4": [{
+                    japanese: "おきます",
+                    kanji: "起きます",
+                    nepali: "उठ्छु",
+                    english: "get up, wake up",
+                    sentence: "まいあさ、6じにおきます。"
+                },
+                {
+                    japanese: "ねます",
+                    kanji: "寝ます",
+                    nepali: "सुत्छु",
+                    english: "sleep, go to bed",
+                    sentence: "きのう、11じにねました。"
+                },
+                {
+                    japanese: "はたらきます",
+                    kanji: "働きます",
+                    nepali: "कामगर्छु",
+                    english: "work",
+                    sentence: "わたしはぎんこうではたらきます。"
+                },
+                {
+                    japanese: "やすみます",
+                    kanji: "休みます",
+                    nepali: "बिश्राम गर्छु / छुट्टी लिन्छु",
+                    english: "take a rest, take a holiday",
+                    sentence: "どようびにやすみます。"
+                },
+                {
+                    japanese: "べんきょうします",
+                    kanji: "勉強します",
+                    nepali: "अध्ययनगर्छु",
+                    english: "study",
+                    sentence: "まいにち、にほんごをべんきょうします。"
+                },
+                {
+                    japanese: "おわります",
+                    kanji: "終わります",
+                    nepali: "सकाउछु",
+                    english: "finish",
+                    sentence: "かいぎは5じにおわります。"
+                },
+                {
+                    japanese: "デパート",
+                    kanji: "",
+                    nepali: "डिर्पाटमेन्टल स्टोर",
+                    english: "department store",
+                    sentence: "デパートは10じから8じまでです。"
+                },
+                {
+                    japanese: "ぎんこう",
+                    kanji: "銀行",
+                    nepali: "बैंक",
+                    english: "bank",
+                    sentence: "ぎんこうのやすみはどようびです。"
+                },
+                {
+                    japanese: "ゆうびんきょく",
+                    kanji: "郵便局",
+                    nepali: "डाक घर / हुलाक कार्यलय",
+                    english: "post office",
+                    sentence: "ゆうびんきょくは9じからです。"
+                },
+                {
+                    japanese: "としょかん",
+                    kanji: "図書館",
+                    nepali: "पुस्तकालय",
+                    english: "library",
+                    sentence: "としょかんでほんをよみます。"
+                },
+                {
+                    japanese: "びじゅつかん",
+                    kanji: "美術館",
+                    nepali: "कला संग्रालय",
+                    english: "art museum",
+                    sentence: "びじゅつかんはなんじまでですか。"
+                },
+                {
+                    japanese: "いま",
+                    kanji: "今",
+                    nepali: "अहिले",
+                    english: "now",
+                    sentence: "いま、4じ5ふんです。"
+                },
+                {
+                    japanese: "〜じ",
+                    kanji: "〜時",
+                    nepali: "बजे",
+                    english: "o'clock",
+                    sentence: "いま、9じです。"
+                },
+                {
+                    japanese: "〜ふん (〜ぷん)",
+                    kanji: "〜分",
+                    nepali: "मिनेट",
+                    english: "minute",
+                    sentence: "いま、9じ30ぷんです。"
+                },
+                {
+                    japanese: "はん",
+                    kanji: "半",
+                    nepali: "साढे",
+                    english: "half",
+                    sentence: "いま、2じはんです。"
+                },
+                {
+                    japanese: "なんじ",
+                    kanji: "何時",
+                    nepali: "कति बजे ?",
+                    english: "what time?",
+                    sentence: "いま、なんじですか。"
+                },
+                {
+                    japanese: "なんぷん",
+                    kanji: "何分",
+                    nepali: "कति मिनेट ?",
+                    english: "what minute?",
+                    sentence: "いま、なんじなんぷんですか。"
+                },
+                {
+                    japanese: "ごぜん",
+                    kanji: "午前",
+                    nepali: "बिहानको समय",
+                    english: "a.m., morning",
+                    sentence: "ごぜん9じにはたらきます。"
+                },
+                {
+                    japanese: "ごご",
+                    kanji: "午後",
+                    nepali: "दिउसोको समय",
+                    english: "p.m., afternoon",
+                    sentence: "ごご7じにばんごはんをたべます。"
+                },
+                {
+                    japanese: "あさ",
+                    kanji: "朝",
+                    nepali: "बिहान",
+                    english: "morning",
+                    sentence: "あさ、べんきょうします。"
+                },
+                {
+                    japanese: "ひる",
+                    kanji: "昼",
+                    nepali: "दिउसो",
+                    english: "daytime, noon",
+                    sentence: "ひる、レストランでたべます。"
+                },
+                {
+                    japanese: "ばん (よる)",
+                    kanji: "晩 (夜)",
+                    nepali: "रात / साँझ",
+                    english: "night, evening",
+                    sentence: "こんばん、テレビをみます。"
+                },
+                {
+                    japanese: "おととい",
+                    kanji: "",
+                    nepali: "अस्ती",
+                    english: "the day before yesterday",
+                    sentence: "おととい、やすみました。"
+                },
+                {
+                    japanese: "きのう",
+                    kanji: "昨日",
+                    nepali: "हिजो",
+                    english: "yesterday",
+                    sentence: "きのう、べんきょうしましたか。"
+                },
+                {
+                    japanese: "きょう",
+                    kanji: "今日",
+                    nepali: "आज",
+                    english: "today",
+                    sentence: "きょうははたらきません。"
+                },
+                {
+                    japanese: "あした",
+                    kanji: "明日",
+                    nepali: "भोली",
+                    english: "tomorrow",
+                    sentence: "あした、えいがをみます。"
+                },
+                {
+                    japanese: "あさって",
+                    kanji: "",
+                    nepali: "पर्सी",
+                    english: "the day after tomorrow",
+                    sentence: "あさって、ともだちにあいます。"
+                },
+                {
+                    japanese: "けさ",
+                    kanji: "今朝",
+                    nepali: "आज बिहान",
+                    english: "this morning",
+                    sentence: "けさ、6じにおきました。"
+                },
+                {
+                    japanese: "こんばん",
+                    kanji: "今晩",
+                    nepali: "आज साँझ / आज रात",
+                    english: "this evening, tonight",
+                    sentence: "こんばん、何をしますか。"
+                },
+                {
+                    japanese: "やすみ",
+                    kanji: "休み",
+                    nepali: "बिश्राम / छुट्टी / बिदा",
+                    english: "rest, holiday, day off",
+                    sentence: "あしたはやすみです。"
+                },
+                {
+                    japanese: "ひるやすみ",
+                    kanji: "昼休み",
+                    nepali: "दिउसोको खाजा वा बिश्रामको समय",
+                    english: "lunchtime",
+                    sentence: "ひるやすみは12じからです。"
+                },
+                {
+                    japanese: "まいあさ",
+                    kanji: "毎朝",
+                    nepali: "हरेक बिहान",
+                    english: "every morning",
+                    sentence: "まいあさ、コーヒーをのみます。"
+                },
+                {
+                    japanese: "まいばん",
+                    kanji: "毎晩",
+                    nepali: "हरेक रात",
+                    english: "every night",
+                    sentence: "まいばん、テレビをみます。"
+                },
+                {
+                    japanese: "まいにち",
+                    kanji: "毎日",
+                    nepali: "हरेक दिन",
+                    english: "every day",
+                    sentence: "まいにち、とてもいそがしいです。"
+                },
+                {
+                    japanese: "げつようび",
+                    kanji: "月曜日",
+                    nepali: "सोमबार",
+                    english: "Monday",
+                    sentence: "げつようびからきんようびまではたらきます。"
+                },
+                {
+                    japanese: "かようび",
+                    kanji: "火曜日",
+                    nepali: "मङ्गलबार",
+                    english: "Tuesday",
+                    sentence: "かようびにびょういんへいきます。"
+                },
+                {
+                    japanese: "すいようび",
+                    kanji: "水曜日",
+                    nepali: "बुधबार",
+                    english: "Wednesday",
+                    sentence: "すいようびはかいぎがあります。"
+                },
+                {
+                    japanese: "もくようび",
+                    kanji: "木曜日",
+                    nepali: "बिहिबार",
+                    english: "Thursday",
+                    sentence: "もくようびにテストがあります。"
+                },
+                {
+                    japanese: "きんようび",
+                    kanji: "金曜日",
+                    nepali: "शुक्रबार",
+                    english: "Friday",
+                    sentence: "きんようびにともだちとえいがをみます。"
+                },
+                {
+                    japanese: "どようび",
+                    kanji: "土曜日",
+                    nepali: "शनिबार",
+                    english: "Saturday",
+                    sentence: "どようびはやすみです。"
+                },
+                {
+                    japanese: "にちようび",
+                    kanji: "日曜日",
+                    nepali: "आईतबार",
+                    english: "Sunday",
+                    sentence: "にちようびにデパートへいきます。"
+                },
+                {
+                    japanese: "なんようび",
+                    kanji: "何曜日",
+                    nepali: "कुन बार ?",
+                    english: "what day of the week?",
+                    sentence: "きょうはなんようびですか。"
+                },
+                {
+                    japanese: "〜から",
+                    kanji: "",
+                    nepali: "~ देखि (बाट)",
+                    english: "from ~",
+                    sentence: "しごとは9じからです。"
+                },
+                {
+                    japanese: "〜まで",
+                    kanji: "",
+                    nepali: "~ सम्म",
+                    english: "up to ~, until ~",
+                    sentence: "ぎんこうは3じまでです。"
+                },
+                {
+                    japanese: "〜と〜",
+                    kanji: "",
+                    nepali: "~ र ~",
+                    english: "~ and ~",
+                    sentence: "ぎんこうのやすみはどようびとにちようびです。"
+                },
+                {
+                    japanese: "たいへんですね。",
+                    kanji: "",
+                    nepali: "कठिन छ है ! (सहानुभूति व्यक्त गर्दा प्रयोग गरिन्छ)",
+                    english: "That's tough, isn't it?",
+                    sentence: "まいにち10じまでですか。たいへんですね。"
+                },
+                {
+                    japanese: "ばんごう",
+                    kanji: "番号",
+                    nepali: "नम्बर",
+                    english: "number",
+                    sentence: "でんわばんごうはなんばんですか。"
+                },
+                {
+                    japanese: "なんばん",
+                    kanji: "何番",
+                    nepali: "कुन नम्बर ? / कति नम्बर ?",
+                    english: "what number?",
+                    sentence: "ゆうびんきょくはなんばんですか。"
+                },
+                {
+                    japanese: "そちら",
+                    kanji: "",
+                    nepali: "तपाईको ठाउँ",
+                    english: "your place",
+                    sentence: "がっこうはそちらです。"
+                }
+            ],
+            "Lesson 5": [{
+                    japanese: "いきます",
+                    kanji: "行きます",
+                    nepali: "जान्छु",
+                    english: "go",
+                    sentence: "あした、きょうとへいきます。"
+                },
+                {
+                    japanese: "きます",
+                    kanji: "来ます",
+                    nepali: "आउछु",
+                    english: "come",
+                    sentence: "かれはバスできます。"
+                },
+                {
+                    japanese: "かえります",
+                    kanji: "帰ります",
+                    nepali: "फर्कन्छु (आफु बसोबास गर्ने ठाँउ तीर)",
+                    english: "go home, return",
+                    sentence: "7じにうちへかえります。"
+                },
+                {
+                    japanese: "がっこう",
+                    kanji: "学校",
+                    nepali: "विद्यालय",
+                    english: "school",
+                    sentence: "まいにち、がっこうへいきます。"
+                },
+                {
+                    japanese: "スーパー",
+                    kanji: "",
+                    nepali: "सुपरमार्केट",
+                    english: "supermarket",
+                    sentence: "スーパーでかいものをします。"
+                },
+                {
+                    japanese: "えき",
+                    kanji: "駅",
+                    nepali: "स्टेसन",
+                    english: "station",
+                    sentence: "えきでともだちにあいます。"
+                },
+                {
+                    japanese: "ひこうき",
+                    kanji: "飛行機",
+                    nepali: "हवाइजहाज / एरोप्लेन",
+                    english: "airplane",
+                    sentence: "ひこうきでアメリカへいきました。"
+                },
+                {
+                    japanese: "ふね",
+                    kanji: "船",
+                    nepali: "पानीजहाज",
+                    english: "ship, boat",
+                    sentence: "ふねでしまへいきます。"
+                },
+                {
+                    japanese: "でんしゃ",
+                    kanji: "電車",
+                    nepali: "विद्युतीय रेल",
+                    english: "electric train",
+                    sentence: "でんしゃでかいしゃへいきます。"
+                },
+                {
+                    japanese: "ちかてつ",
+                    kanji: "地下鉄",
+                    nepali: "जमिनमुनी (रेल)",
+                    english: "subway, underground",
+                    sentence: "とうきょうのちかてつはべんりです。"
+                },
+                {
+                    japanese: "しんかんせん",
+                    kanji: "新幹線",
+                    nepali: "बुलेट रेल",
+                    english: "the Shinkansen, the bullet train",
+                    sentence: "しんかんせんでおおさかへいきました。"
+                },
+                {
+                    japanese: "バス",
+                    kanji: "",
+                    nepali: "बस",
+                    english: "bus",
+                    sentence: "バスでがっこうへいきます。"
+                },
+                {
+                    japanese: "タクシー",
+                    kanji: "",
+                    nepali: "टैक्सी",
+                    english: "taxi",
+                    sentence: "えきからタクシーでのります。"
+                },
+                {
+                    japanese: "じてんしゃ",
+                    kanji: "自転車",
+                    nepali: "साइकल",
+                    english: "bicycle",
+                    sentence: "じてんしゃでこうえんへいきます。"
+                },
+                {
+                    japanese: "あるいて",
+                    kanji: "歩いて",
+                    nepali: "हिडदै / पैदल",
+                    english: "on foot",
+                    sentence: "うちからえきまであるいていきます。"
+                },
+                {
+                    japanese: "ひと",
+                    kanji: "人",
+                    nepali: "व्यक्ती / मान्छे",
+                    english: "person, people",
+                    sentence: "ロビーにひとがいます。"
+                },
+                {
+                    japanese: "ともだち",
+                    kanji: "友達",
+                    nepali: "साथी",
+                    english: "friend",
+                    sentence: "ともだちといっしょにえいがをみます。"
+                },
+                {
+                    japanese: "かれ",
+                    kanji: "彼",
+                    nepali: "उ / केटा साथी",
+                    english: "he, boyfriend, lover",
+                    sentence: "かれはわたしのともだちです。"
+                },
+                {
+                    japanese: "かのじょ",
+                    kanji: "彼女",
+                    nepali: "उनी / केटी साथी",
+                    english: "she, girlfriend, lover",
+                    sentence: "かのじょはにほんじんです。"
+                },
+                {
+                    japanese: "かぞく",
+                    kanji: "家族",
+                    nepali: "परिवार",
+                    english: "family",
+                    sentence: "わたしのかぞくは4にんです。"
+                },
+                {
+                    japanese: "ひとりで",
+                    kanji: "一人で",
+                    nepali: "एक्लै",
+                    english: "alone, by oneself",
+                    sentence: "ひとりでスーパーへいきます。"
+                },
+                {
+                    japanese: "せんしゅう",
+                    kanji: "先週",
+                    nepali: "गत हप्ता",
+                    english: "last week",
+                    sentence: "せんしゅう、どこへいきましたか。"
+                },
+                {
+                    japanese: "こんしゅう",
+                    kanji: "今週",
+                    nepali: "यो हप्ता",
+                    english: "this week",
+                    sentence: "こんしゅうはとてもいそがしいです。"
+                },
+                {
+                    japanese: "らいしゅう",
+                    kanji: "来週",
+                    nepali: "आउने हप्ता",
+                    english: "next week",
+                    sentence: "らいしゅう、おおさかへいきます。"
+                },
+                {
+                    japanese: "せんげつ",
+                    kanji: "先月",
+                    nepali: "गत महिना",
+                    english: "last month",
+                    sentence: "せんげつ、にほんへきました。"
+                },
+                {
+                    japanese: "こんげつ",
+                    kanji: "今月",
+                    nepali: "यो महिना",
+                    english: "this month",
+                    sentence: "こんげつ、しけんがあります。"
+                },
+                {
+                    japanese: "らいげつ",
+                    kanji: "来月",
+                    nepali: "आउने महिना",
+                    english: "next month",
+                    sentence: "らいげつ、くにへかえります。"
+                },
+                {
+                    japanese: "きょねん",
+                    kanji: "去年",
+                    nepali: "गत साल / गत वर्ष",
+                    english: "last year",
+                    sentence: "きょねん、にほんへきました。"
+                },
+                {
+                    japanese: "ことし",
+                    kanji: "今年",
+                    nepali: "यो साल / यो वर्ष",
+                    english: "this year",
+                    sentence: "ことしは2025ねんです。"
+                },
+                {
+                    japanese: "らいねん",
+                    kanji: "来年",
+                    nepali: "आउने साल / आउने वर्ष",
+                    english: "next year",
+                    sentence: "らいねん、アメリカへいきます。"
+                },
+                {
+                    japanese: "たんじょうび",
+                    kanji: "誕生日",
+                    nepali: "जन्मदिन",
+                    english: "birthday",
+                    sentence: "あなたのたんじょうびはいつですか。"
+                },
+                {
+                    japanese: "どういたしまして。",
+                    kanji: "",
+                    nepali: "धन्यवादको जवाफमा फर्काइने शब्द",
+                    english: "You're welcome.",
+                    sentence: "どうもありがとうございました。いいえ、どういたしまして。"
+                },
+                {
+                    japanese: "〜ばんせん",
+                    kanji: "〜番線",
+                    nepali: "नम्बर प्लेटफर्म",
+                    english: "platform number",
+                    sentence: "しんかんせんは14ばんせんです。"
+                },
+                {
+                    japanese: "つぎの",
+                    kanji: "次の",
+                    nepali: "अर्को",
+                    english: "next",
+                    sentence: "つぎのでんしゃはなんじですか。"
+                },
+                {
+                    japanese: "ふつう",
+                    kanji: "普通",
+                    nepali: "लोकल (रेल)",
+                    english: "local (train)",
+                    sentence: "ふつうでいきます。"
+                },
+                {
+                    japanese: "きゅうこう",
+                    kanji: "急行",
+                    nepali: "छिटो / तेज (रेल)",
+                    english: "rapid (train)",
+                    sentence: "きゅうこうははやいです。"
+                },
+                {
+                    japanese: "とっきゅう",
+                    kanji: "特急",
+                    nepali: "एक्सप्रेस (रेल)",
+                    english: "express (train)",
+                    sentence: "とっきゅうがいちばん はやいです。"
+                }
+            ],
+            "Lesson 6": [{
+                    japanese: "たべます",
+                    kanji: "食べます",
+                    nepali: "खान्छु",
+                    english: "eat",
+                    sentence: "レストランでひるごはんをたべます。"
+                },
+                {
+                    japanese: "のみます",
+                    kanji: "飲みます",
+                    nepali: "पिउछु",
+                    english: "drink",
+                    sentence: "きっさてんでコーヒーをのみませんか。"
+                },
+                {
+                    japanese: "すいます[たばこを~]",
+                    kanji: "吸います",
+                    nepali: "पिउछु [चुरोट]",
+                    english: "smoke [a cigarette]",
+                    sentence: "ここでたばこをすわないでください。"
+                },
+                {
+                    japanese: "みます",
+                    kanji: "見ます",
+                    nepali: "हेर्छु",
+                    english: "see, look at, watch",
+                    sentence: "いえでテレビをみます。"
+                },
+                {
+                    japanese: "ききます",
+                    kanji: "聞きます",
+                    nepali: "सुन्छु",
+                    english: "hear, listen",
+                    sentence: "まいばん、ラジオをききます。"
+                },
+                {
+                    japanese: "よみます",
+                    kanji: "読みます",
+                    nepali: "पढ्छु",
+                    english: "read",
+                    sentence: "としょかんでしんぶんをよみます。"
+                },
+                {
+                    japanese: "かきます",
+                    kanji: "書きます",
+                    nepali: "लेख्छु / कोर्छु",
+                    english: "write, draw, paint",
+                    sentence: "ともだちにてがみをかきます。"
+                },
+                {
+                    japanese: "かいます",
+                    kanji: "買います",
+                    nepali: "किन्छु",
+                    english: "buy",
+                    sentence: "デパートでくつをかいました。"
+                },
+                {
+                    japanese: "とります[しゃしんを~]",
+                    kanji: "撮ります",
+                    nepali: "खिच्छु / लिन्छु [फोटो]",
+                    english: "take [a photograph]",
+                    sentence: "こうえんでしゃしんをとります。"
+                },
+                {
+                    japanese: "します",
+                    kanji: "",
+                    nepali: "गर्छु / खेल्छु",
+                    english: "do, play",
+                    sentence: "しゅうまつ、テニスをします。"
+                },
+                {
+                    japanese: "あいます[ともだちに~]",
+                    kanji: "会います",
+                    nepali: "भेट्छु [साथि लाई]",
+                    english: "meet [a friend]",
+                    sentence: "どようびにともだちにあいます。"
+                },
+                {
+                    japanese: "ごはん",
+                    kanji: "",
+                    nepali: "भात",
+                    english: "a meal, cooked rice",
+                    sentence: "あさごはんをたべましたか。"
+                },
+                {
+                    japanese: "あさごはん",
+                    kanji: "朝ごはん",
+                    nepali: "बिहानको खाना",
+                    english: "breakfast",
+                    sentence: "いつもあさごはんをたべますか。"
+                },
+                {
+                    japanese: "ひるごはん",
+                    kanji: "昼ごはん",
+                    nepali: "दिउसोको खाना",
+                    english: "lunch",
+                    sentence: "ひるごはんはパンをたべます。"
+                },
+                {
+                    japanese: "ばんごはん",
+                    kanji: "晩ごはん",
+                    nepali: "रातको खाना",
+                    english: "supper",
+                    sentence: "ばんごはんのあとで、べんきょうします。"
+                },
+                {
+                    japanese: "パン",
+                    kanji: "",
+                    nepali: "पाउरोटी",
+                    english: "bread",
+                    sentence: "あさ、パンをたべます。"
+                },
+                {
+                    japanese: "たまご",
+                    kanji: "卵",
+                    nepali: "अण्डा",
+                    english: "egg",
+                    sentence: "たまごりょうりはすきですか。"
+                },
+                {
+                    japanese: "にく",
+                    kanji: "肉",
+                    nepali: "मासु",
+                    english: "meat",
+                    sentence: "わたしはにくをたべません。"
+                },
+                {
+                    japanese: "さかな",
+                    kanji: "魚",
+                    nepali: "माछा",
+                    english: "fish",
+                    sentence: "さかながすきです。"
+                },
+                {
+                    japanese: "やさい",
+                    kanji: "野菜",
+                    nepali: "सागसब्जी",
+                    english: "vegetable",
+                    sentence: "スーパーでやさいをかいます。"
+                },
+                {
+                    japanese: "くだもの",
+                    kanji: "果物",
+                    nepali: "फलफुल",
+                    english: "fruit",
+                    sentence: "まいにちくだものをたべます。"
+                },
+                {
+                    japanese: "みず",
+                    kanji: "水",
+                    nepali: "पानी",
+                    english: "water",
+                    sentence: "みずをのみます。"
+                },
+                {
+                    japanese: "おちゃ",
+                    kanji: "お茶",
+                    nepali: "चिया / ग्रीन टि",
+                    english: "tea, green tea",
+                    sentence: "いっしょにおちゃをのみませんか。"
+                },
+                {
+                    japanese: "こうちゃ",
+                    kanji: "紅茶",
+                    nepali: "कालो चिया",
+                    english: "black tea",
+                    sentence: "こうちゃにさとうをいれますか。"
+                },
+                {
+                    japanese: "ぎゅうにゅう(ミルク)",
+                    kanji: "牛乳",
+                    nepali: "गाईको दुध (दुध)",
+                    english: "milk",
+                    sentence: "こどもはぎゅうにゅうがすきです。"
+                },
+                {
+                    japanese: "ジュース",
+                    kanji: "",
+                    nepali: "जुस (रस)",
+                    english: "juice",
+                    sentence: "オレンジジュースをください。"
+                },
+                {
+                    japanese: "ビール",
+                    kanji: "",
+                    nepali: "बियर",
+                    english: "beer",
+                    sentence: "ビールはあまりのみません。"
+                },
+                {
+                    japanese: "[お]さけ",
+                    kanji: "お酒",
+                    nepali: "रक्सी",
+                    english: "alcohol, sake",
+                    sentence: "おさけはからだにわるいです。"
+                },
+                {
+                    japanese: "ビデオ",
+                    kanji: "",
+                    nepali: "भिडियो / भिडियोटेप",
+                    english: "video",
+                    sentence: "どようびにビデオをみました。"
+                },
+                {
+                    japanese: "みせ",
+                    kanji: "店",
+                    nepali: "पसल / स्टोर",
+                    english: "shop, store",
+                    sentence: "あのレストランはあたらしいみせです。"
+                },
+                {
+                    japanese: "にわ",
+                    kanji: "庭",
+                    nepali: "बगैचा",
+                    english: "garden",
+                    sentence: "にわにきれいなはながあります。"
+                },
+                {
+                    japanese: "しゅくだい",
+                    kanji: "宿題",
+                    nepali: "गृहकार्य",
+                    english: "homework",
+                    sentence: "きょうのしゅくだいはむずかしいです。"
+                },
+                {
+                    japanese: "サッカー",
+                    kanji: "",
+                    nepali: "फुटबल",
+                    english: "soccer, football",
+                    sentence: "こどもとサッカーをします。"
+                },
+                {
+                    japanese: "[お]はなみ",
+                    kanji: "お花見",
+                    nepali: "चेरी फुलेको हेर्न",
+                    english: "cherry-blossom viewing",
+                    sentence: "にちようびにおはなみをします。"
+                },
+                {
+                    japanese: "なに",
+                    kanji: "何",
+                    nepali: "के ?",
+                    english: "what",
+                    sentence: "なにをたべますか。"
+                },
+                {
+                    japanese: "いっしょに",
+                    kanji: "一緒に",
+                    nepali: "सँगै",
+                    english: "together",
+                    sentence: "いっしょにひるごはんをたべませんか。"
+                },
+                {
+                    japanese: "ときどき",
+                    kanji: "時々",
+                    nepali: "कहिलेकाँही",
+                    english: "sometimes",
+                    sentence: "ときどきえいがをみます。"
+                },
+                {
+                    japanese: "それから",
+                    kanji: "",
+                    nepali: "तेसपछि / अनि तेसपछि",
+                    english: "after that, and then",
+                    sentence: "パンをたべます。それから、コーヒーをのみます。"
+                },
+                {
+                    japanese: "ええ",
+                    kanji: "",
+                    nepali: "हजुर",
+                    english: "yes",
+                    sentence: "ええ、いいですね。"
+                },
+                {
+                    japanese: "いいですね。",
+                    kanji: "",
+                    nepali: "ठिक छ है। / राम्रो छ है",
+                    english: "That's good.",
+                    sentence: "テニスですか。いいですね。"
+                },
+                {
+                    japanese: "わかりました。",
+                    kanji: "",
+                    nepali: "हजुर बुझे",
+                    english: "I see. / I understand.",
+                    sentence: "はい、わかりました。"
+                },
+                {
+                    japanese: "なんですか",
+                    kanji: "何ですか",
+                    nepali: "हजुर ? (के हो ?)",
+                    english: "Yes? / What is it?",
+                    sentence: "すみません、なんですか。"
+                },
+                {
+                    japanese: "じゃ、また[あした]",
+                    kanji: "",
+                    nepali: "ल है त, फेरि भेटौला [भोली]",
+                    english: "See you [tomorrow].",
+                    sentence: "じゃ、またあした。"
+                },
+                {
+                    japanese: "メキシコ",
+                    kanji: "",
+                    nepali: "मेक्सीको",
+                    english: "Mexico",
+                    sentence: "メキシコからきました。"
+                }
+            ],
+            "Lesson 7": [{
+                    japanese: "きります",
+                    kanji: "切ります",
+                    nepali: "काट्छु",
+                    english: "cut, slice",
+                    sentence: "はさみでかみをきります。"
+                },
+                {
+                    japanese: "おくります",
+                    kanji: "送ります",
+                    nepali: "पठाउछु",
+                    english: "send",
+                    sentence: "ともだちにメールをおくります。"
+                },
+                {
+                    japanese: "あげます",
+                    kanji: "",
+                    nepali: "दिन्छु",
+                    english: "give",
+                    sentence: "わたしはマリアさんにはなをあげました。"
+                },
+                {
+                    japanese: "もらいます",
+                    kanji: "",
+                    nepali: "पाउछु",
+                    english: "receive",
+                    sentence: "わたしはワットさんにCDをもらいました。"
+                },
+                {
+                    japanese: "かします",
+                    kanji: "貸します",
+                    nepali: "उधार दिन्छु",
+                    english: "lend",
+                    sentence: "わたしはミラーさんにおかねをかしました。"
+                },
+                {
+                    japanese: "かります",
+                    kanji: "借ります",
+                    nepali: "उधार लिन्छु",
+                    english: "borrow",
+                    sentence: "わたしはとしょかんでほんをかります。"
+                },
+                {
+                    japanese: "おしえます",
+                    kanji: "教えます",
+                    nepali: "सिकाउछु",
+                    english: "teach",
+                    sentence: "わたしはラジブくんにえいごをおしえます。"
+                },
+                {
+                    japanese: "ならいます",
+                    kanji: "習います",
+                    nepali: "सिक्छु",
+                    english: "learn",
+                    sentence: "わたしはせんせいににほんごをならいます。"
+                },
+                {
+                    japanese: "かけます[でんわを~]",
+                    kanji: "",
+                    nepali: "[टेलीफोन] गर्छु",
+                    english: "make [a telephone call]",
+                    sentence: "ともだちにでんわをかけます。"
+                },
+                {
+                    japanese: "て",
+                    kanji: "手",
+                    nepali: "हात",
+                    english: "hand, arm",
+                    sentence: "てであらいます。"
+                },
+                {
+                    japanese: "はし",
+                    kanji: "",
+                    nepali: "चपस्टीक",
+                    english: "chopsticks",
+                    sentence: "はしでごはんをたべます。"
+                },
+                {
+                    japanese: "スプーン",
+                    kanji: "",
+                    nepali: "चम्चा",
+                    english: "spoon",
+                    sentence: "スプーンでカレーをたべます。"
+                },
+                {
+                    japanese: "ナイフ",
+                    kanji: "",
+                    nepali: "चक्कु",
+                    english: "knife",
+                    sentence: "ナイフでにくをきります。"
+                },
+                {
+                    japanese: "フォーク",
+                    kanji: "",
+                    nepali: "कांटा चम्चा",
+                    english: "fork",
+                    sentence: "フォークでサラダをたべます。"
+                },
+                {
+                    japanese: "はさみ",
+                    kanji: "",
+                    nepali: "कैँची",
+                    english: "scissors",
+                    sentence: "はさみできってをきります。"
+                },
+                {
+                    japanese: "パソコン",
+                    kanji: "",
+                    nepali: "व्यक्तिगत कम्प्युटर",
+                    english: "personal computer",
+                    sentence: "パソコンでレポートをおくります。"
+                },
+                {
+                    japanese: "ケータイ",
+                    kanji: "",
+                    nepali: "मोबाइल फोन",
+                    english: "mobile phone, cell phone",
+                    sentence: "ケータイででんわをかけます。"
+                },
+                {
+                    japanese: "メール",
+                    kanji: "",
+                    nepali: "मेल",
+                    english: "e-mail",
+                    sentence: "まいにちメールをおくります。"
+                },
+                {
+                    japanese: "ねんがじょう",
+                    kanji: "年賀状",
+                    nepali: "नयाँ वर्षको कार्ड",
+                    english: "New Year's greeting card",
+                    sentence: "ともだちにねんがじょうをおくります。"
+                },
+                {
+                    japanese: "パンチ",
+                    kanji: "",
+                    nepali: "पन्चिङ्ग मेसिन",
+                    english: "hole puncher",
+                    sentence: "パンチであなをあけます。"
+                },
+                {
+                    japanese: "ホッチキス",
+                    kanji: "",
+                    nepali: "स्टेपलर",
+                    english: "stapler",
+                    sentence: "ホッチキスでかみをとめます。"
+                },
+                {
+                    japanese: "セロテープ",
+                    kanji: "",
+                    nepali: "पानि टेप / सेलोटेप",
+                    english: "Scotch tape, clear adhesive tape",
+                    sentence: "セロテープでポスターをはります。"
+                },
+                {
+                    japanese: "けしゴム",
+                    kanji: "消しゴム",
+                    nepali: "इरेजर",
+                    english: "eraser",
+                    sentence: "けしゴムをかりてもいいですか。"
+                },
+                {
+                    japanese: "かみ",
+                    kanji: "紙",
+                    nepali: "कागज",
+                    english: "paper",
+                    sentence: "これはたいせつなかみです。"
+                },
+                {
+                    japanese: "はな",
+                    kanji: "花",
+                    nepali: "फूल",
+                    english: "flower, blossom",
+                    sentence: "きれいなはなをもらいました。"
+                },
+                {
+                    japanese: "シャツ",
+                    kanji: "",
+                    nepali: "सर्ट",
+                    english: "shirt",
+                    sentence: "これはちちのシャツです。"
+                },
+                {
+                    japanese: "プレゼント",
+                    kanji: "",
+                    nepali: "उपहार",
+                    english: "present, gift",
+                    sentence: "たんじょうびにプレゼントをあげます。"
+                },
+                {
+                    japanese: "にもつ",
+                    kanji: "荷物",
+                    nepali: "लगेज / सामान / पार्सल",
+                    english: "luggage, baggage, parcel",
+                    sentence: "にもつをおくりたいです。"
+                },
+                {
+                    japanese: "おかね",
+                    kanji: "お金",
+                    nepali: "पैसा",
+                    english: "money",
+                    sentence: "おかねをはらいます。"
+                },
+                {
+                    japanese: "きっぷ",
+                    kanji: "切符",
+                    nepali: "टिकट",
+                    english: "ticket",
+                    sentence: "えきできっぷをかいます。"
+                },
+                {
+                    japanese: "クリスマス",
+                    kanji: "",
+                    nepali: "क्रिसमस",
+                    english: "Christmas",
+                    sentence: "クリスマスにパーティーをします。"
+                },
+                {
+                    japanese: "ちち",
+                    kanji: "父",
+                    nepali: "(मेरो) बुबा",
+                    english: "(my) father",
+                    sentence: "これはちちにもらいました。"
+                },
+                {
+                    japanese: "はは",
+                    kanji: "母",
+                    nepali: "(मेरो) आमा",
+                    english: "(my) mother",
+                    sentence: "わたしはははにてがみをかきます。"
+                },
+                {
+                    japanese: "おとうさん",
+                    kanji: "お父さん",
+                    nepali: "(अरुको) बुबा",
+                    english: "(someone else's) father",
+                    sentence: "ミラーさんのおとうさんはげんきです。"
+                },
+                {
+                    japanese: "おかあさん",
+                    kanji: "お母さん",
+                    nepali: "(अरुको) आमा",
+                    english: "(someone else's) mother",
+                    sentence: "あなたのおかあさんはせんせいです。"
+                },
+                {
+                    japanese: "もう",
+                    kanji: "",
+                    nepali: "पहिले नै / अघिनै",
+                    english: "already",
+                    sentence: "もうひるごはんをたべましたか。"
+                },
+                {
+                    japanese: "まだ",
+                    kanji: "",
+                    nepali: "अझै छैन",
+                    english: "not yet",
+                    sentence: "いいえ、まだです。"
+                },
+                {
+                    japanese: "これから",
+                    kanji: "",
+                    nepali: "अब देखि / अब बाट",
+                    english: "from now on, soon",
+                    sentence: "これからべんきょうします。"
+                },
+                {
+                    japanese: "[〜、]すてきですね。",
+                    kanji: "",
+                    nepali: "[~,] कस्तो राम्रो है !",
+                    english: "What a nice [~]!",
+                    sentence: "このシャツ、すてきですね。"
+                },
+                {
+                    japanese: "いらっしゃい。",
+                    kanji: "",
+                    nepali: "स्वागत छ",
+                    english: "Welcome.",
+                    sentence: "いらっしゃい。どうぞあがってください。"
+                },
+                {
+                    japanese: "どうぞおあがりください。",
+                    kanji: "",
+                    nepali: "कृपया भित्र आउनुहोस्",
+                    english: "Do come in.",
+                    sentence: "どうぞおあがりください。"
+                },
+                {
+                    japanese: "しつれいします。",
+                    kanji: "",
+                    nepali: "कसैलाई बाधा नहोस् भनेर माफ माग्नु",
+                    english: "May I come in?",
+                    sentence: "しつれいします。"
+                },
+                {
+                    japanese: "[〜は]いかがですか。",
+                    kanji: "",
+                    nepali: "[~] लिनुहुन्छ ?",
+                    english: "Would you like to have [~]?",
+                    sentence: "コーヒーはいかがですか。"
+                },
+                {
+                    japanese: "いただきます。",
+                    kanji: "",
+                    nepali: "खान वा पिउन अगाडि भनिने शब्द",
+                    english: "Thank you / I receive",
+                    sentence: "では、いただきます。"
+                },
+                {
+                    japanese: "ごちそうさまでした。",
+                    kanji: "",
+                    nepali: "खाइसके पछि वा पिइसके पछि भनिने शब्द",
+                    english: "Thank you for the meal (after finishing)",
+                    sentence: "ごちそうさまでした。おいしかったです。"
+                },
+                {
+                    japanese: "スペイン",
+                    kanji: "",
+                    nepali: "स्पेन",
+                    english: "Spain",
+                    sentence: "わたしはスペインへいきたいです。"
+                }
+            ],
+            "Lesson 8": [{
+                    japanese: "ハンサム[な]",
+                    kanji: "",
+                    nepali: "ह्यान्डसम",
+                    english: "handsome",
+                    sentence: "ミラーさんはハンサムです。"
+                },
+                {
+                    japanese: "きれい[な]",
+                    kanji: "",
+                    nepali: "सुन्दर / सफा",
+                    english: "beautiful, clean",
+                    sentence: "ならはきれいなまちです。"
+                },
+                {
+                    japanese: "しずか[な]",
+                    kanji: "静か[な]",
+                    nepali: "शान्त",
+                    english: "quiet",
+                    sentence: "わたしのへやはしずかです。"
+                },
+                {
+                    japanese: "にぎやか[な]",
+                    kanji: "",
+                    nepali: "चहलपहल",
+                    english: "lively",
+                    sentence: "おおさかはにぎやかなまちです。"
+                },
+                {
+                    japanese: "ゆうめい[な]",
+                    kanji: "有名[な]",
+                    nepali: "प्रसिद्ध",
+                    english: "famous",
+                    sentence: "ふじさんはゆうめいなやまです。"
+                },
+                {
+                    japanese: "しんせつ[な]",
+                    kanji: "親切[な]",
+                    nepali: "सहयोगी / दयालु / बिचारशील",
+                    english: "kind, helpful",
+                    sentence: "サントスさんはしんせつなひとです。"
+                },
+                {
+                    japanese: "げんき[な]",
+                    kanji: "元気[な]",
+                    nepali: "फुर्तिलो / सँन्चै / आरामै",
+                    english: "healthy, energetic",
+                    sentence: "わたしはげんきです。"
+                },
+                {
+                    japanese: "ひま[な]",
+                    kanji: "暇[な]",
+                    nepali: "फुर्सद (समय)",
+                    english: "free (time)",
+                    sentence: "きょうはひまです。"
+                },
+                {
+                    japanese: "べんり[な]",
+                    kanji: "便利[な]",
+                    nepali: "सुविधाजनक",
+                    english: "convenient",
+                    sentence: "ちかてつはべんりです。"
+                },
+                {
+                    japanese: "すてき[な]",
+                    kanji: "",
+                    nepali: "राम्रो / अद्भुत",
+                    english: "lovely, nice, wonderful",
+                    sentence: "すてきなネクタイですね。"
+                },
+                {
+                    japanese: "おおきい",
+                    kanji: "大きい",
+                    nepali: "ठूलो",
+                    english: "big, large",
+                    sentence: "このかばんはおおきいです。"
+                },
+                {
+                    japanese: "ちいさい",
+                    kanji: "小さい",
+                    nepali: "सानो",
+                    english: "small, little",
+                    sentence: "あのいえはちいさいです。"
+                },
+                {
+                    japanese: "あたらしい",
+                    kanji: "新しい",
+                    nepali: "नयाँ / ताजा",
+                    english: "new",
+                    sentence: "これはあたらしいくるまです。"
+                },
+                {
+                    japanese: "ふるい",
+                    kanji: "古い",
+                    nepali: "पुरानो",
+                    english: "old (not for people)",
+                    sentence: "わたしのかさはふるいです。"
+                },
+                {
+                    japanese: "いい (よい)",
+                    kanji: "",
+                    nepali: "राम्रो",
+                    english: "good",
+                    sentence: "きょうはいい天気（てんき）ですね。"
+                },
+                {
+                    japanese: "わるい",
+                    kanji: "悪い",
+                    nepali: "खराब",
+                    english: "bad",
+                    sentence: "てんきがわるいです。"
+                },
+                {
+                    japanese: "あつい",
+                    kanji: "暑い、熱い",
+                    nepali: "गर्मी / तातो",
+                    english: "hot",
+                    sentence: "きょうはあついです。"
+                },
+                {
+                    japanese: "さむい",
+                    kanji: "寒い",
+                    nepali: "जाडो (तापमान सन्दर्भमा)",
+                    english: "cold (weather)",
+                    sentence: "ほっかいどうはさむいです。"
+                },
+                {
+                    japanese: "つめたい",
+                    kanji: "冷たい",
+                    nepali: "चीसो (छुने सन्दर्भमा)",
+                    english: "cold (to the touch)",
+                    sentence: "つめたいみずをのみます。"
+                },
+                {
+                    japanese: "むずかしい",
+                    kanji: "難しい",
+                    nepali: "कठिन / गाह्रो",
+                    english: "difficult",
+                    sentence: "にほんごはむずかしいですか。"
+                },
+                {
+                    japanese: "やさしい",
+                    kanji: "易しい",
+                    nepali: "सजिलो / सरल",
+                    english: "easy",
+                    sentence: "このしけんはやさしいです。"
+                },
+                {
+                    japanese: "たかい",
+                    kanji: "高い",
+                    nepali: "महँगो / अग्लो",
+                    english: "expensive, tall, high",
+                    sentence: "このカメラはたかいです。"
+                },
+                {
+                    japanese: "やすい",
+                    kanji: "安い",
+                    nepali: "सस्तो",
+                    english: "inexpensive, cheap",
+                    sentence: "あのレストランはやすいです。"
+                },
+                {
+                    japanese: "ひくい",
+                    kanji: "低い",
+                    nepali: "होचो / कम",
+                    english: "low",
+                    sentence: "わたしのせはひくいです。"
+                },
+                {
+                    japanese: "おもしろい",
+                    kanji: "面白い",
+                    nepali: "रोचक / रमाइलो",
+                    english: "interesting, funny",
+                    sentence: "にほんごはおもしろいです。"
+                },
+                {
+                    japanese: "おいしい",
+                    kanji: "",
+                    nepali: "स्वादिष्ट",
+                    english: "delicious, tasty",
+                    sentence: "にほんのたべものはおいしいです。"
+                },
+                {
+                    japanese: "いそがしい",
+                    kanji: "忙しい",
+                    nepali: "व्यस्त",
+                    english: "busy",
+                    sentence: "しごとはいそがしいですか。"
+                },
+                {
+                    japanese: "たのしい",
+                    kanji: "楽しい",
+                    nepali: "रमाइलो",
+                    english: "enjoyable, fun",
+                    sentence: "パーティーはたのしかったです。"
+                },
+                {
+                    japanese: "しろい",
+                    kanji: "白い",
+                    nepali: "सेतो (विशेषण)",
+                    english: "white",
+                    sentence: "しろいくつをかいました。"
+                },
+                {
+                    japanese: "くろい",
+                    kanji: "黒い",
+                    nepali: "कालो (विशेषण)",
+                    english: "black",
+                    sentence: "くろいかばんをもっています。"
+                },
+                {
+                    japanese: "あかい",
+                    kanji: "赤い",
+                    nepali: "रातो (विशेषण)",
+                    english: "red",
+                    sentence: "あかいはながすきです。"
+                },
+                {
+                    japanese: "あおい",
+                    kanji: "青い",
+                    nepali: "निलो (विशेषण)",
+                    english: "blue",
+                    sentence: "そらはあおいです。"
+                },
+                {
+                    japanese: "さくら",
+                    kanji: "桜",
+                    nepali: "चेरी (फुल)",
+                    english: "cherry (blossom)",
+                    sentence: "さくらはきれいです。"
+                },
+                {
+                    japanese: "やま",
+                    kanji: "山",
+                    nepali: "हिमाल / पहाड",
+                    english: "mountain",
+                    sentence: "ふじさんはたかいやまです。"
+                },
+                {
+                    japanese: "まち",
+                    kanji: "町",
+                    nepali: "शहर",
+                    english: "town, city",
+                    sentence: "わたしのまちはしずかです。"
+                },
+                {
+                    japanese: "たべもの",
+                    kanji: "食べ物",
+                    nepali: "खानेकुरा",
+                    english: "food",
+                    sentence: "すしはおいしいたべものです。"
+                },
+                {
+                    japanese: "ところ",
+                    kanji: "所",
+                    nepali: "ठाउँ",
+                    english: "place",
+                    sentence: "ならはいいところです。"
+                },
+                {
+                    japanese: "りょう",
+                    kanji: "寮",
+                    nepali: "छात्रावास",
+                    english: "dormitory",
+                    sentence: "わたしのりょうはふるいです。"
+                },
+                {
+                    japanese: "せいかつ",
+                    kanji: "生活",
+                    nepali: "जीवन",
+                    english: "life",
+                    sentence: "にほんのせいかつはどうですか。"
+                },
+                {
+                    japanese: "[お]しごと",
+                    kanji: "お仕事",
+                    nepali: "काम / पेशा / व्यवसाय",
+                    english: "work, job",
+                    sentence: "おしごとはいそがしいですか。"
+                },
+                {
+                    japanese: "どう",
+                    kanji: "",
+                    nepali: "कसरी ?",
+                    english: "how",
+                    sentence: "にほんのせいかつはどうですか。"
+                },
+                {
+                    japanese: "どんな〜",
+                    kanji: "",
+                    nepali: "कस्तो प्रकारको",
+                    english: "what kind of ~",
+                    sentence: "ならはどんなまちですか。"
+                },
+                {
+                    japanese: "とても",
+                    kanji: "",
+                    nepali: "धेरै / असाध्यै",
+                    english: "very",
+                    sentence: "きょうはとてもあついです。"
+                },
+                {
+                    japanese: "あまり",
+                    kanji: "",
+                    nepali: "खासै / त्यत्तिको (नकारात्मकसँग प्रयोग गरिन्छ)",
+                    english: "not so (used with negatives)",
+                    sentence: "このえいがはあまりおもしろくないです。"
+                },
+                {
+                    japanese: "そして",
+                    kanji: "",
+                    nepali: "र / साथसाथै",
+                    english: "and (used to connect sentences)",
+                    sentence: "きょうとへいきました。そして、ならへいきました。"
+                },
+                {
+                    japanese: "〜が、~",
+                    kanji: "",
+                    nepali: "~ तर, ~",
+                    english: "~, but ~",
+                    sentence: "にほんのたべものはおいしいですが、たかいです。"
+                }
+            ],
+            "Lesson 9": [{
+                    japanese: "わかります",
+                    kanji: "",
+                    nepali: "बुझ्छु",
+                    english: "understand",
+                    sentence: "わたしはえいごがわかります。"
+                },
+                {
+                    japanese: "あります",
+                    kanji: "",
+                    nepali: "छ",
+                    english: "have, exist",
+                    sentence: "わたしはくるまがあります。"
+                },
+                {
+                    japanese: "すき[な]",
+                    kanji: "好き[な]",
+                    nepali: "मनपर्छ",
+                    english: "like",
+                    sentence: "わたしはスポーツがすきです。"
+                },
+                {
+                    japanese: "きらい[な]",
+                    kanji: "嫌い[な]",
+                    nepali: "मनपर्दैन (घृणा)",
+                    english: "dislike",
+                    sentence: "わたしはトマトがきらいです。"
+                },
+                {
+                    japanese: "じょうず[な]",
+                    kanji: "上手[な]",
+                    nepali: "दक्ष (कुनै कुरामा राम्रो)",
+                    english: "good at, skillful",
+                    sentence: "マリアさんはうたがじょうずです。"
+                },
+                {
+                    japanese: "へた[な]",
+                    kanji: "下手[な]",
+                    nepali: "अदक्ष (कुनै कुरामा नराम्रो)",
+                    english: "poor at, unskillful",
+                    sentence: "わたしはダンスがへたです。"
+                },
+                {
+                    japanese: "のみもの",
+                    kanji: "飲み物",
+                    nepali: " पेय पदार्थ",
+                    english: "drinks, beverage",
+                    sentence: "どんなのみものがすきですか。"
+                },
+                {
+                    japanese: "りょうり",
+                    kanji: "料理",
+                    nepali: "परिकार (पाकेको खाना)",
+                    english: "dish (cooked food), cooking",
+                    sentence: "インドりょうりがすきです。"
+                },
+                {
+                    japanese: "スポーツ",
+                    kanji: "",
+                    nepali: "खेलकुद",
+                    english: "sports",
+                    sentence: "スポーツがじょうずですか。"
+                },
+                {
+                    japanese: "やきゅう",
+                    kanji: "野球",
+                    nepali: "बेसबल",
+                    english: "baseball",
+                    sentence: "わたしはときどきやきゅうをします。"
+                },
+                {
+                    japanese: "ダンス",
+                    kanji: "",
+                    nepali: "नृत्य / डान्स",
+                    english: "dance",
+                    sentence: "ダンスができますか。"
+                },
+                {
+                    japanese: "りょこう",
+                    kanji: "旅行",
+                    nepali: "यात्रा / भ्रमण",
+                    english: "trip, tour",
+                    sentence: "わたしはりょこうがすきです。"
+                },
+                {
+                    japanese: "おんがく",
+                    kanji: "音楽",
+                    nepali: "संगीत",
+                    english: "music",
+                    sentence: "どんなおんがくがすきですか。"
+                },
+                {
+                    japanese: "うた",
+                    kanji: "歌",
+                    nepali: "गीत / गाना",
+                    english: "song",
+                    sentence: "わたしはうたがへたです。"
+                },
+                {
+                    japanese: "クラシック",
+                    kanji: "",
+                    nepali: "शास्त्रीय संगीत",
+                    english: "classical music",
+                    sentence: "クラシックをよくききます。"
+                },
+                {
+                    japanese: "ジャズ",
+                    kanji: "",
+                    nepali: "ज्याज संगीत",
+                    english: "jazz",
+                    sentence: "わたしはジャズがすきです。"
+                },
+                {
+                    japanese: "コンサート",
+                    kanji: "",
+                    nepali: "सांगीतीक कार्यक्रम / कर्न्सट",
+                    english: "concert",
+                    sentence: "コンサートのチケットがあります。"
+                },
+                {
+                    japanese: "カラオケ",
+                    kanji: "",
+                    nepali: "काराओके (ट्रयाक संगीत)",
+                    english: "karaoke",
+                    sentence: "いっしょにカラオケへいきませんか。"
+                },
+                {
+                    japanese: "かぶき",
+                    kanji: "歌舞伎",
+                    nepali: "काबुकी",
+                    english: "Kabuki",
+                    sentence: "かぶきをみたいです。"
+                },
+                {
+                    japanese: "え",
+                    kanji: "絵",
+                    nepali: "चित्र",
+                    english: "picture, drawing",
+                    sentence: "わたしはえをかくのがすきです。"
+                },
+                {
+                    japanese: "じ",
+                    kanji: "字",
+                    nepali: "अक्षर",
+                    english: "letter, character",
+                    sentence: "じをかくのがへたです。"
+                },
+                {
+                    japanese: "かんじ",
+                    kanji: "漢字",
+                    nepali: "चाईनीज अक्षर",
+                    english: "Chinese characters",
+                    sentence: "かんじがすこしわかります。"
+                },
+                {
+                    japanese: "ひらがな",
+                    kanji: "",
+                    nepali: "हिरागाना लिपी",
+                    english: "Hiragana script",
+                    sentence: "ひらがなをかいてください。"
+                },
+                {
+                    japanese: "かたかな",
+                    kanji: "",
+                    nepali: "काताकाना लिपी",
+                    english: "Katakana script",
+                    sentence: "かたかなはむずかしいです。"
+                },
+                {
+                    japanese: "ローマじ",
+                    kanji: "ローマ字",
+                    nepali: "रोमन वर्णमाला",
+                    english: "the Roman alphabet",
+                    sentence: "ローマじでなまえをかきます。"
+                },
+                {
+                    japanese: "こまかいおかね",
+                    kanji: "細かいお金",
+                    nepali: "चान-चुन पैंसा",
+                    english: "small change",
+                    sentence: "こまかいおかねがありますか。"
+                },
+                {
+                    japanese: "チケット",
+                    kanji: "",
+                    nepali: "टिकट",
+                    english: "ticket",
+                    sentence: "コンサートのチケットがあります。"
+                },
+                {
+                    japanese: "じかん",
+                    kanji: "時間",
+                    nepali: "समय",
+                    english: "time",
+                    sentence: "じかんがありますか。"
+                },
+                {
+                    japanese: "ようじ",
+                    kanji: "用事",
+                    nepali: "व्यक्तीगत काम / काम",
+                    english: "something to do, errand",
+                    sentence: "きょうはようじがあります。"
+                },
+                {
+                    japanese: "やくそく",
+                    kanji: "約束",
+                    nepali: "अपोइन्टमेन्ट / बाचा",
+                    english: "appointment, promise",
+                    sentence: "ともだちとやくそくがあります。"
+                },
+                {
+                    japanese: "ごしゅじん",
+                    kanji: "ご主人",
+                    nepali: "(अरुको) श्रीमान",
+                    english: "(someone else's) husband",
+                    sentence: "ごしゅじんはテニスがじょうずですか。"
+                },
+                {
+                    japanese: "おっと / しゅじん",
+                    kanji: "夫 / 主人",
+                    nepali: "(आफ्नो) श्रीमान",
+                    english: "(my) husband",
+                    sentence: "おっとはあまりさけをのみません。"
+                },
+                {
+                    japanese: "おくさん",
+                    kanji: "奥さん",
+                    nepali: "(अरुको) श्रीमती",
+                    english: "(someone else's) wife",
+                    sentence: "おくさんはりょうりがじょうずです。"
+                },
+                {
+                    japanese: "つま / かない",
+                    kanji: "妻 / 家内",
+                    nepali: "(आफ्नो) श्रीमती",
+                    english: "(my) wife",
+                    sentence: "かないはりょこうがすきです。"
+                },
+                {
+                    japanese: "こども",
+                    kanji: "子ども",
+                    nepali: "बच्चा",
+                    english: "child",
+                    sentence: "こどもがふたりいます。"
+                },
+                {
+                    japanese: "よく",
+                    kanji: "",
+                    nepali: "राम्रो सँग / धेरै",
+                    english: "well, much",
+                    sentence: "わたしはえいごがよくわかります。"
+                },
+                {
+                    japanese: "だいたい",
+                    kanji: "",
+                    nepali: "ज्यादातर / लगभग",
+                    english: "mostly, roughly",
+                    sentence: "ひらがなはだいたいわかります。"
+                },
+                {
+                    japanese: "たくさん",
+                    kanji: "",
+                    nepali: "धेरै",
+                    english: "many, much",
+                    sentence: "おかねがたくさんあります。"
+                },
+                {
+                    japanese: "すこし",
+                    kanji: "少し",
+                    nepali: "थोरै",
+                    english: "a little, a few",
+                    sentence: "にほんごがすこしわかります。"
+                },
+                {
+                    japanese: "ぜんぜん",
+                    kanji: "全然",
+                    nepali: "बिल्कुलै / पटक्कै (नकारात्मकसँग प्रयोग गरिन्छ)",
+                    english: "not at all",
+                    sentence: "かんじがぜんぜんわかりません。"
+                },
+                {
+                    japanese: "はやく",
+                    kanji: "早く、速く",
+                    nepali: "छीटो / चाडो / चाडै / सबेरै",
+                    english: "early, quickly, fast",
+                    sentence: "はやくうちへかえります。"
+                },
+                {
+                    japanese: "〜から",
+                    kanji: "",
+                    nepali: "~ त्यसैले",
+                    english: "because ~",
+                    sentence: "じかんがありませんから、しんぶんをよみません。"
+                },
+                {
+                    japanese: "どうして",
+                    kanji: "",
+                    nepali: "कीन ?",
+                    english: "why",
+                    sentence: "どうしてきのうやすみましたか。"
+                },
+                {
+                    japanese: "ざんねんです[が]",
+                    kanji: "残念です[が]",
+                    nepali: "माफगर्नुहोस, तर / दुर्भाग्यवश",
+                    english: "I'm sorry, but / unfortunately",
+                    sentence: "ざんねんですが、じかんがありません。"
+                },
+                {
+                    japanese: "またこんどおねがいします。",
+                    kanji: "また今度お願いします。",
+                    nepali: "कृपया फेरि अर्को पटक सोध्नु होला",
+                    english: "Please ask me again some other time.",
+                    sentence: "きょうはちょっと…。またこんどおねがいします。"
+                }
+            ],
+            "Lesson 10": [{
+                    japanese: "います",
+                    kanji: "",
+                    nepali: "छ / हुनुहुन्छ (आफै हिँडडुल गर्न सक्ने चिज)",
+                    english: "be, exist (for animate things)",
+                    sentence: "こうえんにこどもがいます。"
+                },
+                {
+                    japanese: "あります",
+                    kanji: "",
+                    nepali: "छ / छन् (आफै हिँडडुल गर्न नसक्ने चिज)",
+                    english: "be, exist (for inanimate things)",
+                    sentence: "つくえのうえにほんがあります。"
+                },
+                {
+                    japanese: "いろいろ[な]",
+                    kanji: "",
+                    nepali: "बिभिन्न / थरिथरि",
+                    english: "various",
+                    sentence: "いろいろなものがあります。"
+                },
+                {
+                    japanese: "おとこのひと",
+                    kanji: "男の人",
+                    nepali: "पुरुष",
+                    english: "man",
+                    sentence: "あそこにいるおとこのひとはだれですか。"
+                },
+                {
+                    japanese: "おんなのひと",
+                    kanji: "女の人",
+                    nepali: "महिला",
+                    english: "woman",
+                    sentence: "うけつけにおんなのひとがいます。"
+                },
+                {
+                    japanese: "おとこのこ",
+                    kanji: "男の子",
+                    nepali: "केटा",
+                    english: "boy",
+                    sentence: "こうえんにおとこのこがいます。"
+                },
+                {
+                    japanese: "おんなのこ",
+                    kanji: "女の子",
+                    nepali: "केटी",
+                    english: "girl",
+                    sentence: "あのかわいいおんなのこはだれですか。"
+                },
+                {
+                    japanese: "いぬ",
+                    kanji: "犬",
+                    nepali: "कुकुर",
+                    english: "dog",
+                    sentence: "わたしのうちに いぬがいます。"
+                },
+                {
+                    japanese: "ねこ",
+                    kanji: "猫",
+                    nepali: "बिरालो",
+                    english: "cat",
+                    sentence: "ねこはいすのしたにいます。"
+                },
+                {
+                    japanese: "パンダ",
+                    kanji: "",
+                    nepali: "पाण्डा",
+                    english: "panda",
+                    sentence: "どうぶつえんにパンダがいます。"
+                },
+                {
+                    japanese: "ぞう",
+                    kanji: "象",
+                    nepali: "हात्ती",
+                    english: "elephant",
+                    sentence: "ぞうはからだがおおきいです。"
+                },
+                {
+                    japanese: "き",
+                    kanji: "木",
+                    nepali: "रुख / काठ",
+                    english: "tree, wood",
+                    sentence: "にわにさくらのきがあります。"
+                },
+                {
+                    japanese: "もの",
+                    kanji: "物",
+                    nepali: "चिज",
+                    english: "thing",
+                    sentence: "はこのなかにいろいろなものがあります。"
+                },
+                {
+                    japanese: "でんち",
+                    kanji: "電池",
+                    nepali: "ब्याट्री",
+                    english: "battery",
+                    sentence: "このとけいにはでんちがいります。"
+                },
+                {
+                    japanese: "はこ",
+                    kanji: "箱",
+                    nepali: "बक्स",
+                    english: "box",
+                    sentence: "はこのなかに何がありますか。"
+                },
+                {
+                    japanese: "スイッチ",
+                    kanji: "",
+                    nepali: "स्विच",
+                    english: "switch",
+                    sentence: "テレビのスイッチはどこですか。"
+                },
+                {
+                    japanese: "れいぞうこ",
+                    kanji: "冷蔵庫",
+                    nepali: "फ्रिज",
+                    english: "refrigerator",
+                    sentence: "れいぞうこのなかにたまごがあります。"
+                },
+                {
+                    japanese: "テーブル",
+                    kanji: "",
+                    nepali: "टेबल",
+                    english: "table",
+                    sentence: "テーブルのうえにコンピューターがあります。"
+                },
+                {
+                    japanese: "ベッド",
+                    kanji: "",
+                    nepali: "खाट",
+                    english: "bed",
+                    sentence: "わたしのへやにベッドがあります。"
+                },
+                {
+                    japanese: "たな",
+                    kanji: "棚",
+                    nepali: "तखता",
+                    english: "shelf",
+                    sentence: "たなのうえにほんがたくさんあります。"
+                },
+                {
+                    japanese: "ドア",
+                    kanji: "",
+                    nepali: "ढोका",
+                    english: "door",
+                    sentence: "ドアのちかくにポストがあります。"
+                },
+                {
+                    japanese: "まど",
+                    kanji: "窓",
+                    nepali: "झ्याल",
+                    english: "window",
+                    sentence: "へやのまどはあけてください。"
+                },
+                {
+                    japanese: "ポスト",
+                    kanji: "",
+                    nepali: "पोस्ट बक्स / पत्र पेटिका",
+                    english: "mailbox, postbox",
+                    sentence: "ポストのなかにてがみがあります。"
+                },
+                {
+                    japanese: "ビル",
+                    kanji: "",
+                    nepali: "बिल्डिङ्ग",
+                    english: "building",
+                    sentence: "えきのまえにあたらしいビルがあります。"
+                },
+                {
+                    japanese: "コンビニ",
+                    kanji: "",
+                    nepali: "सुविधाजनक स्टोर",
+                    english: "convenience store",
+                    sentence: "コンビニは24じかんあいています。"
+                },
+                {
+                    japanese: "こうえん",
+                    kanji: "公園",
+                    nepali: "पार्क",
+                    english: "park",
+                    sentence: "こうえんにひとがたくさんいます。"
+                },
+                {
+                    japanese: "きっさてん",
+                    kanji: "喫茶店",
+                    nepali: "क्याफे / कफी सप",
+                    english: "cafe, coffee shop",
+                    sentence: "きっさてんでコーヒーをのみます。"
+                },
+                {
+                    japanese: "〜や",
+                    kanji: "〜屋",
+                    nepali: "पसल / स्टोर",
+                    english: "~ store, ~ shop",
+                    sentence: "えきのちかくにほんやがあります。"
+                },
+                {
+                    japanese: "のりば",
+                    kanji: "乗り場",
+                    nepali: "बस, ट्याक्सी, रेल आदी चढ्ने निश्चित ठाउँ",
+                    english: "a fixed place to catch taxis, trains, etc.",
+                    sentence: "バスのりばはどこですか。"
+                },
+                {
+                    japanese: "けん",
+                    kanji: "県",
+                    nepali: "प्रान्त",
+                    english: "prefecture",
+                    sentence: "わたしはナラけんにすんでいます。"
+                },
+                {
+                    japanese: "うえ",
+                    kanji: "上",
+                    nepali: "माथी",
+                    english: "on, above, over",
+                    sentence: "ほんはつくえのうえにあります。"
+                },
+                {
+                    japanese: "した",
+                    kanji: "下",
+                    nepali: "तल / मुनी",
+                    english: "under, below, beneath",
+                    sentence: "ねこはいすのしたにいます。"
+                },
+                {
+                    japanese: "まえ",
+                    kanji: "前",
+                    nepali: "अगाडि / अघि",
+                    english: "front, before",
+                    sentence: "ぎんこうはえきのまえにあります。"
+                },
+                {
+                    japanese: "うしろ",
+                    kanji: "後ろ",
+                    nepali: "पछाडि",
+                    english: "back, behind",
+                    sentence: "いぬはドアのうしろにいます。"
+                },
+                {
+                    japanese: "みぎ",
+                    kanji: "右",
+                    nepali: "दायाँ",
+                    english: "right",
+                    sentence: "ゆうびんきょくはぎんこうのみぎにあります。"
+                },
+                {
+                    japanese: "ひだり",
+                    kanji: "左",
+                    nepali: "बायाँ",
+                    english: "left",
+                    sentence: "スーパーはぎんこうのひだりにあります。"
+                },
+                {
+                    japanese: "なか",
+                    kanji: "中",
+                    nepali: "भित्र",
+                    english: "in, inside",
+                    sentence: "はこのなかにてがみがあります。"
+                },
+                {
+                    japanese: "そと",
+                    kanji: "外",
+                    nepali: "बाहिर",
+                    english: "outside",
+                    sentence: "こどもはうちのそとにいます。"
+                },
+                {
+                    japanese: "となり",
+                    kanji: "隣",
+                    nepali: "आडमा / छेउमा",
+                    english: "next, next door",
+                    sentence: "ほんやはスーパーのとなりです。"
+                },
+                {
+                    japanese: "ちかく",
+                    kanji: "近く",
+                    nepali: "नजीक",
+                    english: "near, vicinity",
+                    sentence: "えきのちかくにコンビニがあります。"
+                },
+                {
+                    japanese: "あいだ",
+                    kanji: "間",
+                    nepali: "बीच / बीचमा",
+                    english: "between, among",
+                    sentence: "ぎんこうはゆうびんきょくとデパートのあいだにあります。"
+                },
+                {
+                    japanese: "〜や〜[など]",
+                    kanji: "",
+                    nepali: "~ र ~ आदि",
+                    english: "~, ~, and so on",
+                    sentence: "はこのなかにてがみやしゃしんなどがあります。"
+                },
+                {
+                    japanese: "いちばんした",
+                    kanji: "一番下",
+                    nepali: "पिँधमा (सबैभन्दा तल)",
+                    english: "the very bottom",
+                    sentence: "ナンプラーはいちばんしたのたなにあります。"
+                },
+                {
+                    japanese: "とうきょうディズニーランド",
+                    kanji: "東京ディズニーランド",
+                    nepali: "टोक्यो डिज्नील्याण्ड",
+                    english: "Tokyo Disneyland",
+                    sentence: "とうきょうディズニーランドはちばけんにあります。"
+                }
+            ],
+            "Lesson 11": [{
+                    japanese: "います[こどもが~]",
+                    kanji: "",
+                    nepali: "छ [बच्चा]",
+                    english: "have [a child]",
+                    sentence: "わたしはこどもがふたりいます。"
+                },
+                {
+                    japanese: "います[にほんに~]",
+                    kanji: "",
+                    nepali: "[जापानमा] छु",
+                    english: "stay, be [in Japan]",
+                    sentence: "わたしはとうきょうにいます。"
+                },
+                {
+                    japanese: "かかります",
+                    kanji: "",
+                    nepali: "लाग्छ (समय वा पैसा उल्लेख गर्दा)",
+                    english: "take (time), cost (money)",
+                    sentence: "うちからかいしゃまで1じかんかかります。"
+                },
+                {
+                    japanese: "やすみます[かいしゃを~]",
+                    kanji: "休みます",
+                    nepali: "बिदा लिन्छु [कम्पनी]",
+                    english: "take a day off [from work]",
+                    sentence: "きのう、かいしゃをやすみました。"
+                },
+                {
+                    japanese: "ひとつ",
+                    kanji: "一つ",
+                    nepali: "एक (वस्तुहरु गन्न प्रयोग गरिन्छ)",
+                    english: "one (for things)",
+                    sentence: "りんごをひとつください。"
+                },
+                {
+                    japanese: "ふたつ",
+                    kanji: "二つ",
+                    nepali: "दुई",
+                    english: "two",
+                    sentence: "みかんをふたつかいました。"
+                },
+                {
+                    japanese: "みっつ",
+                    kanji: "三つ",
+                    nepali: "तीन",
+                    english: "three",
+                    sentence: "きってをみっつおねがいします。"
+                },
+                {
+                    japanese: "よっつ",
+                    kanji: "四つ",
+                    nepali: "चार",
+                    english: "four",
+                    sentence: "テーブルがよっつあります。"
+                },
+                {
+                    japanese: "いつつ",
+                    kanji: "五つ",
+                    nepali: "पाँच",
+                    english: "five",
+                    sentence: "たまごをいつつください。"
+                },
+                {
+                    japanese: "むっつ",
+                    kanji: "六つ",
+                    nepali: "छ",
+                    english: "six",
+                    sentence: "このへやにいすがむっつあります。"
+                },
+                {
+                    japanese: "ななつ",
+                    kanji: "七つ",
+                    nepali: "सात",
+                    english: "seven",
+                    sentence: "かばんがななつあります。"
+                },
+                {
+                    japanese: "やっつ",
+                    kanji: "八つ",
+                    nepali: "आठ",
+                    english: "eight",
+                    sentence: "はがきをやっつかいました。"
+                },
+                {
+                    japanese: "ここのつ",
+                    kanji: "九つ",
+                    nepali: "नौं",
+                    english: "nine",
+                    sentence: "チョコレートをここのつたべました。"
+                },
+                {
+                    japanese: "とお",
+                    kanji: "十",
+                    nepali: "दश",
+                    english: "ten",
+                    sentence: "りんごがとおあります。"
+                },
+                {
+                    japanese: "いくつ",
+                    kanji: "",
+                    nepali: "कति वटा ? / कति ?",
+                    english: "how many",
+                    sentence: "みかんをいくつたべましたか。"
+                },
+                {
+                    japanese: "ひとり",
+                    kanji: "一人",
+                    nepali: "एक जना",
+                    english: "one person",
+                    sentence: "きょうしつにがくせいがひとりいます。"
+                },
+                {
+                    japanese: "ふたり",
+                    kanji: "二人",
+                    nepali: "दुई जना",
+                    english: "two people",
+                    sentence: "おとうとがふたりいます。"
+                },
+                {
+                    japanese: "〜にん",
+                    kanji: "〜人",
+                    nepali: "जना",
+                    english: "people (counter)",
+                    sentence: "わたしのクラスにりゅうがくせいが5にんいます。"
+                },
+                {
+                    japanese: "〜だい",
+                    kanji: "〜台",
+                    nepali: "मेशीन, कार आदि गन्दा",
+                    english: "counter for machines, cars, etc.",
+                    sentence: "うちにテレビが2だあります。"
+                },
+                {
+                    japanese: "〜まい",
+                    kanji: "〜枚",
+                    nepali: "कागज, टिकट जस्ता पातलो र फराकीलो चिज गन्न प्रयोग गरिन्छ",
+                    english: "counter for flat objects",
+                    sentence: "80えんのきってを5まいください。"
+                },
+                {
+                    japanese: "〜かい",
+                    kanji: "〜回",
+                    nepali: "- पटक / चोटि",
+                    english: "times",
+                    sentence: "1しゅうかんに2かいテニスをします。"
+                },
+                {
+                    japanese: "りんご",
+                    kanji: "",
+                    nepali: "स्याउ",
+                    english: "apple",
+                    sentence: "りんごをいくつたべましたか。"
+                },
+                {
+                    japanese: "みかん",
+                    kanji: "",
+                    nepali: "सुन्तला",
+                    english: "mandarin orange",
+                    sentence: "みかんをみっつください。"
+                },
+                {
+                    japanese: "サンドイッチ",
+                    kanji: "",
+                    nepali: "स्यानडविच",
+                    english: "sandwich",
+                    sentence: "サンドイッチとジュースをおねがいします。"
+                },
+                {
+                    japanese: "カレー[ライス]",
+                    kanji: "",
+                    nepali: "करी (भात सँग)",
+                    english: "curry [and rice]",
+                    sentence: "ひるごはんカレーをたべました。"
+                },
+                {
+                    japanese: "アイスクリーム",
+                    kanji: "",
+                    nepali: "आइसक्रिम",
+                    english: "ice cream",
+                    sentence: "アイスクリームをひとつください。"
+                },
+                {
+                    japanese: "きって",
+                    kanji: "切手",
+                    nepali: "हुलाक टिकट",
+                    english: "postage stamp",
+                    sentence: "きってをなんまいかいましたか。"
+                },
+                {
+                    japanese: "はがき",
+                    kanji: "葉書",
+                    nepali: "पोस्टकार्ड",
+                    english: "postcard",
+                    sentence: "はがきを2まいかいました。"
+                },
+                {
+                    japanese: "ふうとう",
+                    kanji: "封筒",
+                    nepali: "खाम",
+                    english: "envelope",
+                    sentence: "ふうとうを5まいください。"
+                },
+                {
+                    japanese: "りょうしん",
+                    kanji: "両親",
+                    nepali: "बुबा-आमा",
+                    english: "parents",
+                    sentence: "わたしのりょうしんはネパールにいます。"
+                },
+                {
+                    japanese: "きょうだい",
+                    kanji: "兄弟",
+                    nepali: "दाजुभाई दिदीबहिनी",
+                    english: "siblings",
+                    sentence: "きょうだいはなんにんですか。"
+                },
+                {
+                    japanese: "あに",
+                    kanji: "兄",
+                    nepali: "(मेरो) दाजु",
+                    english: "(my) elder brother",
+                    sentence: "わたしのあにはかいしゃいんです。"
+                },
+                {
+                    japanese: "おにいさん",
+                    kanji: "お兄さん",
+                    nepali: "(अरुको) दाजु",
+                    english: "(someone else's) elder brother",
+                    sentence: "あなたのおにいさんはなんさいですか。"
+                },
+                {
+                    japanese: "あね",
+                    kanji: "姉",
+                    nepali: "(मेरो) दिदी",
+                    english: "(my) elder sister",
+                    sentence: "あねはぎんこういんです。"
+                },
+                {
+                    japanese: "おねえさん",
+                    kanji: "お姉さん",
+                    nepali: "(अरुको) दिदी",
+                    english: "(someone else's) elder sister",
+                    sentence: "おねえさんはけっこんしていますか。"
+                },
+                {
+                    japanese: "おとうと",
+                    kanji: "弟",
+                    nepali: "(मेरो) भाई",
+                    english: "(my) younger brother",
+                    sentence: "おとうとはがくせいです。"
+                },
+                {
+                    japanese: "おとうとさん",
+                    kanji: "弟さん",
+                    nepali: "(अरुको) भाई",
+                    english: "(someone else's) younger brother",
+                    sentence: "ミラーさんの おとうとさんはどこにいますか。"
+                },
+                {
+                    japanese: "いもうと",
+                    kanji: "妹",
+                    nepali: "(मेरो) बहिनी",
+                    english: "(my) younger sister",
+                    sentence: "わたしのいもうとは7さいです。"
+                },
+                {
+                    japanese: "いもうとさん",
+                    kanji: "妹さん",
+                    nepali: "(अरुको) बहिनी",
+                    english: "(someone else's) younger sister",
+                    sentence: "あなたのいもうとさんはかわいいですね。"
+                },
+                {
+                    japanese: "がいこく",
+                    kanji: "外国",
+                    nepali: "विदेश / विदेशी मुलुक",
+                    english: "foreign country",
+                    sentence: "がいこくからともだちがきます。"
+                },
+                {
+                    japanese: "〜じかん",
+                    kanji: "〜時間",
+                    nepali: "घण्टा",
+                    english: "hour",
+                    sentence: "まいにち、8じかんはたらきます。"
+                },
+                {
+                    japanese: "〜しゅうかん",
+                    kanji: "〜週間",
+                    nepali: "हप्ता",
+                    english: "week",
+                    sentence: "1しゅうかんにほんごをべんきょうしました。"
+                },
+                {
+                    japanese: "〜かげつ",
+                    kanji: "〜か月",
+                    nepali: "महिना",
+                    english: "month",
+                    sentence: "にほんに6かげついます。"
+                },
+                {
+                    japanese: "〜ねん",
+                    kanji: "〜年",
+                    nepali: "वर्ष / साल",
+                    english: "year",
+                    sentence: "わたしは3ねんにほんごをべんきょうしました。"
+                },
+                {
+                    japanese: "〜ぐらい",
+                    kanji: "",
+                    nepali: "जती",
+                    english: "about ~",
+                    sentence: "15ふんぐらいかかります。"
+                },
+                {
+                    japanese: "どのくらい",
+                    kanji: "",
+                    nepali: "कतिजति",
+                    english: "how long",
+                    sentence: "うちからえきまでどのくらいかかりますか。"
+                },
+                {
+                    japanese: "ぜんぶで",
+                    kanji: "全部で",
+                    nepali: "जम्मागरी / सबैगरी",
+                    english: "in total",
+                    sentence: "ぜんぶでいくらですか。"
+                },
+                {
+                    japanese: "みんな",
+                    kanji: "",
+                    nepali: "सबै / सबैजना",
+                    english: "all, everyone",
+                    sentence: "みんなげんきです。"
+                },
+                {
+                    japanese: "〜だけ",
+                    kanji: "",
+                    nepali: "मात्र",
+                    english: "only ~",
+                    sentence: "やすみはにちようびだけです。"
+                },
+                {
+                    japanese: "かしこまりました。",
+                    kanji: "",
+                    nepali: "निश्चय (सर / म्याम)",
+                    english: "Certainly (sir/madam).",
+                    sentence: "はい、かしこまりました。"
+                },
+                {
+                    japanese: "いいおてんきですね。",
+                    kanji: "いいお天気ですね。",
+                    nepali: "राम्रो मौसम छ है",
+                    english: "Nice weather, isn't it?",
+                    sentence: "こんにちは。いいおてんきですね。"
+                },
+                {
+                    japanese: "おでかけですか。",
+                    kanji: "お出かけですか。",
+                    nepali: "बाहिर जान लग्नुभएको हो ?",
+                    english: "Are you going out?",
+                    sentence: "おでかけですか。"
+                },
+                {
+                    japanese: "ちょっと〜まで。",
+                    kanji: "",
+                    nepali: "एकैछिन ~ सम्म",
+                    english: "I'm just going to ~.",
+                    sentence: "ええ、ちょっとゆうびんきょくまで。"
+                },
+                {
+                    japanese: "いってらっしゃい。",
+                    kanji: "",
+                    nepali: "राम्रोसँग गएर आउनु",
+                    english: "See you later. / Take care.",
+                    sentence: "「いってきます。」「いってらっしゃい。」"
+                },
+                {
+                    japanese: "いってきます。",
+                    kanji: "",
+                    nepali: "गएर आउछु",
+                    english: "See you later. / I'm off.",
+                    sentence: "「いってきます。」「いってらっしゃい。」"
+                },
+                {
+                    japanese: "ふなびん",
+                    kanji: "船便",
+                    nepali: "सामुन्द्रीक डाक",
+                    english: "sea mail",
+                    sentence: "ふなびんでどのくらいかかりますか。"
+                },
+                {
+                    japanese: "こうくうびん(エアメール)",
+                    kanji: "航空便",
+                    nepali: "हावाई डाक",
+                    english: "airmail",
+                    sentence: "こうくうびんでおねがいします。"
+                },
+                {
+                    japanese: "おねがいします。",
+                    kanji: "お願いします。",
+                    nepali: "कृपया।",
+                    english: "Please.",
+                    sentence: "きってを5まいおねがいします。"
+                },
+                {
+                    japanese: "オーストラリア",
+                    kanji: "",
+                    nepali: "अष्ट्रेलिया",
+                    english: "Australia",
+                    sentence: "オーストラリアまでどのくらいかかりますか。"
+                }
+            ],
+            "Lesson 12": [{
+                    japanese: "かんたん[な]",
+                    kanji: "簡単[な]",
+                    nepali: "सजिलो / सरल",
+                    english: "easy, simple",
+                    sentence: "このテストはかんたんです。"
+                },
+                {
+                    japanese: "ちかい",
+                    kanji: "近い",
+                    nepali: "नजिक",
+                    english: "near",
+                    sentence: "えきからうちまでちかいです。"
+                },
+                {
+                    japanese: "とおい",
+                    kanji: "遠い",
+                    nepali: "टाढा",
+                    english: "far",
+                    sentence: "がっこうはここからとおいです。"
+                },
+                {
+                    japanese: "はやい",
+                    kanji: "速い、早い",
+                    nepali: "छिटो / चाडो",
+                    english: "fast, early",
+                    sentence: "しんかんせんはとてもはやいです。"
+                },
+                {
+                    japanese: "おそい",
+                    kanji: "遅い",
+                    nepali: "ढिलो",
+                    english: "slow, late",
+                    sentence: "バスはおそいです。"
+                },
+                {
+                    japanese: "おおい[ひとが~]",
+                    kanji: "多い",
+                    nepali: "[मान्छे] धेरै",
+                    english: "many [people], much",
+                    sentence: "とうきょうはひとがおおいです。"
+                },
+                {
+                    japanese: "すくない[ひとが~]",
+                    kanji: "少ない",
+                    nepali: "[मान्छे] कम / थोरै",
+                    english: "few [people], a little",
+                    sentence: "このまちはひとがすくないです。"
+                },
+                {
+                    japanese: "あたたかい",
+                    kanji: "暖かい、温かい",
+                    nepali: "न्यानो",
+                    english: "warm",
+                    sentence: "きょうはあたたかいですね。"
+                },
+                {
+                    japanese: "すずしい",
+                    kanji: "涼しい",
+                    nepali: "शितल",
+                    english: "cool",
+                    sentence: "きのうはすずしかったです。"
+                },
+                {
+                    japanese: "あまい",
+                    kanji: "甘い",
+                    nepali: "गुलीयो",
+                    english: "sweet",
+                    sentence: "このケーキはあまいです。"
+                },
+                {
+                    japanese: "からい",
+                    kanji: "辛い",
+                    nepali: "पीरो / मसालेदार",
+                    english: "spicy, hot",
+                    sentence: "インドのカレーはからいです。"
+                },
+                {
+                    japanese: "おもい",
+                    kanji: "重い",
+                    nepali: "भारी",
+                    english: "heavy",
+                    sentence: "このにもつはおもいです。"
+                },
+                {
+                    japanese: "かるい",
+                    kanji: "軽い",
+                    nepali: "हल्का",
+                    english: "light (weight)",
+                    sentence: "このかばんはかるいです。"
+                },
+                {
+                    japanese: "いい[コーヒーが~]",
+                    kanji: "",
+                    nepali: "[कफि] ठिक (रुचाउनु)",
+                    english: "prefer [coffee]",
+                    sentence: "きっさてんでコーヒーがいいです。"
+                },
+                {
+                    japanese: "きせつ",
+                    kanji: "季節",
+                    nepali: "ऋतु",
+                    english: "season",
+                    sentence: "どのきせつがいちばんすきですか。"
+                },
+                {
+                    japanese: "はる",
+                    kanji: "春",
+                    nepali: "वसन्त ऋतु",
+                    english: "spring",
+                    sentence: "はるがいちばんすきです。"
+                },
+                {
+                    japanese: "なつ",
+                    kanji: "夏",
+                    nepali: "गर्मी ऋतु",
+                    english: "summer",
+                    sentence: "にほんのなつはあついです。"
+                },
+                {
+                    japanese: "あき",
+                    kanji: "秋",
+                    nepali: "शरद ऋतु",
+                    english: "autumn, fall",
+                    sentence: "あきはくだものがおいしいです。"
+                },
+                {
+                    japanese: "ふゆ",
+                    kanji: "冬",
+                    nepali: "जाडो ऋतु",
+                    english: "winter",
+                    sentence: "ふゆはとてもさむいです。"
+                },
+                {
+                    japanese: "てんき",
+                    kanji: "天気",
+                    nepali: "मौसम",
+                    english: "weather",
+                    sentence: "きょうはてんきがいいです。"
+                },
+                {
+                    japanese: "あめ",
+                    kanji: "雨",
+                    nepali: "वर्षा",
+                    english: "rain, rainy",
+                    sentence: "きのうはあめでした。"
+                },
+                {
+                    japanese: "ゆき",
+                    kanji: "雪",
+                    nepali: "हिउ",
+                    english: "snow, snowy",
+                    sentence: "きのう、ゆきがたくさんふりました。"
+                },
+                {
+                    japanese: "くもり",
+                    kanji: "曇り",
+                    nepali: "बादल लाग्नु",
+                    english: "cloudy",
+                    sentence: "きょうはくもりです。"
+                },
+                {
+                    japanese: "ホテル",
+                    kanji: "",
+                    nepali: "होटल",
+                    english: "hotel",
+                    sentence: "あのホテルはサービスがいいです。"
+                },
+                {
+                    japanese: "くうこう",
+                    kanji: "空港",
+                    nepali: "हवाई अड्डा / एरपोर्ट",
+                    english: "airport",
+                    sentence: "くうこうまでバスでいきます。"
+                },
+                {
+                    japanese: "うみ",
+                    kanji: "海",
+                    nepali: "समुन्द्र / महासागर",
+                    english: "sea, ocean",
+                    sentence: "なつ、ともだちとうみへいきます。"
+                },
+                {
+                    japanese: "せかい",
+                    kanji: "世界",
+                    nepali: "विश्व / संसार",
+                    english: "world",
+                    sentence: "せかいでどこがいちばんすきですか。"
+                },
+                {
+                    japanese: "パーティー",
+                    kanji: "",
+                    nepali: "पार्टी",
+                    english: "party",
+                    sentence: "パーティーはたのしかったですか。"
+                },
+                {
+                    japanese: "[お]まつり",
+                    kanji: "お祭り",
+                    nepali: "चाड / महोत्सव",
+                    english: "festival",
+                    sentence: "ぎおんまつりはゆうめいです。"
+                },
+                {
+                    japanese: "すきやき",
+                    kanji: "すき焼き",
+                    nepali: "गाईको मासु र सागसब्जी तातो भाडामा भको खाना",
+                    english: "sukiyaki",
+                    sentence: "すきやきはおいしいです。"
+                },
+                {
+                    japanese: "さしみ",
+                    kanji: "刺身",
+                    nepali: "काचो माछा पातलो टुकामा काटिएको",
+                    english: "sashimi",
+                    sentence: "さしみをたべたことがありますか。"
+                },
+                {
+                    japanese: "[お]すし",
+                    kanji: "お寿司",
+                    nepali: "भिनेगर र भात माथी काचो माछा",
+                    english: "sushi",
+                    sentence: "わたしはおすしがいちばんすきです。"
+                },
+                {
+                    japanese: "てんぷら",
+                    kanji: "天ぷら",
+                    nepali: "समुन्द्रीक खाना र साजसब्जी बिटरमा फ्राई गरिएको खाना",
+                    english: "tempura",
+                    sentence: "てんぷらはさかなのりょうりです。"
+                },
+                {
+                    japanese: "ぶたにく",
+                    kanji: "豚肉",
+                    nepali: "सुंगुरको मासु",
+                    english: "pork",
+                    sentence: "わたしはぶたにくがすきです。"
+                },
+                {
+                    japanese: "とりにく",
+                    kanji: "鶏肉",
+                    nepali: "कुखुराको मासु",
+                    english: "chicken",
+                    sentence: "とりにくはやすいです。"
+                },
+                {
+                    japanese: "ぎゅうにく",
+                    kanji: "牛肉",
+                    nepali: "गोरुको मासु",
+                    english: "beef",
+                    sentence: "ぎゅうにくはぶたにくよりたかいです。"
+                },
+                {
+                    japanese: "レモン",
+                    kanji: "",
+                    nepali: "कागती",
+                    english: "lemon",
+                    sentence: "レモンはすっぱいです。"
+                },
+                {
+                    japanese: "いけばな",
+                    kanji: "生け花",
+                    nepali: "फुल प्रबन्ध",
+                    english: "flower arrangement",
+                    sentence: "いけばなをならいたいです。"
+                },
+                {
+                    japanese: "もみじ",
+                    kanji: "紅葉",
+                    nepali: "शरद ऋतुको रातो पात",
+                    english: "maple, red leaves of autumn",
+                    sentence: "きょうとのもみじはとてもきれいです。"
+                },
+                {
+                    japanese: "どちら",
+                    kanji: "",
+                    nepali: "कुन चाही (दुई वस्तुमा)",
+                    english: "which one (between two things)",
+                    sentence: "にく と さかなと どちらがすきですか。"
+                },
+                {
+                    japanese: "どちらも",
+                    kanji: "",
+                    nepali: "दुबै",
+                    english: "both",
+                    sentence: "どちらもすきです。"
+                },
+                {
+                    japanese: "いちばん",
+                    kanji: "一番",
+                    nepali: "सबैभन्दा",
+                    english: "the most",
+                    sentence: "スポーツでサッカーがいちばんおもしろいです。"
+                },
+                {
+                    japanese: "ずっと",
+                    kanji: "",
+                    nepali: "निरन्तर",
+                    english: "by far",
+                    sentence: "バスよりでんしゃのほうがずっとはやいです。"
+                },
+                {
+                    japanese: "はじめて",
+                    kanji: "初めて",
+                    nepali: "पहिलो चोटी",
+                    english: "for the first time",
+                    sentence: "はじめてすしをたべました。"
+                },
+                {
+                    japanese: "ただいま。",
+                    kanji: "",
+                    nepali: "म घर आए",
+                    english: "I'm home.",
+                    sentence: "ただいま。"
+                },
+                {
+                    japanese: "おかえりなさい。",
+                    kanji: "",
+                    nepali: "घरमा स्वागत छ",
+                    english: "Welcome home.",
+                    sentence: "おかえりなさい。"
+                },
+                {
+                    japanese: "つかれました。",
+                    kanji: "疲れました。",
+                    nepali: "थकित छु",
+                    english: "I'm tired.",
+                    sentence: "ああ、つかれました。"
+                },
+                {
+                    japanese: "ぎおんまつり",
+                    kanji: "祇園祭",
+                    nepali: "क्योतोको प्रसिद्ध चाड",
+                    english: "the Gion Festival",
+                    sentence: "ぎおんまつりはきょうとのおまつりです。"
+                },
+                {
+                    japanese: "ホンコン",
+                    kanji: "",
+                    nepali: "हङ्गकङ्ग",
+                    english: "Hong Kong",
+                    sentence: "ホンコンはなつとてもあついです。"
+                },
+                {
+                    japanese: "シンガポール",
+                    kanji: "",
+                    nepali: "सिङ्गापुर",
+                    english: "Singapore",
+                    sentence: "シンガポールへりょこうにいきました。"
+                }
+            ],
+            "Lesson 13": [{
+                    japanese: "あそびます",
+                    kanji: "遊びます",
+                    nepali: "आफै रमाउछु / खेल्छु",
+                    english: "enjoy oneself, play",
+                    sentence: "こどもたちはこうえんであそびます。"
+                },
+                {
+                    japanese: "およぎます",
+                    kanji: "泳ぎます",
+                    nepali: "पौडिन्छु",
+                    english: "swim",
+                    sentence: "なつ、うみでおよぎたいです。"
+                },
+                {
+                    japanese: "むかえます",
+                    kanji: "迎えます",
+                    nepali: "भेट्न जान्छु",
+                    english: "go to meet, welcome",
+                    sentence: "えきへともだちをむかえにいきます。"
+                },
+                {
+                    japanese: "つかれます",
+                    kanji: "疲れます",
+                    nepali: "थाक्छु",
+                    english: "get tired",
+                    sentence: "きょうはとてもつかれました。"
+                },
+                {
+                    japanese: "けっこんします",
+                    kanji: "結婚します",
+                    nepali: "विवहा गर्छु",
+                    english: "marry, get married",
+                    sentence: "らいねん、ともだちがけっこんします。"
+                },
+                {
+                    japanese: "かいものします",
+                    kanji: "買い物します",
+                    nepali: "किनमेल गर्छु",
+                    english: "do shopping",
+                    sentence: "しゅうまつ、デパートへかいものしにいきます。"
+                },
+                {
+                    japanese: "しょくじします",
+                    kanji: "食事します",
+                    nepali: "भोजन गर्छ",
+                    english: "have a meal, dine",
+                    sentence: "レストランでしょくじしましょう。"
+                },
+                {
+                    japanese: "さんぽします [こうえんを〜]",
+                    kanji: "散歩します",
+                    nepali: "[पार्कमा] हिडडुल गर्छु / टहलिन्छु",
+                    english: "take a walk [in a park]",
+                    sentence: "まいあさ、こうえんをさんぽします。"
+                },
+                {
+                    japanese: "たいへん[な]",
+                    kanji: "大変[な]",
+                    nepali: "गाह्रो / कठिन",
+                    english: "hard, tough, severe",
+                    sentence: "きょうのしごとはたいへんでした。"
+                },
+                {
+                    japanese: "ほしい",
+                    kanji: "欲しい",
+                    nepali: "चाहना (केही चीजको)",
+                    english: "want (something)",
+                    sentence: "わたしはあたらしいコンピューターがほしいです。"
+                },
+                {
+                    japanese: "ひろい",
+                    kanji: "広い",
+                    nepali: "फराकीलो",
+                    english: "spacious, wide",
+                    sentence: "このへやはひろいです。"
+                },
+                {
+                    japanese: "せまい",
+                    kanji: "狭い",
+                    nepali: "साँघुरो",
+                    english: "narrow, small (room, etc.)",
+                    sentence: "あのへやはせまいです。"
+                },
+                {
+                    japanese: "プール",
+                    kanji: "",
+                    nepali: "स्वीमीङ्ग पुल",
+                    english: "swimming pool",
+                    sentence: "プールでおよぎたいです。"
+                },
+                {
+                    japanese: "かわ",
+                    kanji: "川",
+                    nepali: "खोला / नदी",
+                    english: "river",
+                    sentence: "かわでつりをします。"
+                },
+                {
+                    japanese: "びじゅつ",
+                    kanji: "美術",
+                    nepali: "राम्रो कला",
+                    english: "fine arts",
+                    sentence: "わたしはびじゅつがすきです。"
+                },
+                {
+                    japanese: "つり",
+                    kanji: "釣り",
+                    nepali: "माछा मार्ने",
+                    english: "fishing",
+                    sentence: "しゅみはつりです。"
+                },
+                {
+                    japanese: "スキー",
+                    kanji: "スキー",
+                    nepali: "स्कीइङ (हिउमा)",
+                    english: "skiing",
+                    sentence: "ふゆにスキーをします。"
+                },
+                {
+                    japanese: "しゅうまつ",
+                    kanji: "週末",
+                    nepali: "हप्ताको छुट्टीको दिन",
+                    english: "weekend",
+                    sentence: "しゅうまつはなにをしますか。"
+                },
+                {
+                    japanese: "[お]しょうがつ",
+                    kanji: "お正月",
+                    nepali: "नयाँ वर्षको दिन",
+                    english: "New Year's Day",
+                    sentence: "おしょうがつにうちへかえります。"
+                },
+                {
+                    japanese: "〜ごろ",
+                    kanji: "",
+                    nepali: "~ तिर",
+                    english: "about (time)",
+                    sentence: "8じごろおきます。"
+                },
+                {
+                    japanese: "なにか",
+                    kanji: "何か",
+                    nepali: "केही",
+                    english: "something",
+                    sentence: "なにかたべたいです。"
+                },
+                {
+                    japanese: "どこか",
+                    kanji: "",
+                    nepali: "कतै / कहिँ / कुनै ठाउँ",
+                    english: "somewhere, some place",
+                    sentence: "なつやすみにどこかへいきたいです。"
+                },
+                {
+                    japanese: "のどがかわきます",
+                    kanji: "",
+                    nepali: "तिर्खा लाग्नु",
+                    english: "get thirsty",
+                    sentence: "のどがかわきましたから、みずをのみます。"
+                },
+                {
+                    japanese: "おなかがすきます",
+                    kanji: "",
+                    nepali: "भोक लाग्नु",
+                    english: "get hungry",
+                    sentence: "おなかがすきましたね。しょくじしましょう。"
+                },
+                {
+                    japanese: "そうしましょう。",
+                    kanji: "",
+                    nepali: "त्यसो गरौं",
+                    english: "Let's do that.",
+                    sentence: "テニスをしませんか。ええ、そうしましょう。"
+                },
+                {
+                    japanese: "ごちゅうもんは？",
+                    kanji: "ご注文は？",
+                    nepali: "अर्डर लिन सक्छु ?",
+                    english: "May I take your order?",
+                    sentence: "いらっしゃいませ。ごちゅうもんは？"
+                },
+                {
+                    japanese: "ていしょく",
+                    kanji: "定食",
+                    nepali: "खानाको सेट",
+                    english: "set meal",
+                    sentence: "ていしょくをおねがいします。"
+                },
+                {
+                    japanese: "ぎゅうどん",
+                    kanji: "牛丼",
+                    nepali: "बोटुका भरिको खाना माथी गाईको मासु",
+                    english: "bowl of rice topped with beef",
+                    sentence: "ぎゅうどんをひとつください。"
+                },
+                {
+                    japanese: "しょうしょうおまちください。",
+                    kanji: "少々お待ちください。",
+                    nepali: "एकै छिन् पर्खनुहोस्",
+                    english: "Please wait a moment.",
+                    sentence: "はい、しょうしょうおまちください。"
+                },
+                {
+                    japanese: "〜でございます。",
+                    kanji: "",
+                    nepali: "です को आदर शब्द",
+                    english: "(polite form of です)",
+                    sentence: "ぎゅうどんでございます。"
+                },
+                {
+                    japanese: "べつべつに",
+                    kanji: "別々に",
+                    nepali: "अलग-अलगै",
+                    english: "separately",
+                    sentence: "おねがいします、べつべつに。"
+                }
+            ],
+            "Lesson 14": [{
+                    japanese: "つけます",
+                    kanji: "",
+                    nepali: "अन गर्छु",
+                    english: "turn on",
+                    sentence: "すみません、でんきをつけてください。"
+                },
+                {
+                    japanese: "けします",
+                    kanji: "消します",
+                    nepali: "अफ गर्छु",
+                    english: "turn off",
+                    sentence: "テレビをけしてください。"
+                },
+                {
+                    japanese: "あけます",
+                    kanji: "開けます",
+                    nepali: "खोल्छु",
+                    english: "open",
+                    sentence: "まどをあけてもいいですか。"
+                },
+                {
+                    japanese: "しめます",
+                    kanji: "閉めます",
+                    nepali: "बन्दगर्छु",
+                    english: "close, shut",
+                    sentence: "さむいですから、ドアをしめてください。"
+                },
+                {
+                    japanese: "いそぎます",
+                    kanji: "急ぎます",
+                    nepali: "हतारिन्छु",
+                    english: "hurry",
+                    sentence: "じかんがありませんから、いそいでください。"
+                },
+                {
+                    japanese: "まちます",
+                    kanji: "待ちます",
+                    nepali: "पर्खन्छु",
+                    english: "wait",
+                    sentence: "ここでちょっとまってください。"
+                },
+                {
+                    japanese: "もちます",
+                    kanji: "持ちます",
+                    nepali: "समात्छु / बोक्छु",
+                    english: "hold",
+                    sentence: "このにもつをもちましょうか。"
+                },
+                {
+                    japanese: "とります",
+                    kanji: "取ります",
+                    nepali: "लिन्छु / पासगर्छु",
+                    english: "take, pass",
+                    sentence: "しおをとってください。"
+                },
+                {
+                    japanese: "てつだいます",
+                    kanji: "手伝います",
+                    nepali: "सहयोग गर्छु (कार्यले)",
+                    english: "help (with a task)",
+                    sentence: "すみません、ちょっとてつだってください。"
+                },
+                {
+                    japanese: "よびます",
+                    kanji: "呼びます",
+                    nepali: "बोलाउछु",
+                    english: "call",
+                    sentence: "タクシーをよびましょうか。"
+                },
+                {
+                    japanese: "はなします",
+                    kanji: "話します",
+                    nepali: "बोल्छु / कुरागर्छ",
+                    english: "speak, talk",
+                    sentence: "ゆっくりはなしてください。"
+                },
+                {
+                    japanese: "つかいます",
+                    kanji: "使います",
+                    nepali: "प्रयोगगर्छु",
+                    english: "use",
+                    sentence: "このパソコンをつかってもいいですか。"
+                },
+                {
+                    japanese: "とめます",
+                    kanji: "止めます",
+                    nepali: "रोक्छु",
+                    english: "stop, park",
+                    sentence: "あそこにくるまをとめてください。"
+                },
+                {
+                    japanese: "みせます",
+                    kanji: "見せます",
+                    nepali: "देखाउछु",
+                    english: "show",
+                    sentence: "パスポートをみせてください。"
+                },
+                {
+                    japanese: "おしえます[じゅうしょを~]",
+                    kanji: "教えます",
+                    nepali: "[ठेगाना] भन्छु / सिकाउछु",
+                    english: "tell [an address]",
+                    sentence: "じゅうしょをおしえてください。"
+                },
+                {
+                    japanese: "すわります",
+                    kanji: "座ります",
+                    nepali: "बस्छु",
+                    english: "sit down",
+                    sentence: "ここにすわってもいいですか。"
+                },
+                {
+                    japanese: "たちます",
+                    kanji: "立ちます",
+                    nepali: "उभिन्छु",
+                    english: "stand up",
+                    sentence: "そこにたたないでください。"
+                },
+                {
+                    japanese: "はいります[きっさてんに~]",
+                    kanji: "入ります",
+                    nepali: "[कफी सपमा] प्रवेशगर्छु",
+                    english: "enter [a coffee shop]",
+                    sentence: "このへやにはいらないでください。"
+                },
+                {
+                    japanese: "でます[きっさてんを~]",
+                    kanji: "出ます",
+                    nepali: "[कफी सपबाट] निस्कीन्छु",
+                    english: "go out [of a coffee shop]",
+                    sentence: "いま、うちをでます。"
+                },
+                {
+                    japanese: "ふります[あめが~]",
+                    kanji: "降ります",
+                    nepali: "[वर्षा] हुन्छ",
+                    english: "rain",
+                    sentence: "あめがふっています。"
+                },
+                {
+                    japanese: "コピーします",
+                    kanji: "",
+                    nepali: "फोटोकपी गर्छु",
+                    english: "photocopy",
+                    sentence: "このしりょうをコピーしてください。"
+                },
+                {
+                    japanese: "でんき",
+                    kanji: "電気",
+                    nepali: "बिजुली / बत्ती",
+                    english: "electricity, light",
+                    sentence: "でんきがついています。"
+                },
+                {
+                    japanese: "エアコン",
+                    kanji: "",
+                    nepali: "एयर कन्डीसन",
+                    english: "air conditioner",
+                    sentence: "エアコンをつけましょうか。"
+                },
+                {
+                    japanese: "パスポート",
+                    kanji: "",
+                    nepali: "राहदानी (पासपोर्ट)",
+                    english: "passport",
+                    sentence: "パスポートをみせてください。"
+                },
+                {
+                    japanese: "なまえ",
+                    kanji: "名前",
+                    nepali: "नाम",
+                    english: "name",
+                    sentence: "ここになまえをかいてください。"
+                },
+                {
+                    japanese: "じゅうしょ",
+                    kanji: "住所",
+                    nepali: "ठेगाना",
+                    english: "address",
+                    sentence: "じゅうしょをおしえてください。"
+                },
+                {
+                    japanese: "ちず",
+                    kanji: "地図",
+                    nepali: "नक्सा",
+                    english: "map",
+                    sentence: "ちずをかきましょうか。"
+                },
+                {
+                    japanese: "しお",
+                    kanji: "塩",
+                    nepali: "नुन",
+                    english: "salt",
+                    sentence: "しおをとってください。"
+                },
+                {
+                    japanese: "さとう",
+                    kanji: "砂糖",
+                    nepali: "चिनी",
+                    english: "sugar",
+                    sentence: "さとうをいれますか。"
+                },
+                {
+                    japanese: "もんだい",
+                    kanji: "問題",
+                    nepali: "प्रश्न / समस्या",
+                    english: "question, problem",
+                    sentence: "このもんだいはむずかしいです。"
+                },
+                {
+                    japanese: "こたえ",
+                    kanji: "答え",
+                    nepali: "उत्तर",
+                    english: "answer",
+                    sentence: "こたえがわかりません。"
+                },
+                {
+                    japanese: "よみかた",
+                    kanji: "読み方",
+                    nepali: "पढ्ने तरिका",
+                    english: "how to read, way of reading",
+                    sentence: "このかんじのよみかたをおしえてください。"
+                },
+                {
+                    japanese: "まっすぐ",
+                    kanji: "",
+                    nepali: "सीधा",
+                    english: "straight",
+                    sentence: "このみちをまっすぐいってください。"
+                },
+                {
+                    japanese: "ゆっくり",
+                    kanji: "",
+                    nepali: "बिस्तारै / आरामदायी",
+                    english: "slowly, leisurely",
+                    sentence: "ゆっくりはなしてください。"
+                },
+                {
+                    japanese: "すぐ",
+                    kanji: "",
+                    nepali: "तुरुन्त",
+                    english: "immediately",
+                    sentence: "すぐいきます。"
+                },
+                {
+                    japanese: "また",
+                    kanji: "",
+                    nepali: "फेरि",
+                    english: "again",
+                    sentence: "またきてください。"
+                },
+                {
+                    japanese: "あとで",
+                    kanji: "後で",
+                    nepali: "पछि",
+                    english: "later",
+                    sentence: "あとででんわをかけます。"
+                },
+                {
+                    japanese: "もうすこし",
+                    kanji: "もう少し",
+                    nepali: "अब थोरै",
+                    english: "a little more",
+                    sentence: "もうすこしおおきいのはありませんか。"
+                },
+                {
+                    japanese: "さあ",
+                    kanji: "",
+                    nepali: "ठीक (कुनै कामलाई प्रोत्साहन गर्दा)",
+                    english: "right (when encouraging)",
+                    sentence: "さあ、いきましょう。"
+                },
+                {
+                    japanese: "あれ？",
+                    kanji: "",
+                    nepali: "अरे ? (चकित वा अचम्म हुँदा)",
+                    english: "Oh! / Eh?",
+                    sentence: "あれ？かぎはどこですか。"
+                },
+                {
+                    japanese: "しんごうをみぎへまがってください。",
+                    kanji: "信号を右へ曲がってください。",
+                    nepali: "ट्राफिक बत्तीबाट दाहिनेतिर मुडिनुहोस्।",
+                    english: "Turn right at the traffic light.",
+                    sentence: "つぎのしんごうをみぎへまがってください。"
+                },
+                {
+                    japanese: "これでおねがいします。",
+                    kanji: "",
+                    nepali: "कृपया यसबाट (तिर्न चाहन्छु)।",
+                    english: "I'd like to pay with this.",
+                    sentence: "1000えんです。これでおねがいします。"
+                },
+                {
+                    japanese: "おつり",
+                    kanji: "お釣り",
+                    nepali: "घुर्ता पैसा / फिर्ता पैसा",
+                    english: "change (money)",
+                    sentence: "はい、200えんのおつりです。"
+                }
+            ],
+            "Lesson 15": [{
+                    japanese: "おきます",
+                    kanji: "置きます",
+                    nepali: "राख्छु",
+                    english: "put, place",
+                    sentence: "つくえのうえにほんをおきます。"
+                },
+                {
+                    japanese: "つくります",
+                    kanji: "作ります",
+                    nepali: "बनाउछु / उत्पादनगर्छु",
+                    english: "make, produce",
+                    sentence: "ばんごはんをつくります。"
+                },
+                {
+                    japanese: "うります",
+                    kanji: "売ります",
+                    nepali: "बेच्छु",
+                    english: "sell",
+                    sentence: "えきでしんぶんをうっています。"
+                },
+                {
+                    japanese: "しります",
+                    kanji: "知ります",
+                    nepali: "चिन्छु",
+                    english: "get to know",
+                    sentence: "ミラーさんのじゅうしょをしっていますか。"
+                },
+                {
+                    japanese: "すみます",
+                    kanji: "住みます",
+                    nepali: "बसोबास गर्छु",
+                    english: "live, reside",
+                    sentence: "わたしはとうきょうにすんでいます。"
+                },
+                {
+                    japanese: "けんきゅうします",
+                    kanji: "研究します",
+                    nepali: "अनुसन्धान गर्छु",
+                    english: "do research",
+                    sentence: "だいがくでけいざいをけんきゅうしています。"
+                },
+                {
+                    japanese: "しりょう",
+                    kanji: "資料",
+                    nepali: "सामाग्री / डाटा",
+                    english: "materials, data",
+                    sentence: "かいぎのしりょうをコピーします。"
+                },
+                {
+                    japanese: "カタログ",
+                    kanji: "",
+                    nepali: "क्याटलक",
+                    english: "catalogue",
+                    sentence: "あたらしいカタログをもらいました。"
+                },
+                {
+                    japanese: "じこくひょう",
+                    kanji: "時刻表",
+                    nepali: "समय तालिका",
+                    english: "timetable",
+                    sentence: "えきでじこくひょうをもらいます。"
+                },
+                {
+                    japanese: "ふく",
+                    kanji: "服",
+                    nepali: "लुगा",
+                    english: "clothes",
+                    sentence: "デパートでふくをかいました。"
+                },
+                {
+                    japanese: "せいひん",
+                    kanji: "製品",
+                    nepali: "उत्पादनहरु",
+                    english: "products",
+                    sentence: "このかいしゃはくるまのせいひんをつくっています。"
+                },
+                {
+                    japanese: "ソフト",
+                    kanji: "",
+                    nepali: "सफ्टवेयर",
+                    english: "software",
+                    sentence: "このコンピューターのソフトはべんりです。"
+                },
+                {
+                    japanese: "でんしじしょ",
+                    kanji: "電子辞書",
+                    nepali: "विद्युतीय शब्दकोश",
+                    english: "electronic dictionary",
+                    sentence: "でんしじしょをもっていますか。"
+                },
+                {
+                    japanese: "けいざい",
+                    kanji: "経済",
+                    nepali: "अर्थव्यवस्था (अर्थशास्त्र)",
+                    english: "economy",
+                    sentence: "わたしはだいがくでけいざいをべんきょうします。"
+                },
+                {
+                    japanese: "しやくしょ",
+                    kanji: "市役所",
+                    nepali: "नगरपालिका कार्यलय",
+                    english: "municipal office, city hall",
+                    sentence: "しやくしょはどこですか。"
+                },
+                {
+                    japanese: "こうこう",
+                    kanji: "高校",
+                    nepali: "उच्च माध्यमिक विद्यालय",
+                    english: "senior high school",
+                    sentence: "わたしはこうこうのきょうしです。"
+                },
+                {
+                    japanese: "はいしゃ",
+                    kanji: "歯医者",
+                    nepali: "दन्त चिकित्सक",
+                    english: "dentist, dentist's",
+                    sentence: "はいしゃをよやくします。"
+                },
+                {
+                    japanese: "どくしん",
+                    kanji: "独身",
+                    nepali: "अविवाहित / एकल",
+                    english: "single, unmarried",
+                    sentence: "わたしはどくしんです。"
+                },
+                {
+                    japanese: "みなさん",
+                    kanji: "皆さん",
+                    nepali: "सबैजना",
+                    english: "everyone",
+                    sentence: "みなさん、こんにちは。"
+                },
+                {
+                    japanese: "おもいだします",
+                    kanji: "思い出します",
+                    nepali: "सम्झन्छु / याद गर्छु",
+                    english: "remember, recollect",
+                    sentence: "こうこうのともだちをおもいだします。"
+                },
+                {
+                    japanese: "いらっしゃいます",
+                    kanji: "",
+                    nepali: "हुनुहुन्छ (います को आदर शब्द)",
+                    english: "be (honorific equivalent of います)",
+                    sentence: "せんせいはけんきゅうしつにいらっしゃいます。"
+                },
+                {
+                    japanese: "にっぽんばし",
+                    kanji: "日本橋",
+                    nepali: "ओशाकामा रहेको किनमेल गर्ने जिल्ला",
+                    english: "Nipponbashi (shopping district in Osaka)",
+                    sentence: "にっぽんばしでかいものをします。"
+                }
+            ],
+            "Lesson 16": [{
+                    japanese: "のります[でんしゃに~]",
+                    kanji: "乗ります",
+                    nepali: "[रेलमा] चड्छु",
+                    english: "get on, ride [a train]",
+                    sentence: "まいにち、でんしゃにのります。"
+                },
+                {
+                    japanese: "おります[でんしゃを~]",
+                    kanji: "降ります",
+                    nepali: "[रेलबाट] झर्छु / ओर्लन्छु",
+                    english: "get off [a train]",
+                    sentence: "つぎのえきでおります。"
+                },
+                {
+                    japanese: "のりかえます",
+                    kanji: "乗り換えます",
+                    nepali: "बदल्छु (रेल आदि)",
+                    english: "change (trains, etc.)",
+                    sentence: "おおさかでちかてつにのりかえます。"
+                },
+                {
+                    japanese: "あびます[シャワーを~]",
+                    kanji: "浴びます",
+                    nepali: "[सावर] लिन्छु (नुहाउछु)",
+                    english: "take [a shower]",
+                    sentence: "あさ、シャワーをあびます。"
+                },
+                {
+                    japanese: "いれます",
+                    kanji: "入れます",
+                    nepali: "भित्र हाल्छु / छिराउछु",
+                    english: "put in, insert",
+                    sentence: "かばんにほんをいれます。"
+                },
+                {
+                    japanese: "だします",
+                    kanji: "出します",
+                    nepali: "बाहिर निकाल्छु / पठाउछु",
+                    english: "take out, hand in, send",
+                    sentence: "ぎんこうでおかねをだします。"
+                },
+                {
+                    japanese: "おろします[おかねを~]",
+                    kanji: "下ろします",
+                    nepali: "[पैसा] निकासीगर्छु",
+                    english: "withdraw [money]",
+                    sentence: "ATMでおかねをおろします。"
+                },
+                {
+                    japanese: "はいります[だいがくに~]",
+                    kanji: "入ります",
+                    nepali: "[विश्वविद्यालयमा] प्रवेशगर्छु",
+                    english: "enter [a university]",
+                    sentence: "らいねんだいがくにはいります。"
+                },
+                {
+                    japanese: "でます[だいがくを~]",
+                    kanji: "出ます",
+                    nepali: "[विश्वविद्यालयबाट] स्नातकगर्छु",
+                    english: "graduate from [a university]",
+                    sentence: "ことしだいがくをでます。"
+                },
+                {
+                    japanese: "おします",
+                    kanji: "押します",
+                    nepali: "ठेल्छु / थिच्छु",
+                    english: "push, press",
+                    sentence: "このボタンをおしてください。"
+                },
+                {
+                    japanese: "はじめます",
+                    kanji: "始めます",
+                    nepali: "सुरुगर्छ / थाल्छु",
+                    english: "start, begin",
+                    sentence: "9じからじゅぎょうをはじめます。"
+                },
+                {
+                    japanese: "けんがくします",
+                    kanji: "見学します",
+                    nepali: "शैक्षीक यात्रा गर्छु",
+                    english: "tour, visit a place to study it",
+                    sentence: "こうじょうをけんがくします。"
+                },
+                {
+                    japanese: "でんわします",
+                    kanji: "電話します",
+                    nepali: "टेलीफोन गर्छु",
+                    english: "phone",
+                    sentence: "あとででんわします。"
+                },
+                {
+                    japanese: "わかい",
+                    kanji: "若い",
+                    nepali: "जवान",
+                    english: "young",
+                    sentence: "あのひとはまだわかいです。"
+                },
+                {
+                    japanese: "ながい",
+                    kanji: "長い",
+                    nepali: "लामो",
+                    english: "long",
+                    sentence: "かのじょはかみがながいです。"
+                },
+                {
+                    japanese: "みじかい",
+                    kanji: "短い",
+                    nepali: "छोटो",
+                    english: "short",
+                    sentence: "このえんぴつはみじかいです。"
+                },
+                {
+                    japanese: "あかるい",
+                    kanji: "明るい",
+                    nepali: "उज्यालो / चम्किलो",
+                    english: "bright, light",
+                    sentence: "このへやはあかるいです。"
+                },
+                {
+                    japanese: "くらい",
+                    kanji: "暗い",
+                    nepali: "अध्याँरो",
+                    english: "dark",
+                    sentence: "そとはくらいです。"
+                },
+                {
+                    japanese: "からだ",
+                    kanji: "体",
+                    nepali: "शरीर",
+                    english: "body, health",
+                    sentence: "からだにきをつけてください。"
+                },
+                {
+                    japanese: "あたま",
+                    kanji: "頭",
+                    nepali: "टाउको / दिमाग",
+                    english: "head, brain",
+                    sentence: "かれはあたまがいいです。"
+                },
+                {
+                    japanese: "かみ",
+                    kanji: "髪",
+                    nepali: "कपाल",
+                    english: "hair",
+                    sentence: "かみをきりました。"
+                },
+                {
+                    japanese: "かお",
+                    kanji: "顔",
+                    nepali: "अनुहार",
+                    english: "face",
+                    sentence: "かおをあらいます。"
+                },
+                {
+                    japanese: "め",
+                    kanji: "目",
+                    nepali: "आखाँ",
+                    english: "eye",
+                    sentence: "めがいたいです。"
+                },
+                {
+                    japanese: "みみ",
+                    kanji: "耳",
+                    nepali: "कान",
+                    english: "ear",
+                    sentence: "みみがいたいです。"
+                },
+                {
+                    japanese: "くち",
+                    kanji: "口",
+                    nepali: "मुख",
+                    english: "mouth",
+                    sentence: "くちをあけてください。"
+                },
+                {
+                    japanese: "は",
+                    kanji: "歯",
+                    nepali: "दाँत",
+                    english: "tooth",
+                    sentence: "はをみがきます。"
+                },
+                {
+                    japanese: "おなか",
+                    kanji: "",
+                    nepali: "पेट",
+                    english: "stomach",
+                    sentence: "おなかがすきました。"
+                },
+                {
+                    japanese: "あし",
+                    kanji: "足",
+                    nepali: "खुट्टा",
+                    english: "leg, foot",
+                    sentence: "あしがいたいです。"
+                },
+                {
+                    japanese: "せ",
+                    kanji: "背",
+                    nepali: "उचाई",
+                    english: "height",
+                    sentence: "わたしはせがたかいです。"
+                },
+                {
+                    japanese: "サービス",
+                    kanji: "",
+                    nepali: "सेवा (सर्भीस)",
+                    english: "service",
+                    sentence: "あのホテルはサービスがいいです。"
+                },
+                {
+                    japanese: "ジョギング",
+                    kanji: "",
+                    nepali: "जगीङ्ग",
+                    english: "jogging",
+                    sentence: "まいあさ、ジョギングをします。"
+                },
+                {
+                    japanese: "シャワー",
+                    kanji: "",
+                    nepali: "सावर",
+                    english: "shower",
+                    sentence: "シャワーをあびます。"
+                },
+                {
+                    japanese: "みどり",
+                    kanji: "緑",
+                    nepali: "हरियो / हरियाली",
+                    english: "green, greenery",
+                    sentence: "こうえんはみどりがおおいです。"
+                },
+                {
+                    japanese: "[お]てら",
+                    kanji: "お寺",
+                    nepali: "बौद्ध मन्दिर",
+                    english: "Buddhist temple",
+                    sentence: "きょうとでおてらをけんがくしました。"
+                },
+                {
+                    japanese: "じんじゃ",
+                    kanji: "神社",
+                    nepali: "सिन्टो मन्दिर",
+                    english: "Shinto shrine",
+                    sentence: "ちかくにゆうめいなじんじゃがあります。"
+                },
+                {
+                    japanese: "どうやって",
+                    kanji: "",
+                    nepali: "कुन् तरिकाले / कसरी",
+                    english: "in what way, how",
+                    sentence: "ここからえきまでどうやっていきますか。"
+                },
+                {
+                    japanese: "どの〜",
+                    kanji: "",
+                    nepali: "कुन्",
+                    english: "which ~ (used for three or more)",
+                    sentence: "どのかばんがあなたのですか。"
+                },
+                {
+                    japanese: "[いいえ、]まだまだです。",
+                    kanji: "",
+                    nepali: "अँह, अझैअझै छैन",
+                    english: "[No,] I still have a long way to go.",
+                    sentence: "にほんごがじょうずですね。いいえ、まだまだです。"
+                },
+                {
+                    japanese: "おひきだしですか。",
+                    kanji: "お引き出しですか。",
+                    nepali: "पैसा निकासी गर्नहुनेहो ?",
+                    english: "Are you making a withdrawal?",
+                    sentence: "おひきだしですか。"
+                },
+                {
+                    japanese: "まず",
+                    kanji: "",
+                    nepali: "सर्वप्रथम",
+                    english: "first of all",
+                    sentence: "まず、カードをいれてください。"
+                },
+                {
+                    japanese: "キャッシュカード",
+                    kanji: "",
+                    nepali: "क्यास कार्ड",
+                    english: "cash card, ATM card",
+                    sentence: "キャッシュカードをおもちですか。"
+                },
+                {
+                    japanese: "あんしょうばんごう",
+                    kanji: "暗証番号",
+                    nepali: "पिन नम्बर",
+                    english: "personal identification number, PIN",
+                    sentence: "つぎに、あんしょうばんごうをおしてください。"
+                },
+                {
+                    japanese: "つぎに",
+                    kanji: "次に",
+                    nepali: "अर्को चरणमा",
+                    english: "next",
+                    sentence: "つぎに、きんがくをおしてください。"
+                },
+                {
+                    japanese: "きんがく",
+                    kanji: "金額",
+                    nepali: "पैसाको मात्रा",
+                    english: "amount of money",
+                    sentence: "きんがくをかくにんしてください。"
+                },
+                {
+                    japanese: "かくにん",
+                    kanji: "確認",
+                    nepali: "पुष्टिकरण / निश्चीत",
+                    english: "confirmation",
+                    sentence: "かくにんボタンをおしてください。"
+                },
+                {
+                    japanese: "ボタン",
+                    kanji: "",
+                    nepali: "बटन",
+                    english: "button",
+                    sentence: "このボタンをおしてください。"
+                },
+                {
+                    japanese: "JR",
+                    kanji: "",
+                    nepali: "जापानी रेलवे",
+                    english: "Japan Railways",
+                    sentence: "JRのえきはどこですか。"
+                },
+                {
+                    japanese: "ゆきまつり",
+                    kanji: "雪祭り",
+                    nepali: "हीउ चाड",
+                    english: "Snow Festival",
+                    sentence: "さっぽろのゆきまつりはゆうめいです。"
+                }
+            ],
+            "Lesson 17": [{
+                    japanese: "おぼえます",
+                    kanji: "覚えます",
+                    nepali: "यादगर्छु / कण्ठगर्छु",
+                    english: "memorize",
+                    sentence: "あたらしいことばをおぼえます。"
+                },
+                {
+                    japanese: "わすれます",
+                    kanji: "忘れます",
+                    nepali: "बिर्सीन्छु / भुल्छु",
+                    english: "forget",
+                    sentence: "かさをわすれないでください。"
+                },
+                {
+                    japanese: "なくします",
+                    kanji: "",
+                    nepali: "हराउछु",
+                    english: "lose",
+                    sentence: "さいふをなくしました。"
+                },
+                {
+                    japanese: "はらいます",
+                    kanji: "払います",
+                    nepali: "तिर्छु",
+                    english: "pay",
+                    sentence: "レストランでおかねをはらいます。"
+                },
+                {
+                    japanese: "かえします",
+                    kanji: "返します",
+                    nepali: "फर्काउछु / फिर्तागर्छु",
+                    english: "give back, return",
+                    sentence: "ともだちにほんをかえします。"
+                },
+                {
+                    japanese: "でかけます",
+                    kanji: "出かけます",
+                    nepali: "बाहिर जान्छु",
+                    english: "go out",
+                    sentence: "しゅうまつにでかけます。"
+                },
+                {
+                    japanese: "ぬぎます",
+                    kanji: "脱ぎます",
+                    nepali: "फुकाल्छु (लुगा, जुत्ता आदि)",
+                    english: "take off (clothes, shoes, etc.)",
+                    sentence: "うちへかえって、くつをぬぎます。"
+                },
+                {
+                    japanese: "もっていきます",
+                    kanji: "持って行きます",
+                    nepali: "बोकेर जान्छु",
+                    english: "take (something)",
+                    sentence: "あした、おべんとうをもっていきます。"
+                },
+                {
+                    japanese: "もってきます",
+                    kanji: "持って来ます",
+                    nepali: "बोकेर आउछु",
+                    english: "bring (something)",
+                    sentence: "カメラをもってきてください。"
+                },
+                {
+                    japanese: "しんぱいします",
+                    kanji: "心配します",
+                    nepali: "चिन्ता गर्छु / पिर गर्छु",
+                    english: "worry",
+                    sentence: "しんぱいしないでください。だいじょうぶです。"
+                },
+                {
+                    japanese: "ざんぎょうします",
+                    kanji: "残業します",
+                    nepali: "ओभरटाइम काम गर्छु",
+                    english: "work overtime",
+                    sentence: "まいにちざんぎょうします。"
+                },
+                {
+                    japanese: "しゅっちょうします",
+                    kanji: "出張します",
+                    nepali: "व्यापारीक यात्रा गर्छु",
+                    english: "go on a business trip",
+                    sentence: "らいげつ、アメリカへしゅっちょうします。"
+                },
+                {
+                    japanese: "のみます[くすりを~]",
+                    kanji: "飲みます",
+                    nepali: "[औषधि] पीउछु",
+                    english: "take [medicine]",
+                    sentence: "しょくじのあとで、くすりをのみます。"
+                },
+                {
+                    japanese: "はいります[おふろに~]",
+                    kanji: "入ります",
+                    nepali: "स्नान लिन्छु",
+                    english: "take [a bath]",
+                    sentence: "ねるまえに、おふろにはいります。"
+                },
+                {
+                    japanese: "たいせつ[な]",
+                    kanji: "大切[な]",
+                    nepali: "महत्वपूर्ण",
+                    english: "important, precious",
+                    sentence: "かぞくはたいせつです。"
+                },
+                {
+                    japanese: "だいじょうぶ[な]",
+                    kanji: "大丈夫[な]",
+                    nepali: "ठिक छ (सुरक्षित)",
+                    english: "all right, okay",
+                    sentence: "だいじょうぶですか。はい、げんきです。"
+                },
+                {
+                    japanese: "あぶない",
+                    kanji: "危ない",
+                    nepali: "खतरनाक",
+                    english: "dangerous",
+                    sentence: "このかわはあぶないです。"
+                },
+                {
+                    japanese: "きんえん",
+                    kanji: "禁煙",
+                    nepali: "धुम्रपान निषेध",
+                    english: "no smoking",
+                    sentence: "このへやはきんえんです。"
+                },
+                {
+                    japanese: "[けんこう]ほけんしょう",
+                    kanji: "健康保険証",
+                    nepali: "[स्वास्थ्य] बीमा कार्ड",
+                    english: "[health] insurance card",
+                    sentence: "びょういんへいくとき、ほけんしょうをもっていきます。"
+                },
+                {
+                    japanese: "ねつ",
+                    kanji: "熱",
+                    nepali: "ताप / ज्वोरो",
+                    english: "fever",
+                    sentence: "きのう、ねつがありました。"
+                },
+                {
+                    japanese: "びょうき",
+                    kanji: "病気",
+                    nepali: "बिरामी / रोग",
+                    english: "illness, disease",
+                    sentence: "びょうきですから、かいしゃをやすみます。"
+                },
+                {
+                    japanese: "くすり",
+                    kanji: "薬",
+                    nepali: "औषधी",
+                    english: "medicine",
+                    sentence: "くすりをのまなければなりません。"
+                },
+                {
+                    japanese: "[お]ふろ",
+                    kanji: "お風呂",
+                    nepali: "स्नान",
+                    english: "bath",
+                    sentence: "おふろにはいってもいいですか。"
+                },
+                {
+                    japanese: "うわぎ",
+                    kanji: "上着",
+                    nepali: "ज्याकेट / बाहिरी पोसाक",
+                    english: "jacket, outerwear",
+                    sentence: "さむいですから、うわぎをきてください。"
+                },
+                {
+                    japanese: "したぎ",
+                    kanji: "下着",
+                    nepali: "भित्री पोसाक",
+                    english: "underwear",
+                    sentence: "せんたくものにしたぎがあります。"
+                },
+                {
+                    japanese: "2,3にち",
+                    kanji: "",
+                    nepali: "दुई वा तिन दिन",
+                    english: "a few days",
+                    sentence: "2,3にちかいしゃをやすみます。"
+                },
+                {
+                    japanese: "~までに",
+                    kanji: "",
+                    nepali: "सम्ममा (समय सीमा संकेत गर्दा)",
+                    english: "by ~ (indicating a time limit)",
+                    sentence: "どようびまでにレポートをだしてください。"
+                },
+                {
+                    japanese: "ですから",
+                    kanji: "",
+                    nepali: "त्यसकारण / त्यसैले",
+                    english: "therefore, so",
+                    sentence: "ねつがあります。ですから、びょういんへいきます。"
+                },
+                {
+                    japanese: "どうしましたか。",
+                    kanji: "",
+                    nepali: "के भयो ?",
+                    english: "What's the matter?",
+                    sentence: "どうしましたか。げんきじゃありませんね。"
+                },
+                {
+                    japanese: "のど",
+                    kanji: "",
+                    nepali: "गला",
+                    english: "throat",
+                    sentence: "のどがいたいです。"
+                },
+                {
+                    japanese: "[~が]いたいです。",
+                    kanji: "痛いです。",
+                    nepali: "[~] दुखेको छ",
+                    english: "I have a pain in my [~].",
+                    sentence: "あたまがいたいです。"
+                },
+                {
+                    japanese: "かぜ",
+                    kanji: "風邪",
+                    nepali: "रुघाँ",
+                    english: "cold, flu",
+                    sentence: "かぜをひきました。"
+                },
+                {
+                    japanese: "おだいじに。",
+                    kanji: "お大事に。",
+                    nepali: "आफ्नो ख्याल गर्नुस् (बिरामी मानीसलाई भनिने शब्द)",
+                    english: "Take care of yourself.",
+                    sentence: "はい、ありがとうございます。おだいじに。"
+                }
+            ],
+            "Lesson 18": [{
+                    japanese: "できます",
+                    kanji: "",
+                    nepali: "सक्षम हुनु / सक्छु",
+                    english: "can, be able to",
+                    sentence: "わたしはにほんごをはなすことができます。"
+                },
+                {
+                    japanese: "あらいます",
+                    kanji: "洗います",
+                    nepali: "धुन्छु",
+                    english: "wash",
+                    sentence: "しょくじのまえにてをあらいます。"
+                },
+                {
+                    japanese: "ひきます",
+                    kanji: "弾きます",
+                    nepali: "बजाउछु (गीतार, पियानो आदि)",
+                    english: "play (stringed instrument, piano, etc.)",
+                    sentence: "ギターをひくことができますか。"
+                },
+                {
+                    japanese: "うたいます",
+                    kanji: "歌います",
+                    nepali: "गाउछु",
+                    english: "sing",
+                    sentence: "うたをうたうのがすきです。"
+                },
+                {
+                    japanese: "あつめます",
+                    kanji: "集めます",
+                    nepali: "जम्मागर्छु / भेलागर्छु",
+                    english: "collect, gather",
+                    sentence: "ふるいきってをあつめるのがしゅみです。"
+                },
+                {
+                    japanese: "すてます",
+                    kanji: "捨てます",
+                    nepali: "फाल्छु",
+                    english: "throw away",
+                    sentence: "ふるいざっしをすてます。"
+                },
+                {
+                    japanese: "かえます",
+                    kanji: "換えます",
+                    nepali: "साट्छु / बदल्छु",
+                    english: "exchange, change",
+                    sentence: "ドルをえんにかえます。"
+                },
+                {
+                    japanese: "うんてんします",
+                    kanji: "運転します",
+                    nepali: "ड्राइभ गर्छ",
+                    english: "drive",
+                    sentence: "くるまをうんてんすることができます。"
+                },
+                {
+                    japanese: "よやくします",
+                    kanji: "予約します",
+                    nepali: "आरक्षित गर्छु (रिजर्भ गर्छु / बुकिङ्ग गर्छु)",
+                    english: "reserve, book",
+                    sentence: "ホテルをよやくしました。"
+                },
+                {
+                    japanese: "ピアノ",
+                    kanji: "",
+                    nepali: "पियानो",
+                    english: "piano",
+                    sentence: "ピアノをひくことができます。"
+                },
+                {
+                    japanese: "〜メートル",
+                    kanji: "",
+                    nepali: "मीटर",
+                    english: "meter",
+                    sentence: "100メートルおよぐことができます。"
+                },
+                {
+                    japanese: "げんきん",
+                    kanji: "現金",
+                    nepali: "नगद",
+                    english: "cash",
+                    sentence: "げんきんではらいます。"
+                },
+                {
+                    japanese: "しゅみ",
+                    kanji: "趣味",
+                    nepali: "रुची / शौक",
+                    english: "hobby",
+                    sentence: "あなたのしゅみはなんですか。"
+                },
+                {
+                    japanese: "にっき",
+                    kanji: "日記",
+                    nepali: "डायरी (दैनिकी)",
+                    english: "diary",
+                    sentence: "まいにち、にっきをかきます。"
+                },
+                {
+                    japanese: "おいのり",
+                    kanji: "お祈り",
+                    nepali: "प्रार्थना / पुजा",
+                    english: "prayer",
+                    sentence: "おいのりをします。"
+                },
+                {
+                    japanese: "かちょう",
+                    kanji: "課長",
+                    nepali: "खण्ड प्रमुख",
+                    english: "section chief",
+                    sentence: "わたしのかちょうはやさしいです。"
+                },
+                {
+                    japanese: "ぶちょう",
+                    kanji: "部長",
+                    nepali: "विभाग प्रमुख",
+                    english: "department chief",
+                    sentence: "ぶちょうはゴルフがじょうずです。"
+                },
+                {
+                    japanese: "しゃちょう",
+                    kanji: "社長",
+                    nepali: "कम्पनी अध्यक्ष",
+                    english: "company president",
+                    sentence: "しゃちょうのくるまは大きいです。"
+                },
+                {
+                    japanese: "どうぶつ",
+                    kanji: "動物",
+                    nepali: "जनावर",
+                    english: "animal",
+                    sentence: "どんなどうぶつがすきですか。"
+                },
+                {
+                    japanese: "うま",
+                    kanji: "馬",
+                    nepali: "घोडा",
+                    english: "horse",
+                    sentence: "うまにのることができます。"
+                },
+                {
+                    japanese: "インターネット",
+                    kanji: "",
+                    nepali: "इन्टरनेट",
+                    english: "internet",
+                    sentence: "インターネットでよやくします。"
+                },
+                {
+                    japanese: "とくに",
+                    kanji: "特に",
+                    nepali: "विशेष गरी",
+                    english: "especially",
+                    sentence: "とくにさかながすきです。"
+                },
+                {
+                    japanese: "へえ",
+                    kanji: "",
+                    nepali: "होर ! साच्चै !",
+                    english: "Really!",
+                    sentence: "へえ、すごいですね。"
+                },
+                {
+                    japanese: "それはおもしろいですね。",
+                    kanji: "",
+                    nepali: "त्यो रोचक छ है ?",
+                    english: "That's interesting, isn't it?",
+                    sentence: "しゅみはきってあつめですか。それはおもしろいですね。"
+                },
+                {
+                    japanese: "なかなか",
+                    kanji: "",
+                    nepali: "सजिलो छैन (नकारात्मकसँग प्रयोग गरिन्छ)",
+                    english: "not easily",
+                    sentence: "にほんではなかなかうまをみることができません。"
+                },
+                {
+                    japanese: "ほんとうですか。",
+                    kanji: "本当ですか。",
+                    nepali: "साच्चै हो ?",
+                    english: "Really?",
+                    sentence: "1000メートルおよぐことができますか。ほんとうですか。"
+                },
+                {
+                    japanese: "ぜひ",
+                    kanji: "是非",
+                    nepali: "जसरी गरेर भएपनि / साँच्चै",
+                    english: "by all means, definitely",
+                    sentence: "ぜひ、わたしのうちへきてください。"
+                },
+                {
+                    japanese: "ビートルズ",
+                    kanji: "",
+                    nepali: "बिटल्स (प्रसिद्ध ब्रिटिस पप समूह)",
+                    english: "The Beatles",
+                    sentence: "ビートルズのうたがすきです。"
+                },
+                {
+                    japanese: "あきはばら",
+                    kanji: "秋葉原",
+                    nepali: "आकिहाबारा (टोक्योको एक जिल्ला)",
+                    english: "Akihabara",
+                    sentence: "あきはばらでパソコンをかいました。"
+                }
+            ],
+            "Lesson 19": [{
+                    japanese: "のぼります",
+                    kanji: "登ります",
+                    nepali: "चढ्छु (पाहाड)",
+                    english: "climb [a mountain]",
+                    sentence: "ふじさんにのぼったことがありますか。"
+                },
+                {
+                    japanese: "とまります[ホテルに~]",
+                    kanji: "泊まります",
+                    nepali: "बस्छु / रोकिन्छु [होटलमा]",
+                    english: "stay [at a hotel]",
+                    sentence: "きのう、あたらしいホテルにとまりました。"
+                },
+                {
+                    japanese: "そうじします",
+                    kanji: "掃除します",
+                    nepali: "सरसफाई गर्छु",
+                    english: "clean (a room)",
+                    sentence: "へやをきれいにそうじしました。"
+                },
+                {
+                    japanese: "せんたくします",
+                    kanji: "洗濯します",
+                    nepali: "धुन्छु (लुगा)",
+                    english: "wash (clothes)",
+                    sentence: "まいにち、ふくをせんたくします。"
+                },
+                {
+                    japanese: "なります",
+                    kanji: "",
+                    nepali: "हुन्छ / बन्छु",
+                    english: "become",
+                    sentence: "わたしはいしゃになりたいです。"
+                },
+                {
+                    japanese: "ねむい",
+                    kanji: "眠い",
+                    nepali: "निन्द्रा ग्रस्त",
+                    english: "sleepy",
+                    sentence: "きのうあまりねませんでしたから、ねむいです。"
+                },
+                {
+                    japanese: "つよい",
+                    kanji: "強い",
+                    nepali: "बलियो",
+                    english: "strong",
+                    sentence: "かれはからだがつよいです。"
+                },
+                {
+                    japanese: "よわい",
+                    kanji: "弱い",
+                    nepali: "कमजोर",
+                    english: "weak",
+                    sentence: "このチームはよわいです。"
+                },
+                {
+                    japanese: "れんしゅう",
+                    kanji: "練習",
+                    nepali: "अभ्यास",
+                    english: "practice",
+                    sentence: "サッカーのれんしゅうをします。"
+                },
+                {
+                    japanese: "ゴルフ",
+                    kanji: "",
+                    nepali: "गल्फ खेल",
+                    english: "golf",
+                    sentence: "ゴルフをしたことがありますか。"
+                },
+                {
+                    japanese: "すもう",
+                    kanji: "相撲",
+                    nepali: "जापानी कुस्ती खेल",
+                    english: "sumo wrestling",
+                    sentence: "すもうをみたことがあります。"
+                },
+                {
+                    japanese: "おちゃ",
+                    kanji: "お茶",
+                    nepali: "चिया समारोह",
+                    english: "tea ceremony",
+                    sentence: "おちゃをならいたいです。"
+                },
+                {
+                    japanese: "ひ",
+                    kanji: "日",
+                    nepali: "दिन",
+                    english: "day, date",
+                    sentence: "きょうはわたしのたんじょうびのひです。"
+                },
+                {
+                    japanese: "ちょうし",
+                    kanji: "調子",
+                    nepali: "अवस्था / स्थिति",
+                    english: "condition",
+                    sentence: "きょうはからだのちょうしがいいです。"
+                },
+                {
+                    japanese: "いちど",
+                    kanji: "一度",
+                    nepali: "एक पटक / एक पल्ट",
+                    english: "once",
+                    sentence: "いちど、きょうとへいきたいです。"
+                },
+                {
+                    japanese: "いちども",
+                    kanji: "一度も",
+                    nepali: "एक पटकपनि / कहिल्यै (नकारात्मकसँग प्रयोग हुन्छ)",
+                    english: "not once, never (used with negatives)",
+                    sentence: "いちどもうみでおよいだことがありません。"
+                },
+                {
+                    japanese: "だんだん",
+                    kanji: "",
+                    nepali: "क्रमिक रुपले / बिस्तारै",
+                    english: "gradually",
+                    sentence: "だんだんあたたかくなります。"
+                },
+                {
+                    japanese: "もうすぐ",
+                    kanji: "",
+                    nepali: "चाँडै / छिट्टै",
+                    english: "soon",
+                    sentence: "もうすぐはるですね。"
+                },
+                {
+                    japanese: "おかげさまで",
+                    kanji: "",
+                    nepali: "धन्यवाद (सहयोग प्राप्त गर्दा कृतज्ञता व्यक्त गर्दा प्रयोग गरिन्छ)",
+                    english: "Thank you (expressing gratitude for help)",
+                    sentence: "おかげさまで、げんきになりました。"
+                },
+                {
+                    japanese: "でも",
+                    kanji: "",
+                    nepali: "तर",
+                    english: "but",
+                    sentence: "スポーツはすきです。でも、サッカーはあまりすきじゃありません。"
+                },
+                {
+                    japanese: "かんぱい",
+                    kanji: "乾杯",
+                    nepali: "चियर्स",
+                    english: "Cheers!",
+                    sentence: "みなさん、かんぱい！"
+                },
+                {
+                    japanese: "ダイエット",
+                    kanji: "",
+                    nepali: "डाईट",
+                    english: "diet",
+                    sentence: "あしたからダイエットをします。"
+                },
+                {
+                    japanese: "むり[な]",
+                    kanji: "無理[な]",
+                    nepali: "असम्भव",
+                    english: "impossible",
+                    sentence: "むりなダイエットはからだにわるいです。"
+                },
+                {
+                    japanese: "からだにいい",
+                    kanji: "体にいい",
+                    nepali: "शरिरलाई राम्रो",
+                    english: "good for one's health",
+                    sentence: "やさいはからだにいいです。"
+                },
+                {
+                    japanese: "とうきょうスカイツリー",
+                    kanji: "東京スカイツリー",
+                    nepali: "टोक्यो स्काई ट्री",
+                    english: "Tokyo Skytree",
+                    sentence: "とうきょうスカイツリーにのぼったことがありますか。"
+                }
+            ],
+            "Lesson 20": [{
+                    japanese: "いります[ビザが~]",
+                    kanji: "",
+                    nepali: "चाहिन्छ / आवश्यक छ [भिसा]",
+                    english: "need, require [a visa]",
+                    sentence: "このくにへはいるのにビザがいります。"
+                },
+                {
+                    japanese: "しらべます",
+                    kanji: "調べます",
+                    nepali: "जाँच्छु / छानबिनगर्छु",
+                    english: "check, investigate",
+                    sentence: "ことばのいみをじしょでしらべます。"
+                },
+                {
+                    japanese: "しゅうりします",
+                    kanji: "修理します",
+                    nepali: "मर्मत गर्छु",
+                    english: "repair",
+                    sentence: "こわれたとけいをしゅうりします。"
+                },
+                {
+                    japanese: "ぼく",
+                    kanji: "僕",
+                    nepali: "म (पुरुषहरु द्वारा प्रयोग गरिने अनौपचारिक शब्द)",
+                    english: "I (informal, used by men)",
+                    sentence: "ぼくはがくせいだ。"
+                },
+                {
+                    japanese: "きみ",
+                    kanji: "君",
+                    nepali: "तिमी (अनौपचारिक शब्द)",
+                    english: "you (informal, for equals or subordinates)",
+                    sentence: "きみはなにをたべる？"
+                },
+                {
+                    japanese: "〜くん",
+                    kanji: "〜君",
+                    nepali: "जी (केटा मान्छेको नाम पछाडि जोडिने अनौपचारिक शब्द)",
+                    english: "(informal suffix for boys' names)",
+                    sentence: "たなかくん、こんにちは。"
+                },
+                {
+                    japanese: "うん",
+                    kanji: "",
+                    nepali: "अँ / हो / हस (अनौपचारिक शब्द)",
+                    english: "yes (informal)",
+                    sentence: "「これ、きみの？」「うん、そうだよ。」"
+                },
+                {
+                    japanese: "ううん",
+                    kanji: "",
+                    nepali: "अँह / होईन / नाई (अनौपचारिक शब्द)",
+                    english: "no (informal)",
+                    sentence: "「もうたべた？」「ううん、まだ。」"
+                },
+                {
+                    japanese: "ことば",
+                    kanji: "言葉",
+                    nepali: "शब्द / भाषा",
+                    english: "word, language",
+                    sentence: "あたらしいことばをおぼえる。"
+                },
+                {
+                    japanese: "きもの",
+                    kanji: "着物",
+                    nepali: "किमोनो (परम्परागत जापानी पोशाक)",
+                    english: "kimono",
+                    sentence: "きものをきたことがありますか。"
+                },
+                {
+                    japanese: "ビザ",
+                    kanji: "",
+                    nepali: "भिसा",
+                    english: "visa",
+                    sentence: "ビザをしんせいする。"
+                },
+                {
+                    japanese: "はじめ",
+                    kanji: "初め",
+                    nepali: "शुरु / शुरुवात",
+                    english: "the beginning",
+                    sentence: "はじめはひらがなをべんきょうする。"
+                },
+                {
+                    japanese: "おわり",
+                    kanji: "終わり",
+                    nepali: "समाप्त / अन्त",
+                    english: "the end",
+                    sentence: "これでじゅぎょうはおわりだ。"
+                },
+                {
+                    japanese: "こっち",
+                    kanji: "",
+                    nepali: "यता (अनौपचारिक शब्द)",
+                    english: "this way (informal)",
+                    sentence: "こっちへきて。"
+                },
+                {
+                    japanese: "そっち",
+                    kanji: "",
+                    nepali: "त्यता (अनौपचारिक शब्द)",
+                    english: "that way (informal)",
+                    sentence: "そっちに何がある？"
+                },
+                {
+                    japanese: "あっち",
+                    kanji: "",
+                    nepali: "ऊ त्यता (अनौपचारिक शब्द)",
+                    english: "that way over there (informal)",
+                    sentence: "あっちへいこう。"
+                },
+                {
+                    japanese: "どっち",
+                    kanji: "",
+                    nepali: "कुन / कता (अनौपचारिक शब्द)",
+                    english: "which one, where (informal)",
+                    sentence: "どっちがいい？"
+                },
+                {
+                    japanese: "みんなで",
+                    kanji: "",
+                    nepali: "सबैजना सँगै",
+                    english: "all together",
+                    sentence: "みんなでごはんをたべよう。"
+                },
+                {
+                    japanese: "〜けど",
+                    kanji: "",
+                    nepali: "तर (अनौपचारिक)",
+                    english: "but (informal)",
+                    sentence: "このカメラはたかいけど、とてもいいね。"
+                },
+                {
+                    japanese: "おなかがいっぱいです",
+                    kanji: "お腹がいっぱいです",
+                    nepali: "म अघाई सकें / पेट टन्न छ",
+                    english: "I'm full.",
+                    sentence: "もうたべられません。おなかがいっぱいです。"
+                },
+                {
+                    japanese: "よかったら",
+                    kanji: "",
+                    nepali: "यदि ठिक लाग्यो भने",
+                    english: "if you like",
+                    sentence: "よかったら、いっしょにえいがをみませんか。"
+                },
+                {
+                    japanese: "いろいろ",
+                    kanji: "",
+                    nepali: "बिभिन्न / थरिथरि",
+                    english: "various",
+                    sentence: "いろいろありがとうございました。"
+                }
+            ],
+            "Lesson 21": [{
+                    japanese: "おもいます",
+                    kanji: "思います",
+                    nepali: "सोच्छु / बिचारगर्छु",
+                    english: "think",
+                    sentence: "あしたあめがふるとおもいます。"
+                },
+                {
+                    japanese: "いいます",
+                    kanji: "言います",
+                    nepali: "भन्छु",
+                    english: "say",
+                    sentence: "かれは「あしたやすむ」といっていました。"
+                },
+                {
+                    japanese: "かちます",
+                    kanji: "勝ちます",
+                    nepali: "जित्छु",
+                    english: "win",
+                    sentence: "にほんがかつとおもいます。"
+                },
+                {
+                    japanese: "まけます",
+                    kanji: "負けます",
+                    nepali: "हार्छु",
+                    english: "lose, be beaten",
+                    sentence: "このチームはまけるでしょう。"
+                },
+                {
+                    japanese: "あります[おまつりが~]",
+                    kanji: "",
+                    nepali: "हुन्छ [चाड]",
+                    english: "be held, take place [a festival]",
+                    sentence: "きょうとでおまつりがあります。"
+                },
+                {
+                    japanese: "やくにたちます",
+                    kanji: "役に立ちます",
+                    nepali: "उपयोगी छ",
+                    english: "be useful",
+                    sentence: "このじしょはとてもやくにたちます。"
+                },
+                {
+                    japanese: "うごきます",
+                    kanji: "動きます",
+                    nepali: "चल्छ / काम गर्छ",
+                    english: "move, work",
+                    sentence: "このとけいはうごきません。"
+                },
+                {
+                    japanese: "やめます[かいしゃを~]",
+                    kanji: "",
+                    nepali: "छोड्छु / अवकाश लिन्छु [कम्पनी]",
+                    english: "quit or retire from [a company], stop",
+                    sentence: "らいげつ、かいしゃをやめます。"
+                },
+                {
+                    japanese: "きをつけます",
+                    kanji: "気をつけます",
+                    nepali: "ध्यान दिन्छु / ख्याल राख्छु",
+                    english: "pay attention, take care",
+                    sentence: "くるまにきをつけてください。"
+                },
+                {
+                    japanese: "りゅうがくします",
+                    kanji: "留学します",
+                    nepali: "वैदेशीक अध्ययन गर्छु",
+                    english: "study abroad",
+                    sentence: "アメリカへりゅうがくしたいです。"
+                },
+                {
+                    japanese: "むだ[な]",
+                    kanji: "無駄[な]",
+                    nepali: "काम नलाग्ने / बेकार",
+                    english: "wasteful",
+                    sentence: "でんきをむだにしないでください。"
+                },
+                {
+                    japanese: "ふべん[な]",
+                    kanji: "不便[な]",
+                    nepali: "असुबिधाजनक",
+                    english: "inconvenient",
+                    sentence: "このまちはこうつうがふべんです。"
+                },
+                {
+                    japanese: "すごい",
+                    kanji: "",
+                    nepali: "भयानक / महान",
+                    english: "awful, great",
+                    sentence: "すごいひとがおおいですね。"
+                },
+                {
+                    japanese: "ほんとう",
+                    kanji: "本当",
+                    nepali: "सत्य / साँचो",
+                    english: "true, real",
+                    sentence: "それはほんとうですか。"
+                },
+                {
+                    japanese: "うそ",
+                    kanji: "嘘",
+                    nepali: "असत्य / झुटो",
+                    english: "lie",
+                    sentence: "うそをいってはいけません。"
+                },
+                {
+                    japanese: "じどうしゃ",
+                    kanji: "自動車",
+                    nepali: "कार / मोटर गाडी",
+                    english: "car, automobile",
+                    sentence: "にほんはじどうしゃがおおいです。"
+                },
+                {
+                    japanese: "こうつう",
+                    kanji: "交通",
+                    nepali: "यातायात / ट्राफिक",
+                    english: "transport, traffic",
+                    sentence: "とうきょうはこうつうがべんりです。"
+                },
+                {
+                    japanese: "ぶっか",
+                    kanji: "物価",
+                    nepali: "वस्तुको मुल्यहरु",
+                    english: "commodity prices",
+                    sentence: "にほんはぶっかがたかいです。"
+                },
+                {
+                    japanese: "ほうそう",
+                    kanji: "放送",
+                    nepali: "घोषणा / प्रशारण",
+                    english: "announcement, broadcast",
+                    sentence: "ラジオのほうそうをききます。"
+                },
+                {
+                    japanese: "ニュース",
+                    kanji: "",
+                    nepali: "समाचार",
+                    english: "news",
+                    sentence: "まいにちニュースをみます。"
+                },
+                {
+                    japanese: "アニメ",
+                    kanji: "",
+                    nepali: "एनिमेसन (कार्टुन)",
+                    english: "anime",
+                    sentence: "にほんのアニメはせかいでゆうめいです。"
+                },
+                {
+                    japanese: "マンガ",
+                    kanji: "漫画",
+                    nepali: "कमिक (हास्य पुस्तक)",
+                    english: "manga, comic book",
+                    sentence: "わたしはマンガがすきです。"
+                },
+                {
+                    japanese: "デザイン",
+                    kanji: "",
+                    nepali: "डिजाईन / कलाकृति",
+                    english: "design",
+                    sentence: "このふくのデザインはすてきです。"
+                },
+                {
+                    japanese: "ゆめ",
+                    kanji: "夢",
+                    nepali: "सपना",
+                    english: "dream",
+                    sentence: "わたしのゆめはいしゃになることです。"
+                },
+                {
+                    japanese: "てんさい",
+                    kanji: "天才",
+                    nepali: "प्रतिभासालि",
+                    english: "genius",
+                    sentence: "アインシュタインはてんさいだとおもいます。"
+                },
+                {
+                    japanese: "しあい",
+                    kanji: "試合",
+                    nepali: "खेल",
+                    english: "game, match",
+                    sentence: "サッカーのしあいをみました。"
+                },
+                {
+                    japanese: "いけん",
+                    kanji: "意見",
+                    nepali: "बिचार / राय",
+                    english: "opinion",
+                    sentence: "なにかいけんがありますか。"
+                },
+                {
+                    japanese: "はなし",
+                    kanji: "話",
+                    nepali: "कुरा / बातचित",
+                    english: "talk, speech, story",
+                    sentence: "しゃちょうのはなしはながかったです。"
+                },
+                {
+                    japanese: "ちきゅう",
+                    kanji: "地球",
+                    nepali: "पृथ्वी",
+                    english: "the earth",
+                    sentence: "ちきゅうはあおいです。"
+                },
+                {
+                    japanese: "つき",
+                    kanji: "月",
+                    nepali: "चन्द्रमा",
+                    english: "the moon",
+                    sentence: "つきはきれいです。"
+                },
+                {
+                    japanese: "さいきん",
+                    kanji: "最近",
+                    nepali: "आजकल / आजभोलि",
+                    english: "recently, these days",
+                    sentence: "さいきん、いそがしいです。"
+                },
+                {
+                    japanese: "たぶん",
+                    kanji: "",
+                    nepali: "शायद / सम्भवत:",
+                    english: "probably, maybe",
+                    sentence: "かれはたぶんくるでしょう。"
+                },
+                {
+                    japanese: "きっと",
+                    kanji: "",
+                    nepali: "अवश्य / पक्कै",
+                    english: "surely, certainly",
+                    sentence: "あしたはきっとはれるでしょう。"
+                },
+                {
+                    japanese: "ほんとうに",
+                    kanji: "本当に",
+                    nepali: "साच्चै / साच्चिकै",
+                    english: "really",
+                    sentence: "にほんごはほんとうにおもしろいです。"
+                },
+                {
+                    japanese: "そんなに",
+                    kanji: "",
+                    nepali: "त्यत्तिको (नकारात्मकसँग प्रयोग गरिन्छ)",
+                    english: "not so",
+                    sentence: "このもんだいはそんなにむずかしくないです。"
+                },
+                {
+                    japanese: "〜について",
+                    kanji: "",
+                    nepali: "को बारेमा",
+                    english: "about ~, concerning ~",
+                    sentence: "にほんのぶんかについてべんきょうしています。"
+                },
+                {
+                    japanese: "ひさしぶりですね。",
+                    kanji: "久しぶりですね。",
+                    nepali: "धेरै पछि भेट भयो है",
+                    english: "It's been a long time.",
+                    sentence: "ミラーさん、ひさしぶりですね。"
+                },
+                {
+                    japanese: "〜でものみませんか。",
+                    kanji: "",
+                    nepali: "भएपनि पिउने हैन र ?",
+                    english: "How about drinking ~ or something?",
+                    sentence: "ビールでものみませんか。"
+                },
+                {
+                    japanese: "もちろん",
+                    kanji: "",
+                    nepali: "अवश्य",
+                    english: "of course",
+                    sentence: "もちろん、いきます。"
+                },
+                {
+                    japanese: "もうかえらないと…",
+                    kanji: "もう帰らないと…",
+                    nepali: "अब घर फर्किएन भने....",
+                    english: "I have to go home now...",
+                    sentence: "すみません、もうかえらないと…。"
+                },
+                {
+                    japanese: "カンガルー",
+                    kanji: "",
+                    nepali: "कंगारु",
+                    english: "kangaroo",
+                    sentence: "オーストラリアでカンガルーをみました。"
+                }
+            ],
+            "Lesson 22": [{
+                    japanese: "きます",
+                    kanji: "着ます",
+                    nepali: "लगाउछु (सर्ट, आदि)",
+                    english: "put on (a shirt, etc.)",
+                    sentence: "あしたのパーティーにこのシャツをきます。"
+                },
+                {
+                    japanese: "はきます",
+                    kanji: "",
+                    nepali: "लगाउछु (जुत्ता, आदि)",
+                    english: "put on (shoes, trousers, etc.)",
+                    sentence: "あたらしいくつをはいてでかけます。"
+                },
+                {
+                    japanese: "かぶります",
+                    kanji: "",
+                    nepali: "लगाउछु (टोपी, आदि)",
+                    english: "put on (a hat, etc.)",
+                    sentence: "そとへいくとき、ぼうしをかぶります。"
+                },
+                {
+                    japanese: "かけます[めがねを~]",
+                    kanji: "",
+                    nepali: "लगाउछु [चश्मा]",
+                    english: "put on [glasses]",
+                    sentence: "わたしはいつもめがねをかけています。"
+                },
+                {
+                    japanese: "うまれます",
+                    kanji: "生まれます",
+                    nepali: "जन्मनु",
+                    english: "be born",
+                    sentence: "わたしはネパールでうまれました。"
+                },
+                {
+                    japanese: "わたしたち",
+                    kanji: "私たち",
+                    nepali: "हामी",
+                    english: "we",
+                    sentence: "わたしたちはがくせいです。"
+                },
+                {
+                    japanese: "コート",
+                    kanji: "",
+                    nepali: "कोट",
+                    english: "coat",
+                    sentence: "これはわたしがきのうかったコートです。"
+                },
+                {
+                    japanese: "セーター",
+                    kanji: "",
+                    nepali: "सुइटर",
+                    english: "sweater",
+                    sentence: "さむいですから、セーターをきます。"
+                },
+                {
+                    japanese: "スーツ",
+                    kanji: "",
+                    nepali: "सुट",
+                    english: "suit",
+                    sentence: "かいしゃへいくとき、スーツをきます。"
+                },
+                {
+                    japanese: "ぼうし",
+                    kanji: "帽子",
+                    nepali: "टोपी / ह्याट",
+                    english: "hat, cap",
+                    sentence: "これはだれのぼうしですか。"
+                },
+                {
+                    japanese: "めがね",
+                    kanji: "眼鏡",
+                    nepali: "चश्मा",
+                    english: "glasses",
+                    sentence: "めがねをかけているひとはミラーさんです。"
+                },
+                {
+                    japanese: "ケーキ",
+                    kanji: "",
+                    nepali: "केक",
+                    english: "cake",
+                    sentence: "おいしいケーキをたべました。"
+                },
+                {
+                    japanese: "[お]べんとう",
+                    kanji: "お弁当",
+                    nepali: "टिफिन खाजा",
+                    english: "box lunch",
+                    sentence: "ひるごはんにおべんとうをたべます。"
+                },
+                {
+                    japanese: "ロボット",
+                    kanji: "",
+                    nepali: "रोबोट",
+                    english: "robot",
+                    sentence: "これはしょくじをつくるロボットです。"
+                },
+                {
+                    japanese: "ユーモア",
+                    kanji: "",
+                    nepali: "हाँस्य",
+                    english: "humor",
+                    sentence: "かれはユーモアがあります。"
+                },
+                {
+                    japanese: "つごう",
+                    kanji: "都合",
+                    nepali: "सुबिधा / अनुकुल",
+                    english: "convenience",
+                    sentence: "あしたはつごうがわるいです。"
+                },
+                {
+                    japanese: "よく",
+                    kanji: "",
+                    nepali: "प्राय: / अक्सर / धेरै जसो",
+                    english: "often, well",
+                    sentence: "よくこのレストランへきます。"
+                },
+                {
+                    japanese: "えーと",
+                    kanji: "",
+                    nepali: "उम्म् (कुराकानी गर्दा केही सोच्दै गर्दा)",
+                    english: "well, let me see",
+                    sentence: "えーと、これはなんでしたっけ。"
+                },
+                {
+                    japanese: "おめでとう[ございます]。",
+                    kanji: "",
+                    nepali: "शुभकामना छ / बधाई छ",
+                    english: "Congratulations.",
+                    sentence: "たんじょうび、おめでとうございます。"
+                },
+                {
+                    japanese: "おさがしですか。",
+                    kanji: "お探しですか。",
+                    nepali: "~ खोज्नुभएको हो ?",
+                    english: "Are you looking for ~?",
+                    sentence: "どんなコートをおさがしですか。"
+                },
+                {
+                    japanese: "では",
+                    kanji: "",
+                    nepali: "त्यसो भए / ल त",
+                    english: "well then",
+                    sentence: "では、これをください。"
+                },
+                {
+                    japanese: "こちら",
+                    kanji: "",
+                    nepali: "यो (これ को नम्र शब्द)",
+                    english: "this (polite)",
+                    sentence: "おさがしのコートはこちらです。"
+                },
+                {
+                    japanese: "やちん",
+                    kanji: "家賃",
+                    nepali: "भाडा / बाहाल",
+                    english: "rent",
+                    sentence: "このアパートのやちんはいくらですか。"
+                },
+                {
+                    japanese: "ダイニングキッチン",
+                    kanji: "",
+                    nepali: "भान्सा सँग भोजन क्षेत्र",
+                    english: "dining-kitchen",
+                    sentence: "このへやはダイニングキッチンです。"
+                },
+                {
+                    japanese: "わしつ",
+                    kanji: "和室",
+                    nepali: "जापानी शैली कोठा",
+                    english: "Japanese-style room",
+                    sentence: "わしつにふとんがあります。"
+                },
+                {
+                    japanese: "おしいれ",
+                    kanji: "押し入れ",
+                    nepali: "जापानी शैली दराज",
+                    english: "Japanese-style closet",
+                    sentence: "おしいれにふとんをしまいます。"
+                },
+                {
+                    japanese: "ふとん",
+                    kanji: "布団",
+                    nepali: "जापानी शैली गद्दा, डसना र सिरक",
+                    english: "futon, Japanese-style bedding",
+                    sentence: "わたしはふとんでねます。"
+                },
+                {
+                    japanese: "パリ",
+                    kanji: "",
+                    nepali: "पेरिस",
+                    english: "Paris",
+                    sentence: "いつかパリへいきたいです。"
+                },
+                {
+                    japanese: "ばんりのちょうじょう",
+                    kanji: "万里の長城",
+                    nepali: "चिनको महान पर्खाल",
+                    english: "the Great Wall of China",
+                    sentence: "ばんりのちょうじょうをみたことがありますか。"
+                }
+            ],
+            "Lesson 23": [{
+                    japanese: "ききます[せんせいに~]",
+                    kanji: "聞きます",
+                    nepali: "सोध्छु [शिक्षकलाई]",
+                    english: "ask [the teacher]",
+                    sentence: "わからないとき、せんせいにききます。"
+                },
+                {
+                    japanese: "まわします",
+                    kanji: "回します",
+                    nepali: "घुमाउँछु",
+                    english: "turn",
+                    sentence: "このボタンをみぎへまわします。"
+                },
+                {
+                    japanese: "ひきます",
+                    kanji: "引きます",
+                    nepali: "तान्छु",
+                    english: "pull",
+                    sentence: "ドアのノブをひきます。"
+                },
+                {
+                    japanese: "かえます",
+                    kanji: "変えます",
+                    nepali: "साट्छु",
+                    english: "change",
+                    sentence: "サイズをかえてください。"
+                },
+                {
+                    japanese: "さわります[ドアに~]",
+                    kanji: "触ります",
+                    nepali: "छुन्छु / स्पर्शगर्छु [ढोकामा]",
+                    english: "touch [a door]",
+                    sentence: "ドアにさわらないでください。"
+                },
+                {
+                    japanese: "でます[おつりが~]",
+                    kanji: "出ます",
+                    nepali: "निस्कन्छ [फिर्ता पैंसा]",
+                    english: "come out [change]",
+                    sentence: "おかねをいれると、おつりがでます。"
+                },
+                {
+                    japanese: "あるきます",
+                    kanji: "歩きます",
+                    nepali: "हिँड्छु",
+                    english: "walk",
+                    sentence: "じかんがあるとき、こうえんをあるきます。"
+                },
+                {
+                    japanese: "わたります[はしを~]",
+                    kanji: "渡ります",
+                    nepali: "तर्छु / पारगर्छु [पुल]",
+                    english: "cross [a bridge]",
+                    sentence: "このはしをわたると、えきがあります。"
+                },
+                {
+                    japanese: "まがります[みぎへ~]",
+                    kanji: "曲がります",
+                    nepali: "घुम्छु / मोडिन्छु [दायाँ]",
+                    english: "turn [to the right]",
+                    sentence: "つぎのかどをみぎへまがってください。"
+                },
+                {
+                    japanese: "さびしい",
+                    kanji: "寂しい",
+                    nepali: "एक्लो",
+                    english: "lonely",
+                    sentence: "ともだちがいないと、さびしいです。"
+                },
+                {
+                    japanese: "[お]ゆ",
+                    kanji: "お湯",
+                    nepali: "तातो पानी",
+                    english: "hot water",
+                    sentence: "おゆがでません。"
+                },
+                {
+                    japanese: "おと",
+                    kanji: "音",
+                    nepali: "आवाज",
+                    english: "sound",
+                    sentence: "ラジオのおとがちいさいです。"
+                },
+                {
+                    japanese: "サイズ",
+                    kanji: "",
+                    nepali: "आकार / साईज",
+                    english: "size",
+                    sentence: "このシャツのサイズはおおきいです。"
+                },
+                {
+                    japanese: "こしょう",
+                    kanji: "故障",
+                    nepali: "बिग्रन्छ",
+                    english: "breakdown",
+                    sentence: "エアコンがこしょうしました。"
+                },
+                {
+                    japanese: "みち",
+                    kanji: "道",
+                    nepali: "सडक / बाटो",
+                    english: "road, way",
+                    sentence: "このみちはせまいです。"
+                },
+                {
+                    japanese: "こうさてん",
+                    kanji: "交差点",
+                    nepali: "चौबाटो",
+                    english: "crossroads, intersection",
+                    sentence: "あのこうさてんをわたります。"
+                },
+                {
+                    japanese: "しんごう",
+                    kanji: "信号",
+                    nepali: "ट्राफिक बत्तीहरु",
+                    english: "traffic light",
+                    sentence: "しんごうがあおのとき、わたります。"
+                },
+                {
+                    japanese: "かど",
+                    kanji: "角",
+                    nepali: "कुना",
+                    english: "corner",
+                    sentence: "つぎのかどをひだりへまがります。"
+                },
+                {
+                    japanese: "はし",
+                    kanji: "橋",
+                    nepali: "पुल",
+                    english: "bridge",
+                    sentence: "はしをわたってください。"
+                },
+                {
+                    japanese: "ちゅうしゃじょう",
+                    kanji: "駐車場",
+                    nepali: "पार्किङ्ग क्षेत्र",
+                    english: "parking lot, car park",
+                    sentence: "ちゅうしゃじょうはどこですか。"
+                },
+                {
+                    japanese: "たてもの",
+                    kanji: "建物",
+                    nepali: "भवन",
+                    english: "building",
+                    sentence: "あれはゆうめいなたてものです。"
+                },
+                {
+                    japanese: "なんかいも",
+                    kanji: "何回も",
+                    nepali: "धेरै पटक / धेरै चोटि",
+                    english: "many times",
+                    sentence: "このえいがをなんかいもみました。"
+                },
+                {
+                    japanese: "〜め",
+                    kanji: "〜目",
+                    nepali: "औं (क्रममा संकेत गर्दै)",
+                    english: "the ~th (indicating order)",
+                    sentence: "ふたつめのかどをみぎへまがります。"
+                },
+                {
+                    japanese: "しょうとくたいし",
+                    kanji: "聖徳太子",
+                    nepali: "राजकुमार शोतोकु (५७४ - ६२२)",
+                    english: "Prince Shotoku",
+                    sentence: "しょうとくたいしはゆうめいなせいじかでした。"
+                },
+                {
+                    japanese: "ほうりゅうじ",
+                    kanji: "法隆寺",
+                    nepali: "होर्योउजी मन्दिर",
+                    english: "Horyuji Temple",
+                    sentence: "ほうりゅうじはならにあります。"
+                }
+            ],
+            "Lesson 24": [{
+                    japanese: "くれます",
+                    kanji: "",
+                    nepali: "दिनुहुन्छ (मलाई)",
+                    english: "give (me)",
+                    sentence: "ともだちはわたしにおみやげをくれました。"
+                },
+                {
+                    japanese: "なおします",
+                    kanji: "直します",
+                    nepali: "सच्याउछु / ठीकगर्छु",
+                    english: "repair, correct",
+                    sentence: "ちちはこわれたとけいをなおしてくれました。"
+                },
+                {
+                    japanese: "つれていきます",
+                    kanji: "連れて行きます",
+                    nepali: "लान्छु / लिएर जान्छु (कसैलाई)",
+                    english: "take (someone)",
+                    sentence: "こどもをどうぶつえんへつれていきました。"
+                },
+                {
+                    japanese: "つれてきます",
+                    kanji: "連れて来ます",
+                    nepali: "ल्याउछु / लिएर आउँछु (कसैलाई)",
+                    english: "bring (someone)",
+                    sentence: "あした、ともだちをうちへつれてきます。"
+                },
+                {
+                    japanese: "おくります[ひとを~]",
+                    kanji: "送ります",
+                    nepali: "पुऱ्याउँछु [मान्छेलाई]",
+                    english: "escort [someone], go with",
+                    sentence: "えきまでひとをおくります。"
+                },
+                {
+                    japanese: "しょうかいします",
+                    kanji: "紹介します",
+                    nepali: "परिचय गर्छु",
+                    english: "introduce",
+                    sentence: "あなたにともだちをしょうかいします。"
+                },
+                {
+                    japanese: "あんないします",
+                    kanji: "案内します",
+                    nepali: "वरपर देखाउँछु / मार्ग देखाउँछु",
+                    english: "show around, guide",
+                    sentence: "あした、きょうとをあんないしてあげます。"
+                },
+                {
+                    japanese: "せつめいします",
+                    kanji: "説明します",
+                    nepali: "व्याख्या गर्छु",
+                    english: "explain",
+                    sentence: "このぶんぽうをせつめいしてください。"
+                },
+                {
+                    japanese: "おじいさん / おじいちゃん",
+                    kanji: "",
+                    nepali: "हजुरबुबा / बाजे",
+                    english: "grandfather, old man",
+                    sentence: "わたしのおじいさんは80さいです。"
+                },
+                {
+                    japanese: "おばあさん / おばあちゃん",
+                    kanji: "",
+                    nepali: "हजुरआमा / बोजु",
+                    english: "grandmother, old woman",
+                    sentence: "おばあちゃんはとてもげんきです。"
+                },
+                {
+                    japanese: "じゅんび",
+                    kanji: "準備",
+                    nepali: "तयारी",
+                    english: "preparation",
+                    sentence: "りょこうのじゅんびをします。"
+                },
+                {
+                    japanese: "ひっこし",
+                    kanji: "引っ越し",
+                    nepali: "बसाई-सराई",
+                    english: "moving (house)",
+                    sentence: "らいしゅう、ひっこしをてつだってください。"
+                },
+                {
+                    japanese: "[お]かし",
+                    kanji: "お菓子",
+                    nepali: "मिठाई / खाजा",
+                    english: "sweets, snacks",
+                    sentence: "こどもにおかしをあげました。"
+                },
+                {
+                    japanese: "ホームステイ",
+                    kanji: "",
+                    nepali: "होमस्टे",
+                    english: "homestay",
+                    sentence: "オーストラリアでホームステイをしました。"
+                },
+                {
+                    japanese: "ぜんぶ",
+                    kanji: "全部",
+                    nepali: "सबै",
+                    english: "all",
+                    sentence: "しゅくだいはぜんぶしましたか。"
+                },
+                {
+                    japanese: "じぶんで",
+                    kanji: "自分で",
+                    nepali: "आफै",
+                    english: "by oneself",
+                    sentence: "このりょうりはじぶんでつくりました。"
+                },
+                {
+                    japanese: "ほかに",
+                    kanji: "",
+                    nepali: "अरु / बाहेक",
+                    english: "besides",
+                    sentence: "ほかにしつもんはありますか。"
+                },
+                {
+                    japanese: "ははのひ",
+                    kanji: "母の日",
+                    nepali: "आमाको मुख हेर्ने दिन",
+                    english: "Mother's Day",
+                    sentence: "ははのひに、ははにはなをあげます。"
+                }
+            ],
+            "Lesson 25": [{
+                    japanese: "かんがえます",
+                    kanji: "考えます",
+                    nepali: "सोच्छु / बिचारगर्छु",
+                    english: "think, consider",
+                    sentence: "すこしかんがえてください。"
+                },
+                {
+                    japanese: "つきます",
+                    kanji: "着きます",
+                    nepali: "आईपुग्छु",
+                    english: "arrive",
+                    sentence: "えきについたら、でんわしてください。"
+                },
+                {
+                    japanese: "とります[としを~]",
+                    kanji: "取ります",
+                    nepali: "ढल्कनु / बढ्नु [उमेर] (बुढो हुनु)",
+                    english: "grow old",
+                    sentence: "ちちはとしをとりました。"
+                },
+                {
+                    japanese: "たります",
+                    kanji: "足ります",
+                    nepali: "प्रयाप्तहुन्छ / पुग्छ",
+                    english: "be enough, be sufficient",
+                    sentence: "おかねがたりません。"
+                },
+                {
+                    japanese: "いなか",
+                    kanji: "田舎",
+                    nepali: "गाउँ-घर",
+                    english: "countryside, hometown",
+                    sentence: "いなかにすみたいです。"
+                },
+                {
+                    japanese: "チャンス",
+                    kanji: "",
+                    nepali: "मौका / अवसर",
+                    english: "chance",
+                    sentence: "これはいいチャンスです。"
+                },
+                {
+                    japanese: "おく",
+                    kanji: "億",
+                    nepali: "दश करोड (सय मिलियन)",
+                    english: "a hundred million",
+                    sentence: "このいえは1おくえんです。"
+                },
+                {
+                    japanese: "もし[~たら]",
+                    kanji: "",
+                    nepali: "यदि [~ भयो भने]",
+                    english: "if ~",
+                    sentence: "もし1おくえんあったら、りょこうしたいです。"
+                },
+                {
+                    japanese: "いみ",
+                    kanji: "意味",
+                    nepali: "अर्थ",
+                    english: "meaning",
+                    sentence: "このことばのいみはなんですか。"
+                },
+                {
+                    japanese: "もしもし",
+                    kanji: "",
+                    nepali: "हेलो (फोनमा उठाउदा प्रयोग गरिन्छ)",
+                    english: "Hello (on the phone)",
+                    sentence: "もしもし、ミラーですが、サントスさんをおねがいします。"
+                },
+                {
+                    japanese: "てんきん",
+                    kanji: "転勤",
+                    nepali: "सरुवा",
+                    english: "transfer",
+                    sentence: "てんきんしますか。それはたいへんですね。"
+                },
+                {
+                    japanese: "こと",
+                    kanji: "事",
+                    nepali: "कुरा / चीज",
+                    english: "thing, matter",
+                    sentence: "かぞくのことがしんぱいです。"
+                },
+                {
+                    japanese: "ひま",
+                    kanji: "暇",
+                    nepali: "फुर्सद / खाली समय",
+                    english: "free time",
+                    sentence: "ひまがあったら、あそびにきてください。"
+                },
+                {
+                    japanese: "[いろいろ]おせわになりました。",
+                    kanji: "お世話になりました。",
+                    nepali: "सबै सहयोगको लागि धेरै धन्यवाद",
+                    english: "Thank you for everything you have done for me.",
+                    sentence: "せんせい、いろいろおせわになりました。"
+                },
+                {
+                    japanese: "がんばります",
+                    kanji: "頑張ります",
+                    nepali: "मेहनतगर्छु",
+                    english: "I will do my best.",
+                    sentence: "にほんごのべんきょうをがんばります。"
+                },
+                {
+                    japanese: "どうぞおげんきで。",
+                    kanji: "どうぞお元気で。",
+                    nepali: "कृपया आफ्नो ख्याल राख्नु है। (कसैसँग लामो समय छुट्टीदा भनिने गरिन्छ)",
+                    english: "Please take care of yourself.",
+                    sentence: "さようなら。どうぞおげんきで。"
+                },
+                {
+                    japanese: "ベトナム",
+                    kanji: "",
+                    nepali: "भेतनाम",
+                    english: "Vietnam",
+                    sentence: "ベトナムへいったことがありますか。"
+                }
+            ],
+
+"Lesson 26": [
+        { japanese: "みます", kanji: "見ます", nepali: "हेर्छ / जाँज गर्छु", english: "see, check", sentence: "パスポートをみます。" },
+        { japanese: "さがします", kanji: "探します", nepali: "खोजीगर्नु", english: "look for, search", sentence: "なくしたかぎをさがします。" },
+        { japanese: "おくれます[じかんに〜]", kanji: "遅れます", nepali: "ढिलो हुनु / ढिलो पुग्नु", english: "be late", sentence: "かいぎのじかんにおくれました。" },
+        { japanese: "まにあいます[じかんに〜]", kanji: "間に合います", nepali: "समयमाहुनु / समयमापुग्नु", english: "be on time", sentence: "でんしゃのじかんにまにあいました。" },
+        { japanese: "やります", kanji: "", nepali: "गर्नु", english: "do", sentence: "しゅくだいをやります。" },
+        { japanese: "ひろいます", kanji: "拾います", nepali: "टिप्नु / बटुल्नु", english: "pick up", sentence: "こうえんでごみをひろいます。" },
+        { japanese: "れんらくします", kanji: "連絡します", nepali: "फोन गर्नु / सम्पर्क गर्नु", english: "contact, get in touch", sentence: "あした、ともだちにれんらくします。" },
+        { japanese: "きぶんがいい", kanji: "気分がいい", nepali: "राम्रो महसुस गर्नु", english: "feel well", sentence: "きょうはとてもきぶんがいいです。" },
+        { japanese: "きぶんがわるい", kanji: "気分が悪い", nepali: "नराम्रो महसुस गर्नु", english: "feel ill", sentence: "きのうからきぶんがわるいです。" },
+        { japanese: "うんどうかい", kanji: "運動会", nepali: "खेलकुदसमारोह", english: "sports day, athletic meeting", sentence: "がっこうのうんどうかいにさんかします。" },
+        { japanese: "ぼんおどり", kanji: "盆踊り", nepali: "बोन चाड नाच", english: "Bon Festival dance", sentence: "なつにぼんおどりがあります。" },
+        { japanese: "フリーマーケット", kanji: "", nepali: "फ्रिबजार", english: "flea market", sentence: "フリーマーケットでふるいふくをかいました。" },
+        { japanese: "ばしょ", kanji: "場所", nepali: "ठाउँ", english: "place, location", sentence: "パーティーのばしょはどこですか。" },
+        { japanese: "ボランティア", kanji: "", nepali: "स्वयंसेवक", english: "volunteer", sentence: "しゅうまつにボランティアをします。" },
+        { japanese: "さいふ", kanji: "財布", nepali: "पर्स", english: "wallet, purse", sentence: "あたらしいさいふがほしいです。" },
+        { japanese: "ごみ", kanji: "", nepali: "फोहोर", english: "rubbish, trash, garbage", sentence: "ごみはごみばこにすててください。" },
+        { japanese: "こっかいぎじどう", kanji: "国会議事堂", nepali: "संसद भवन", english: "the Diet Building", sentence: "こっかいぎじどうをけんがくしました。" },
+        { japanese: "へいじつ", kanji: "平日", nepali: "सोम्बारदेखि शुक्रबार सम्मको दिन", english: "weekday", sentence: "へいじつはしごとがいそがしいです。" },
+        { japanese: "〜べん", kanji: "〜弁", nepali: "क्षेत्रीयभाषा", english: "~ dialect", sentence: "おおさかべんはすこしむずかしいです。" },
+        { japanese: "こんど", kanji: "今度", nepali: "अर्को पटक / अर्को समय", english: "next time, another time", sentence: "こんど、いっしょにえいがをみませんか。" },
+        { japanese: "ずいぶん", kanji: "", nepali: "एकदम राम्रो / धेरै राम्रो", english: "very, quite", sentence: "にほんごがずいぶんじょうずになりましたね。" },
+        { japanese: "ちょくせつ", kanji: "直接", nepali: "सिधै / प्रत्यक्ष", english: "directly", sentence: "しゃちょうとちょくせつはなしたいです。" },
+        { japanese: "いつでも", kanji: "", nepali: "जहिलेपनि", english: "any time", sentence: "いつでもれんらくしてください。" },
+        { japanese: "どこでも", kanji: "", nepali: "जहाँपनि", english: "any place", sentence: "このカードはどこでもつかえます。" },
+        { japanese: "だれでも", kanji: "", nepali: "जोपनि / जोकोहीपनी", english: "anybody", sentence: "このパーティーはだれでもさんかできます。" },
+        { japanese: "なんでも", kanji: "何でも", nepali: "जेपनी", english: "anything", sentence: "なんでもすきなたべものをたべてください。" },
+        { japanese: "こんな〜", kanji: "", nepali: "यो जस्तै / यस्तै~", english: "~ like this", sentence: "こんなきれいなけしきははじめてみました。" },
+        { japanese: "そんな〜", kanji: "", nepali: "त्यो जस्तै / त्यस्तै ~", english: "~ like that", sentence: "そんなむずかしいもんだいはわかりません。" },
+        { japanese: "あんな〜", kanji: "", nepali: "उ त्यो जस्तै ~ / ऊ त्यस्तै~", english: "~ like that (over there)", sentence: "あんなおおきないえにすみたいです。" },
+        { japanese: "かたづきます[にもつが〜]", kanji: "片付きます", nepali: "[बक्स] मिलाउनु", english: "be put in order", sentence: "へやのにもつがかたづきました。" },
+        { japanese: "だします[ごみを〜]", kanji: "出します", nepali: "[फोहोर] बाहिर निकाल्नु", english: "put out (the trash)", sentence: "まいあさ、ごみをだします。" },
+        { japanese: "もえるごみ", kanji: "燃えるごみ", nepali: "जल्ने फोहोर", english: "burnable rubbish", sentence: "もえるごみはげつようびにだしてください。" },
+        { japanese: "おきば", kanji: "置き場", nepali: "राख्ने ठाउँ", english: "place where something is put", sentence: "じてんしゃおきばはあそこです。" },
+        { japanese: "よこ", kanji: "横", nepali: "छेउ / किनारा", english: "side", sentence: "ぎんこうのよこにゆうびんきょくがあります。" },
+        { japanese: "びん", kanji: "瓶", nepali: "बोतल / सीसी", english: "bottle", sentence: "このびんのなかにジュースがあります。" },
+        { japanese: "かん", kanji: "缶", nepali: "डिब्बा / टिन", english: "can", sentence: "ビールのからいかんをすてます。" },
+        { japanese: "ガス", kanji: "ガス", nepali: "ग्यास", english: "gas", sentence: "ガスがいしゃにれんらくします。" },
+        { japanese: "〜がいしゃ", kanji: "〜会社", nepali: "~ कम्पनी", english: "~ company", sentence: "とうきょうでんりょくはでんきがいしゃです。" },
+        { japanese: "うちゅう", kanji: "宇宙", nepali: "अन्तरिक्ष / ब्रम्हाण्ड", english: "space, universe", sentence: "うちゅうへいってみたいです。" },
+        { japanese: "〜さま", kanji: "〜様", nepali: "ज्यू (~ さん को आदर शब्द )", english: "Mr./Ms. (respectful form of ~さん)", sentence: "おきゃくさま、こちらへどうぞ。" },
+        { japanese: "うちゅうせん", kanji: "宇宙船", nepali: "अन्तरिक्ष यान", english: "spaceship", sentence: "うちゅうせんにのってみたいです。" },
+        { japanese: "こわい", kanji: "怖い", nepali: "डर लाग्दो", english: "frightening, scary", sentence: "わたしはいぬがこわいです。" },
+        { japanese: "うちゅうステーション", kanji: "宇宙ステーション", nepali: "अन्तरिक्ष स्टेसन", english: "space station", sentence: "うちゅうステーションではたらきたいです。" },
+        { japanese: "ちがいます", kanji: "違います", nepali: "फरक हुनु / भिन्नहुनु", english: "be different", sentence: "このこたえはちがいます。" },
+        { japanese: "うちゅうひこうし", kanji: "宇宙飛行士", nepali: "अन्तरिक्ष यात्री", english: "astronaut", sentence: "かれはゆうめいなうちゅうひこうしです。" }
+    ],
+    "Lesson 27": [
+        { japanese: "かいます", kanji: "飼います", nepali: "पाल्नु (कुकुर / बिरालो आदि)", english: "keep (a pet), raise (an animal)", sentence: "わたしはねこをかっています。" },
+        { japanese: "はしります[みちを〜]", kanji: "走ります", nepali: "[बाटोमा] दौडनु / गुडाउनु", english: "run, drive [along a road]", sentence: "まいあさ、こうえんをはしります。" },
+        { japanese: "みえます[やまが〜]", kanji: "見えます", nepali: "[हिमाल] देखिन्छ", english: "can be seen", sentence: "ここからやまがみえます。" },
+        { japanese: "きこえます[おとが〜]", kanji: "聞こえます", nepali: "[आवाज] सुनिन्छ", english: "can be heard", sentence: "となりからおとがきこえます。" },
+        { japanese: "できます[みちが〜]", kanji: "できます", nepali: "[बाटो] बन्छ", english: "be made, be completed", sentence: "えきのまえにあたらしいビルができました。" },
+        { japanese: "ひらきます[きょうしつを〜]", kanji: "開きます", nepali: "[कक्षा-कोठा] खोल्नु", english: "set up (a class), open", sentence: "わたしはにほんごのきょうしつをひらきたいです。" },
+        { japanese: "しんぱい[な]", kanji: "心配", nepali: "चिन्ता / पिर", english: "worried, anxious", sentence: "しけんはしんぱいしないでください。" },
+        { japanese: "ペット", kanji: "", nepali: "घर पालुवा", english: "pet", sentence: "どんなペットをかいたいですか。" },
+        { japanese: "とり", kanji: "鳥", nepali: "चरा", english: "bird", sentence: "そらにとりがとんでいます。" },
+        { japanese: "こえ", kanji: "声", nepali: "आवाज / स्वर", english: "voice", sentence: "かれはこえがおおきいです。" },
+        { japanese: "なみ", kanji: "波", nepali: "सामुन्द्रीक छाल / तरंग", english: "wave", sentence: "うみのなみのおとがきこえます。" },
+        { japanese: "はなび", kanji: "花火", nepali: "आतसबाजी", english: "fireworks", sentence: "なつにはなびをみました。" },
+        { japanese: "どうぐ", kanji: "道具", nepali: "उपकरण / औजार / सामग्री", english: "tool, instrument", sentence: "これはべんりなどうぐです。" },
+        { japanese: "クリーニング", kanji: "", nepali: "ड्राई क्लीनिङ्ग / लण्ड्री", english: "dry cleaning, laundry", sentence: "シャツをクリーニングにだします。" },
+        { japanese: "いえ", kanji: "家", nepali: "घर", english: "house, home", sentence: "いつかおおきいいえをたてたいです。" },
+        { japanese: "マンション", kanji: "", nepali: "भाडामा दिनको लागी बनाइएको घर", english: "apartment, condominium", sentence: "このマンションはあたらしいです。" },
+        { japanese: "キッチン", kanji: "", nepali: "भान्साघर", english: "kitchen", sentence: "キッチンでりょうりをします。" },
+        { japanese: "〜きょうしつ", kanji: "〜教室", nepali: "कक्षा-कोठा", english: "~ class", sentence: "りょうりきょうしつにいきます。" },
+        { japanese: "パーティールーム", kanji: "", nepali: "पार्टी हल", english: "party room", sentence: "パーティールームをよやくしました。" },
+        { japanese: "かた", kanji: "方", nepali: "उहाँ (ひと को आदर शब्द)", english: "person (respectful form of ひと)", sentence: "あのかたはどなたですか。" },
+        { japanese: "〜ご", kanji: "〜後", nepali: "पछि", english: "after", sentence: "しょくじのあとで、コーヒーをのみます。" },
+        { japanese: "しか", kanji: "", nepali: "~ बाहेक", english: "only ~ (used with negatives)", sentence: "わたしはひらがなしかわかりません。" },
+        { japanese: "ほかの", kanji: "", nepali: "अरु / अन्य / अर्को", english: "other", sentence: "ほかのいろはありませんか。" },
+        { japanese: "はっきり", kanji: "", nepali: "प्रस्ट / स्पष्टसँग", english: "clearly", sentence: "はっきりみえません。" },
+        { japanese: "かぐ", kanji: "家具", nepali: "फर्नीचर", english: "furniture", sentence: "このへやにはかぐがすくないです。" },
+        { japanese: "ほんだな", kanji: "本棚", nepali: "किताब राख्ने दराज", english: "bookshelf", sentence: "あたらしいほんだなをかいたいです。" },
+        { japanese: "いつか", kanji: "", nepali: "कुनै दीन / कुनै बेला", english: "sometime, someday", sentence: "いつかうちゅうへいきたいです。" },
+        { japanese: "たてます", kanji: "建てます", nepali: "बनाउनु / ठड्याउनु", english: "build", sentence: "しょうらい、じぶんのいえをたてたいです。" },
+        { japanese: "すばらしい", kanji: "", nepali: "आश्चर्यजनक / अदभुत", english: "wonderful, fantastic", sentence: "すばらしいけしきですね。" },
+        { japanese: "こどもたち", kanji: "子供たち", nepali: "बच्चाहरु / केटा-केटीहरु", english: "children", sentence: "こどもたちはこうえんであそんでいます。" },
+        { japanese: "だいすき[な]", kanji: "大好き", nepali: "एकदम मनपर्नु / रुचाउनु", english: "like very much", sentence: "わたしはアニメがだいすきです。" },
+        { japanese: "しゅじんこう", kanji: "主人公", nepali: "नायक / नायीका", english: "main character", sentence: "このマンガのしゅじんこうはだれですか。" },
+        { japanese: "かたち", kanji: "形", nepali: "आकार", english: "shape", sentence: "このビルはおもしろいかたちをしています。" },
+        { japanese: "ふしぎ[な]", kanji: "不思議", nepali: "सानदार / रहस्यमय / अनौठो", english: "mysterious, strange", sentence: "ふしぎなはなしをききました。" },
+        { japanese: "ポケット", kanji: "", nepali: "गोजी / खल्ती", english: "pocket", sentence: "ポケットのなかになにがありますか。" },
+        { japanese: "たとえば", kanji: "例えば", nepali: "उदाहरणको लागी", english: "for example", sentence: "たとえば、これはべんりです。" },
+        { japanese: "つけます", kanji: "付けます", nepali: "टास्नु / लगाउनु", english: "attach, put on", sentence: "ポケットをシャツにつけます。" },
+        { japanese: "じゆうに", kanji: "自由に", nepali: "स्वतन्त्रता पुर्वक / खुलेर", english: "freely", sentence: "じゆうにつかってください。" },
+        { japanese: "そら", kanji: "空", nepali: "आकाश", english: "sky", sentence: "そらをみてください。" },
+        { japanese: "とびます", kanji: "飛びます", nepali: "उड्नु", english: "fly", sentence: "とりがそらをとんでいます。" },
+        { japanese: "むかし", kanji: "昔", nepali: "पुरानो दिनहरु / उहिले", english: "old days, ancient times", sentence: "むかし、ここに大きなおてらがありました。" },
+        { japanese: "じぶん", kanji: "自分", nepali: "आफु", english: "oneself", sentence: "じぶんのへやをそうじします。" },
+        { japanese: "しょうらい", kanji: "将来", nepali: "भविष्य", english: "future", sentence: "しょうらい、いしゃになりたいです。" }
+    ],
+  "Lesson 28": [
+        { japanese: "うれます[パンが〜]", kanji: "売れます", nepali: "[पाउरोटी] बेचिन्छ", english: "sell, be sold", sentence: "このパンはよくうれます。" },
+        { japanese: "おどります", kanji: "踊ります", nepali: "नाच्छु", english: "dance", sentence: "パーティーでおどりました。" },
+        { japanese: "かみます", kanji: "", nepali: "टोक्छु / चपाउँछु", english: "bite, chew", sentence: "ごはんをよくかんでたべてください。" },
+        { japanese: "えらびます", kanji: "選びます", nepali: "छान्छु", english: "choose", sentence: "すきないろをえらんでください。" },
+        { japanese: "かよいます[だいがくに〜]", kanji: "通います", nepali: "[विश्वविद्यालय] आउने जाने गर्छु", english: "commute, go to and from", sentence: "まいにち、だいがくにかよっています。" },
+        { japanese: "メモします", kanji: "", nepali: "टिपोट (मेमो) गर्छु", english: "take a memo, jot down", sentence: "たいせつなことをメモしてください。" },
+        { japanese: "まじめ[な]", kanji: "真面目", nepali: "गम्भीर / इमान्दार", english: "serious, diligent", sentence: "かれはまじめながくせいです。" },
+        { japanese: "ねっしん[な]", kanji: "熱心", nepali: "लगनशील", english: "enthusiastic, eager", sentence: "かれはしごとにねっしんです。" },
+        { japanese: "えらい", kanji: "偉い", nepali: "माहान / असल", english: "great, admirable", sentence: "アインシュタインはえらいかがくしゃです。" },
+        { japanese: "ちょうどいい", kanji: "", nepali: "ठ्याक्कै मिल्ने", english: "just right, perfect", sentence: "このふくのサイズはちょうどいいです。" },
+        { japanese: "けしき", kanji: "景色", nepali: "दृष्य", english: "scenery, view", sentence: "ここからのけしきはすばらしいです。" },
+        { japanese: "びよういん", kanji: "美容院", nepali: "सैलुन / बिउटी पार्लर", english: "beauty parlor", sentence: "びよういんでかみをきりました。" },
+        { japanese: "だいどころ", kanji: "台所", nepali: "भान्साकोठा", english: "kitchen", sentence: "はははだいどころでりょうりしています。" },
+        { japanese: "けいけん", kanji: "経験", nepali: "अनुभव", english: "experience", sentence: "いろいろなけいけんをしました。" },
+        { japanese: "ちから", kanji: "力", nepali: "शक्ती / बल", english: "power, strength", sentence: "かれはちからがつよいです。" },
+        { japanese: "にんき", kanji: "人気", nepali: "लोकप्रियता", english: "popularity", sentence: "このかしゅはわかいひとににんきがあります。" },
+        { japanese: "かたち", kanji: "形", nepali: "आकार", english: "shape, form", sentence: "このパンはおもしろいかたちをしています。" },
+        { japanese: "いろ", kanji: "色", nepali: "रङ्ग", english: "color", sentence: "どんないろがすきですか。" },
+        { japanese: "あじ", kanji: "味", nepali: "स्वाद", english: "taste", sentence: "このスープはあじがいいです。" },
+        { japanese: "ガム", kanji: "", nepali: "चुईगम", english: "chewing gum", sentence: "ガムをかみますか。" },
+        { japanese: "しなもの", kanji: "品物", nepali: "चिज / सामानहरु", english: "goods, articles", sentence: "このみせはいろいろなしなものがあります。" },
+        { japanese: "ねだん", kanji: "値段", nepali: "मुल्य", english: "price", sentence: "ねだんをみてください。" },
+        { japanese: "きゅうりょう", kanji: "給料", nepali: "तलब", english: "salary", sentence: "このかいしゃはきゅうりょうがいいです。" },
+        { japanese: "ボーナス", kanji: "", nepali: "बोनस", english: "bonus", sentence: "ボーナスでりょこうへいきたいです。" },
+        { japanese: "ゲーム", kanji: "", nepali: "[कम्प्युटर] गेम / खेल", english: "game", sentence: "しゅみはコンピューターゲームです。" },
+        { japanese: "ばんぐみ", kanji: "番組", nepali: "[टेलिभिजन] कार्यक्रम", english: "program", sentence: "どんなテレビばんぐみをみますか。" },
+        { japanese: "ドラマ", kanji: "", nepali: "नाटक / ड्रामा", english: "drama", sentence: "にほんのドラマがおもしろいです。" },
+        { japanese: "かしゅ", kanji: "歌手", nepali: "गायक / गायीका", english: "singer", sentence: "しょうらい、かしゅになりたいです。" },
+        { japanese: "しょうせつ", kanji: "小説", nepali: "उपन्यास / लेख", english: "novel", sentence: "わたしはしょうせつをよむのがすきです。" },
+        { japanese: "しょうせつか", kanji: "小説家", nepali: "उपन्यासकार", english: "novelist", sentence: "かれはゆうめいなしょうせつかです。" },
+        { japanese: "〜か", kanji: "〜家", nepali: "पेसा", english: "-er (suffix for occupation)", sentence: "かのじょはおんがくかです。" },
+        { japanese: "〜き", kanji: "〜機", nepali: "मेसीनको नाम", english: "-machine", sentence: "せんたくきをかいました。" },
+        { japanese: "むすこ", kanji: "息子", nepali: "मेरो छोरा", english: "my son", sentence: "むすこはしょうがくせいです。" },
+        { japanese: "むすこさん", kanji: "息子さん", nepali: "अरुको छोरा", english: "someone else's son", sentence: "むすこさんはなんさいですか。" },
+        { japanese: "むすめ", kanji: "娘", nepali: "मेरो छोरी", english: "my daughter", sentence: "むすめはこうこうせいです。" },
+        { japanese: "むすめさん", kanji: "娘さん", nepali: "अरुको छोरी", english: "someone else's daughter", sentence: "むすめさんはだいがくせいです。" },
+        { japanese: "じぶん", kanji: "自分", nepali: "आफु", english: "oneself", sentence: "じぶんのへやをそうじします。" },
+        { japanese: "しょうらい", kanji: "将来", nepali: "भविष्य", english: "future", sentence: "しょうらい、いしゃになりたいです。" },
+        { japanese: "しばらく", kanji: "", nepali: "एक्कै छिन / केही बेर", english: "for a while", sentence: "しばらくおまちください。" },
+        { japanese: "たいてい", kanji: "", nepali: "धेरै जसो / प्रायः जस्तो", english: "usually, mostly", sentence: "しゅうまつはたいていうちにいます。" },
+        { japanese: "それに", kanji: "", nepali: "साथै", english: "in addition, moreover", sentence: "このレストランはおいしいです。それに、やすいです。" },
+        { japanese: "それで", kanji: "", nepali: "त्यसैले / त्यस कारण", english: "so, therefore", sentence: "あたまがいたいです。それで、かいしゃをやすみました。" },
+        { japanese: "[ちょっと]おねがいがあるんですが。", kanji: "お願いがあるんですが", nepali: "हजुरलाई केही सोध्नु (गराउनु) छ", english: "I have a small favor to ask.", sentence: "すみません、ちょっとおねがいがあるんですが。" },
+        { japanese: "じつは", kanji: "実は", nepali: "वास्तबमा", english: "actually, in fact", sentence: "じつは、あしたくにへかえります。" },
+        { japanese: "かいわ", kanji: "会話", nepali: "संवाद / कुराकानी", english: "conversation", sentence: "にほんごでかいわをします。" },
+        { japanese: "うーん", kanji: "", nepali: "उम् .........", english: "Umm...", sentence: "うーん、そうですね。" },
+        { japanese: "おしらせ", kanji: "お知らせ", nepali: "सुचना", english: "notice, announcement", sentence: "たいせつなおしらせがあります。" },
+        { japanese: "さんかします", kanji: "参加します", nepali: "भाग लिन्छु / सामेल हुन्छु", english: "participate, join", sentence: "パーティーにさんかしますか。" },
+        { japanese: "ひにち", kanji: "日にち", nepali: "मिती", english: "date", sentence: "ひにちをきめてください。" },
+        { japanese: "ど", kanji: "土", nepali: "शनिबार", english: "Saturday", sentence: "どようびはやすみです。" },
+        { japanese: "たいいくかん", kanji: "体育館", nepali: "जिम हल", english: "gymnasium", sentence: "たいいくかんでうんどうします。" },
+        { japanese: "むりょう", kanji: "無料", nepali: "निः शुल्क / सित्तैमा", english: "free of charge", sentence: "このコンサートはむりょうです。" },
+        { japanese: "さそいます", kanji: "誘います", nepali: "आमन्त्रण गर्छु", english: "invite", sentence: "ともだちをえいがにさそいました。" },
+        { japanese: "イベント", kanji: "", nepali: "कुनै पनि कार्यक्रम, महत्सव या प्रतिश्पर्धा", english: "event", sentence: "しゅうまつにイベントがあります。" }
+    ],
+    "Lesson 29": [
+        { japanese: "あきます[ドアが〜]", kanji: "開きます", nepali: "[ढोका] खुल्छ", english: "(door) opens", sentence: "ドアがあいています。" },
+        { japanese: "しまります[ドアが〜]", kanji: "閉まります", nepali: "[ढोका] बन्द हुन्छ", english: "(door) closes", sentence: "ドアがしまっています。" },
+        { japanese: "つきます[でんきが〜]", kanji: "", nepali: "[बत्ती] बल्छ", english: "(light) comes on", sentence: "でんきがついています。" },
+        { japanese: "きえます[でんきが〜]", kanji: "消えます", nepali: "[बत्ती] निभ्छ", english: "(light) goes off", sentence: "でんきがきえました。" },
+        { japanese: "こわれます[いすが〜]", kanji: "壊れます", nepali: "[कुर्सी] भाँचिन्छ / बिग्रन्छ", english: "(chair) breaks", sentence: "このいすはこわれています。" },
+        { japanese: "われます[コップが〜]", kanji: "割れます", nepali: "[गीलास] फुट्छ", english: "(glass) breaks, smashes", sentence: "コップがわれてしまいました。" },
+        { japanese: "おれます[きが〜]", kanji: "折れます", nepali: "[रुख] भाँचिन्छ", english: "(tree) breaks, snaps", sentence: "たいふうできがおれました。" },
+        { japanese: "やぶれます[かみが〜]", kanji: "破れます", nepali: "[कागज] च्यातिन्छ", english: "(paper) tears", sentence: "このかみはやぶれています。" },
+        { japanese: "よごれます[ふくが〜]", kanji: "汚れます", nepali: "[लुगा] फोहोर हुन्छ", english: "(clothes) get dirty", sentence: "シャツがよごれてしまいました。" },
+        { japanese: "つきます[ポケットが〜]", kanji: "", nepali: "[गोजी] जोड्छु / टास्छु", english: "be attached [a pocket]", sentence: "このシャツにはポケットがついています。" },
+        { japanese: "はずれます[ボタンが〜]", kanji: "外れます", nepali: "[टाँक] फुस्कन्छ / निस्कन्छ", english: "(button) comes undone", sentence: "ボタンがはずれています。" },
+        { japanese: "とまります[くるまが〜]", kanji: "止まります", nepali: "[कार] रोकिन्छ", english: "(car) stops", sentence: "くるまがとまっています。" },
+        { japanese: "まちがえます", kanji: "間違えます", nepali: "गल्ती गर्छु", english: "make a mistake", sentence: "けいさんをまちがえました。" },
+        { japanese: "おとします", kanji: "落とします", nepali: "खसाल्छु / झार्छु", english: "drop, lose", sentence: "さいふをおとしてしまいました。" },
+        { japanese: "かかります[かぎが〜]", kanji: "掛かります", nepali: "[साँचो] लाग्छ", english: "be locked", sentence: "ドアにかぎがかかっています。" },
+        { japanese: "ふきます", kanji: "", nepali: "पुस्छु", english: "wipe", sentence: "テーブルをふいてください。" },
+        { japanese: "とりかえます", kanji: "取り替えます", nepali: "साट्छु", english: "change, replace", sentence: "でんちをとりかえます。" },
+        { japanese: "かたづけます", kanji: "片付けます", nepali: "मिलाउछु (आफुले)", english: "put in order, tidy up", sentence: "へやをかたづけてください。" },
+        { japanese: "[お]さら", kanji: "お皿", nepali: "प्लेट / थाल", english: "plate, dish", sentence: "おさらをあらってください。" },
+        { japanese: "[お]ちゃわん", kanji: "", nepali: "कचौरा", english: "rice bowl", sentence: "このおちゃわんはきれいです。" },
+        { japanese: "コップ", kanji: "", nepali: "कप", english: "cup, glass", sentence: "コップがわれてしまいました。" },
+        { japanese: "ガラス", kanji: "", nepali: "गिलास / सीसा", english: "glass (material)", sentence: "このまどはガラスでできています。" },
+        { japanese: "ふくろ", kanji: "袋", nepali: "झोला / थोक्रो", english: "bag", sentence: "ふくろにいれてください。" },
+        { japanese: "しょるい", kanji: "書類", nepali: "कागजपत्र", english: "document, papers", sentence: "たいせつなしょるいですから、なくさないでください。" },
+        { japanese: "えだ", kanji: "枝", nepali: "हाँगा", english: "branch, twig", sentence: "きのえだがおれました。" },
+        { japanese: "えきいん", kanji: "駅員", nepali: "स्टेशन कर्मचारी", english: "station attendant", sentence: "えきいんにききました。" },
+        { japanese: "こうばん", kanji: "交番", nepali: "पुलीस क्वाटर", english: "police box", sentence: "こうばんはえきのちかくにあります。" },
+        { japanese: "スピーチ", kanji: "", nepali: "भाषण", english: "speech", sentence: "スピーチをします。" },
+        { japanese: "へんじ", kanji: "返事", nepali: "उत्तर", english: "reply, answer", sentence: "まだへんじがありません。" },
+        { japanese: "おさきにどうぞ。", kanji: "お先にどうぞ", nepali: "तपाई अघि जानुहोस्", english: "After you. / Go ahead, please.", sentence: "おさきにどうぞ。" },
+        { japanese: "いまのでんしゃ", kanji: "今の電車", nepali: "भर्खरै छुटेको रेल", english: "the train which has just left", sentence: "いまのでんしゃにのりました。" },
+        { japanese: "わすれもの", kanji: "忘れ物", nepali: "बिर्सेको वस्तु", english: "lost item", sentence: "でんしゃのなかにわすれものをしました。" },
+        { japanese: "このくらい", kanji: "", nepali: "यतिजती (यत्रो)", english: "about this size", sentence: "このくらいのおおきさのかばんです。" },
+        { japanese: "〜がわ", kanji: "〜側", nepali: "~ पट्टी", english: "~ side", sentence: "みぎがわのドアからでてください。" },
+        { japanese: "ポケット", kanji: "", nepali: "गोजी", english: "pocket", sentence: "ポケットのなかにさいふがあります。" },
+        { japanese: "〜へん", kanji: "〜辺", nepali: "तीर", english: "around ~, about ~", sentence: "このへんにコンビニはありませんか。" },
+        { japanese: "おぼえていません。", kanji: "覚えていません", nepali: "याद छैन", english: "I don't remember.", sentence: "どこにおいたか、おぼえていません。" },
+        { japanese: "あみだな", kanji: "網棚", nepali: "सवारी साधानमा हुने माथीको तखता", english: "overhead rack", sentence: "あみだなのうえにかばんがあります。" },
+        { japanese: "たしか", kanji: "確か", nepali: "पक्का / साच्चीनै", english: "I think, if I'm not mistaken", sentence: "たしか、つくえのうえにおきました。" },
+        { japanese: "[ああ、]よかった。", kanji: "", nepali: "आहो, राम्रो !", english: "Oh, that's great! / Thank goodness!", sentence: "さいふがありましたか。ああ、よかった。" },
+        { japanese: "じしん", kanji: "地震", nepali: "भुकम्प", english: "earthquake", sentence: "きのう、おおきいじしんがありました。" },
+        { japanese: "かべ", kanji: "壁", nepali: "भित्ता", english: "wall", sentence: "かべにポスターがはってあります。" },
+        { japanese: "はり", kanji: "針", nepali: "सुई / सीयो", english: "hands (of a clock), needle", sentence: "とけいのはりがとまっています。" },
+        { japanese: "さします", kanji: "指します", nepali: "(औलाले) देखाउछु / पोइन्ट गर्नु", english: "point", sentence: "はりは12じをさしています。" },
+        { japanese: "えきまえ", kanji: "駅前", nepali: "स्टेसन अगाडी", english: "the area in front of a station", sentence: "えきまえでじこがありました。" },
+        { japanese: "たおれます", kanji: "倒れます", nepali: "ढल्नु", english: "fall down", sentence: "じしんでビルがたおれました。" },
+        { japanese: "にし", kanji: "西", nepali: "पश्चिम", english: "west", sentence: "にしの方からたいふうがきます。" },
+        { japanese: "〜のほう", kanji: "〜の方", nepali: "~ दिशा तिर", english: "direction", sentence: "みなみのほうへいきたいです。" },
+        { japanese: "もえます", kanji: "燃えます", nepali: "जल्छ / डढ्छ", english: "burn", sentence: "かじでいえがもえました。" },
+        { japanese: "レポーター", kanji: "", nepali: "रीपोर्टर", english: "reporter", sentence: "レポーターがじけんについてほうどうしています。" }
+    ],
+    "Lesson 30": [
+        { japanese: "はります", kanji: "", nepali: "टास्छु", english: "put up, post, paste", sentence: "かべにポスターをはります。" },
+        { japanese: "かけます", kanji: "掛けます", nepali: "झुण्ड्याउछु", english: "hang", sentence: "カレンダーをかけます。" },
+        { japanese: "かざります", kanji: "飾ります", nepali: "सजाउछु / देखाएर राख्छु", english: "decorate, display", sentence: "へやにはなをかざります。" },
+        { japanese: "ならべます", kanji: "並べます", nepali: "लाईनमा मिलाएर राख्छु", english: "arrange, line up", sentence: "つくえをならべてください。" },
+        { japanese: "うえます", kanji: "植えます", nepali: "रोप्छु", english: "plant", sentence: "にわにきをうえます。" },
+        { japanese: "もどします", kanji: "戻します", nepali: "फर्काउछु / फिर्ता गर्छु", english: "return, put back", sentence: "ほんをもとのところにもどしてください。" },
+        { japanese: "まとめます", kanji: "", nepali: "मिलाएर संगै राख्छु / संकलन गर्छु", english: "put together, summarize", sentence: "にもつをまとめます。" },
+        { japanese: "しまいます", kanji: "", nepali: "राख्छु", english: "put away", sentence: "つかったものはしまいます。" },
+        { japanese: "きめます", kanji: "決めます", nepali: "निर्णय गर्छु", english: "decide", sentence: "かいぎのひをきめます。" },
+        { japanese: "よしゅうします", kanji: "予習します", nepali: "पाठ तयारी गर्नु", english: "prepare one's lesson", sentence: "あしたのじゅぎょうをよしゅうします。" },
+        { japanese: "ふくしゅうします", kanji: "復習します", nepali: "दोहोऱ्याउछु", english: "review one's lesson", sentence: "きのうのぶんぽうをふくしゅうします。" },
+        { japanese: "そのままにします", kanji: "", nepali: "जस्ताको त्यस्तै छोडनु", english: "leave things as they are", sentence: "テレビをつけたままにしないでください。" },
+        { japanese: "じゅぎょう", kanji: "授業", nepali: "कक्षा", english: "class", sentence: "きょうのにほんごのじゅぎょうはおもしろかったです。" },
+        { japanese: "こうぎ", kanji: "講義", nepali: "लेक्चर", english: "lecture", sentence: "だいがくでこうぎをききます。" },
+        { japanese: "ミーティング", kanji: "", nepali: "मिटिङ्ग", english: "meeting", sentence: "あした、ミーティングがあります。" },
+        { japanese: "よてい", kanji: "予定", nepali: "योजना / तालिका", english: "plan, schedule", sentence: "しゅうまつのよていはなんですか。" },
+        { japanese: "おしらせ", kanji: "お知らせ", nepali: "सुचना", english: "announcement, notice", sentence: "たいせつなおしらせがあります。" },
+        { japanese: "ガイドブック", kanji: "", nepali: "मार्ग देखाउने किताब", english: "guidebook", sentence: "りょこうのまえにガイドブックをよみます。" },
+        { japanese: "カレンダー", kanji: "", nepali: "पात्रो", english: "calendar", sentence: "カレンダーによていをかきます。" },
+        { japanese: "ポスター", kanji: "", nepali: "पोस्टर / विज्ञापन पत्र", english: "poster", sentence: "へやにポスターがはってあります。" },
+        { japanese: "よていひょう", kanji: "予定表", nepali: "योजनाको तालिका", english: "schedule", sentence: "よていひょうをみてください。" },
+        { japanese: "ごみばこ", kanji: "ごみ箱", nepali: "डस्टबिन / फोहोर राख्ने भाडा", english: "trash can, dustbin", sentence: "ごみはごみばこにいれてください。" },
+        { japanese: "にんぎょう", kanji: "人形", nepali: "गुडिया / खेलौना", english: "doll", sentence: "にほんにんぎょうはきれいです。" },
+        { japanese: "かびん", kanji: "花瓶", nepali: "गमला / फुलदानी", english: "vase", sentence: "かびんにはなをかざります。" },
+        { japanese: "かがみ", kanji: "鏡", nepali: "ऐना", english: "mirror", sentence: "まいあさ、かがみをみます。" },
+        { japanese: "ひきだし", kanji: "引き出し", nepali: "घर्रा", english: "drawer", sentence: "ひきだしのなかにふくがあります。" },
+        { japanese: "げんかん", kanji: "玄関", nepali: "प्रवेशद्वार", english: "entrance hall, porch", sentence: "げんかんにくつをぬいでください。" },
+        { japanese: "ろうか", kanji: "廊下", nepali: "भवन भित्रको गल्ली", english: "corridor, hallway", sentence: "ろうかをはしらないでください。" },
+        { japanese: "かべ", kanji: "壁", nepali: "भित्ता", english: "wall", sentence: "かべにえをかけます。" },
+        { japanese: "いけ", kanji: "池", nepali: "पोखरी / ताल", english: "pond", sentence: "いけにさかながいます。" },
+        { japanese: "もとのところ", kanji: "元の所", nepali: "पहिलाको ठाँउ", english: "original place", sentence: "つかったものはもとのところにもどしてください。" },
+        { japanese: "まわり", kanji: "周り", nepali: "आसपास / वरीपरी", english: "around", sentence: "いえのまわりにきがあります。" },
+        { japanese: "まんなか", kanji: "真ん中", nepali: "केन्द्र / बिच्चमा", english: "center", sentence: "へやのまんなかにテーブルがあります。" },
+        { japanese: "すみ", kanji: "隅", nepali: "कुना", english: "corner", sentence: "へやのすみにつくえがあります。" },
+        { japanese: "まだ", kanji: "", nepali: "अझै / बाँकी", english: "still", sentence: "まだしゅくだいがおわっていません。" },
+        { japanese: "リュック", kanji: "", nepali: "झोला (पछाडी बोक्ने )", english: "rucksack, backpack", sentence: "このリュックはかるいです。" },
+        { japanese: "ひじょうぶくろ", kanji: "非常袋", nepali: "आपतकालीन गरिने सामान राखेको झोला", english: "emergency kit", sentence: "ひじょうぶくろをよういしておきます。" },
+        { japanese: "ひじょうじ", kanji: "非常時", nepali: "आपतकालीन समय", english: "emergency", sentence: "ひじょうじにこれをつかってください。" },
+        { japanese: "せいかつします", kanji: "生活します", nepali: "जिवन बिताउनु / जिवन जिउनु", english: "live, lead a life", sentence: "わたしはとうきょうでせいかつしています。" },
+        { japanese: "かいちゅうでんとう", kanji: "懐中電灯", nepali: "टर्च लाईट", english: "torch, flashlight", sentence: "ひじょうぶくろにかいちゅうでんとうがあります。" },
+        { japanese: "〜とか、〜とか", kanji: "", nepali: "~ जस्ता, ~ जस्ता", english: "~, ~, and so on", sentence: "ひきだしのなかにシャツとか、ズボンとかがあります。" },
+        { japanese: "まるい", kanji: "丸い", nepali: "गोलो", english: "round", sentence: "まるいテーブルをかいました。" },
+        { japanese: "ある〜", kanji: "", nepali: "एक ~", english: "one ~, a certain ~", sentence: "むかし、あるところにおじいさんがいました。" },
+        { japanese: "ゆめをみます", kanji: "夢を見ます", nepali: "सपना देख्छु", english: "have a dream", sentence: "きのう、こわいゆめをみました。" },
+        { japanese: "うれしい", kanji: "", nepali: "खुशी", english: "happy, glad", sentence: "プレゼントをもらって、うれしいです。" },
+        { japanese: "いや[な]", kanji: "嫌", nepali: "घृणित / असहमत", english: "unpleasant, hateful", sentence: "わたしはトマトがいやです。" },
+        { japanese: "すると", kanji: "", nepali: "गर्यो भने", english: "and then, thereupon", sentence: "ドアをあけました。すると、ねこがいました。" },
+        { japanese: "めがさめます", kanji: "目が覚めます", nepali: "आँखा खुल्नु / बिउझीनु", english: "wake up", sentence: "まいあさ、6じにめがさめます。" }
+    ],   
+         "Lesson 31": [
+        { japanese: "つづけます", kanji: "続けます", nepali: "लगातार गर्छु / निरन्तरता दिनु", english: "continue", sentence: "しごとがおわってから、べんきょうをつづけます。" },
+        { japanese: "みつけます", kanji: "見つけます", nepali: "पत्ता लगाउछु / भेट्टाउनु", english: "find", sentence: "いいしごとをみつけたいです。" },
+        { japanese: "とります[やすみを〜]", kanji: "取ります", nepali: "[छुट्टी] लिन्छु", english: "take [a holiday]", sentence: "あした、やすみをとります。" },
+        { japanese: "うけます[しけんを〜]", kanji: "受けます", nepali: "[परिक्षामा] सामेल हुनु", english: "take [an examination]", sentence: "らいしゅう、にほんごのしけんをうけます。" },
+        { japanese: "もうしこみます", kanji: "申し込みます", nepali: "आवेदन दिनु", english: "apply for, enter for", sentence: "パーティーにもうしこみました。" },
+        { japanese: "きゅうけいします", kanji: "休憩します", nepali: "बिश्राम गर्छु", english: "take a break, take a rest", sentence: "つかれましたから、すこしきゅうけいしましょう。" },
+        { japanese: "れんきゅう", kanji: "連休", nepali: "क्रमीक बिदा", english: "consecutive holidays", sentence: "らいしゅうはれんきゅうです。" },
+        { japanese: "さくぶん", kanji: "作文", nepali: "निबन्ध / रचना", english: "essay, composition", sentence: "にほんごでさくぶんをかきました。" },
+        { japanese: "はっぴょう", kanji: "発表", nepali: "घोषण / प्रस्तुति", english: "announcement, presentation", sentence: "あした、かいぎではっぴょうがあります。" },
+        { japanese: "てんらんかい", kanji: "展覧会", nepali: "प्रदर्शनी", english: "exhibition", sentence: "びじゅつかんえのてんらんかいをみにいきます。" },
+        { japanese: "けっこんしき", kanji: "結婚式", nepali: "विवाह समारोह", english: "wedding ceremony", sentence: "ともだちのけっこんしきにいきます。" },
+        { japanese: "[お]そうしき", kanji: "お葬式", nepali: "अन्त्येष्टि (क्रिया)", english: "funeral", sentence: "おそうしきにしゅっせきします。" },
+        { japanese: "しき", kanji: "式", nepali: "समारोह", english: "ceremony", sentence: "そつぎょうしきは3がつです。" },
+        { japanese: "ほんしゃ", kanji: "本社", nepali: "प्रमुख कार्यलय", english: "head office", sentence: "ほんしゃはとうきょうにあります。" },
+        { japanese: "してん", kanji: "支店", nepali: "शाखा कार्यलय", english: "branch office", sentence: "おおさかしてんではたらいています。" },
+        { japanese: "きょうかい", kanji: "教会", nepali: "चर्च", english: "church", sentence: "にちようびにきょうかいへいきます。" },
+        { japanese: "だいがくいん", kanji: "大学院", nepali: "मास्टर-डिग्री अध्ययन गर्ने विश्वविद्यालय", english: "graduate school", sentence: "だいがくをそつぎょうしてから、だいがくいんへいきます。" },
+        { japanese: "どうぶつえん", kanji: "動物園", nepali: "चिडियाखाना", english: "zoo", sentence: "こどもとどうぶつえんへいきました。" },
+        { japanese: "おんせん", kanji: "温泉", nepali: "गरम पानी", english: "hot spring, spa", sentence: "にほんのおんせんはゆうめいです。" },
+        { japanese: "かえり", kanji: "帰り", nepali: "फर्कने", english: "return, way back", sentence: "かえりにスーパーでかいものをします。" },
+        { japanese: "おこさん", kanji: "お子さん", nepali: "अरुको बच्चा", english: "(someone else's) child", sentence: "おこさんはなんさいですか。" },
+        { japanese: "〜ごう", kanji: "〜号", nepali: "नम्बर", english: "~ No. (train, typhoon, etc.)", sentence: "のぞみ3ごうにのります。" },
+        { japanese: "〜のほう", kanji: "〜の方", nepali: "~ तिर", english: "direction of ~", sentence: "おおさかのほうへいきます。" },
+        { japanese: "ずっと", kanji: "ずっと", nepali: "निरन्तर / सधै भर", english: "all the time, much more", sentence: "バスよりでんしゃのほうがずっとはやいです。" },
+        { japanese: "のこります", kanji: "残ります", nepali: "बाँकी रहनु / उब्रनु", english: "remain, be left", sentence: "じかんがあまりのこっていません。" },
+        { japanese: "にゅうがくしけん", kanji: "入学試験", nepali: "प्रवेश परिक्षा", english: "entrance exam", sentence: "にゅうがくしけんはむずかしかったです。" },
+        { japanese: "つきに", kanji: "月に", nepali: "महिनामा", english: "per month", sentence: "つきに2かいえいがをみます。" },
+        { japanese: "むら", kanji: "村", nepali: "गाँउ", english: "village", sentence: "わたしのいなかはちいさなむらです。" },
+        { japanese: "そつぎょうします", kanji: "卒業します", nepali: "अध्ययन पुरा गर्नु / ग्रयाजुएट गर्नु", english: "graduate", sentence: "らいねん、だいがくをそつぎょうします。" },
+        { japanese: "えいがかん", kanji: "映画館", nepali: "सिनेमा हल", english: "cinema, movie theater", sentence: "えきまえにあたらしいえいがかんができました。" },
+        { japanese: "いや[な]", kanji: "嫌", nepali: "घृणित / असहमत", english: "unpleasant, hateful", sentence: "わたしはたばこがいやです。" },
+        { japanese: "そら", kanji: "空", nepali: "आकाश", english: "sky", sentence: "そらがきれいです。" },
+        { japanese: "とじます", kanji: "閉じます", nepali: "बन्द गर्नु", english: "close", sentence: "ほんをとじてください。" },
+        { japanese: "とかい", kanji: "都会", nepali: "शहर", english: "city", sentence: "とかいにすみたいですか。" },
+        { japanese: "こどもたち", kanji: "子供たち", nepali: "बच्चाहरु", english: "children", sentence: "こどもたちはげんきにあそんでいます。" },
+        { japanese: "じゆうに", kanji: "自由に", nepali: "स्वतन्त्रता पुर्वक / खुलेर", english: "freely", sentence: "じゆうにはなしてください。" }
+    ],
+    "Lesson 32": [
+        { japanese: "うんどうします", kanji: "運動します", nepali: "व्यायाम गर्नु", english: "exercise", sentence: "まいにち、30ぷんうんどうします。" },
+        { japanese: "せいこうします", kanji: "成功します", nepali: "सफल हुनु", english: "succeed", sentence: "このプロジェクトはせいこうしました。" },
+        { japanese: "しっぱいします[しけんに〜]", kanji: "失敗します", nepali: "[परिक्षामा] फेल गर्नु", english: "fail [an exam]", sentence: "しけんにしっぱいしました。" },
+        { japanese: "ごうかくします[しけんに〜]", kanji: "合格します", nepali: "[परिक्षामा] पास गर्नु", english: "pass [an exam]", sentence: "N4のしけんにごうかくしました。" },
+        { japanese: "やみます[あめが〜]", kanji: "やみます", nepali: "[वर्षात] रोकिनु", english: "(rain) stops", sentence: "あめがやみました。" },
+        { japanese: "はれます", kanji: "晴れます", nepali: "घाम लाग्नु", english: "clear up", sentence: "あしたははれるでしょう。" },
+        { japanese: "くもります", kanji: "曇ります", nepali: "बादल लाग्नु", english: "get cloudy", sentence: "そらがくもっています。" },
+        { japanese: "つづきます[ねつが〜]", kanji: "続きます", nepali: "[ज्वोरो] लगातार आइरहनु", english: "(fever) continues", sentence: "たかいねつがつづいています。" },
+        { japanese: "ひきます[かぜを〜]", kanji: "ひきます", nepali: "[रुघा खोकी] लाग्नु", english: "catch [a cold]", sentence: "かぜをひいてしまいました。" },
+        { japanese: "ひやします", kanji: "冷やします", nepali: "चिसो पार्नु", english: "cool", sentence: "あたまをひやしてください。" },
+        { japanese: "こみます[みちが〜]", kanji: "込みます", nepali: "[बाटो] भिडभाड हुनु", english: "(road) get crowded", sentence: "このみちはいつもこんでいます。" },
+        { japanese: "すきます[みちが〜]", kanji: "すきます", nepali: "[बाटो] कम भिडभाड हुनु", english: "(road) get empty", sentence: "このじかんはみちがすいています。" },
+        { japanese: "でます[しあいに〜]", kanji: "出ます", nepali: "[खेलमा] सहभागी हुनु", english: "participate [in a match]", sentence: "マラソンたいかいにでます。" },
+        { japanese: "むりをします", kanji: "無理をします", nepali: "सकी-नसकी गर्नु", english: "overdo things, work too hard", sentence: "むりをしないでください。" },
+        { japanese: "じゅうぶん[な]", kanji: "十分", nepali: "पर्याप्त / प्रसस्त", english: "enough, sufficient", sentence: "じゅうぶんにねてください。" },
+        { japanese: "おかしい", kanji: "", nepali: "अनौठो", english: "strange, funny", sentence: "かれはすこしおかしいです。" },
+        { japanese: "うるさい", kanji: "", nepali: "हल्ला", english: "noisy", sentence: "となりのへやがうるさいです。" },
+        { japanese: "せんせい", kanji: "先生", nepali: "डाक्टर (बोलाउदा प्रयोग हुन्छ)", english: "doctor (addressing)", sentence: "せんせい、あたまがいたいです。" },
+        { japanese: "やけど", kanji: "", nepali: "पोलेको घाँउ", english: "burn", sentence: "やけどをしました。" },
+        { japanese: "けが", kanji: "", nepali: "चोट-पटक", english: "injury", sentence: "けがをしないように、きをつけてください。" },
+        { japanese: "せき", kanji: "", nepali: "खोकी", english: "cough", sentence: "せきがでます。" },
+        { japanese: "インフルエンザ", kanji: "", nepali: "इन्फ्लुएन्जा", english: "influenza", sentence: "インフルエンザにかかりました。" },
+        { japanese: "たいよう", kanji: "太陽", nepali: "घाम", english: "sun", sentence: "たいようがでています。" },
+        { japanese: "ほし", kanji: "星", nepali: "तारा", english: "star", sentence: "よる、ほしがみえます。" },
+        { japanese: "かぜ", kanji: "風", nepali: "हावा", english: "wind", sentence: "きょうはかぜがつよいです。" },
+        { japanese: "こくさい〜", kanji: "国際〜", nepali: "अन्तरराष्ट्रिय ~", english: "international ~", sentence: "こくさいかいぎがあります。" },
+        { japanese: "すいどう", kanji: "水道", nepali: "नल / धारा", english: "water supply, faucet", sentence: "すいどうのみずをのみます。" },
+        { japanese: "エンジン", kanji: "", nepali: "इन्जीन", english: "engine", sentence: "くるまのエンジンがおかしいです。" },
+        { japanese: "チーム", kanji: "", nepali: "टोली", english: "team", sentence: "どちらのチームがかちますか。" },
+        { japanese: "こんや", kanji: "今夜", nepali: "आज बेलुका", english: "tonight", sentence: "こんや、パーティーがあります。" },
+        { japanese: "ゆうがた", kanji: "夕方", nepali: "साँझपख", english: "late afternoon, evening", sentence: "ゆうがた、さんぽします。" },
+        { japanese: "おそく", kanji: "遅く", nepali: "ढीलो", english: "late", sentence: "きのう、おそくねました。" },
+        { japanese: "げんき", kanji: "元気", nepali: "जोस", english: "vigor, energy", sentence: "げんきがありませんね。どうしましたか。" },
+        { japanese: "い", kanji: "胃", nepali: "पेट", english: "stomach", sentence: "いがいたいです。" },
+        { japanese: "ストレス", kanji: "", nepali: "तनाव", english: "stress", sentence: "しごとのストレスがおおいです。" },
+        { japanese: "それはいけませんね。", kanji: "", nepali: "त्यो सुनेर दुख लाग्यो ।", english: "I'm sorry to hear that.", sentence: "かぜですか。それはいけませんね。" },
+        { japanese: "ほしうらない", kanji: "星占い", nepali: "राशीफल", english: "horoscope", sentence: "けさ、ほしうらないをみました。" },
+        { japanese: "おうしざ", kanji: "牡牛座", nepali: "वृष राशी", english: "Taurus", sentence: "わたしはおうしざです。" },
+        { japanese: "はたらきすぎ", kanji: "働きすぎ", nepali: "धेरै काम गर्ने", english: "overworking", sentence: "はたらきすぎはからだにわるいです。" },
+        { japanese: "こまります", kanji: "困ります", nepali: "अफ्ठ्यारो पर्नु / आपत पर्नु", english: "be in trouble, have a problem", sentence: "おかねがなくてこまっています。" },
+        { japanese: "たからくじ", kanji: "宝くじ", nepali: "चिठ्ठा", english: "lottery", sentence: "たからくじをかいました。" },
+        { japanese: "あたります[たからくじが〜]", kanji: "当たります", nepali: "[चिठ्ठा] पर्नु", english: "win [a lottery]", sentence: "たからくじがあたりました。" },
+        { japanese: "けんこう", kanji: "健康", nepali: "स्वास्थ", english: "health", sentence: "けんこうがいちばんたいせつです。" },
+        { japanese: "れんあい", kanji: "恋愛", nepali: "रोमान्टिक प्रेम", english: "romantic love", sentence: "れんあいしょうせつをよみます。" },
+        { japanese: "こいびと", kanji: "恋人", nepali: "प्रेमि / प्रेमिका", english: "sweetheart, boyfriend, girlfriend", sentence: "かれはわたしのこいびとです。" }
+    ],
+    "Lesson 33": [
+        { japanese: "にげます", kanji: "逃げます", nepali: "भाग्नु", english: "run away, escape", sentence: "どろぼうがにげました。" },
+        { japanese: "さわぎます", kanji: "騒ぎます", nepali: "हल्ला गर्नु / हल्ला हुनु", english: "make a noise", sentence: "こどもたちがさわいでいます。" },
+        { japanese: "あきらめます", kanji: "", nepali: "त्याग्नु / छोड्नु / हार मान्नु", english: "give up", sentence: "だいがくへいくのをあきらめました。" },
+        { japanese: "なげます", kanji: "投げます", nepali: "फ्याक्नु (टाढा)", english: "throw", sentence: "ボールをなげてください。" },
+        { japanese: "まもります", kanji: "守ります", nepali: "पालना गर्नु", english: "keep, follow, obey", sentence: "きそくをまもりなさい。" },
+        { japanese: "はじまります[しきが〜]", kanji: "始まります", nepali: "[समारोह] सुरु हुन्छ", english: "(ceremony) begins, starts", sentence: "しきは10じにはじまります。" },
+        { japanese: "しゅっせきします[かいぎに〜]", kanji: "出席します", nepali: "[मिटिङ्गमा] सहभागी हुनु", english: "attend [a meeting]", sentence: "かいぎにしゅっせきします。" },
+        { japanese: "つたえます", kanji: "伝えます", nepali: "भनिदिनु (अरुलाई)", english: "tell, convey", sentence: "やまださんにつたえてください。" },
+        { japanese: "ちゅういします[くるまに〜]", kanji: "注意します", nepali: "[गाडिमा] सावधान हुनु", english: "be careful [of cars]", sentence: "くるまにちゅういしてください。" },
+        { japanese: "はずします[せきを〜]", kanji: "外します", nepali: "[आफ्नो सीटबाट] टाढा हुनु", english: "be away [from one's desk]", sentence: "かいぎのとき、せきをはずさないでください。" },
+        { japanese: "もどります", kanji: "戻ります", nepali: "फर्कनु", english: "return, come back", sentence: "じぶんのせきにもどってください。" },
+        { japanese: "あります[でんわが〜]", kanji: "", nepali: "[फोन] आउनु", english: "have [a phone call]", sentence: "さっき、でんわがありましたよ。" },
+        { japanese: "リサイクルします", kanji: "", nepali: "रिसायकल गर्नु", english: "recycle", sentence: "ふるいかみをリサイクルします。" },
+        { japanese: "だめ[な]", kanji: "", nepali: "हुन्न", english: "no good, not permitted", sentence: "ここでたばこをすってはだめです。" },
+        { japanese: "おなじ", kanji: "同じ", nepali: "उस्तै / एउटै", english: "same", sentence: "わたしはかれとおなじとしです。" },
+        { japanese: "けいさつ", kanji: "警察", nepali: "पुलिस (स्टेशन)", english: "police (station)", sentence: "さいふをおとしたから、けいさつへいきます。" },
+        { japanese: "せき", kanji: "席", nepali: "सीट", english: "seat", sentence: "せきにもどってください。" },
+        { japanese: "マーク", kanji: "", nepali: "मार्क / चिन्ह", english: "mark, symbol", sentence: "これはきんえんのマークです。" },
+        { japanese: "ボール", kanji: "", nepali: "बल", english: "ball", sentence: "ボールをなげます。" },
+        { japanese: "しめきり", kanji: "締め切り", nepali: "अन्तिम मिति", english: "deadline", sentence: "レポートのしめきりはあしたです。" },
+        { japanese: "きそく", kanji: "規則", nepali: "नियम", english: "rule, regulation", sentence: "がっこうのきそくをまもります。" },
+        { japanese: "きけん", kanji: "危険", nepali: "खतरा / जोखिम", english: "danger", sentence: "このかわはきけんです。" },
+        { japanese: "しようきんし", kanji: "使用禁止", nepali: "प्रयोग गर्न मनाहि", english: "Do Not Use", sentence: "このエレベーターはしようきんしです。" },
+        { japanese: "たちいりきんし", kanji: "立入禁止", nepali: "भित्र पस्न मनाहि", english: "Keep Out, No Entry", sentence: "あそこはたちいりきんしです。" },
+        { japanese: "じょこう", kanji: "徐行", nepali: "बिस्तारै जानुस", english: "Go Slow", sentence: "がっこうのまえはじょこうしてください。" },
+        { japanese: "いりぐち", kanji: "入口", nepali: "भित्र पस्ने ढोका", english: "entrance", sentence: "デパートのいりぐちはどこですか。" },
+        { japanese: "でぐち", kanji: "出口", nepali: "बाहिर निस्कने ढोका", english: "exit", sentence: "でぐちはあちらです。" },
+        { japanese: "ひじょうぐち", kanji: "非常口", nepali: "आपतकालिन ढोका", english: "emergency exit", sentence: "ひじょうぐちはあそこです。" },
+        { japanese: "わりびき", kanji: "割引", nepali: "छुट", english: "Discount", sentence: "このみせは10パーセントわりびきです。" },
+        { japanese: "のみほうだい", kanji: "飲み放題", nepali: "जति पिए पनि हुने", english: "All You Can Drink", sentence: "このコースはのみほうだいです。" },
+        { japanese: "しようちゅう", kanji: "使用中", nepali: "प्रयोग गरिरहेको वा भइरहेको", english: "In Use, Occupied", sentence: "このトイレはしようちゅうです。" },
+        { japanese: "ぼしゅうちゅう", kanji: "募集中", nepali: "कामदार चाहिरहेको", english: "Applications Wanted", sentence: "アルバイトをぼしゅうちゅうです。" },
+        { japanese: "どういう〜", kanji: "", nepali: "कस्तो प्रकारको", english: "what kind of ~", sentence: "これはどういういみですか。" },
+        { japanese: "いくら[〜ても]", kanji: "", nepali: "जति (भए पनि)", english: "however ~, even if ~", sentence: "いくらやすくても、かいません。" },
+        { japanese: "もう", kanji: "", nepali: "अब", english: "(not) any longer (used with negatives)", sentence: "もうたべられません。" },
+        { japanese: "あと〜", kanji: "", nepali: "बाँकी ~", english: "~ left", sentence: "あと5ふんしかありません。" },
+        { japanese: "ちゅうしゃいはん", kanji: "駐車違反", nepali: "पार्किङ्गको नियम उल्लंघन", english: "parking violation", sentence: "ちゅうしゃいはんで、ばっきんをはらいました。" },
+        { japanese: "ばっきん", kanji: "罰金", nepali: "जरिवाना", english: "fine", sentence: "1まんえんのばっきんです。" },
+        { japanese: "じしん", kanji: "地震", nepali: "भुकम्प", english: "earthquake", sentence: "じしんがおきたとき、あわてないでください。" },
+        { japanese: "おきます", kanji: "起きます", nepali: "हुनु", english: "happen", sentence: "きのう、じこがおきました。" },
+        { japanese: "たすけあいます", kanji: "助け合います", nepali: "एक-अर्कालाई सहयोग गर्नु", english: "help each other", sentence: "こまったときは、たすけあいます。" },
+        { japanese: "もともと", kanji: "", nepali: "साच्चिकै भन्नु पर्दा", english: "originally", sentence: "かれはもともとやさしいひとです。" },
+        { japanese: "かなしい", kanji: "悲しい", nepali: "दु : खी", english: "sad", sentence: "かなしいえいがをみて、なきました。" },
+        { japanese: "もっと", kanji: "", nepali: "अझै", english: "more", sentence: "もっとべんきょうしなければなりません。" },
+        { japanese: "あいさつ", kanji: "", nepali: "अभिवादन", english: "greeting", sentence: "げんきにあいさつをしましょう。" },
+        { japanese: "あいて", kanji: "相手", nepali: "विपक्षी (अर्को व्यक्ती)", english: "the other person", sentence: "あいてのはなしをよくききます。" },
+        { japanese: "きもち", kanji: "気持ち", nepali: "भावना", english: "feeling", sentence: "かんしゃのきもちをつたえます。" }
+    ],  
+        "Lesson 34": [
+        { japanese: "みがきます[はを〜]", kanji: "磨きます", nepali: "[दाँत] माझ्नु / टल्काउनु", english: "brush [one's teeth], polish", sentence: "ごはんをたべたら、はをみがきます。" },
+        { japanese: "くみたてます", kanji: "組み立てます", nepali: "संरचना गर्नु / जोडेर बनाउनु", english: "assemble", sentence: "あたらしいベッドをくみたてます。" },
+        { japanese: "おります", kanji: "折ります", nepali: "बंग्याउनु / भाच्नु / पट्याउनु", english: "bend, fold, break, snap", sentence: "かみをおってください。" },
+        { japanese: "きがつきます[わすれものに〜]", kanji: "気がつきます", nepali: "[बिर्सिएको चिज] थाहा पाउनु", english: "notice, become aware of [lost property]", sentence: "でんしゃをおりてから、わすれものにきがつきました。" },
+        { japanese: "つけます[しょうゆを〜]", kanji: "", nepali: "[सोया सस्] हाल्नु", english: "put in [soy sauce]", sentence: "さしみはしょうゆをつけてたべます。" },
+        { japanese: "みつかります[かぎが〜]", kanji: "見つかります", nepali: "[साँचो] पत्ता लाग्छ / भेटिन्छ", english: "(key) be found", sentence: "かばんのなかからかぎがみつかりました。" },
+        { japanese: "しつもんします", kanji: "質問します", nepali: "प्रश्न गर्छु", english: "ask a question", sentence: "わからないとき、せんせいにしつもんします。" },
+        { japanese: "さします[かさを〜]", kanji: "", nepali: "[छाता] ओढ्छु / खोल्छु", english: "put up [an umbrella]", sentence: "あめがふったら、かさをさします。" },
+        { japanese: "スポーツクラブ", kanji: "", nepali: "खेलकुद क्लब", english: "sports club", sentence: "しゅうまつにスポーツクラブへいきます。" },
+        { japanese: "[お]しろ", kanji: "お城", nepali: "महल", english: "castle", sentence: "にほんのおしろをみたいです。" },
+        { japanese: "せつめいしょ", kanji: "説明書", nepali: "निर्देशन पुस्तीका", english: "explanatory pamphlet, instruction book", sentence: "せつめいしょをよんでください。" },
+        { japanese: "ず", kanji: "図", nepali: "आकृति / चित्र", english: "figure, drawing", sentence: "このずをみてください。" },
+        { japanese: "せん", kanji: "線", nepali: "रेखा / लाईन", english: "line", sentence: "このせんのうえにかいてください。" },
+        { japanese: "やじるし", kanji: "矢印", nepali: "वाण / तिर (चिन्ह)", english: "arrow (sign)", sentence: "やじるしのほうへいってください。" },
+        { japanese: "くろ", kanji: "黒", nepali: "कालो (noun)", english: "black (noun)", sentence: "わたしはくろがすきです。" },
+        { japanese: "しろ", kanji: "白", nepali: "सेतो (noun)", english: "white (noun)", sentence: "しろいくつをはいています。" },
+        { japanese: "あか", kanji: "赤", nepali: "रातो (noun)", english: "red (noun)", sentence: "あかのボールペンをください。" },
+        { japanese: "あお", kanji: "青", nepali: "नीलो (noun)", english: "blue (noun)", sentence: "そらのいろはあおです。" },
+        { japanese: "こん", kanji: "紺", nepali: "गाढा नीलो (noun)", english: "navy blue, dark blue (noun)", sentence: "こんのスーツをきています。" },
+        { japanese: "きいろ", kanji: "黄色", nepali: "पहेलो (noun)", english: "yellow (noun)", sentence: "きいろいはながさいています。" },
+        { japanese: "ちゃいろ", kanji: "茶色", nepali: "खैरो (noun)", english: "brown (noun)", sentence: "ちゃいろのいぬがいます。" },
+        { japanese: "しょうゆ", kanji: "しょうゆ", nepali: "सोया सस्", english: "soy sauce", sentence: "さしみにしょうゆをつけます。" },
+        { japanese: "ソース", kanji: "", nepali: "सस्", english: "sauce", sentence: "このりょうりにはソースをかけます。" },
+        { japanese: "おきゃく[さん]", kanji: "お客さん", nepali: "ग्राहक / पाहुना / अतिथि", english: "visitor, guest, customer", sentence: "おきゃくさんがきました。" },
+        { japanese: "〜か〜", kanji: "", nepali: "वा", english: "~ or ~", sentence: "コーヒーかこうちゃ、どちらがいいですか。" },
+        { japanese: "ゆうべ", kanji: "", nepali: "हिजो राती", english: "last night", sentence: "ゆうべ、おそくまでテレビをみました。" },
+        { japanese: "さっき", kanji: "", nepali: "अघि भर्खरै", english: "a short while ago", sentence: "さっきでんわがありましたよ。" },
+        { japanese: "さどう", kanji: "茶道", nepali: "चीयापान समारोह", english: "tea ceremony", sentence: "さどうをけいけんしたいです。" },
+        { japanese: "おちゃをたてます", kanji: "お茶をたてます", nepali: "ग्रीन टी बनाउनु", english: "make green tea", sentence: "おちゃをたてるのはむずかしいです。" },
+        { japanese: "さきに", kanji: "先に", nepali: "पहिले / अघि", english: "first, ahead", sentence: "さきにごはんをたべます。" },
+        { japanese: "のせます", kanji: "載せます", nepali: "चढाउछु / लोड गर्छु", english: "place on, load on", sentence: "たなににもつをのせます。" },
+        { japanese: "これでいいですか。", kanji: "", nepali: "यो भए हुन्छ ?", english: "Is this all right?", sentence: "これでいいですか。" },
+        { japanese: "いかがですか。", kanji: "", nepali: "कस्तो छ ?", english: "How is it?", sentence: "このおちゃはいかがですか。" },
+        { japanese: "にがい", kanji: "苦い", nepali: "तीतो", english: "bitter", sentence: "このくすりはにがいですね。" },
+        { japanese: "おやこどんぶり", kanji: "親子丼", nepali: "चिकन र अण्डा सँग पकाएको खाना", english: "bowl of rice topped with chicken and egg", sentence: "ひるごはんにおやこどんぶりをたべます。" },
+        { japanese: "ざいりょう", kanji: "材料", nepali: "बनाउन चाहीने सरसामान", english: "material, ingredient", sentence: "りょうりのざいりょうをかいます。" },
+        { japanese: "〜ぶん", kanji: "〜分", nepali: "भाग", english: "portion for ~ people", sentence: "これはふたりぶんのざいりょうです。" },
+        { japanese: "グラム", kanji: "", nepali: "ग्राम", english: "gram", sentence: "にくを200グラムください。" },
+        { japanese: "たまねぎ", kanji: "玉ねぎ", nepali: "प्याज", english: "onion", sentence: "たまねぎをひとつきってください。" },
+        { japanese: "ちょうみりょう", kanji: "調味料", nepali: "मरमसाला", english: "seasoning, condiment", sentence: "このりょうりにはちょうみりょうがたくさんはいっています。" },
+        { japanese: "てきとうなおおきさに", kanji: "適当な大きさに", nepali: "मिल्ने आकारमा", english: "in suitable size", sentence: "やさいをてきとうなおおきさにきってください。" },
+        { japanese: "なべ", kanji: "", nepali: "प्यान / फ्राइ प्यान", english: "pot, pan", sentence: "なべにみずをいれます。" },
+        { japanese: "ひ", kanji: "火", nepali: "आगो", english: "fire, flame", sentence: "ひをつけてください。" },
+        { japanese: "ひにかけます", kanji: "火にかけます", nepali: "आगोमा तताउनु", english: "put on the stove", sentence: "なべをひにかけます。" },
+        { japanese: "にます", kanji: "煮ます", nepali: "पकाउछु / उमाल्छु", english: "cook, boil, simmer", sentence: "やさいをにます。" },
+        { japanese: "にえます", kanji: "煮えます", nepali: "पाक्छ / उम्लीन्छ", english: "be cooked, be boiled", sentence: "にくがにえました。" },
+        { japanese: "どんぶり", kanji: "", nepali: "जापानीज कचौरा", english: "bowl", sentence: "どんぶりにごはんをいれます。" },
+        { japanese: "たちます", kanji: "", nepali: "[समय] कट्नु / बित्नु", english: "(time) pass", sentence: "10ぷんたちました。" }
+    ],
+    "Lesson 35": [
+        { japanese: "さきます[はなが〜]", kanji: "咲きます", nepali: "[फुल] फुल्छ", english: "(flowers) bloom", sentence: "にわにはながさきました。" },
+        { japanese: "かわります[いろが〜]", kanji: "変わります", nepali: "[रङ्ग] फेरिन्छ", english: "(color) changes", sentence: "しんごうのいろがかわりました。" },
+        { japanese: "こまります", kanji: "困ります", nepali: "अफ्ठ्यारो पर्छ / आपत पर्छ", english: "be in trouble, have a problem", sentence: "おかねがなくて、こまっています。" },
+        { japanese: "つけます[まるを〜]", kanji: "", nepali: "[गोलो] लगाउनु", english: "draw (a circle), mark", sentence: "ただしいこたえにまるをつけてください。" },
+        { japanese: "なおります[びょうきが〜]", kanji: "治ります", nepali: "[बिमार] निको हुन्छ", english: "recover from, get well", sentence: "びょうきがなおりました。" },
+        { japanese: "なおります[こしょうが〜]", kanji: "直ります", nepali: "[बिग्रेको] बन्छ", english: "be repaired, be fixed", sentence: "とけいのこしょうがなおりました。" },
+        { japanese: "クリックします", kanji: "", nepali: "क्लिक गर्नु", english: "click", sentence: "このボタンをクリックしてください。" },
+        { japanese: "にゅうりょくします", kanji: "入力します", nepali: "टाइप गर्नु", english: "input", sentence: "ここにパスワードをにゅうりょくします。" },
+        { japanese: "ただしい", kanji: "正しい", nepali: "ठिक / सत्य", english: "correct, right", sentence: "ただしいこたえをえらびなさい。" },
+        { japanese: "むこう", kanji: "向こう", nepali: "अर्को तिर / ऊ त्यतातिर", english: "over there, the other side", sentence: "むこうにゆうびんきょくがあります。" },
+        { japanese: "しま", kanji: "島", nepali: "समुन्द्री टापु", english: "island", sentence: "あのしまへいってみたいです。" },
+        { japanese: "みなと", kanji: "港", nepali: "बन्दरगाह", english: "port, harbor", sentence: "みなとにふねがとまっています。" },
+        { japanese: "きんじょ", kanji: "近所", nepali: "छिमेकी", english: "neighborhood", sentence: "きんじょにスーパーがあります。" },
+        { japanese: "おくじょう", kanji: "屋上", nepali: "छत / कौशी", english: "rooftop", sentence: "おくじょうからまちがみえます。" },
+        { japanese: "かいがい", kanji: "海外", nepali: "समुन्द्र-पारी", english: "overseas", sentence: "かいがいへりょこうしたいです。" },
+        { japanese: "やまのぼり", kanji: "山登り", nepali: "हिमाल (पाहाड) चढ्ने", english: "mountain climbing", sentence: "しゅみはやまのぼりです。" },
+        { japanese: "れきし", kanji: "歴史", nepali: "इतिहास", english: "history", sentence: "にほんのれきしをべんきょうしています。" },
+        { japanese: "きかい", kanji: "機会", nepali: "मौका / अवसर", english: "chance, opportunity", sentence: "これはいいきかいです。" },
+        { japanese: "きょか", kanji: "許可", nepali: "अनुमति", english: "permission", sentence: "せんせいのきょかをもらいました。" },
+        { japanese: "まる", kanji: "丸", nepali: "गोलो / घुमाउरो", english: "circle", sentence: "ここにまるをかいてください。" },
+        { japanese: "ふりがな", kanji: "", nepali: "खान्जिको माथी लेखीने अक्षर", english: "furigana", sentence: "このかんじのふりがなをおしえてください。" },
+        { japanese: "せつび", kanji: "設備", nepali: "उपकरण / सुबिधा", english: "equipment, facility", sentence: "このホテルはせつびがいいです。" },
+        { japanese: "レバー", kanji: "", nepali: "लीबर", english: "lever", sentence: "このレバーをおしてください。" },
+        { japanese: "キー", kanji: "", nepali: "साँचो", english: "key", sentence: "パソコンのキーをおします。" },
+        { japanese: "カーテン", kanji: "", nepali: "पर्दा", english: "curtain", sentence: "カーテンをしめてください。" },
+        { japanese: "ひも", kanji: "", nepali: "डोरी / तार", english: "string", sentence: "ひもできります。" },
+        { japanese: "すいはんき", kanji: "炊飯器", nepali: "राइस कुकर", english: "rice cooker", sentence: "すいはんきでごはんをたきます。" },
+        { japanese: "は", kanji: "葉", nepali: "पात", english: "leaf", sentence: "きの葉がおちます。" },
+        { japanese: "むかし", kanji: "昔", nepali: "उहिले / प्राचिन समय", english: "old days", sentence: "むかし、ここに大きいきがありました。" },
+        { japanese: "もっと", kanji: "", nepali: "अझै / धेरै", english: "more", sentence: "もっとゆっくりはなしてください。" },
+        { japanese: "これでおわりましょう。", kanji: "これで終わりましょう", nepali: "यसैमा समाप्त गरौं", english: "Let's finish here.", sentence: "はい、きょうはこれでおわりましょう。" },
+        { japanese: "それなら", kanji: "", nepali: "त्यसो भए", english: "in that case, then", sentence: "じかんがありませんか。それなら、あしたにしましょう。" },
+        { japanese: "やこうバス", kanji: "夜行バス", nepali: "रात्रि बस", english: "night bus", sentence: "やこうバスでとうきょうへいきます。" },
+        { japanese: "りょこうしゃ", kanji: "旅行社", nepali: "ट्राभल एजेन्सी", english: "travel agency", sentence: "りょこうしゃでチケットをよやくします。" },
+        { japanese: "くわしい", kanji: "詳しい", nepali: "बिस्तृत", english: "detailed", sentence: "くわしいせつめいをありがとうございます。" },
+        { japanese: "スキーじょう", kanji: "スキー場", nepali: "स्की रिसोर्ट / स्की क्षेत्र", english: "ski resort", sentence: "ふゆにスキーじょうへいきます。" },
+        { japanese: "しゅ", kanji: "朱", nepali: "सिंधुरी रातो रङ्ग", english: "vermilion", sentence: "じんじゃのとりいはしゅいろです。" },
+        { japanese: "まじわります", kanji: "交わります", nepali: "घुलमील हुनु", english: "associate with, mix with", sentence: "いろいろなひととまじわりたいです。" },
+        { japanese: "ことわざ", kanji: "", nepali: "उखान / टुक्का", english: "proverb", sentence: "にほんのことわざをおしえてください。" },
+        { japanese: "かんけい", kanji: "関係", nepali: "सम्बन्ध / नाता", english: "relationship", sentence: "かれとはともだちのかんけいです。" },
+        { japanese: "なかよくします", kanji: "仲よくします", nepali: "सम्बन्ध राम्रो गर्नु", english: "be on good terms with", sentence: "クラスのみんなとなかよくします。" },
+        { japanese: "ひつよう[な]", kanji: "必要", nepali: "आवश्यक / जरुरी", english: "necessary, essential", sentence: "パスポートがりょこうにひつようです。" }
+    ],
+    "Lesson 36": [
+        { japanese: "あいます[じこに〜]", kanji: "遭います", nepali: "[दुर्घटनामा] पर्नु", english: "encounter [an accident]", sentence: "きのう、こうつうじこにあいました。" },
+        { japanese: "ちょきんします", kanji: "貯金します", nepali: "बचत गर्नु", english: "save money", sentence: "しょうらいのためにちょきんしています。" },
+        { japanese: "すぎます[7じを〜]", kanji: "過ぎます", nepali: "[७ बजे] कट्नु", english: "pass [7 o'clock]", sentence: "やくそくのじかんをすぎてしまいました。" },
+        { japanese: "なれます[しごとに〜]", kanji: "慣れます", nepali: "[काममा] बानी पर्नु", english: "get used to [work]", sentence: "にほんのせいかつになれましたか。" },
+        { japanese: "くさります[たべものが〜]", kanji: "腐ります", nepali: "[खानेकुरा] सड्नु / कुहीनु", english: "(food) rot", sentence: "このたべものはくさっています。" },
+        { japanese: "けんどう", kanji: "剣道", nepali: "केन्दो", english: "kendo", sentence: "けんどうをならいたいです。" },
+        { japanese: "じゅうどう", kanji: "柔道", nepali: "जुडो खेल", english: "judo", sentence: "しゅみはじゅうどうです。" },
+        { japanese: "ラッシュ", kanji: "", nepali: "व्यस्त समय", english: "rush hour", sentence: "あさのラッシュはたいへんです。" },
+        { japanese: "うちゅう", kanji: "宇宙", nepali: "अन्तरिक्ष / ब्रम्हाण्ड", english: "space, universe", sentence: "うちゅうへいってみたいです。" },
+        { japanese: "きょく", kanji: "曲", nepali: "धुन", english: "a piece of music", sentence: "このきょくがすきです。" },
+        { japanese: "まいしゅう", kanji: "毎週", nepali: "हरेक हप्ता", english: "every week", sentence: "まいしゅう、テニスをします。" },
+        { japanese: "まいつき", kanji: "毎月", nepali: "हरेक महिना", english: "every month", sentence: "まいつき、ほんをよみます。" },
+        { japanese: "まいとし(まいねん)", kanji: "毎年", nepali: "हरेक वर्ष / हरेक साल", english: "every year", sentence: "まいとし、りょこうします。" },
+        { japanese: "このごろ", kanji: "", nepali: "आजकल / आजभोलि", english: "these days", sentence: "このごろ、とてもいそがしいです。" },
+        { japanese: "やっと", kanji: "", nepali: "अन्तत : / आखिरमा", english: "finally", sentence: "やっとしけんがおわりました。" },
+        { japanese: "かなり", kanji: "", nepali: "धेरै", english: "considerably, fairly", sentence: "きょうはかなりあついです。" },
+        { japanese: "かならず", kanji: "必ず", nepali: "जसरी भएपनि", english: "without fail, by any means", sentence: "あした、かならずきてください。" },
+        { japanese: "ぜったいに", kanji: "絶対に", nepali: "पक्कै / बिल्कुल", english: "absolutely, never (with negatives)", sentence: "ぜったいにわすれません。" },
+        { japanese: "じょうずに", kanji: "上手に", nepali: "कौशलतापूर्वक / दक्षसँग", english: "skillfully, well", sentence: "かのじょはピアノをじょうずにひきます。" },
+        { japanese: "できるだけ", kanji: "", nepali: "संभव भएसम्म / सके सम्म", english: "as much as possible", sentence: "できるだけはやくきてください。" },
+        { japanese: "ほとんど", kanji: "", nepali: "लगभग सबै / प्रायजस्तो", english: "almost all, mostly", sentence: "しゅくだいはほとんどおわりました。" },
+        { japanese: "おきゃくさま", kanji: "お客様", nepali: "पाहुना (आदर शब्द)", english: "customer, guest (respectful)", sentence: "おきゃくさま、こちらへどうぞ。" },
+        { japanese: "とくべつ[な]", kanji: "特別", nepali: "विशेष", english: "special", sentence: "きょうはとくべつなひです。" },
+        { japanese: "していらっしゃいます", kanji: "", nepali: "गर्दै हुनुहुन्छ (していますको आदर शब्द)", english: "be doing (respectful form of しています)", sentence: "せんせいはなにをしていらっしゃいますか。" },
+        { japanese: "すいえい", kanji: "水泳", nepali: "पौडी खेल", english: "swimming", sentence: "すいえいができますか。" },
+        { japanese: "チャレンジします", kanji: "", nepali: "चुनौती गर्नु", english: "challenge", sentence: "あたらしいしごとにチャレンジします。" },
+        { japanese: "きもち", kanji: "気持ち", nepali: "महसुस / भावना", english: "feeling, mood", sentence: "きょうはきもちがいいです。" },
+        { japanese: "のりもの", kanji: "乗り物", nepali: "सवारीसाधान", english: "vehicle", sentence: "どんなのりものがすきですか。" },
+        { japanese: "〜せいき", kanji: "〜世紀", nepali: "- सताब्दी", english: "-th century", sentence: "いまは21せいきです。" },
+        { japanese: "とおく", kanji: "遠く", nepali: "टाढाँ / टाढाँको ठाँउ", english: "far away", sentence: "とおくやまがみえます。" },
+        { japanese: "めずらしい", kanji: "珍しい", nepali: "दुर्लभ / असामान्य", english: "rare, unusual", sentence: "めずらしいはなをみました。" },
+        { japanese: "きしゃ", kanji: "汽車", nepali: "बाफ इन्जीन भएको रेल गाडी", english: "steam train", sentence: "むかしのきしゃにのってみたいです。" },
+        { japanese: "きせん", kanji: "汽船", nepali: "बाफ बाट चल्ने पानी जहाज", english: "steamboat", sentence: "きせんでかわをわたります。" },
+        { japanese: "おおぜいのひと", kanji: "大勢の人", nepali: "धेरै मान्छेहरु", english: "many people", sentence: "おおぜいのひとがならんでいます。" },
+        { japanese: "はこびます", kanji: "運びます", nepali: "ओसार्नु", english: "carry, transport", sentence: "このにもつをはこんでください。" },
+        { japanese: "じゆうに", kanji: "自由に", nepali: "स्वतन्त्रता पुर्वक / खुलेर", english: "freely", sentence: "じゆうにつかってください。" }
+    ],
+       
+  "Lesson 37": [
+        { japanese: "ほめます", kanji: "褒めます", nepali: "प्रशंसा गर्नु", english: "praise", sentence: "せんせいはがくせいをほめました。" },
+        { japanese: "しかります", kanji: "叱ります", nepali: "गाली गर्नु", english: "scold", sentence: "はははこどもをしかりました。" },
+        { japanese: "さそいます", kanji: "誘います", nepali: "आमन्त्रणा गर्नु", english: "invite, ask someone to join", sentence: "ともだちをえいがにさそいます。" },
+        { japanese: "しょうたいします", kanji: "招待します", nepali: "निम्तो गर्नु / निमन्त्रणा गर्नु", english: "invite", sentence: "けっこんしきにともだちをしょうたいします。" },
+        { japanese: "たのみます", kanji: "頼みます", nepali: "अनुरोध (बिन्ती) गर्नु", english: "ask, request", sentence: "ともだちにしごとをたのみました。" },
+        { japanese: "ちゅういします", kanji: "注意します", nepali: "चेतावनी गर्नु / सुझाव गर्नु", english: "warn, advise", sentence: "くるまにちゅういしてください。" },
+        { japanese: "とります", kanji: "盗ります", nepali: "चोर्नु / लुट्नु", english: "steal, rob", sentence: "どろぼうがおかねをとりました。" },
+        { japanese: "ふみます", kanji: "踏みます", nepali: "टेक्नु / कुल्चीनु", english: "step on", sentence: "あしをふまないでください。" },
+        { japanese: "こわします", kanji: "壊します", nepali: "भत्काउनु / नष्ट गर्नु", english: "break, destroy", sentence: "こどもがおもちゃをこわしました。" },
+        { japanese: "よごします", kanji: "汚します", nepali: "फोहोर गर्नु", english: "make dirty", sentence: "ふくをよごしてしまいました。" },
+        { japanese: "おこないます", kanji: "行います", nepali: "कुनै कुरा गर्छु वा लिन्छु", english: "hold, carry out, practice", sentence: "あした、パーティーをおこないます。" },
+        { japanese: "ゆしゅつします", kanji: "輸出します", nepali: "निर्यात गर्नु", english: "export", sentence: "にほんはくるまをゆしゅつします。" },
+        { japanese: "ゆにゅうします", kanji: "輸入します", nepali: "आयात गर्नु", english: "import", sentence: "にほんはせきゆをゆにゅうします。" },
+        { japanese: "ほんやくします", kanji: "翻訳します", nepali: "अनुवाद गर्नु / उल्था गर्नु", english: "translate", sentence: "えいごをにほんごにほんやくします。" },
+        { japanese: "はつめいします", kanji: "発明します", nepali: "आविष्कार गर्नु", english: "invent", sentence: "エジソンはでんわをはつめいしました。" },
+        { japanese: "はっけんします", kanji: "発見します", nepali: "पत्ता लगाउनु", english: "discover", sentence: "あたらしいほしをはっけんしました。" },
+        { japanese: "こめ", kanji: "米", nepali: "चामल", english: "rice", sentence: "にほんはこめをつくります。" },
+        { japanese: "むぎ", kanji: "麦", nepali: "गहुँ", english: "wheat, barley", sentence: "パンはむぎからつくります。" },
+        { japanese: "せきゆ", kanji: "石油", nepali: "तेल / मट्टितेल / पेट्रोल", english: "oil, petroleum", sentence: "このくにではせきゆがとれます。" },
+        { japanese: "げんりょう", kanji: "原料", nepali: "कच्चा पदार्थ", english: "raw material", sentence: "プラスチックのげんりょうはせきゆです。" },
+        { japanese: "インスタントラーメン", kanji: "", nepali: "तयारी चाउचाउ", english: "instant noodles", sentence: "インスタントラーメンはべんりなたべものです。" },
+        { japanese: "デート", kanji: "", nepali: "डेटीङ्ग", english: "date (romantic outing)", sentence: "こいびととデートします。" },
+        { japanese: "どろぼう", kanji: "泥棒", nepali: "चोर / डाँकु / लुटेरा", english: "thief, robber", sentence: "どろぼうがうちにはいりました。" },
+        { japanese: "けいかん", kanji: "警官", nepali: "पुलिस / प्रहरी", english: "policeman", sentence: "けいかんがどろぼうをつかまえました。" },
+        { japanese: "せかいじゅう", kanji: "世界中", nepali: "संसारभरी", english: "all over the world", sentence: "せかいじゅうをりょこうしたいです。" },
+        { japanese: "〜じゅう", kanji: "〜中", nepali: "~ भरी", english: "all over ~", sentence: "にほんじゅうをりょこうしました。" },
+        { japanese: "みなさま", kanji: "皆様", nepali: "माहानुभावहरु / हजुरहरु", english: "ladies and gentlemen, everyone", sentence: "みなさま、こんにちは。" },
+        { japanese: "やけます[うちが〜]", kanji: "焼けます", nepali: "[घर] जल्नु", english: "(house) burn down", sentence: "かじでうちがやけてしまいました。" },
+        { japanese: "そのご", kanji: "その後", nepali: "त्यसपछि", english: "after that", sentence: "びょうきになりました。そのご、ずっとげんきです。" },
+        { japanese: "せかいいさん", kanji: "世界遺産", nepali: "विश्व सम्पदा", english: "World Heritage Site", sentence: "きんかくじはせかいいさんです。" },
+        { japanese: "〜のひとつ", kanji: "〜の一つ", nepali: "~ को एउटा", english: "one of the ~", sentence: "これはにほんのゆうめいなおてらのひとつです。" },
+        { japanese: "きんいろ", kanji: "金色", nepali: "सुनौलो रङ्ग", english: "golden color", sentence: "きんいろのかみかざりがすきです。" },
+        { japanese: "ほんもの", kanji: "本物", nepali: "वास्तविक कुरा / सक्कली", english: "real thing, genuine article", sentence: "これはほんもののダイヤモンドですか。" },
+        { japanese: "きん", kanji: "金", nepali: "सुन", english: "gold", sentence: "このゆびわはきんでできています。" },
+        { japanese: "うつくしい", kanji: "美しい", nepali: "सुन्दर / राम्रो", english: "beautiful, lovely", sentence: "うつくしいけしきをみました。" },
+        { japanese: "ごうか[な]", kanji: "豪華", nepali: "भव्य / शानदार", english: "gorgeous, splendid", sentence: "ごうかなホテルにとまりました。" },
+        { japanese: "ちょうこく", kanji: "彫刻", nepali: "मुर्तीकला", english: "engraving, sculpture", sentence: "このちょうこくはすばらしいです。" },
+        { japanese: "いいつたえ", kanji: "言い伝え", nepali: "पौराणिक कथा", english: "legend, tradition", sentence: "このむらにはふるいいいつたえがあります。" },
+        { japanese: "ねむります", kanji: "眠ります", nepali: "निदाउनु", english: "sleep", sentence: "きのうのよる、よくねむりました。" },
+        { japanese: "ほります", kanji: "彫ります", nepali: "खोप्नु / कुद्नु", english: "engrave, carve", sentence: "きのいたにえをほります。" },
+        { japanese: "なかま", kanji: "仲間", nepali: "सहकर्मी / मित्र", english: "colleague, friend", sentence: "しごとのなかまとしょくじします。" },
+        { japanese: "しかし", kanji: "", nepali: "तैपनी / यद्यपि / तर", english: "but, however", sentence: "かれはべんきょうしました。しかし、しけんにしっぱいしました。" },
+        { japanese: "そのあと", kanji: "そのあと", nepali: "त्यस पछी", english: "after that", sentence: "かいものがおわって、そのあとえいがをみました。" },
+        { japanese: "いっしょうけんめい", kanji: "一生懸命", nepali: "मिहिनेतको साथ", english: "with all one's effort", sentence: "いっしょうけんめいべんきょうします。" },
+        { japanese: "ねずみ", kanji: "", nepali: "मुसा", english: "mouse, rat", sentence: "ねこがねずみをとりました。" },
+        { japanese: "いっぴきもいません。", kanji: "一匹もいません", nepali: "एउटा पनि छैन", english: "there is not a single (mouse)", sentence: "このへやにはねずみがいっぴきもいません。" }
+    ],
+    "Lesson 38": [
+        { japanese: "さんかします[りょこうに〜]", kanji: "参加します", nepali: "भाग लिनु / सामेल हुनु", english: "participate, join [a tour]", sentence: "ボランティアにさんかします。" },
+        { japanese: "そだてます", kanji: "育てます", nepali: "पाल्नु / हुर्काउनु", english: "bring up, raise", sentence: "はははわたしをそだてました。" },
+        { japanese: "はこびます", kanji: "運びます", nepali: "बोक्नु / ओर्सानु", english: "carry, transport", sentence: "このおもいにもつをはこんでください。" },
+        { japanese: "にゅういんします", kanji: "入院します", nepali: "अस्पतालमा भर्ना हुनु", english: "enter hospital", sentence: "けがをして、にゅういんしました。" },
+        { japanese: "たいいんします", kanji: "退院します", nepali: "अस्पतालबाट डिस्चार्ज हुनु", english: "leave hospital", sentence: "らいしゅう、たいいんします。" },
+        { japanese: "いれます[でんげんを〜]", kanji: "入れます", nepali: "[पावर स्विच] अन-गर्नु", english: "turn on [the power switch]", sentence: "まず、でんげんをいれてください。" },
+        { japanese: "きります[でんげんを〜]", kanji: "切ります", nepali: "[पावर स्विच] अफ-गर्नु", english: "turn off [the power switch]", sentence: "つかいおわったら、でんげんをきってください。" },
+        { japanese: "かけます[かぎを〜]", kanji: "掛けます", nepali: "[साँचो] लगाउनु (बन्द गर्नु)", english: "lock", sentence: "でかけるとき、かぎをかけます。" },
+        { japanese: "つきます[うそを〜]", kanji: "", nepali: "ढाट्नु / झुटो बोल्नु", english: "tell [a lie]", sentence: "うそをついてはいけません。" },
+        { japanese: "きもちがいい", kanji: "気持ちがいい", nepali: "राम्रो महसुस गर्नु", english: "pleasant, agreeable", sentence: "おんせんはきもちがいいです。" },
+        { japanese: "きもちがわるい", kanji: "気持ちが悪い", nepali: "नराम्रो महसुस गर्नु", english: "unpleasant, disgusting", sentence: "ふねにのって、きもちがわるくなりました。" },
+        { japanese: "おおきな〜", kanji: "大きな〜", nepali: "ठूला ~", english: "large, big ~", sentence: "おおきないぬがいます。" },
+        { japanese: "ちいさな〜", kanji: "小さな〜", nepali: "साना ~", english: "small, little ~", sentence: "ちいさなこどもがあそんでいます。" },
+        { japanese: "あかちゃん", kanji: "赤ちゃん", nepali: "बच्चा", english: "baby", sentence: "あかちゃんがうまれました。" },
+        { japanese: "しょうがっこう", kanji: "小学校", nepali: "प्राथमिक विद्यालय", english: "elementary school", sentence: "むすこはしょうがっこうへいっています。" },
+        { japanese: "ちゅうがっこう", kanji: "中学校", nepali: "निम्न माध्यमिक विद्यालय", english: "junior high school", sentence: "ちゅうがっこうをそつぎょうしました。" },
+        { japanese: "えきまえ", kanji: "駅前", nepali: "रेल स्टेसन अगाडि", english: "in front of the station", sentence: "えきまえでともだちとあいます。" },
+        { japanese: "かいがん", kanji: "海岸", nepali: "समुन्द्री किनार", english: "seacoast, seashore", sentence: "かいがんをさんぽします。" },
+        { japanese: "こうじょう", kanji: "工場", nepali: "कारखाना", english: "factory", sentence: "ちちはこうじょうではたらいています。" },
+        { japanese: "ゆびわ", kanji: "指輪", nepali: "औंठी", english: "ring", sentence: "かのじょにゆびわをあげました。" },
+        { japanese: "でんげん", kanji: "電源", nepali: "पावर स्विच", english: "power switch", sentence: "でんげんをいれてください。" },
+        { japanese: "しゅうかん", kanji: "習慣", nepali: "बानी", english: "habit, custom", sentence: "はやくおきるしゅうかんがあります。" },
+        { japanese: "けんこう", kanji: "健康", nepali: "स्वास्थ", english: "health", sentence: "けんこうがいちばんです。" },
+        { japanese: "〜せい", kanji: "〜製", nepali: "मा बनेको", english: "made in ~", sentence: "このカメラはにほんせいです。" },
+        { japanese: "おととし", kanji: "", nepali: "परार साल", english: "the year before last", sentence: "おととし、にほんへきました。" },
+        { japanese: "[あ、]いけない。", kanji: "", nepali: "ए, हुदैन / लु, बर्बाद", english: "Oops! / Oh, no!", sentence: "あ、いけない。しゅくだいをわすれました。" },
+        { japanese: "おさきに[しつれいします]", kanji: "お先に失礼します", nepali: "माफगर्नुहोस, पहिला जान लागेकोमा", english: "Excuse me for leaving first.", sentence: "おさきにしつれいします。" },
+        { japanese: "かいらん", kanji: "回覧", nepali: "वृताकार / गोलो", english: "circular", sentence: "このかいらんをみてください。" },
+        { japanese: "けんきゅうしつ", kanji: "研究室", nepali: "पढ्ने कोठा / प्रयोगशाला", english: "study room, laboratory", sentence: "せんせいはけんきゅうしつにいらっしゃいます。" },
+        { japanese: "きちんと", kanji: "", nepali: "राम्ररी / सफासँग", english: "neatly, tidily", sentence: "ほんをきちんとほんだなにもどしてください。" },
+        { japanese: "せいりします", kanji: "整理します", nepali: "क्रमबद्धगर्नु / मिलाउनु", english: "sort, arrange", sentence: "しりょうをせいりします。" },
+        { japanese: "ほうほう", kanji: "方法", nepali: "तरिका / प्रणाली", english: "method, system", sentence: "いいほうほうがありますか。" },
+        { japanese: "〜という", kanji: "", nepali: "~ भन्ने", english: "called ~", sentence: "これは「さくら」というはなです。" },
+        { japanese: "〜さつ", kanji: "〜冊", nepali: "पुस्तक गन्दा प्रयोग गरिने", english: "(counter for books, etc.)", sentence: "ほんを3さつかいました。" },
+        { japanese: "はんこ", kanji: "", nepali: "छाप / मोहर", english: "seal, stamp", sentence: "ここに、はんこをおしてください。" },
+        { japanese: "おします[はんこを〜]", kanji: "押します", nepali: "[छाप] लगाउनु", english: "affix [a seal]", sentence: "しょるいにはんこをおします。" },
+        { japanese: "ふたご", kanji: "双子", nepali: "जुम्ल्याहा", english: "twins", sentence: "あのふたりはふたごです。" },
+        { japanese: "しまい", kanji: "姉妹", nepali: "दिदि-बहिनी", english: "sisters", sentence: "かのじょたちはしまいです。" },
+        { japanese: "5ねんせい", kanji: "5年生", nepali: "पाचौं कक्षा / पाचौं वर्ष", english: "fifth grade", sentence: "むすこはしょうがっこうの5ねんせいです。" },
+        { japanese: "にています", kanji: "似ています", nepali: "समान हुनु / उस्तै हुनु", english: "resemble, be similar", sentence: "ふたごはかおがにています。" },
+        { japanese: "せいかく", kanji: "性格", nepali: "चरीत्र", english: "character, personality", sentence: "かれはせいかくがいいです。" },
+        { japanese: "おとなしい", kanji: "", nepali: "शान्त / भद्र-भलाद्मी", english: "quiet, gentle", sentence: "かのじょはおとなしいひとです。" },
+        { japanese: "せわをします", kanji: "世話をします", nepali: "हेरचाह गर्नु / सेवा गर्नु", english: "take care of", sentence: "はははこどものせわをします。" },
+        { japanese: "じかんがたちます", kanji: "時間がたちます", nepali: "समय बित्नु", english: "time passes", sentence: "はやいですね。じかんがたちます。" },
+        { japanese: "だいすき[な]", kanji: "大好き", nepali: "एकदम मन पराउनु", english: "like very much", sentence: "わたしはねこがだいすきです。" },
+        { japanese: "〜てん", kanji: "〜点", nepali: "बिन्दु / अंक", english: "point, score", sentence: "しけんは100てんでした。" },
+        { japanese: "きがつよい", kanji: "気が強い", nepali: "कठोर मन", english: "strong-willed", sentence: "あねはきがつよいです。" },
+        { japanese: "けんかします", kanji: "", nepali: "लडाइ-झगडा गर्नु", english: "quarrel, fight", sentence: "こどもがけんかしています。" },
+        { japanese: "ねんれい", kanji: "年齢", nepali: "उमेर / वर्ष", english: "age", sentence: "しつれいですが、ねんれいはおいくつですか。" },
+        { japanese: "しかた", kanji: "仕方", nepali: "गर्ने तरिका", english: "way of doing", sentence: "このりょうりのしかたをおしえてください。" }
+    ],
+    "Lesson 39": [
+        { japanese: "こたえます[しつもんに〜]", kanji: "答えます", nepali: "[प्रश्नको] उत्तर दिनु", english: "answer [a question]", sentence: "せんせいのしつもんにこたえます。" },
+        { japanese: "たおれます[ビルが〜]", kanji: "倒れます", nepali: "[भवन] लड्नु / ढल्नु", english: "(a building) fall down", sentence: "じしんでビルがたおれました。" },
+        { japanese: "とおります[みちを〜]", kanji: "通ります", nepali: "[बाटो] पार गर्नु", english: "pass [along a street]", sentence: "まいにちこのみちをとおります。" },
+        { japanese: "しにます", kanji: "死にます", nepali: "मर्नु / बित्नु", english: "die", sentence: "かれのおじいさんはきょねんしにました。" },
+        { japanese: "びっくりします", kanji: "", nepali: "अचम्म पर्नु / छक्क पर्नु", english: "be surprised", sentence: "ニュースをきいて、びっくりしました。" },
+        { japanese: "がっかりします", kanji: "", nepali: "निराश हुनु", english: "be disappointed", sentence: "しけんにしっぱいして、がっかりしました。" },
+        { japanese: "あんしんします", kanji: "安心します", nepali: "ढुक्क हुनु", english: "be relieved", sentence: "てがみをもらって、あんしんしました。" },
+        { japanese: "りこんします", kanji: "離婚します", nepali: "सम्बन्ध बिच्छेद गर्नु / छोड-पत्र गर्नु", english: "divorce", sentence: "あのふたりはらいげつりこんします。" },
+        { japanese: "ふとります", kanji: "太ります", nepali: "मोटाउनु", english: "get fat", sentence: "さいきん、すこしふとりました。" },
+        { japanese: "やせます", kanji: "", nepali: "दुब्लाउनु", english: "get slim, lose weight", sentence: "ダイエットをして、やせました。" },
+        { japanese: "ふくざつ[な]", kanji: "複雑", nepali: "जटिल", english: "complicated, complex", sentence: "このもんだいはふくざつです。" },
+        { japanese: "じゃま[な]", kanji: "邪魔", nepali: "अवरोध / रोकावट", english: "obstructive, in the way", sentence: "そこにたつとじゃまです。" },
+        { japanese: "かたい", kanji: "硬い", nepali: "कडा / दरो", english: "hard, tough", sentence: "このパンはかたいです。" },
+        { japanese: "やわらかい", kanji: "柔らかい", nepali: "कोमल / नरम", english: "soft, tender", sentence: "このベッドはやわらかいです。" },
+        { japanese: "きたない", kanji: "汚い", nepali: "फोहोर / मैला", english: "dirty", sentence: "へやがきたないです。そうじしてください。" },
+        { japanese: "うれしい", kanji: "", nepali: "खुसी / प्रसन्न", english: "happy, glad", sentence: "プレゼントをもらって、うれしいです。" },
+        { japanese: "かなしい", kanji: "悲しい", nepali: "दुखी / उदास", english: "sad", sentence: "かなしいえいがをみて、なきました。" },
+        { japanese: "はずかしい", kanji: "恥ずかしい", nepali: "लज्जीत", english: "embarrassed, shy", sentence: "みんなのまえではなすのははずかしいです。" },
+        { japanese: "しゅしょう", kanji: "首相", nepali: "प्रधानमन्त्री", english: "Prime Minister", sentence: "にほんのしゅしょうはだれですか。" },
+        { japanese: "つなみ", kanji: "津波", nepali: "सुनामी (समुन्द्री छाल-तुफान)", english: "tsunami", sentence: "じしんのあとで、つなみがきました。" },
+        { japanese: "たいふう", kanji: "台風", nepali: "हावाहुरी / तुफान", english: "typhoon", sentence: "おおきいたいふうがきます。" },
+        { japanese: "かみなり", kanji: "雷", nepali: "चट्याङ्ग", english: "thunder, lightning", sentence: "かみなりがなっています。" },
+        { japanese: "かじ", kanji: "火事", nepali: "आगलागी", english: "fire", sentence: "となりのビルでかじがありました。" },
+        { japanese: "じこ", kanji: "事故", nepali: "दुर्घटना", english: "accident", sentence: "こうつうじこにあいました。" },
+        { japanese: "ハイキング", kanji: "", nepali: "पैदल यात्रा", english: "hiking", sentence: "しゅうまつにハイキングへいきませんか。" },
+        { japanese: "[お]みあい", kanji: "お見合い", nepali: "विवाहको लागी गरिने बैठक", english: "arranged marriage interview", sentence: "おみあいをしたことがありますか。" },
+        { japanese: "そうさ", kanji: "操作", nepali: "सञ्चालन", english: "operation", sentence: "このきかいのそうさはかんたんです。" },
+        { japanese: "かいじょう", kanji: "会場", nepali: "[आयोजना] स्थल / हल", english: "venue, event site", sentence: "コンサートのかいじょうはどこですか。" },
+        { japanese: "〜だい", kanji: "〜代", nepali: "~ शुल्क / भाडा", english: "~ charge, fee, fare", sentence: "でんわだいをはらいます。" },
+        { japanese: "〜や", kanji: "〜屋", nepali: "पसल / पसले", english: "~ shop, ~ monger", sentence: "はなやではなをかいます。" },
+        { japanese: "フロント", kanji: "", nepali: "काउन्ター", english: "front desk, reception", sentence: "ホテルのフロントでかぎをもらいます。" },
+        { japanese: "〜ごうしつ", kanji: "〜号室", nepali: "कोठा नम्बर", english: "room number ~", sentence: "わたしのへやは305ごうしつです。" },
+        { japanese: "タオル", kanji: "", nepali: "तौलीया / गम्सा", english: "towel", sentence: "タオルをください。" },
+        { japanese: "せっけん", kanji: "", nepali: "साबुन", english: "soap", sentence: "せっけんでてをあらいます。" },
+        { japanese: "おとな", kanji: "大人", nepali: "बयस्क / जवान", english: "adult", sentence: "おとなは1,000えんです。" },
+        { japanese: "ようふく", kanji: "洋服", nepali: "पश्चिमी पोसाक", english: "Western-style clothes", sentence: "あたらしいようふくをかいました。" },
+        { japanese: "せいようかします", kanji: "西洋化します", nepali: "पश्चिमी मुलुक जस्तो बन्नु", english: "be Westernized", sentence: "にほんはせいようかしました。" },
+        { japanese: "あいます", kanji: "合います", nepali: "मिल्नु / सुहाउनु", english: "fit, suit", sentence: "このネクタイはスーツにあいますね。" },
+        { japanese: "いまでは", kanji: "今では", nepali: "अहिले चाँही", english: "now, nowadays", sentence: "いまでは、だれでもスマートフォンをもっています。" },
+        { japanese: "せいじんしき", kanji: "成人式", nepali: "२० वर्ष पुगेकोबेला मनाउने उत्सव", english: "coming-of-age ceremony", sentence: "せいじんしきは1がつにあります。" },
+        { japanese: "でんとうてき[な]", kanji: "伝統的", nepali: "परम्परागत", english: "traditional", sentence: "きものはにほのでんとうてきなふくです。" }
+    ],
+          "Lesson 40": [
+        { japanese: "かぞえます", kanji: "数えます", nepali: "गणना गर्नु / गन्नु", english: "count", sentence: "いすがいくつあるか、かぞえてください。" },
+        { japanese: "はかります", kanji: "測ります", nepali: "जोख्नु / नाप्नु", english: "measure, weigh", sentence: "にもつのおもさをはかります。" },
+        { japanese: "たしかめます", kanji: "確かめます", nepali: "पक्का गर्नु", english: "confirm, make sure", sentence: "しゅっぱつじかんをたしかめます。" },
+        { japanese: "あいます[サイズが〜]", kanji: "合います", nepali: "[साईज] मिल्नु / ठिक हुनु", english: "(size) fits", sentence: "このくつのサイズがあいません。" },
+        { japanese: "しゅっぱつします", kanji: "出発します", nepali: "प्रस्थान गर्नु", english: "depart", sentence: "バスはごぜん9じにしゅっぱつします。" },
+        { japanese: "とうちゃくします", kanji: "到着します", nepali: "आईपुग्नु / आगमन गर्नु", english: "arrive", sentence: "ひこうきはごご3じにとうちゃくします。" },
+        { japanese: "よいます", kanji: "酔います", nepali: "लागुपदार्थले मात्नु", english: "get drunk", sentence: "きのう、おさけをたくさん飲んで、よいました。" },
+        { japanese: "うまくいきます", kanji: "", nepali: "सोचे जस्तै राम्रो हुदै जानु", english: "go well", sentence: "きょうのしけんはうまくいきました。" },
+        { japanese: "でます[もんだいが〜]", kanji: "出ます", nepali: "[समस्या] देखा पर्नु", english: "(problems) appear", sentence: "テストにもんだいがたくさんでました。" },
+        { japanese: "そうだんします", kanji: "相談します", nepali: "परामर्श लिनु / छलफल गर्नु", english: "consult, discuss", sentence: "こまったとき、せんせいにそうだんします。" },
+        { japanese: "ひつよう[な]", kanji: "必要", nepali: "आवश्यक", english: "necessary", sentence: "りょこうにパスポートがひつようです。" },
+        { japanese: "てんきよほう", kanji: "天気予報", nepali: "मौसम पूर्वानुमान", english: "weather forecast", sentence: "てんきよほうによると、あしたはあめです。" },
+        { japanese: "ぼうねんかい", kanji: "忘年会", nepali: "वर्षको अन्तमा गरिने पार्टी", english: "year-end party", sentence: "きんようびにぼうねんかいがあります。" },
+        { japanese: "しんねんかい", kanji: "新年会", nepali: "नयाँ वर्षमा गरिने पार्टी", english: "New Year's party", sentence: "らいしゅう、しんねんかいをします。" },
+        { japanese: "にじかい", kanji: "二次会", nepali: "दोस्रो पार्टी", english: "second party", sentence: "にじかいはカラオケへいきましょう。" },
+        { japanese: "はっぴょうかい", kanji: "発表会", nepali: "प्रस्तुती बैठक", english: "presentation meeting", sentence: "ピアノのはっぴょうかいをみました。" },
+        { japanese: "たいかい", kanji: "大会", nepali: "सम्मेलन / ऱ्याली", english: "rally, convention", sentence: "スピーチたいかいにでます。" },
+        { japanese: "マラソン", kanji: "", nepali: "लामो दुरीको दौंड", english: "marathon", sentence: "マラソンたいかいではしりました。" },
+        { japanese: "コンテスト", kanji: "", nepali: "प्रतियोगीता", english: "contest", sentence: "しゃしんのコンテストにでます。" },
+        { japanese: "おもて", kanji: "表", nepali: "अगाडिको भाग", english: "face, front", sentence: "コインのおもてをみてください。" },
+        { japanese: "うら", kanji: "裏", nepali: "पछाडी", english: "back side", sentence: "てがみのうらになまえをかきます。" },
+        { japanese: "まちがい", kanji: "間違い", nepali: "भुल / गल्ती", english: "mistake", sentence: "けいさんにまちがいがあります。" },
+        { japanese: "きず", kanji: "傷", nepali: "खोट / घाउ / दाग", english: "defect, wound, scratch", sentence: "このいすにはきずがあります。" },
+        { japanese: "ズボン", kanji: "", nepali: "पाइन्ट / सुरुवाल", english: "trousers, pants", sentence: "あたらしいズボンをはきます。" },
+        { japanese: "[お]としより", kanji: "お年寄り", nepali: "बृद्ध व्यक्ती", english: "elderly person", sentence: "おとしよりにしんせつにしましょう。" },
+        { japanese: "ながさ", kanji: "長さ", nepali: "लम्बाई", english: "length", sentence: "このはしのながさはどのくらいですか。" },
+        { japanese: "おもさ", kanji: "重さ", nepali: "वजन / तौल", english: "weight", sentence: "にもつのおもさをはかります。" },
+        { japanese: "たかさ", kanji: "高さ", nepali: "उचाई", english: "height", sentence: "このビルのたかさは100メートルです。" },
+        { japanese: "おおきさ", kanji: "大きさ", nepali: "मात्रा / आकार", english: "size, scale", sentence: "りんごのおおきさをおしえてください。" },
+        { japanese: "[〜]びん", kanji: "〜便", nepali: "उडान नम्बर", english: "flight (number)", sentence: "JL107びんでとうきょうへいきます。" },
+        { japanese: "〜こ", kanji: "〜個", nepali: "सानो वस्तु गणना गर्दा", english: "(counter for small objects)", sentence: "たまごを3こください。" },
+        { japanese: "〜ほん(〜ぽん、〜ぼん)", kanji: "〜本", nepali: "लामो वस्तु गणना गर्दा", english: "(counter for long objects)", sentence: "えんぴつを2ほんかいました。" },
+        { japanese: "〜はい(〜ぱい、〜ばい)", kanji: "〜杯", nepali: "गीलास वा कपको गणना गर्दा", english: "(counter for glasses, cups)", sentence: "コーヒーをいっぱいのみました。" },
+        { japanese: "〜センチ", kanji: "", nepali: "सेन्टीमिटर", english: "centimeter", sentence: "ながさは10センチです。" },
+        { japanese: "〜ミリ", kanji: "", nepali: "मिलीमिटर", english: "millimeter", sentence: "あつさは5ミリです。" },
+        { japanese: "〜グラム", kanji: "", nepali: "ग्राम", english: "gram", sentence: "にくを300グラムください。" },
+        { japanese: "〜いじょう", kanji: "〜以上", nepali: "भन्दा बढी", english: "... or more", sentence: "18さいいじょうのひとははいれます。" },
+        { japanese: "〜いか", kanji: "〜以下", nepali: "भन्दा कम", english: "... or less", sentence: "10さいいかのこどもはむりょうです。" },
+        { japanese: "どうでしょうか", kanji: "", nepali: "कस्तो छ होला ?", english: "How is it? (polite)", sentence: "このデザインはどうでしょうか。" },
+        { japanese: "テスト", kanji: "", nepali: "परीक्षण / परिक्षा", english: "test", sentence: "あした、かんじのテストがあります。" },
+        { japanese: "せいせき", kanji: "成績", nepali: "प्रदर्शन / प्राप्तांक / नतिजा", english: "performance, result", sentence: "しけんのせいせきがよかったです。" },
+        { japanese: "ところで", kanji: "", nepali: "छ नी............", english: "by the way", sentence: "ところで、しゅうまつよていがありますか。" },
+        { japanese: "ようす", kanji: "様子", nepali: "रुप / अवस्था / स्थीती", english: "situation, condition, appearance", sentence: "こどものようすをみてください。" },
+        { japanese: "じけん", kanji: "事件", nepali: "घटना / मामला", english: "incident, case", sentence: "きのう、じけんがありました。" },
+        { japanese: "オートバイ", kanji: "", nepali: "मोटरसाईकल", english: "motorcycle", sentence: "オートバイにのることができますか。" },
+        { japanese: "ばくだん", kanji: "爆弾", nepali: "बम", english: "bomb", sentence: "ばくだんをおとしました。" },
+        { japanese: "つみます", kanji: "積みます", nepali: "लोड गर्नु / चाङ्ग लगाउनु", english: "load, pile up", sentence: "トラックににもつをつみます。" },
+        { japanese: "うんてんしゅ", kanji: "運転手", nepali: "ड्राइभार", english: "driver", sentence: "タクシーのうんてんしゅとはなしました。" },
+        { japanese: "はなれた", kanji: "離れた", nepali: "टाढा / टाढीएको", english: "remote, separated", sentence: "ここからはなれたところにすんでいます。" },
+        { japanese: "きゅうに", kanji: "急に", nepali: "अचानक / अकस्मात", english: "suddenly", sentence: "きゅうにあめがふってきました。" },
+        { japanese: "うごかします", kanji: "動かします", nepali: "सञ्चालन गर्नु / चलाउनु", english: "start, operate, move", sentence: "このきかいをうごかしてください。" },
+        { japanese: "はんにん", kanji: "犯人", nepali: "अपराधि", english: "offender, criminal", sentence: "けいさつがはんにんをつかまえました。" },
+        { japanese: "おとこ", kanji: "男", nepali: "केटा मान्छे", english: "man", sentence: "はんにんはおとこでした。" },
+        { japanese: "てにいれます", kanji: "手に入れます", nepali: "प्राप्त गर्नु / पाउनु", english: "obtain, get", sentence: "あたらしいコンピューターをてにいれました。" },
+        { japanese: "いまでも", kanji: "今でも", nepali: "अहिले पनी", english: "even now", sentence: "いまでも、かれのことをおぼえています。" }
+    ],
+    "Lesson 41": [
+        { japanese: "いただきます", kanji: "", nepali: "पाउनु (もらいます को आदर शब्द)", english: "receive (humble)", sentence: "しゃちょうにおみやげをいただきました。" },
+        { japanese: "くださいます", kanji: "", nepali: "दिनुहुन्छ (くれます को आदर शब्द)", english: "give (respectful)", sentence: "ぶちょうがほんをくださいました。" },
+        { japanese: "やります", kanji: "", nepali: "दिनु (सानोलाई)", english: "give (to a younger person, etc.)", sentence: "わたしはいもうとにおかしをやりました。" },
+        { japanese: "よびます", kanji: "呼びます", nepali: "बोलाउनु", english: "call", sentence: "なまえをよびます。" },
+        { japanese: "とりかえます", kanji: "取り替えます", nepali: "साट्नु", english: "change", sentence: "ふるいでんちをとりかえます。" },
+        { japanese: "しんせつにします", kanji: "親切にします", nepali: "दया गर्नु", english: "be kind to", sentence: "おとしよりにしんせつにします。" },
+        { japanese: "かわいい", kanji: "", nepali: "मायालु / प्यारो", english: "lovely, cute", sentence: "かわいいねこがいますね。" },
+        { japanese: "めずらしい", kanji: "珍しい", nepali: "दुर्लभ / असामान्य", english: "rare, unusual", sentence: "めずらしいはなをみました。" },
+        { japanese: "おいわい", kanji: "お祝い", nepali: "उत्सव / उपलक्ष्य", english: "celebration, gift", sentence: "けっこんのおいわいをあげます。" },
+        { japanese: "おとしだま", kanji: "お年玉", nepali: "नयाँ वर्षमा दिईने पैसा", english: "New Year's gift money", sentence: "おしょうがつにこどもにおとしだまをやります。" },
+        { japanese: "[お]みまい", kanji: "お見舞い", nepali: "बिरामी भेट्न जाने कार्य", english: "expression of sympathy, visit", sentence: "ともだちのおみまいにいきます。" },
+        { japanese: "きょうみ", kanji: "興味", nepali: "रुची", english: "interest", sentence: "わたしはにほんのれきしにきょうみがあります。" },
+        { japanese: "じょうほう", kanji: "情報", nepali: "जानकारी / खबर", english: "information", sentence: "インターネットでじょうほうをあつめます。" },
+        { japanese: "ぶんぽう", kanji: "文法", nepali: "व्याकरण", english: "grammar", sentence: "このぶんぽうはむずかしいです。" },
+        { japanese: "はつおん", kanji: "発音", nepali: "उच्चारण", english: "pronunciation", sentence: "にほんごのはつおんはむずかしいですか。" },
+        { japanese: "さる", kanji: "猿", nepali: "बाँदर", english: "monkey", sentence: "どうぶつえんでさるをみました。" },
+        { japanese: "えさ", kanji: "", nepali: "आहारा / चारो", english: "feed, bait", sentence: "さるにえさをやらないでください。" },
+        { japanese: "おもちゃ", kanji: "", nepali: "खेलौना", english: "toy", sentence: "こどもにおもちゃをかってあげました。" },
+        { japanese: "えほん", kanji: "絵本", nepali: "चित्रभको पुस्तक", english: "picture book", sentence: "ねるまえにこどもにえほんをよんでやります。" },
+        { japanese: "えはがき", kanji: "絵はがき", nepali: "चित्रवाला पोस्टकार्ड", english: "picture postcard", sentence: "ともだちからえはがきをもらいました。" },
+        { japanese: "ドライバー", kanji: "", nepali: "पेचकस", english: "screwdriver", sentence: "このドライバーをつかってもいいですか。" },
+        { japanese: "ハンカチ", kanji: "", nepali: "रुमाल", english: "handkerchief", sentence: "きれいなハンカチですね。" },
+        { japanese: "くつした", kanji: "靴下", nepali: "मोजा", english: "socks, stockings", sentence: "あたらしいくつしたをはきます。" },
+        { japanese: "てぶくろ", kanji: "手袋", nepali: "पन्जा", english: "gloves", sentence: "さむいですから、てぶくろをします。" },
+        { japanese: "ようちえん", kanji: "幼稚園", nepali: "प्रिस्कुल / शिशु विद्यालय", english: "kindergarten", sentence: "むすめはようちえんにかよっています。" },
+        { japanese: "だんぼう", kanji: "暖房", nepali: "ए.सी. को तातो हुने मोड", english: "heating", sentence: "だんぼうをつけてください。" },
+        { japanese: "れいぼう", kanji: "冷房", nepali: "ए.सी. को चिसो हुने मोड", english: "air conditioning", sentence: "あついですから、れいぼうをつけましょう。" },
+        { japanese: "おんど", kanji: "温度", nepali: "तापक्रम", english: "temperature", sentence: "きょうのおんどはなんどですか。" },
+        { japanese: "そふ", kanji: "祖父", nepali: "(मेरो) हजुरबाबा", english: "(my) grandfather", sentence: "そふは90さいです。" },
+        { japanese: "そぼ", kanji: "祖母", nepali: "(मेरो) हजुरआमा", english: "(my) grandmother", sentence: "そぼからてがみがきました。" },
+        { japanese: "まご", kanji: "孫", nepali: "(मेरो) नाति-नातिना", english: "(my) grandchild", sentence: "わたしにはまごがひとりいます。" },
+        { japanese: "おまごさん", kanji: "お孫さん", nepali: "(अरुको) नाति-नातिना", english: "(someone else's) grandchild", sentence: "おまごさんはかわいいですね。" },
+        { japanese: "おじ", kanji: "", nepali: "(मेरो) काका / मामा", english: "(my) uncle", sentence: "おじはアメリカにすんでいます。" },
+        { japanese: "おじさん", kanji: "", nepali: "(अरुको) काका / मामा", english: "(someone else's) uncle", sentence: "やまださんのおじさんはゆうめいなおんがくかです。" },
+        { japanese: "おば", kanji: "", nepali: "(मेरो) काकी / माईजु", english: "(my) aunt", sentence: "おばからプレゼントをもらいました。" },
+        { japanese: "おばさん", kanji: "", nepali: "(अरुको) काकी / माईजु", english: "(someone else's) aunt", sentence: "すずきさんのおばさんにあいました。" },
+        { japanese: "かんりにん", kanji: "管理人", nepali: "हेरचाहगर्ने मान्छे", english: "janitor, caretaker", sentence: "アパートのかんりにんとはなしました。" },
+        { japanese: "このあいだ", kanji: "この間", nepali: "यो बिचमा", english: "the other day", sentence: "このあいだ、どうもありがとうございました。" },
+        { japanese: "ひとこと", kanji: "", nepali: "दुई-चार शब्द", english: "a few words", sentence: "はじめに、ひとことごあいさつします。" },
+        { japanese: "〜ずつ", kanji: "", nepali: "प्रत्येक / हरेक", english: "each", sentence: "こどもたちにりんごをひとつずつあげました。" },
+        { japanese: "ふたり", kanji: "二人", nepali: "जोडी (दुई जना)", english: "couple, two people", sentence: "あのふたりはけっこんします。" },
+        { japanese: "おたく", kanji: "お宅", nepali: "घर (आदर शब्द)", english: "(your) house (respectful)", sentence: "せんせいのおたくはどちらですか。" },
+        { japanese: "どうぞおしあわせに。", kanji: "どうぞお幸せに", nepali: "तपाईको खुसीको आशा गर्छु", english: "I wish you happiness.", sentence: "ごけっこんおめでとうございます。どうぞおしあわせに。" },
+        { japanese: "むかしばなし", kanji: "昔話", nepali: "पुरानो काहानी / लोक कथा", english: "old tale, folktale", sentence: "こどもにむかしばなしをよんでやります。" },
+        { japanese: "ある〜", kanji: "", nepali: "कुनै ~ / एउटा ~", english: "a certain ~", sentence: "あるひ、おもしろいひとにあいました。" },
+        { japanese: "おとこ", kanji: "男", nepali: "केटा", english: "man", sentence: "むかし、あるところにおとこがいました。" },
+        { japanese: "いじめます", kanji: "", nepali: "जिस्काउनु / गिजाउनु", english: "bully, tease", sentence: "ともだちをいじめてはいけません。" },
+        { japanese: "かめ", kanji: "亀", nepali: "कछुवा", english: "turtle", sentence: "いけにかめがいます。" },
+        { japanese: "たすけます", kanji: "助けます", nepali: "मद्दत गर्नु / रक्षा गर्नु", english: "help, rescue", sentence: "こまっているひとをたすけます。" },
+        { japanese: "おひめさま", kanji: "お姫様", nepali: "राजकुमारी", english: "princess", sentence: "ものがたりにおひめさまがでてきます。" },
+        { japanese: "くらします", kanji: "暮します", nepali: "जीउनु / जिवन बिताउनु", english: "live, lead a life", sentence: "しあわせにくらしました。" },
+        { japanese: "りく", kanji: "陸", nepali: "भुमी / किनार", english: "land, shore", sentence: "ふねがりくにつきました。" },
+        { japanese: "すると", kanji: "", nepali: "र, त्यसपछी", english: "and then, thereupon", sentence: "ドアをあけました。すると、ねこがいました。" },
+        { japanese: "けむり", kanji: "煙", nepali: "धुवाँ", english: "smoke", sentence: "たばこのけむりはいやです。" },
+        { japanese: "まっしろ[な]", kanji: "真っ白", nepali: "शुद्ध सेतो / एकदम सेतो", english: "pure white", sentence: "まっしろなゆきがふりました。" },
+        { japanese: "なかみ", kanji: "中身", nepali: "सामग्री / भित्री भाग", english: "contents", sentence: "はこのなかみをみせてください。" }
+    ],
+    "Lesson 42": [
+        { japanese: "つつみます", kanji: "包みます", nepali: "बेर्नु / लपेट्नु", english: "wrap", sentence: "プレゼントをきれいなかみでつつみます。" },
+        { japanese: "わかします", kanji: "沸かします", nepali: "उमाल्नु / उसिन्नु", english: "boil", sentence: "おゆをわかしてください。" },
+        { japanese: "まぜます", kanji: "混ぜます", nepali: "मिसाउनु / मिश्रण गर्नु", english: "mix", sentence: "さとうとたまごをまぜます。" },
+        { japanese: "けいさんします", kanji: "計算します", nepali: "हिसाब गर्नु", english: "calculate", sentence: "おかねをけいさんします。" },
+        { japanese: "あつい", kanji: "厚い", nepali: "बाक्लो", english: "thick", sentence: "このほんはあついです。" },
+        { japanese: "うすい", kanji: "薄い", nepali: "पातलो", english: "thin", sentence: "うすいかみをください。" },
+        { japanese: "ならびます", kanji: "並びます", nepali: "लाईनमा मिलेर उभ्भीनु / लाईन लाग्नु", english: "stand in a queue, line up", sentence: "バスていひとがならんでいます。" },
+        { japanese: "じょうぶ[な]", kanji: "丈夫", nepali: "बलीयो / स्वस्थ", english: "strong, healthy", sentence: "このかばんはじょうぶです。" },
+        { japanese: "アパート", kanji: "", nepali: "आवास", english: "apartment", sentence: "えきのちかくのアパートにすんでいます。" },
+        { japanese: "べんごし", kanji: "弁護士", nepali: "वकील", english: "lawyer", sentence: "しょうらい、べんごしになりたいです。" },
+        { japanese: "おんがくか", kanji: "音楽家", nepali: "सङ्गीतकार", english: "musician", sentence: "かれはゆうめいなおんがくかです。" },
+        { japanese: "こどもたち", kanji: "子供たち", nepali: "बच्चाहरु", english: "children", sentence: "こどもたちはげんきです。" },
+        { japanese: "しぜん", kanji: "自然", nepali: "प्रकृति", english: "nature", sentence: "いなかのしぜんはすばらしいです。" },
+        { japanese: "きょういく", kanji: "教育", nepali: "शिक्षा", english: "education", sentence: "こどものきょういくはたいせつです。" },
+        { japanese: "ぶんか", kanji: "文化", nepali: "संस्कृति / परम्परा", english: "culture", sentence: "にほんのぶんかにきょうみがあります。" },
+        { japanese: "しゃかい", kanji: "社会", nepali: "समाज", english: "society", sentence: "だいがくでしゃかいについてべんきょうします。" },
+        { japanese: "せいじ", kanji: "政治", nepali: "राजनीति", english: "politics", sentence: "せいじのニュースをみます。" },
+        { japanese: "ほうりつ", kanji: "法律", nepali: "कानुन", english: "law", sentence: "あたらしいほうりつができました。" },
+        { japanese: "せんそう", kanji: "戦争", nepali: "युद्ध / लडाई", english: "war", sentence: "せんそうはいやです。" },
+        { japanese: "へいわ", kanji: "平和", nepali: "शान्ति", english: "peace", sentence: "せかいのへいわをいのります。" },
+        { japanese: "もくてき", kanji: "目的", nepali: "उद्देश्य", english: "purpose", sentence: "りょこうのもくてきはなんですか。" },
+        { japanese: "ろんぶん", kanji: "論文", nepali: "थेसिस", english: "thesis, academic paper", sentence: "ろんぶんをかかなければなりません。" },
+        { japanese: "たのしみ", kanji: "楽しみ", nepali: "रमाइलो", english: "pleasure, enjoyment, expectation", sentence: "りょこうはたのしみです。" },
+        { japanese: "ミキサー", kanji: "", nepali: "मिक्सर", english: "mixer, blender", sentence: "ミキサーでジュースをつくります。" },
+        { japanese: "やかん", kanji: "", nepali: "केतली", english: "kettle", sentence: "やかんでおゆをわかします。" },
+        { japanese: "ふた", kanji: "", nepali: "बिर्को / ढकनी", english: "lid, cover", sentence: "なべのふたをしてください。" },
+        { japanese: "せんぬき", kanji: "栓抜き", nepali: "बोतल खोल्ने औंजार", english: "bottle opener", sentence: "せんぬきはどこですか。" },
+        { japanese: "かんきり", kanji: "缶切り", nepali: "टिनको बट्टा खोल्ने औंजार", english: "can opener", sentence: "かんきりをかしてください。" },
+        { japanese: "かんづめ", kanji: "缶詰", nepali: "टिनको बट्टामा पाइने खानेकुरा", english: "canned food", sentence: "さかなのかんづめをかいました。" },
+        { japanese: "のしぶくろ", kanji: "のし袋", nepali: "पैसा उपहार दिने खाम", english: "gift envelope for money", sentence: "おいわいをのしぶくろにいれます。" },
+        { japanese: "ふろしき", kanji: "風呂敷", nepali: "सामान पोको पारेर बोक्न प्रयोग गरिने कपडा", english: "wrapping cloth", sentence: "ふろしきでおみやげをつつみます。" },
+        { japanese: "そろばん", kanji: "", nepali: "जमानाको क्यालकुलेटर", english: "abacus", sentence: "そろばんをつかうことができますか。" },
+        { japanese: "たいおんけい", kanji: "体温計", nepali: "क्लिनिकल थर्मोमिटर", english: "clinical thermometer", sentence: "たいおんけいではかります。" },
+        { japanese: "ある〜", kanji: "", nepali: "कुनै ~ / एउटा ~", english: "a certain ~", sentence: "むかし、あるところに…"},
+        { japanese: "いっしょうけんめい", kanji: "一生懸命", nepali: "ज्यान दिएर", english: "with all one's effort", sentence: "いっしょうけんめいべんきょうしました。"},
+        { japanese: "なぜ", kanji: "", nepali: "किन", english: "why", sentence: "なぜ、きのうかいしゃをやすみましたか。"},
+        { japanese: "どのくらい", kanji: "", nepali: "कती जती / कती वटा", english: "how much/many", sentence: "どのくらいかかりますか。"},
+        { japanese: "こくれん", kanji: "国連", nepali: "संयुक्त राष्ट्रहरु", english: "United Nations", sentence: "こくれんのほんぶはニューヨークにあります。"},
+        { japanese: "でます[ボーナスが〜]", kanji: "", nepali: "[बोनस] आउनु", english: "be paid [bonus]", sentence: "ことしはボーナスがでませんでした。"},
+        { japanese: "はんぶん", kanji: "半分", nepali: "आधा", english: "half", sentence: "ケーキのはんぶんをください。"},
+        { japanese: "ローン", kanji: "", nepali: "कर्जा", english: "loan", sentence: "ぎんこうでローンをくみます。"},
+        { japanese: "カップめん", kanji: "", nepali: "कप चाउचाउ", english: "cup noodles", sentence: "カップめんはべんりです。"},
+        { japanese: "せかいはつ", kanji: "世界初", nepali: "संसारको पहिलो", english: "world's first", sentence: "せかいはつのインスタントラーメンはにほんでうまれました。"},
+        { japanese: "〜によって", kanji: "", nepali: "द्वारा / बाट", english: "by ~", sentence: "このラーメンはあんどうももふくさんによって、はつめいされました。"},
+        { japanese: "どんぶり", kanji: "", nepali: "कचौरा / बोटुका", english: "bowl", sentence: "どんぶりにごはんをいれます。"},
+        { japanese: "めん", kanji: "", nepali: "चाउचाउ", english: "noodles", sentence: "ラーメンのめんがすきです。"},
+        { japanese: "ひろめます", kanji: "広めます", nepali: "फिजाउनु / फैलाउनु", english: "spread, popularize", sentence: "かれはインスタントラーメンをせかいにひろめました。"},
+        { japanese: "しじょうちょうさ", kanji: "市場調査", nepali: "बजार सर्वेक्षण / बजार अनुसन्धान", english: "market research", sentence: "あたらしいせいひんのしじょうちょうさをします。"},
+        { japanese: "わります", kanji: "割ります", nepali: "भाच्नु / चुड्नु", english: "break, divide", sentence: "たまごをわります。"},
+        { japanese: "そそぎます", kanji: "注ぎます", nepali: "खन्याउनु", english: "pour", sentence: "コップにみずをそそぎます。"}
+    ],
+          "Lesson 43": [
+        { japanese: "ふえます[ゆしゅつが〜]", kanji: "増えます", nepali: "[निर्यात] बढ्नु / वृद्धि हुनु", english: "(exports) increase", sentence: "にほんのじんこうはへっていますが、がいこくじんはふえています。" },
+        { japanese: "へります[ゆしゅつが〜]", kanji: "減ります", nepali: "[निर्यात] घट्नु / कम हुनु", english: "(exports) decrease", sentence: "しごとがへりましたから、ざんぎょうもへりました。" },
+        { japanese: "あがります[ねだんが〜]", kanji: "上がります", nepali: "[मुल्य] बढ्नु / वृद्धि हुनु", english: "(price) rises", sentence: "バスのだいやねだんがあがりました。" },
+        { japanese: "さがります[ねだんが〜]", kanji: "下がります", nepali: "[मुल्य] घट्नु / कम हुनु", english: "(price) falls", sentence: "ねつがすこしさがりました。" },
+        { japanese: "きれます[ひもが〜]", kanji: "切れます", nepali: "[डोरी] चुडीनु / टुट्नु", english: "(string) breaks, snaps", sentence: "くつのひもがきれました。" },
+        { japanese: "とれます[ボタンが〜]", kanji: "とれます", nepali: "[टाँक] फुस्कीनु", english: "(button) comes off", sentence: "シャツのボタンがとれました。" },
+        { japanese: "おちます[にもつが〜]", kanji: "落ちます", nepali: "[सामान] झर्नु / खस्नु", english: "(baggage) falls down", sentence: "たなからにもつがおちました。" },
+        { japanese: "なくなります[ガソリンが〜]", kanji: "なくなります", nepali: "[पेट्रोल] सिधिनु", english: "(petrol, gasoline) runs out, be lost", sentence: "くるまのガソリンがなくなりました。" },
+        { japanese: "へん[な]", kanji: "変", nepali: "अनौठो / असामान्य (फरक)", english: "strange, peculiar", sentence: "きのう、へんなゆめをみました。" },
+        { japanese: "しあわせ[な]", kanji: "幸せ", nepali: "खुशी", english: "happy", sentence: "しあわせなけっこんしきでした。" },
+        { japanese: "らく[な]", kanji: "楽", nepali: "सजिलो / सहज", english: "easy, comfortable", sentence: "このしごとはらくじゃありません。" },
+        { japanese: "うまい", kanji: "", nepali: "स्वादिलो / मिठो", english: "tasty, skillful", sentence: "このラーメンはうまいですね。" },
+        { japanese: "まずい", kanji: "", nepali: "बेस्वादिलो / नमिठो", english: "not tasty", sentence: "きのうのスープはまずかったです。" },
+        { japanese: "つまらない", kanji: "", nepali: "अल्छी लाग्दो / नरमाइलो", english: "boring, uninteresting", sentence: "このえいがはつまらないです。" },
+        { japanese: "ガソリン", kanji: "", nepali: "पेट्रोल / डिजेल", english: "gasoline, petrol", sentence: "ガソリンをいれにいきます。" },
+        { japanese: "ひ", kanji: "火", nepali: "आगो", english: "fire", sentence: "ひにきをつけてください。" },
+        { japanese: "パンフレット", kanji: "", nepali: "पर्चा / पम्प्लेट", english: "pamphlet", sentence: "りょこうのパンフレットをもらいました。" },
+        { japanese: "いまにも", kanji: "今にも", nepali: "अहिलेपनी / कुनै पनी बेला", english: "at any moment", sentence: "そらがくらいです。いまにもあめがふりそうです。" },
+        { japanese: "わあ", kanji: "", nepali: "ओ ! / वाह !", english: "Wow!", sentence: "わあ、きれいなはなですね。" },
+        { japanese: "ばら", kanji: "", nepali: "गुलाफ", english: "rose", sentence: "かのじょにばらをあげました。" },
+        { japanese: "ドライブ", kanji: "", nepali: "ड्राइभिङ्ग", english: "driving", sentence: "しゅうまつにドライブへいきませんか。" },
+        { japanese: "りゆう", kanji: "理由", nepali: "कारण", english: "reason", sentence: "おくれたりゆうをいってください。" },
+        { japanese: "あやまります", kanji: "謝ります", nepali: "माफी माग्नु / क्षमा माग्नु", english: "apologize", sentence: "わるいことをしたら、あやまります。" },
+        { japanese: "しりあいます", kanji: "知り合います", nepali: "परिचित हुनु", english: "get acquainted", sentence: "パーティーでたくさんのひととしりあいました。" }
+    ],
+    "Lesson 44": [
+        { japanese: "なきます", kanji: "泣きます", nepali: "रुनु", english: "cry", sentence: "かなしいえいがをみて、なきました。" },
+        { japanese: "わらいます", kanji: "笑います", nepali: "हास्नु", english: "laugh, smile", sentence: "おもしろいはなしをきいて、わらいました。" },
+        { japanese: "ねむります", kanji: "眠ります", nepali: "निदाउनु", english: "sleep", sentence: "きのうのよる、よくねむりました。" },
+        { japanese: "かわきます[シャツが〜]", kanji: "乾きます", nepali: "[सर्ट] सुक्नु", english: "(shirt) dries", sentence: "シャツがかわきました。" },
+        { japanese: "ぬれます[シャツが〜]", kanji: "ぬれます", nepali: "[सर्ट] भिज्नु", english: "(shirt) get wet", sentence: "あめでシャツがぬれました。" },
+        { japanese: "すべります", kanji: "滑ります", nepali: "चिप्लीनु", english: "slip", sentence: "ゆきでみちがすべりやすいです。" },
+        { japanese: "おきます[じこが〜]", kanji: "起きます", nepali: "[दुर्घटना] हुनु", english: "(an accident) happens", sentence: "きのう、こうつうじこがおきました。" },
+        { japanese: "ちょうせつします", kanji: "調節します", nepali: "समायोजन गर्नु / मिलाउनु", english: "adjust", sentence: "エアコンのおんどをちょうせつします。" },
+        { japanese: "あんぜん[な]", kanji: "安全", nepali: "सुरक्षित", english: "safe", sentence: "このばしょはあんぜんです。" },
+        { japanese: "きけん[な]", kanji: "危険", nepali: "खतरनाक", english: "dangerous", sentence: "よるひとりであるくのはきけんです。" },
+        { japanese: "こい", kanji: "濃い", nepali: "कडा (स्वाद) / गाढा (रङ्ग)", english: "strong (taste), dark (color)", sentence: "こいコーヒーがすきです。" },
+        { japanese: "うすい", kanji: "薄い", nepali: "फिक्का (स्वाद) / हल्का (रङ्ग)", english: "weak (taste), light (color)", sentence: "このスープはあじがうすいです。" },
+        { japanese: "あつい", kanji: "厚い", nepali: "बाक्लो", english: "thick", sentence: "あついほんをよんでいます。" },
+        { japanese: "ふとい", kanji: "太い", nepali: "मोटो", english: "thick (of diameter)", sentence: "このロープはふといです。" },
+        { japanese: "ほそい", kanji: "細い", nepali: "दुब्लो / पातलो", english: "thin (of diameter)", sentence: "かれはからだがほそいです。" },
+        { japanese: "くうき", kanji: "空気", nepali: "हाँवा", english: "air", sentence: "へやのくうきがきたないです。" },
+        { japanese: "なみだ", kanji: "涙", nepali: "आँसु", english: "tear", sentence: "かなしくてなみだがでました。" },
+        { japanese: "わしょく", kanji: "和食", nepali: "जापानी खाना", english: "Japanese dish", sentence: "わしょくがすきですか。" },
+        { japanese: "ようしょく", kanji: "洋食", nepali: "पश्चिमी खाना", english: "Western dish", sentence: "ときどきようしょくをたべます。" },
+        { japanese: "おかず", kanji: "", nepali: "अतिरिक्त खाना", english: "side dish", sentence: "きょうのおかずはさかなです。" },
+        { japanese: "りょう", kanji: "量", nepali: "मात्रा", english: "quantity", sentence: "このレストランはりょうがおおいです。" },
+        { japanese: "〜ばい", kanji: "〜倍", nepali: "पटक / भाग", english: "~ times", sentence: "このへやはあのへやの2ばいおおきいです。" },
+        { japanese: "シングル", kanji: "", nepali: "सीङ्गल बेडरुम", english: "single room", sentence: "シングルをよやくしました。" },
+        { japanese: "ツイン", kanji: "", nepali: "डबल बेडरुम", english: "twin-bedded room", sentence: "ツインのへやをおねがいします。" },
+        { japanese: "せんたくもの", kanji: "洗濯物", nepali: "धुने कपडा", english: "laundry", sentence: "せんたくものがたくさんあります。" },
+        { japanese: "DVD", kanji: "", nepali: "डि.भि.डि.", english: "DVD", sentence: "DVDでえいがをみます。" },
+        { japanese: "どうなさいますか。", kanji: "", nepali: "म हजुरको लागी के गर्न सक्छु ?", english: "What can I do for you? (respectful)", sentence: "いらっしゃいませ。どうなさいますか。" },
+        { japanese: "カット", kanji: "", nepali: "कपाल कटिङ्ग", english: "cut", sentence: "カットをおねがいします。" },
+        { japanese: "シャンプー", kanji: "", nepali: "स्याम्पु", english: "shampoo", sentence: "シャンプーをしますか。" },
+        { japanese: "どういうふうになさいますか。", kanji: "", nepali: "कसरी गराउन चाहनुहुन्छ ?", english: "How would you like it done? (respectful)", sentence: "カットはどういうふうになさいますか。" },
+        { japanese: "ショート", kanji: "", nepali: "छोटो", english: "short", sentence: "ショートにしてください。" },
+        { japanese: "〜みたいにしてください", kanji: "", nepali: "~ जस्तै गर्नुहोस", english: "Please make it like ~", sentence: "このしゃしんみたいにしてください。" },
+        { japanese: "これでよろしいでしょうか", kanji: "", nepali: "यसले हुन्छ होला ? (नम्र भाषा)", english: "Will this be all right? (polite)", sentence: "これでよろしいでしょうか。" },
+        { japanese: "[どうも]おつかれさまでした", kanji: "お疲れ様でした", nepali: "तपाईको धैर्यताको लागि धन्यवाद", english: "Thank you for your patience.", sentence: "はい、けっこうです。どうもおつかれさまでした。" },
+        { japanese: "いやがります", kanji: "嫌がります", nepali: "मन नपराउनु / घृणा लाग्नु", english: "dislike", sentence: "こどもはやさいをいやがります。" },
+        { japanese: "また", kanji: "", nepali: "फेरी", english: "and, in addition", sentence: "かれはあたまがよくて、またスポーツもじょうずです。" },
+        { japanese: "うまく", kanji: "", nepali: "राम्रोसँग", english: "well, skillfully", sentence: "かれはピアノをうまくひきます。" },
+        { japanese: "じゅんじょ", kanji: "順序", nepali: "क्रमबद्ध / क्रमिकरुपमा", english: "order, sequence", sentence: "じゅんじょよくはなしてください。" },
+        { japanese: "あんしん[な]", kanji: "安心", nepali: "ढुक्क", english: "relief, peace of mind", sentence: "てがみをもらって、あんしんしました。" },
+        { japanese: "ひょうげん", kanji: "表現", nepali: "अनुहारको भाव", english: "expression", sentence: "このひょうげんはいみがありますか。" },
+        { japanese: "たとえば", kanji: "例えば", nepali: "उदाहरणको लागि", english: "for example", sentence: "たとえば、これはどうですか。" },
+        { japanese: "わかれます", kanji: "別れます", nepali: "छुट्टीनु / अलग हुनु", english: "separate, part", sentence: "きのう、かのじょとわかれました。" },
+        { japanese: "これら", kanji: "", nepali: "यिनीहरु", english: "these", sentence: "これらぜんぶください。" },
+        { japanese: "えんぎがわるい", kanji: "縁起が悪い", nepali: "अभागि / अशुभ / दुर्भाग्य", english: "unlucky, bad omen", sentence: "よるくちぶえをふくのはえんぎがわるいです。" }
+    ],
+    "Lesson 45": [
+        { japanese: "しんじます", kanji: "信じます", nepali: "विश्वास गर्नु / भरोसा गर्नु", english: "believe, trust", sentence: "わたしはあなたをしんじます。" },
+        { japanese: "キャンセルします", kanji: "", nepali: "रद्ध गर्नु", english: "cancel", sentence: "ホテルのよやくをキャンセルしました。" },
+        { japanese: "しらせます", kanji: "知らせます", nepali: "जानकारी दिनु", english: "inform", sentence: "ともだちにじかんをしらせます。" },
+        { japanese: "ほしょうしょ", kanji: "保証書", nepali: "ग्यारेन्टी पत्र", english: "guarantee", sentence: "このカメラにはほしょうしょがついていますか。" },
+        { japanese: "りょうしゅうしょ", kanji: "領収書", nepali: "रसिद", english: "receipt", sentence: "りょうしゅうしょをおねがいします。" },
+        { japanese: "キャンプ", kanji: "", nepali: "पाल टाँगी बस्ने ठाउँ", english: "camp", sentence: "なつやすみにキャンプへいきました。" },
+        { japanese: "ちゅうし", kanji: "中止", nepali: "रोक्नु / रद्ध / निलम्बन", english: "calling off, cancellation", sentence: "あめですから、しあいはちゅうしです。" },
+        { japanese: "てん", kanji: "点", nepali: "अंक / प्राप्तांक", english: "point, score", sentence: "しけんは100てんでした。" },
+        { japanese: "うめ", kanji: "梅", nepali: "आरुबखडा", english: "plum (blossom)", sentence: "うめのはながさいています。" },
+        { japanese: "110ばん", kanji: "110番", nepali: "आपतकालिन प्रहरी सेवा", english: "Police emergency number", sentence: "じこのとき、110ばんへでんわします。" },
+        { japanese: "119ばん", kanji: "119番", nepali: "आपतकालिन दमकल सेवा", english: "Fire/Ambulance emergency number", sentence: "かじのとき、119ばんへでんわします。" },
+        { japanese: "きゅうに", kanji: "急に", nepali: "अचानक / एक्कासि", english: "suddenly", sentence: "きゅうにおなかがいたくなりました。" },
+        { japanese: "むりに", kanji: "無理に", nepali: "गाह्रो-अफ्ठ्यारो भएतापनि", english: "unreasonably, forcibly", sentence: "むりにたべてはいけません。" },
+        { japanese: "たのしみにしています", kanji: "楽しみにしています", nepali: "रमाइलोको अपेक्षा गर्दैछु", english: "be looking forward to", sentence: "りょこうをたのしみにしています。" },
+        { japanese: "いじょうです。", kanji: "以上です", nepali: "यति नै हो ।", english: "That's all.", sentence: "これでわたしのスピーチはいじょうです。" },
+        { japanese: "かかりいん", kanji: "係員", nepali: "मुख्य मान्छे / आयोजक", english: "person in charge", sentence: "えきのかかりいんにききました。" },
+        { japanese: "コース", kanji: "", nepali: "पाठ्यक्रम (कोर्स)", english: "course, route", sentence: "マラソンのコースはながいです。" },
+        { japanese: "スタート", kanji: "", nepali: "सुरु", english: "start", sentence: "マラソンは9じにスタートします。" },
+        { japanese: "〜い", kanji: "〜位", nepali: "प्रथम / दृतिय (श्रेणीकरण)", english: "rank", sentence: "かれはマラソンで1いになりました。" },
+        { japanese: "ゆうしょうします", kanji: "優勝します", nepali: "च्याम्पियनशिप जित्नु / पहिलो हुनु", english: "win the championship", sentence: "わたしたちのチームがゆうしょうしました。" },
+        { japanese: "なやみ", kanji: "悩み", nepali: "दुखेसो / समस्या / चिन्ता", english: "trouble, worry", sentence: "なやみがありますか。そうだんしてください。" },
+        { japanese: "めざまし[どけい]", kanji: "目覚まし時計", nepali: "अलार्म घडि", english: "alarm clock", sentence: "めざましどけいをセットします。" },
+        { japanese: "かいとう", kanji: "回答", nepali: "उत्तर / जवाफ दिनु", english: "answer, reply", sentence: "しつもんのかいとうをおねがいします。" },
+        { japanese: "なります[ベルが〜]", kanji: "鳴ります", nepali: "बज्नु [घण्टी ~]", english: "(bell) rings", sentence: "ベルがなっています。" },
+        { japanese: "セットします", kanji: "", nepali: "सेट गर्नु", english: "set", sentence: "めざましを6じにセットしました。" },
+        { japanese: "それでも", kanji: "", nepali: "त्यसो भएतापनी", english: "nevertheless, for all that", sentence: "かれはびょうきです。それでも、しごとをしています。" }
+    ],
+          "Lesson 46": [
+        { japanese: "わたします", kanji: "渡します", nepali: "हस्तान्तरण गर्छु", english: "hand over", sentence: "せんせいにしゅくだいをわたします。" },
+        { japanese: "かえってきます", kanji: "帰って来ます", nepali: "फर्केर आउछु", english: "come back", sentence: "3じごろ、かいしゃにかえってきます。" },
+        { japanese: "でます[バスが〜]", kanji: "出ます", nepali: "[बस] छुटछ / जान्छ", english: "(a bus) departs", sentence: "バスは9じにえきをでます。" },
+        { japanese: "とどきます[にもつが〜]", kanji: "届きます", nepali: "[सामान] पुग्छ", english: "(parcels) be delivered", sentence: "ははからにもつがとどきました。" },
+        { japanese: "にゅうがくします[だいがくに〜]", kanji: "入学します", nepali: "[विश्वविद्यालयमा] भर्ना हुन्छु", english: "enter (a university)", sentence: "らいねん、だいがくににゅうがくします。" },
+        { japanese: "そつぎょうします[だいがくを〜]", kanji: "卒業します", nepali: "[विश्वविद्यालय] स्नातक गर्छु", english: "graduate (from a university)", sentence: "ことし、だいがくをそつぎょうします。" },
+        { japanese: "やきます", kanji: "焼きます", nepali: "पोल्छु / सेकाउछु", english: "bake, grill, roast", sentence: "パンをオーブンでやきます。" },
+        { japanese: "やけます[パンが〜]", kanji: "焼けます", nepali: "[पाउरोटी] सेकिन्छ", english: "(bread) be baked", sentence: "パンがおいしくやけました。" },
+        { japanese: "やけます[にくが〜]", kanji: "焼けます", nepali: "[मासु] पोलीन्छ", english: "(meat) be roasted/grilled", sentence: "にくがじょうずにやけました。" },
+        { japanese: "るす", kanji: "留守", nepali: "अनुपस्थिति", english: "absence", sentence: "きのう、ともだちがきましたが、るすでした。" },
+        { japanese: "たくはいびん", kanji: "宅配便", nepali: "घरमा सामान पुऱ्याइदिने सेवा", english: "home delivery service", sentence: "たくはいびんでにもつをおくります。" },
+        { japanese: "げんいん", kanji: "原因", nepali: "कारण", english: "cause", sentence: "じこのげんいんをしらべています。" },
+        { japanese: "こちら", kanji: "", nepali: "यता / यतातिर (म तिर)", english: "my side", sentence: "こちらがやまだです。" },
+        { japanese: "〜のところ", kanji: "〜の所", nepali: "~ को ठाँउ", english: "by the side of ~, around ~", sentence: "せんせいのところにそうだんにいきます。" },
+        { japanese: "はんとし", kanji: "半年", nepali: "आधा वर्ष (६ महिना)", english: "half a year", sentence: "にほんにきて、はんとしになります。" },
+        { japanese: "ちょうど", kanji: "", nepali: "ठिक्क / ठ्याक्कै", english: "just, exactly", sentence: "ちょうど9じです。" },
+        { japanese: "たったいま", kanji: "たった今", nepali: "भर्खरै", english: "just now", sentence: "たったいま、バスがでました。" },
+        { japanese: "いまいいですか。", kanji: "今いいですか", nepali: "अहिले ठिक छ?", english: "Have you got a moment?", sentence: "すみません、いまいいですか。" },
+        { japanese: "ガスサービスセンター", kanji: "", nepali: "ग्यास सेवा केन्द्र", english: "gas service center", sentence: "ガスサービスセンターにでんわします。" },
+        { japanese: "ガスレンジ", kanji: "", nepali: "ग्यास चुलो", english: "gas cooker, gas range", sentence: "ガスレンジのぐあいがわるいです。" },
+        { japanese: "ぐあい", kanji: "具合", nepali: "अवस्था / हालत", english: "condition", sentence: "からだのぐあいはどうですか。" },
+        { japanese: "もうしわけありません。", kanji: "申し訳ありません", nepali: "मलाई माफगर्नुहोस ।", english: "I'm sorry.", sentence: "おくれて、もうしわけありません。" },
+        { japanese: "どちらさまでしょうか。", kanji: "どちら様でしょうか", nepali: "को हुनुहुन्छ होला ?", english: "May I ask who is calling?", sentence: "もしもし、どちらさまでしょうか。" },
+        { japanese: "おまたせしました。", kanji: "お待たせしました", nepali: "प्रतिक्षा गराएकोमा क्षमा चाहान्छु ।", english: "Sorry to have kept you waiting.", sentence: "おまたせしました。どうぞ。" },
+        { japanese: "むかいます", kanji: "向かいます", nepali: "तर्फ जानु", english: "head for", sentence: "いまからそちらへむかいます。" },
+        { japanese: "ついています", kanji: "", nepali: "भाग्यमानी हुनु", english: "be lucky", sentence: "きょうはついていますね。" },
+        { japanese: "ゆか", kanji: "床", nepali: "भुई", english: "floor", sentence: "ゆかがぬれています。" },
+        { japanese: "ころびます", kanji: "転びます", nepali: "लडछ / पल्टिन्छ", english: "fall down, fall over", sentence: "かいだんでころんで、けがをしました。" },
+        { japanese: "ベル", kanji: "", nepali: "बेल / घण्टी", english: "bell", sentence: "ベルがなっています。" },
+        { japanese: "なります", kanji: "鳴ります", nepali: "बज्नु", english: "(bell) rings", sentence: "でんわがなっています。" },
+        { japanese: "あわてて", kanji: "慌てて", nepali: "हतारीएर / आत्तीएर (हतारमा)", english: "in a hurry", sentence: "あわてていえをでました。" },
+        { japanese: "じゅんばんに", kanji: "順番に", nepali: "क्रमबद्धरुपमा / कममा", english: "in order", sentence: "じゅんばんにはなしてください。" },
+        { japanese: "できごと", kanji: "出来事", nepali: "घटना / गरिएका कार्य", english: "incident, event", sentence: "きのう、おもしろいできごとがありました。" }
+    ],
+    "Lesson 47": [
+        { japanese: "ふきます[かぜが〜]", kanji: "吹きます", nepali: "[हावा] चल्नु / लाग्नु", english: "(wind) blows", sentence: "きょうはつよいかぜがふいています。" },
+        { japanese: "もえます[ごみが〜]", kanji: "燃えます", nepali: "[फोहोर मैला] जल्नु", english: "(rubbish) burns", sentence: "かみはよくもえます。" },
+        { japanese: "なくなります", kanji: "亡くなります", nepali: "बित्नु / मर्नु", english: "pass away (euphemism for しにます)", sentence: "きのう、ゆうめいなかしゅがなくなりました。" },
+        { japanese: "あつまります[ひとが〜]", kanji: "集まります", nepali: "[मान्छे] जम्मा हुनु / भेला हुनु", english: "(people) gather", sentence: "こうえんにひとがあつまっています。" },
+        { japanese: "わかれます[ひとが〜]", kanji: "別れます", nepali: "[मान्छे] छुट्टीनु / अलगीनु", english: "(people) part, separate", sentence: "かれはかのじょとわかれました。" },
+        { japanese: "します[おと/こえが〜]", kanji: "", nepali: "[आवाज / स्वर] सुन्नीनु", english: "you hear, taste, or smell", sentence: "へんないおとがします。" },
+        { japanese: "します[あじが〜]", kanji: "", nepali: "[स्वाद] लिनु", english: "you taste", sentence: "このスープはいいあじがします。" },
+        { japanese: "します[においが〜]", kanji: "", nepali: "[गन्ध] आउनु", english: "you smell", sentence: "いいにおいがしますね。" },
+        { japanese: "きびしい", kanji: "厳しい", nepali: "सख्त / कडा", english: "strict, hard", sentence: "わたしのせんせいはきびしいです。" },
+        { japanese: "ひどい", kanji: "", nepali: "भयानक / कठोर / गम्भीर", english: "terrible, awful", sentence: "きのうはひどいあめでした。" },
+        { japanese: "こわい", kanji: "怖い", nepali: "डरलाग्दो", english: "frightening, horrible", sentence: "こわいえいがをみました。" },
+        { japanese: "じっけん", kanji: "実験", nepali: "परिक्षण", english: "experiment", sentence: "かがくのじっけんをします。" },
+        { japanese: "データ", kanji: "", nepali: "डाटा / तथ्याङ्क", english: "data", sentence: "データがあつまっていません。" },
+        { japanese: "じんこう", kanji: "人口", nepali: "जनसंख्या", english: "population", sentence: "とうきょうのじんこうはおおいです。" },
+        { japanese: "におい", kanji: "", nepali: "गन्ध / बास्ना", english: "smell", sentence: "このはなはいいにおいがします。" },
+        { japanese: "かがく", kanji: "科学", nepali: "विज्ञान", english: "science", sentence: "かがくがはってんしました。" },
+        { japanese: "いがく", kanji: "医学", nepali: "चिकित्सा विज्ञान", english: "medicine, medical science", sentence: "だいがくでいがくをべんきょうします。" },
+        { japanese: "ぶんがく", kanji: "文学", nepali: "साहित्य", english: "literature", sentence: "わたしはにほんのぶんがくにきょうみがあります。" },
+        { japanese: "パトカー", kanji: "", nepali: "पुलीस कार", english: "police car", sentence: "パトカーのおとがきこえます。" },
+        { japanese: "きゅうきゅうしゃ", kanji: "救急車", nepali: "एम्बुलेन्स", english: "ambulance", sentence: "きゅうきゅうしゃをよんでください。" },
+        { japanese: "さんせい", kanji: "賛成", nepali: "स्वीकृती / सम्झौता", english: "approval, agreement", sentence: "わたしはそのいけんにさんせいです。" },
+        { japanese: "はんたい", kanji: "反対", nepali: "विरोध / विपरित", english: "objection, opposition", sentence: "かれはいけんにはんたいしました。" },
+        { japanese: "だいとうりょう", kanji: "大統領", nepali: "राष्ट्रपति", english: "president", sentence: "アメリカのだいとうりょうはだれですか。" },
+        { japanese: "〜によると", kanji: "", nepali: "को अनुसार", english: "according to ~", sentence: "てんきよほうによると、あしたははれるそうです。" },
+        { japanese: "こんやくします", kanji: "婚約します", nepali: "इन्गेजमेन्ट गर्नु", english: "get engaged", sentence: "ともだちがこんやくしました。" },
+        { japanese: "どうも", kanji: "", nepali: "यस्तो लाग्छ कि", english: "it seems that", sentence: "どうもかぜをひいたようです。" },
+        { japanese: "こいびと", kanji: "恋人", nepali: "प्रेमी / प्रेमीका", english: "sweetheart, boyfriend, girlfriend", sentence: "こいびとができました。" },
+        { japanese: "あいて", kanji: "相手", nepali: "अर्को व्यक्ती / प्रतीसपर्धी", english: "the other person", sentence: "けっこんのあいてをさがしています。" },
+        { japanese: "しりあいます", kanji: "知り合います", nepali: "परिचित हुनु / चिन्नु", english: "get acquainted", sentence: "パーティーでかのじょとしりあいました。" },
+        { japanese: "けしょう", kanji: "化粧", nepali: "मेकअप (श्रृंगार)", english: "makeup", sentence: "けしょうをしています。" },
+        { japanese: "せわをします", kanji: "世話をします", nepali: "सेवा गर्न / हेरचाह गर्नु", english: "take care of", sentence: "びょうきのねこのせわをします。" },
+        { japanese: "じょせい", kanji: "女性", nepali: "महिला / नारी", english: "female, woman", sentence: "あのじょせいはだれですか。" },
+        { japanese: "だんせい", kanji: "男性", nepali: "पुरुष / केटा मान्छे", english: "male, man", sentence: "あの男性はゆうめいなはいゆうです。" },
+        { japanese: "ながいき", kanji: "長生き", nepali: "दीर्घायु जिवन", english: "long life", sentence: "そふはながいきしました。" },
+        { japanese: "りゆう", kanji: "理由", nepali: "कारण", english: "reason", sentence: "ながいきのりゆうはなんですか。" },
+        { japanese: "かんけい", kanji: "関係", nepali: "नाता-सम्बन्ध", english: "relationship", sentence: "けんこうとかんけいがあります。" }
+    ],
+    "Lesson 48": [
+        { japanese: "おろします", kanji: "降ろします", nepali: "तल झार्नु / उतार्नु", english: "take down, unload", sentence: "たなからにもつをおろしてください。" },
+        { japanese: "とどけます", kanji: "届けます", nepali: "पुर्याउनु / डेलिभरी गर्नु", english: "deliver", sentence: "ともだちにプレゼントをとどけます。" },
+        { japanese: "せわをします", kanji: "世話をします", nepali: "हेरचाह गर्नु / सेवा गर्नु", english: "take care of", sentence: "るすのあいだ、いぬのせわをおねがいします。" },
+        { japanese: "ろくおんします", kanji: "録音します", nepali: "अडियो रेकर्डिङ् गर्नु", english: "record", sentence: "こうぎをろくおんします。" },
+        { japanese: "いや[な]", kanji: "嫌", nepali: "अनिच्छुक / मन नपर्ने", english: "unwilling, reluctant", sentence: "べんきょうがいやです。" },
+        { japanese: "じゅく", kanji: "塾", nepali: "ट्युसन सेन्टर", english: "cram school", sentence: "こどもがじゅくにかよっています。" },
+        { japanese: "せいと", kanji: "生徒", nepali: "शिष्य", english: "pupil", sentence: "このクラスのせいとは30にんです。" },
+        { japanese: "ファイル", kanji: "", nepali: "फाईल", english: "file", sentence: "しょるいをファイルにいれてください。" },
+        { japanese: "じゆうに", kanji: "自由に", nepali: "स्वतन्त्रतापुर्वक", english: "freely", sentence: "じゆうにつかってください。" },
+        { japanese: "〜かん", kanji: "〜間", nepali: "~ को लागी (अवधि)", english: "for ~ (duration)", sentence: "1しゅうかん、りょこうしました。" },
+        { japanese: "いいことですね。", kanji: "", nepali: "ठिक (राम्रो) कुरा हो है।", english: "That's good.", sentence: "しゅみがたくさんありますね。いいことですね。" },
+        { japanese: "おいそがしいですか。", kanji: "お忙しいですか", nepali: "व्यस्त हुनुहुन्छ हो ?", english: "Are you busy? (polite)", sentence: "せんせい、いま、おいそがしいですか。" },
+        { japanese: "えいぎょう", kanji: "営業", nepali: "व्यापार", english: "business, sales", sentence: "えいぎょうのしごとをしています。" },
+        { japanese: "それまでに", kanji: "", nepali: "त्यतीबेला सम्ममा", english: "by that time", sentence: "5じにミーティングがあります。それまでに、しりょうをじゅんびしてください。" },
+        { japanese: "かまいません。", kanji: "", nepali: "ठीकै छ । / फरक पर्दैन ।", english: "It's all right. / I don't mind.", sentence: "すこしおくれてもかまいません。" },
+        { japanese: "たのしみます", kanji: "楽しみます", nepali: "रमाउछु (आफै)", english: "enjoy oneself", sentence: "パーティーをたのしみましょう。" },
+        { japanese: "おや", kanji: "親", nepali: "अभिभावक (बाबा वा आमा)", english: "parent", sentence: "おやのいうことをききます。" },
+        { japanese: "しょうがくせい", kanji: "小学生", nepali: "प्राथमीक विद्यालयको विद्यार्थी", english: "elementary school student", sentence: "わたしのこどもはしょうがくせいです。" },
+        { japanese: "〜パーセント", kanji: "", nepali: "प्रतिशत", english: "percent", sentence: "せいとの50パーセントはバスでがっこうへきます。" },
+        { japanese: "そのつぎ", kanji: "その次", nepali: "त्यो पछि", english: "next", sentence: "まず、これをしてください。そのつぎはこれです。" },
+        { japanese: "しゅうじ", kanji: "習字", nepali: "हस्तलिपी", english: "calligraphy", sentence: "しゅうじをならいたいです。" },
+        { japanese: "ふつうの", kanji: "普通の", nepali: "साधारण / सामान्य", english: "normal, ordinary", sentence: "これはふつうのでんしじしょです。" }
+    ],
+         "Lesson 49": [
+        { japanese: "りようします", kanji: "利用します", nepali: "प्रयोग गर्नु", english: "use", sentence: "としょかんをりようします。" },
+        { japanese: "つとめます[かいしゃに〜]", kanji: "勤めます", nepali: "[कम्पनीको लागी] काम गर्नु", english: "work [for a company]", sentence: "わたしはIMCにつとめています。" },
+        { japanese: "かけます[いすに〜]", kanji: "掛けます", nepali: "[मेचमा] बस्नु", english: "sit on [a chair]", sentence: "どうぞこのいすにおかけください。" },
+        { japanese: "すごします", kanji: "過ごします", nepali: "बिताउनु (समय)", english: "spend (time)", sentence: "しゅうまつはうちでゆっくりすごします。" },
+        { japanese: "いらっしゃいます", kanji: "", nepali: "हुनुहुन्छ / जानुहुन्छ / आउनुहुन्छ", english: "be, go, come (respectful)", sentence: "せんせいはけんきゅうしつにいらっしゃいます。" },
+        { japanese: "めしあがります", kanji: "召し上がります", nepali: "खानुहुन्छ / पिउनुहुन्छ", english: "eat, drink (respectful)", sentence: "しゃちょう、コーヒーをめしあがりますか。" },
+        { japanese: "おっしゃいます", kanji: "", nepali: "भन्नुहुन्छ", english: "say (respectful)", sentence: "せんせいは「あしたやすみです」とおっしゃいました。" },
+        { japanese: "なさいます", kanji: "", nepali: "गर्नुहुन्छ", english: "do (respectful)", sentence: "しゅうまつはなにをなさいますか。" },
+        { japanese: "ごらんになります", kanji: "ご覧になります", nepali: "हेर्नुहुन्छ", english: "see, look at (respectful)", sentence: "このえいがをごらんになりましたか。" },
+        { japanese: "ごぞんじです", kanji: "ご存じです", nepali: "चिन्दछ / थाहा छ", english: "know (respectful)", sentence: "やまださんをごぞんじですか。" },
+        { japanese: "あいさつ", kanji: "", nepali: "अभीवादन", english: "greeting, address", sentence: "あいさつをします。" },
+        { japanese: "りょかん", kanji: "旅館", nepali: "जापानीज शैलीको होटल", english: "Japanese-style hotel or inn", sentence: "おんせんがあるりょかんにとまりたいです。" },
+        { japanese: "バスてい", kanji: "バス停", nepali: "बस स्टप", english: "bus stop", sentence: "うちのまえにバスていがあります。" },
+        { japanese: "おくさま", kanji: "奥様", nepali: "(अरुको) श्रीमती", english: "(someone else's) wife (respectful)", sentence: "ぶちょうのおくさまにあいさつしました。" },
+        { japanese: "〜さま", kanji: "〜様", nepali: "~さん को आदर शब्द", english: "Mr./Ms. (respectful form of ~さん)", sentence: "おきゃくさま、こちらへどうぞ。" },
+        { japanese: "たまに", kanji: "", nepali: "कहिलेकाँही (आकल-झुकल )", english: "once in a while, occasionally", sentence: "たまにえいがをみます。" },
+        { japanese: "どなたでも", kanji: "", nepali: "जोकोहीपनि / जोभएपनि", english: "anybody (respectful)", sentence: "このイベントはどなたでもさんかできます。" },
+        { japanese: "〜といいます", kanji: "", nepali: "(कसैको नाम) ~ भनिन्छ", english: "be called ~", sentence: "わたしはラジブといいます。" },
+        { japanese: "〜ねん〜くみ", kanji: "〜年〜組", nepali: "वर्ष - श्रेणी", english: "Class ~ of grade ~", sentence: "わたしはしょうがっこうで1ねん2くみでした。" },
+        { japanese: "だします[ねつを〜]", kanji: "出します", nepali: "[ज्वोरो] आउनु", english: "run [a fever]", sentence: "きのうからねつをだしています。" },
+        { japanese: "よろしくおつたえください。", kanji: "よろしくお伝えください", nepali: "नमस्कार वा सोधेको छ भनिदिनुस् ।", english: "Give my best regards.", sentence: "やまださんによろしくおつたえください。" },
+        { japanese: "しつれいいたします。", kanji: "失礼いたします", nepali: "बिदा दिनुहोस्", english: "Good-bye (humble)", sentence: "では、しつれいいたします。" },
+        { japanese: "けいれき", kanji: "経歴", nepali: "पृष्ठभूमि (व्यक्तिगत ईतिहास)", english: "background", sentence: "かれはふくざつなけいれきをもっています。" },
+        { japanese: "いがくぶ", kanji: "医学部", nepali: "मेडीकल (चिकित्सा) विभाग", english: "the medical department", sentence: "かれはだいがくのいがくぶをそつぎょうしました。" },
+        { japanese: "めざします", kanji: "目指します", nepali: "लक्ष्य लिनु", english: "aim for", sentence: "わたしはいしゃをめざしています。" },
+        { japanese: "すすみます", kanji: "進みます", nepali: "अघि बढ्नु", english: "go on (to graduate school)", sentence: "だいがくいんにすすみたいです。" },
+        { japanese: "かいはつします", kanji: "開発します", nepali: "विकाश गर्नू / सिर्जना गर्नु", english: "develop, create", sentence: "あたらしいソフトをかいはつします。" },
+        { japanese: "マウス", kanji: "", nepali: "माउस (जनावर)", english: "mouse", sentence: "じっけんでマウスをつかいます。" },
+        { japanese: "ヒト", kanji: "", nepali: "मानव / मानिस", english: "human", sentence: "iPSさいぼうはヒトのさいぼうです。" },
+        { japanese: "じゅしょうします", kanji: "受賞します", nepali: "पुरस्कार द्वारा सम्मानीत हुनु", english: "be awarded a prize", sentence: "かれはノーベルしょうをじゅしょうしました。" },
+        { japanese: "こうえんかい", kanji: "講演会", nepali: "लेक्चर (प्रवचन) बैठक", english: "lecture meeting", sentence: "やまなかせんせいのこうえんかいへいきました。" }
+    ],
+    "Lesson 50": [
+        { japanese: "まいります", kanji: "参ります", nepali: "जानु, आउनु", english: "go, come (humble)", sentence: "あした、9じにそちらへまいります。" },
+        { japanese: "おります", kanji: "", nepali: "हुनु", english: "be (humble)", sentence: "わたしはかいしゃにおります。" },
+        { japanese: "いただきます", kanji: "", nepali: "खान्छु, पीउछु, पाउछु", english: "eat, drink, receive (humble)", sentence: "では、いただきます。" },
+        { japanese: "もうします", kanji: "申します", nepali: "भन्नु (कसैको नाम)", english: "say, be called (humble)", sentence: "わたしはラジブともうします。" },
+        { japanese: "いたします", kanji: "いたします", nepali: "गर्नु", english: "do (humble)", sentence: "わたしがごあんないいたします。" },
+        { japanese: "はいけんします", kanji: "拝見します", nepali: "हेर्छु", english: "see, look at (humble)", sentence: "せんせいのほんをはいけんしました。" },
+        { japanese: "ぞんじます", kanji: "存じます", nepali: "जान्दछु, चिन्दछु", english: "know (humble)", sentence: "そのことはぞんじませんでした。" },
+        { japanese: "うかがいます", kanji: "伺います", nepali: "सोध्छु, सुन्छु, भेट्नजान्छु", english: "ask, hear, visit (humble)", sentence: "せんせいのおたくへうかがいたいです。" },
+        { japanese: "おめにかかります", kanji: "お目にかかります", nepali: "भेट्नु", english: "meet (humble)", sentence: "しゃちょうにおめにかかりたいです。" },
+        { japanese: "いれます[コーヒーを〜]", kanji: "", nepali: "[कफी] बनाउनु", english: "make [coffee]", sentence: "コーヒーをいれましょうか。" },
+        { japanese: "よういします", kanji: "用意します", nepali: "तयारी गर्नु", english: "prepare", sentence: "かいぎのしりょうをよういします。" },
+        { japanese: "わたくし", kanji: "私", nepali: "म", english: "I (humble)", sentence: "わたくしがまいります。" },
+        { japanese: "ガイド", kanji: "", nepali: "मार्गदर्शक (गाईड)", english: "guide", sentence: "ガイドのはなしをききます。" },
+        { japanese: "メールアドレス", kanji: "", nepali: "ई-मेल ठेगाना", english: "e-mail address", sentence: "メールアドレスをおしえてください。" },
+        { japanese: "スケジュール", kanji: "", nepali: "तालिका / सुची", english: "schedule", sentence: "あしたのスケジュールをかくにんします。" },
+        { japanese: "さらいしゅう", kanji: "さ来週", nepali: "अर्को हप्ता पछि", english: "the week after next", sentence: "さらいしゅう、しゅっちょうします。" },
+        { japanese: "さらいげつ", kanji: "さ来月", nepali: "अर्को महिना पछि", english: "the month after next", sentence: "さらいげつ、くにへかえります。" },
+        { japanese: "さらいねん", kanji: "さ来年", nepali: "अर्को साल पछि", english: "the year after next", sentence: "さらいねん、けっこんするよていです。" },
+        { japanese: "はじめに", kanji: "初めに", nepali: "सुरुमा / सुरुवातमा", english: "first, in the beginning", sentence: "はじめに、じこしょうかいをします。" },
+        { japanese: "きんちょうします", kanji: "緊張します", nepali: "तनाब हुनु / हडबडाउनु", english: "get nervous, become tense", sentence: "スピーチのまえに、とてもきんちょうします。" },
+        { japanese: "しょうきん", kanji: "賞金", nepali: "पुरस्कार रकम", english: "prize money", sentence: "コンテストでしょうきんをもらいました。" },
+        { japanese: "きりん", kanji: "", nepali: "जिराफ", english: "giraffe", sentence: "どうぶつえんできりんをみました。" },
+        { japanese: "ころ", kanji: "", nepali: "समय / दिनहरु / बेला", english: "times, days", sentence: "こどものころ、よくこのこうえんであそびました。" },
+        { japanese: "かないます[ゆめが〜]", kanji: "", nepali: "[सपना] साकार हुनु", english: "be realized [dream]", sentence: "やっとゆめがかないました。" },
+        { japanese: "おうえんします", kanji: "応援します", nepali: "समर्थन गर्नु / सहायता गर्नु", english: "support", sentence: "わたしたちのチームをおうえんしてください。" },
+        { japanese: "こころから", kanji: "心から", nepali: "हृदयदेखि", english: "from my heart", sentence: "こころからかんしゃします。" },
+        { japanese: "かんしゃします", kanji: "感謝します", nepali: "धन्यवाद दिनु / आभारी व्यक्त गर्नु", english: "be grateful, thank", sentence: "しんせつにしてくれて、かんしゃします。" },
+        { japanese: "おれい", kanji: "お礼", nepali: "कृतज्ञता / आभारी / धन्यवाद", english: "gratitude, thanks", sentence: "せんせいにおれいをいいます。" },
+        { japanese: "おげんきでいらっしゃいますか。", kanji: "お元気でいらっしゃいますか", nepali: "हजुरलाई कस्तो छ ?", english: "How are you? (respectful)", sentence: "せんせい、おげんきでいらっしゃいますか。" },
+        { japanese: "めいわくをかけます", kanji: "迷惑をかけます", nepali: "समस्या उत्पादन गर्नु / रिस उठाउनु", english: "cause trouble", sentence: "ごめいわくをかけて、すみませんでした。" },
+        { japanese: "いかします", kanji: "生かします", nepali: "सहि प्रयोग गर्नु / राम्रो प्रयोग गर्नु", english: "make good use of", sentence: "このけいけんをこれからのしごとにいかしたいです。" }
+    ]
+      };

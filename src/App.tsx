@@ -102,34 +102,53 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const showExitDialogRef = useRef(showExitDialog);
+  useEffect(() => {
+    showExitDialogRef.current = showExitDialog;
+  }, [showExitDialog]);
+
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return;
 
-    const backListener = CapacitorApp.addListener('backButton', () => {
-      if (showExitDialog) {
-        setShowExitDialog(false);
-        return;
-      }
+    let listenerHandle: any = null;
 
-      const cv = currentViewRef.current;
-      if (cv === 'learn' || cv === 'splash' || cv === 'onboarding') {
-        setShowExitDialog(true);
-      } else {
-        if (historyRef.current.length > 1) {
-          historyRef.current.pop();
-          const prevView = historyRef.current[historyRef.current.length - 1];
-          currentViewRef.current = prevView;
-          setView(prevView);
-        } else {
-          setShowExitDialog(true);
+    const setupListener = async () => {
+      listenerHandle = await CapacitorApp.addListener('backButton', () => {
+        if (showExitDialogRef.current) {
+          setShowExitDialog(false);
+          return;
         }
-      }
-    });
+
+        const event = new CustomEvent('hardwareBackButton', { cancelable: true });
+        window.dispatchEvent(event);
+        if (event.defaultPrevented) {
+          return;
+        }
+
+        const cv = currentViewRef.current;
+        if (cv === 'learn' || cv === 'splash' || cv === 'onboarding') {
+          setShowExitDialog(true);
+        } else {
+          if (historyRef.current.length > 1) {
+            historyRef.current.pop();
+            const prevView = historyRef.current[historyRef.current.length - 1];
+            currentViewRef.current = prevView;
+            setView(prevView);
+          } else {
+            setShowExitDialog(true);
+          }
+        }
+      });
+    };
+
+    setupListener();
 
     return () => {
-      backListener.remove();
+      if (listenerHandle) {
+        listenerHandle.remove();
+      }
     };
-  }, [showExitDialog]);
+  }, []);
 
   const handleFinishOnboarding = () => {
     localStorage.setItem('kn_onboarded', 'true');
@@ -142,13 +161,13 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-[100dvh] w-full bg-[#11131A] text-zinc-200 font-sans overflow-hidden selection:bg-cyan-500/30 pt-[env(safe-area-inset-top)]">
+    <div className="flex flex-col h-[100dvh] w-full bg-gradient-to-br from-[#0f172a] to-[#312e81] text-zinc-200 font-sans overflow-hidden selection:bg-cyan-500/30 pt-[env(safe-area-inset-top)]">
       <AnimatePresence mode="wait">
         {view === 'splash' && <SplashView key="splash" />}
       </AnimatePresence>
 
       {view !== 'splash' && view !== 'onboarding' && (
-        <header className="flex-none h-[60px] bg-[#11131A]/90 backdrop-blur-xl z-50 flex items-center justify-between px-4 pt-1">
+        <header className="flex-none h-[60px] bg-[#11131A]/40 backdrop-blur-xl z-50 flex items-center justify-between px-4 pt-1">
           <div className="flex flex-col justify-center">
             <h1 className="text-[20px] font-black bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500 tracking-tight">
               Katakana Pro
